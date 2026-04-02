@@ -19,4 +19,4 @@ public class Projectile : MonoBehaviour
 }
 
 
-// Codigo para los projectiles, asignar al prefab.
+// Codigo para los projectiles, asignar al prefab. y para se destruya el enemigo, por el tag "Enemy".

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// Script para el combate del jugador. 
+// Script para el combate del jugador. Con proyectiles, serviria para el personaje mago que implementaremos en el juego.
 
 
 public class PlayerCombat : MonoBehaviour
