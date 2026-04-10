@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: f8aba53f3c871f646b545bbef16710a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4866697452091312915
+    second: Laser Attack_0
+  - first:
+      213: -5927693624280397530
+    second: Laser Attack_1
+  - first:
+      213: -7230529356179881823
+    second: Laser Attack_2
+  - first:
+      213: 4455535471208821347
+    second: Laser Attack_3
+  - first:
+      213: -8610368987329040499
+    second: Laser Attack_4
+  - first:
+      213: -8712627019868050846
+    second: Laser Attack_5
+  - first:
+      213: 8036743759713668370
+    second: Laser Attack_6
+  - first:
+      213: 6303073390396602636
+    second: Laser Attack_7
+  - first:
+      213: 8693904393137608570
+    second: Laser Attack_8
+  - first:
+      213: -5464778439335268753
+    second: Laser Attack_9
+  - first:
+      213: 440637091884227053
+    second: Laser Attack_10
+  - first:
+      213: 6972860890892878625
+    second: Laser Attack_11
+  - first:
+      213: 1091881925348232846
+    second: Laser Attack_12
+  - first:
+      213: 5503975829145010161
+    second: Laser Attack_13
+  - first:
+      213: -6941477480198450737
+    second: Laser Attack_14
+  - first:
+      213: 8588299748204482825
+    second: Laser Attack_15
+  - first:
+      213: 7612951563236011271
+    second: Laser Attack_16
+  - first:
+      213: 1286767307974521072
+    second: Laser Attack_17
+  - first:
+      213: -2497597591331474735
+    second: Laser Attack_18
+  - first:
+      213: 3106807063163408993
+    second: Laser Attack_19
+  - first:
+      213: 47475237659904112
+    second: Laser Attack_20
+  - first:
+      213: -7466374235743245860
+    second: Laser Attack_21
+  - first:
+      213: -7899733605277610351
+    second: Laser Attack_22
+  - first:
+      213: -5732352761258366086
+    second: Laser Attack_23
+  - first:
+      213: 2829913946061456927
+    second: Laser Attack_24
+  - first:
+      213: -9155394907867382747
+    second: Laser Attack_25
+  - first:
+      213: 6414886361045093465
+    second: Laser Attack_26
+  - first:
+      213: -3822834166923545935
+    second: Laser Attack_27
+  - first:
+      213: -7888261259104440335
+    second: Laser Attack_28
+  - first:
+      213: -3046395409927077341
+    second: Laser Attack_29
+  - first:
+      213: 9097426409130300302
+    second: Laser Attack_30
+  - first:
+      213: -7537300727082118736
+    second: Laser Attack_31
+  - first:
+      213: 7273559546830977698
+    second: Laser Attack_32
+  - first:
+      213: -6467161497240026242
+    second: Laser Attack_33
+  - first:
+      213: -3956735684875779740
+    second: Laser Attack_34
+  - first:
+      213: -5566385340581590794
+    second: Laser Attack_35
+  - first:
+      213: 6254945511969019386
+    second: Laser Attack_36
+  - first:
+      213: -9161111316398210800
+    second: Laser Attack_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Laser Attack_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 263
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de47cc2c374067cb0800000000000000
+      internalID: -4866697452091312915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 263
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6294b631e0a9cbda0800000000000000
+      internalID: -5927693624280397530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_2
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 263
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a04dda0cdff7ab90800000000000000
+      internalID: -7230529356179881823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_3
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 263
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362fd8597ed35dd30800000000000000
+      internalID: 4455535471208821347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_4
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 263
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f66359603d18880800000000000000
+      internalID: -8610368987329040499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_5
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 263
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a6b4c03e7861780800000000000000
+      internalID: -8712627019868050846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_6
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 199
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d02947edf388f60800000000000000
+      internalID: 8036743759713668370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_7
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 199
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c097ecb7ad3097750800000000000000
+      internalID: 6303073390396602636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_8
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 199
+        width: 154
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77dc28bbf3f6a870800000000000000
+      internalID: 8693904393137608570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_9
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 199
+        width: 155
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e253b86f43924b0800000000000000
+      internalID: -5464778439335268753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_10
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 199
+        width: 154
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9de98b9157d1600800000000000000
+      internalID: 440637091884227053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_11
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 199
+        width: 153
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12342e5590494c060800000000000000
+      internalID: 6972860890892878625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 135
+        width: 154
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e0d0973d4272f00800000000000000
+      internalID: 1091881925348232846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_13
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 77
+        width: 79
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff3684fadc026c40800000000000000
+      internalID: 5503975829145010161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_14
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 71
+        width: 70
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1d560620beaaf90800000000000000
+      internalID: -6941477480198450737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_15
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 135
+        width: 155
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9011e444e15cf2770800000000000000
+      internalID: 8588299748204482825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_16
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 71
+        width: 141
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70defe29c13a6a960800000000000000
+      internalID: 7612951563236011271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_17
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 135
+        width: 154
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0386c8c048bd110800000000000000
+      internalID: 1286767307974521072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_18
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 73
+        width: 65
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2f0d83930c65dd0800000000000000
+      internalID: -2497597591331474735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_19
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 86
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162978930989d1b20800000000000000
+      internalID: 3106807063163408993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_20
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 71
+        width: 56
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07888542a7aa8a000800000000000000
+      internalID: 47475237659904112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_21
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 135
+        width: 153
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9256ee03c126890800000000000000
+      internalID: -7466374235743245860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_22
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 73
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e463df3228e5290800000000000000
+      internalID: -7899733605277610351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_23
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 79
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b27f1f8879270b0800000000000000
+      internalID: -5732352761258366086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_24
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 71
+        width: 69
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16caeb8dbfd54720800000000000000
+      internalID: 2829913946061456927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_25
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 135
+        width: 154
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cf422b6d081f080800000000000000
+      internalID: -9155394907867382747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_26
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 74
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c47986821460950800000000000000
+      internalID: 6414886361045093465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_27
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 79
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2bb45549092fac0800000000000000
+      internalID: -3822834166923545935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_28
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 90
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ffaa9bbd24478290800000000000000
+      internalID: -7888261259104440335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_29
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 71
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3228ae1e38709b5d0800000000000000
+      internalID: -3046395409927077341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_30
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 79
+        width: 152
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83187e6e1d804e70800000000000000
+      internalID: 9097426409130300302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_31
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 80
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b11afc4ce0266790800000000000000
+      internalID: -7537300727082118736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_32
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 97
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aaf281fedfd0f460800000000000000
+      internalID: 7273559546830977698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_33
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 71
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73ccebf1e60046a0800000000000000
+      internalID: -6467161497240026242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_34
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 7
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4610ed8bbd9d619c0800000000000000
+      internalID: -3956735684875779740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_35
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 7
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f841b3560a30c2b0800000000000000
+      internalID: -5566385340581590794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_36
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 7
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af556529dc70ec650800000000000000
+      internalID: 6254945511969019386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Attack_37
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 7
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011064e9bc13dd080800000000000000
+      internalID: -9161111316398210800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Laser Attack_0: -4866697452091312915
+      Laser Attack_1: -5927693624280397530
+      Laser Attack_10: 440637091884227053
+      Laser Attack_11: 6972860890892878625
+      Laser Attack_12: 1091881925348232846
+      Laser Attack_13: 5503975829145010161
+      Laser Attack_14: -6941477480198450737
+      Laser Attack_15: 8588299748204482825
+      Laser Attack_16: 7612951563236011271
+      Laser Attack_17: 1286767307974521072
+      Laser Attack_18: -2497597591331474735
+      Laser Attack_19: 3106807063163408993
+      Laser Attack_2: -7230529356179881823
+      Laser Attack_20: 47475237659904112
+      Laser Attack_21: -7466374235743245860
+      Laser Attack_22: -7899733605277610351
+      Laser Attack_23: -5732352761258366086
+      Laser Attack_24: 2829913946061456927
+      Laser Attack_25: -9155394907867382747
+      Laser Attack_26: 6414886361045093465
+      Laser Attack_27: -3822834166923545935
+      Laser Attack_28: -7888261259104440335
+      Laser Attack_29: -3046395409927077341
+      Laser Attack_3: 4455535471208821347
+      Laser Attack_30: 9097426409130300302
+      Laser Attack_31: -7537300727082118736
+      Laser Attack_32: 7273559546830977698
+      Laser Attack_33: -6467161497240026242
+      Laser Attack_34: -3956735684875779740
+      Laser Attack_35: -5566385340581590794
+      Laser Attack_36: 6254945511969019386
+      Laser Attack_37: -9161111316398210800
+      Laser Attack_4: -8610368987329040499
+      Laser Attack_5: -8712627019868050846
+      Laser Attack_6: 8036743759713668370
+      Laser Attack_7: 6303073390396602636
+      Laser Attack_8: 8693904393137608570
+      Laser Attack_9: -5464778439335268753
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
