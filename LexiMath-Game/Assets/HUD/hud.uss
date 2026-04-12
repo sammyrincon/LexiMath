@@ -1,0 +1,255 @@
+:root {
+}
+
+.health-bar-container {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    justify-content: center;
+    align-self: center;
+    align-content: auto;
+    width: 15%;
+    height: 10%;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 50% 50%;
+}
+
+.health-frame {
+    background-image: url("project://database/Assets/HUD/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=2800000&guid=dce6f5913aa8921429fe5181db32e07c&type=3#health_bar_decoration");
+    background-size: 100px 25px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-container {
+}
+
+.main-hud {
+}
+
+.settings-overlay {
+}
+
+.health-bar-fill {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: auto;
+    width: 30px;
+    height: 60px;
+    background-size: 35% 23%;
+}
+
+.home-button {
+    top: 10px;
+    right: 15px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    width: 30px;
+    height: 30px;
+    background-image: url("project://database/Assets/UI%20Character/MediavelUI/Mediavel.png?fileID=-4438855966236845718&guid=61514b8e8dd6a744fb2a0563a9ba7c7f&type=3#Mediavel_453");
+    background-color: rgba(149, 149, 149, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+}
+
+.image-button {
+    position: absolute;
+    top: 20px;
+    right: 4px;
+    align-self: center;
+    justify-content: center;
+    align-content: auto;
+    width: 20px;
+    height: 15px;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Extras.png?fileID=2659928716049758086&guid=e9fb8c319a15ea04fa479edb81844eca&type=3#Keyboard Extras_1");
+    overflow: visible;
+    opacity: 0.85;
+    visibility: visible;
+    background-size: 125% 125%;
+    -unity-text-align: upper-left;
+}
+
+.up-button {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-size: 95% 90%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 120px;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=-2789869647701826152&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_0");
+    background-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    left: 60px;
+}
+
+.down-botton {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 150px;
+    right: auto;
+    left: 60px;
+    align-self: center;
+    align-items: center;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=3071471213083671370&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_1");
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0.02);
+    background-size: 95% 90%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.left-button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-size: 100% 100%;
+    align-self: center;
+    align-items: center;
+    top: 135px;
+    left: 30px;
+    bottom: 0;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=-3836678269060062180&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_2");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.right-button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 90px;
+    top: 135px;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=1106243997726028932&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_3");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.attack-button {
+    width: 15px;
+    height: 15px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=744142123&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_39");
+}
+
+.controls-container {
+    width: 100%;
+    height: 0%;
+    align-content: center;
+    align-self: center;
+    justify-content: flex-start;
+    top: auto;
+    align-items: center;
+    background-size: 100% 10%;
+}
+
+.d-pad-area {
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 40%;
+    height: 35%;
+    bottom: 0;
+    left: 30px;
+    background-size: 25% 55%;
+}
+
+.actions-area {
+    background-size: 25% 25%;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    top: 280px;
+    width: 200px;
+    -unity-text-align: upper-center;
+    background-color: rgba(76, 76, 76, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.label-controls {
+    position: relative;
+    height: 15px;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    top: 170px;
+    bottom: auto;
+    color: rgb(255, 255, 255);
+}
+
+.ultimate-button {
+    width: 15px;
+    height: 15px;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=-1405171431&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_16");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    top: 25px;
+    bottom: 0;
+}
+
+.label-attack {
+    left: 35px;
+    top: -10px;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    color: rgb(255, 255, 255);
+}
+
+.label-ultimate {
+    align-items: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-text-align: upper-center;
+    top: -15px;
+    left: 50px;
+}
+
+.space-button {
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    top: 150px;
+    left: 160px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Extras.png?fileID=5398998059697563366&guid=e9fb8c319a15ea04fa479edb81844eca&type=3#Keyboard Extras_10");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
