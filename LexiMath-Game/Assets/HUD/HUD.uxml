@@ -3,9 +3,13 @@
     <ui:VisualElement name="main-hud" class="main-hud" style="flex-grow: 1;">
         <ui:VisualElement name="hud-container" picking-mode="Ignore" style="flex-grow: 1; opacity: 1;">
             <ui:VisualElement name="health-bar-container" class="health-bar-container" style="flex-grow: 1;">
+                <ui:Label name="label-nivel" text="Level 1" class="label-nivel"/>
                 <ui:VisualElement name="health-bar-frame" class="health-frame" style="flex-grow: 1;">
                     <ui:VisualElement name="healthbar-fill" class="health-bar-fill" style="flex-grow: 1;"/>
                 </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="estrellas-container" class="estrellas-container">
+                <ui:Label name="label-estrellas" text="★ 0 / 3" class="label-estrellas"/>
             </ui:VisualElement>
             <ui:Button text="" name="Button" class="home-button" style="position: absolute;">
                 <ui:Image class="image-button"/>
@@ -16,10 +20,13 @@
             <ui:VisualElement name="pause-screen" class="pause-screen" style="flex-grow: 1;">
                 <ui:VisualElement name="book-animation-container" class="book-animation-container" style="flex-grow: 1;">
                     <ui:VisualElement name="buttons-container" class="buttons-container" style="flex-grow: 1; position: absolute;">
-                        <ui:Button text="Continuar&#10;" name="button-continuar" class="buttons-menu"/>
-                        <ui:Button text="Sonido&#10;" name="button-sonido" class="buttons-menu"/>
+                        <ui:Button text="Continuar" name="button-continuar" class="buttons-menu"/>
+                        <ui:Button text="Sonido" name="button-sonido" class="buttons-menu"/>
+                        <ui:Button text="Controles" name="button-controles" class="buttons-menu"/>
+                        <ui:Button text="Gráficos" name="button-graficos" class="buttons-menu"/>
                         <ui:Button text="Salir" name="button-salir" class="buttons-menu"/>
                     </ui:VisualElement>
+                    <ui:VisualElement name="right-page-container" class="right-page-container" style="position: absolute; display: none;" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="controls-container" class="controls-container" style="flex-grow: 1;">
