@@ -4,7 +4,7 @@
         <ui:VisualElement name="hud-container" picking-mode="Ignore" style="flex-grow: 1; opacity: 1;">
             <ui:VisualElement name="health-bar-container" class="health-bar-container" style="flex-grow: 1;">
                 <ui:VisualElement name="health-bar-frame" class="health-frame" style="flex-grow: 1;">
-                    <ui:VisualElement name="health-bar-fill" class="health-fill health-bar-fill home-button" style="flex-grow: 1; background-size: 75px 27px; background-color: rgba(55, 55, 55, 0); background-image: url(&quot;project://database/Assets/HUD/Hearts/Hearts/PNG/health_bar/health_bar.png?fileID=2800000&amp;guid=cc2ae19d769fb4342930af1239ad2a63&amp;type=3#health_bar&quot;); width: 135px; position: absolute; height: 10px; top: 13px; left: 17px;"/>
+                    <ui:VisualElement name="healthbar-fill" class="health-bar-fill" style="flex-grow: 1;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:Button text="" name="Button" class="home-button" style="position: absolute;">
@@ -13,24 +13,21 @@
             <ui:VisualElement name="settings-overlay" class="settings-overlay" style="flex-grow: 1; position: absolute; top: 15px; right: 15px; background-size: 16px 16px;">
                 <ui:VisualElement name="settings-modal" style="flex-grow: 1;"/>
             </ui:VisualElement>
-            <ui:VisualElement name="controls-container" class="controls-container" style="flex-grow: 1;">
-                <ui:VisualElement name="d-pad-area" class="d-pad-area" style="flex-grow: 1; height: 40%; top: 165px;">
-                    <ui:Button text="" name="button-up" class="up-button" style="position: absolute;"/>
-                    <ui:Button text="" name="button-right" class="right-button"/>
-                    <ui:Button text="" name="button-left" class="left-button"/>
-                    <ui:Button text="" name="button-down" class="down-botton"/>
-                    <ui:Label text="Moverse" emoji-fallback-support="false" class="label-controls" style="left: -50px;"/>
-                    <ui:Button text="" name="space-button" class="space-button">
-                        <ui:Label text="Saltar" style="position: absolute; left: 5px; top: 15px; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
-                    </ui:Button>
+            <ui:VisualElement name="pause-screen" class="pause-screen" style="flex-grow: 1;">
+                <ui:VisualElement name="book-animation-container" class="book-animation-container" style="flex-grow: 1;">
+                    <ui:VisualElement name="buttons-container" class="buttons-container" style="flex-grow: 1; position: absolute;">
+                        <ui:Button text="Continuar&#10;" name="button-continuar" class="buttons-menu"/>
+                        <ui:Button text="Sonido&#10;" name="button-sonido" class="buttons-menu"/>
+                        <ui:Button text="Salir" name="button-salir" class="buttons-menu"/>
+                    </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="actions-area" class="actions-area" style="flex-grow: 1;">
-                    <ui:Button text="" name="atack-button" double-click-selects-word="false" class="attack-button">
-                        <ui:Label text="Ataque" name="Attack" class="label-attack"/>
-                    </ui:Button>
-                    <ui:Button text="" name="Ultimate" class="ultimate-button">
-                        <ui:Label text="Ultimate" name="Ultimate" class="label-ultimate" style="color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
-                    </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement name="controls-container" class="controls-container" style="flex-grow: 1;">
+                <ui:VisualElement name="d-pad-container" class="d-pad-container" style="flex-grow: 1;">
+                    <ui:VisualElement name="control-up" class="control-up" style="flex-grow: 1;"/>
+                    <ui:VisualElement name="control-down" class="control-down" style="flex-grow: 1;"/>
+                    <ui:VisualElement name="control-right" class="control-right" style="flex-grow: 1;"/>
+                    <ui:VisualElement name="control-left" class="control-left" style="flex-grow: 1;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
