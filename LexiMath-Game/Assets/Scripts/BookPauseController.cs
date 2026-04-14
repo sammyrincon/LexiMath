@@ -3,6 +3,7 @@ using UnityEngine.UIElements;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class BookPauseController : MonoBehaviour
 {
@@ -52,7 +53,7 @@ public class BookPauseController : MonoBehaviour
 
         // Acciones
         if (btnContinuar != null) btnContinuar.clicked += IntentarCambiarPausa;
-        if (btnSalir     != null) btnSalir.clicked     += () => Application.Quit();
+        if (btnSalir     != null) btnSalir.clicked     += IrAlMenuPrincipal;
         if (btnSonido    != null) btnSonido.clicked    += () => MostrarPanel("sonido");
         if (btnControles != null) btnControles.clicked += () => MostrarPanel("controles");
         if (btnGraficos  != null) btnGraficos.clicked  += () => MostrarPanel("graficos");
@@ -199,6 +200,12 @@ public class BookPauseController : MonoBehaviour
     // ─────────────────────────────────────────────
     //  ANIMACIÓN DEL LIBRO (igual que antes)
     // ─────────────────────────────────────────────
+
+    void IrAlMenuPrincipal()
+    {
+        Time.timeScale = 1; // Aseguramos que el tiempo vuelva a la normalidad
+        SceneManager.LoadScene("MainMenu");
+    }
 
     void IntentarCambiarPausa()
     {
