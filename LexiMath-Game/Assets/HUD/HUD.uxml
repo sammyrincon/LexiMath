@@ -20,6 +20,10 @@
                         <ui:Button text="Sonido&#10;" name="button-sonido" class="buttons-menu"/>
                         <ui:Button text="Salir" name="button-salir" class="buttons-menu"/>
                     </ui:VisualElement>
+<<<<<<< Updated upstream
+=======
+                    <ui:VisualElement name="right-page-container" class="right-page-container" style="position: absolute; display: none;"/>
+>>>>>>> Stashed changes
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="controls-container" class="controls-container" style="flex-grow: 1;">
@@ -30,6 +34,7 @@
                     <ui:VisualElement name="control-left" class="control-left" style="flex-grow: 1;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
+            <ui:Label name="label-nivel" text="Level 1" class="label-nivel"/>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
