@@ -42,9 +42,15 @@
     justify-content: center;
     align-self: center;
     align-content: auto;
-    width: 30px;
-    height: 60px;
-    background-size: 35% 23%;
+    width: 76px;
+    height: 15px;
+    background-size: 100% 100%;
+    background-image: url("project://database/Assets/HUD/Hearts/Hearts/PNG/health_bar/health_bar.png?fileID=2800000&guid=cc2ae19d769fb4342930af1239ad2a63&type=3#health_bar");
+    -unity-background-scale-mode: scale-and-crop;
+    left: 47px;
+    background-color: rgba(0, 0, 0, 0);
+    flex-shrink: 0;
+    max-width: 76px;
 }
 
 .home-button {
@@ -163,25 +169,15 @@
 
 .controls-container {
     width: 100%;
-    height: 0%;
+    height: 70px;
     align-content: center;
     align-self: center;
     justify-content: flex-start;
     top: auto;
     align-items: center;
     background-size: 100% 10%;
-}
-
-.d-pad-area {
-    align-items: flex-start;
-    align-self: flex-start;
-    justify-content: flex-start;
     position: absolute;
-    width: 40%;
-    height: 35%;
     bottom: 0;
-    left: 30px;
-    background-size: 25% 55%;
 }
 
 .actions-area {
@@ -252,4 +248,94 @@
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.pause-screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.78);
+}
+
+.book-animation-container {
+    align-items: center;
+    align-self: center;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/HUD/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/2%20-%20Gold/Pixel%20Book/Sprites/Open%20&%20Close/Open/1.png?fileID=2800000&guid=eec0ce09a0161f244b1ac153e82674ff&type=3#1");
+    -unity-background-scale-mode: scale-to-fit;
+    position: absolute;
+}
+
+.buttons-container {
+    width: 100px;
+    height: 200px;
+    justify-content: center;
+    align-content: center;
+    top: 20%;
+    left: 20%;
+}
+
+.buttons-menu {
+    -unity-text-align: upper-center;
+    width: 80px;
+    height: 30px;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    align-content: center;
+    align-self: center;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-image: url("project://database/Assets/UI%20Character/MediavelUI/Mediavel.png?fileID=9120660117641809374&guid=61514b8e8dd6a744fb2a0563a9ba7c7f&type=3#Mediavel_220");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    left: -30px;
+}
+
+.control-up {
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 20px;
+}
+
+.control-down {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 20px;
+}
+
+.control-right {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 20px;
+}
+
+.control-left {
+    top: 20px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.d-pad-container {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    background-size: 100px 60px;
+    width: 60px;
+    height: 60px;
 }
