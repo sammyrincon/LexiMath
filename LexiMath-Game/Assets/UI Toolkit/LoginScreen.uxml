@@ -12,7 +12,7 @@
             <ui:Button name="boton-login" text="▶  JUGAR" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 20px;"/>
             <ui:Button name="boton-registrarse" text="CREAR CUENTA" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
             <ui:Button name="boton-admin" text="ADMIN" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); height: 48px;"/>
-            <ui:Label name="texto-error" text="Usuario o contraseña incorrectos"/>
+            <ui:Label name="texto-error" text="Usuario o contraseña incorrectos" style="font-size: 22px; -unity-font-style: bold;"/>
         </ui:VisualElement>
         <ui:Label name="texto-footer" text="© 2026 LEXI MATH" style="color: rgb(255, 255, 255); font-size: 18px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
     </ui:VisualElement>

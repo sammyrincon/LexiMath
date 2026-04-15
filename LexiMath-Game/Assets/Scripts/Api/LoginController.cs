@@ -1,61 +1,85 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 /// <summary>
-/// LoginController — controla la pantalla de Login
-/// Conecta los campos de UI con AuthManager para
-/// llamar a la API y manejar la respuesta.
+/// LoginController — controla la pantalla de Login con UI Toolkit
+/// Lee los campos del UXML y conecta con AuthManager.
 /// </summary>
 public class LoginController : MonoBehaviour
 {
-    [Header("Campos de entrada")]
-    public TMP_InputField inputUsuario;
-    public TMP_InputField inputContrasena;
+    // ── Referencias al UIDocument ──────────────────────────────
+    private UIDocument _doc;
 
-    [Header("Botones")]
-    public GameObject botonLogin;
-    public GameObject botonRegistrarse;
-    public GameObject botonAdmin;
-
-    [Header("Mensajes")]
-    public TextMeshProUGUI textError;
+    // ── Elementos del UXML ─────────────────────────────────────
+    private TextField  _inputUsuario;
+    private TextField  _inputContrasena;
+    private Button     _botonLogin;
+    private Button     _botonRegistrarse;
+    private Button     _botonAdmin;
+    private Label      _textoError;
 
     // ───────────────────────────────────────────────────────────
-    void Start()
+    void OnEnable()
     {
-        // Asegurarse que el texto de error esté oculto al inicio
-        textError.gameObject.SetActive(false);
+        // Obtener la raíz del documento UI
+        _doc = GetComponent<UIDocument>();
+        var root = _doc.rootVisualElement;
+
+        // Conectar elementos por nombre (igual que en el UXML)
+        _inputUsuario    = root.Q<TextField>("input-usuario");
+        _inputContrasena = root.Q<TextField>("input-contrasena");
+        _botonLogin      = root.Q<Button>("boton-login");
+        _botonRegistrarse = root.Q<Button>("boton-registrarse");
+        _botonAdmin      = root.Q<Button>("boton-admin");
+        _textoError      = root.Q<Label>("texto-error");
+
+        // Ocultar error al inicio
+        _textoError.style.display = DisplayStyle.None;
+
+        // Registrar eventos de los botones
+        _botonLogin.clicked      += OnClickLogin;
+        _botonRegistrarse.clicked += OnClickRegistrarse;
+        _botonAdmin.clicked      += OnClickAdmin;
     }
 
     // ───────────────────────────────────────────────────────────
-    // BOTÓN LOGIN — llamado desde el Inspector
-    // ───────────────────────────────────────────────────────────
-    public void OnClickLogin()
+    void OnDisable()
     {
-        // Limpiar error anterior
-        textError.gameObject.SetActive(false);
+        // Desregistrar eventos para evitar memory leaks
+        _botonLogin.clicked      -= OnClickLogin;
+        _botonRegistrarse.clicked -= OnClickRegistrarse;
+        _botonAdmin.clicked      -= OnClickAdmin;
+    }
 
-        // Validar que los campos no estén vacíos
-        if (string.IsNullOrEmpty(inputUsuario.text) ||
-            string.IsNullOrEmpty(inputContrasena.text))
+    // ───────────────────────────────────────────────────────────
+    // BOTÓN LOGIN
+    // ───────────────────────────────────────────────────────────
+    private void OnClickLogin()
+    {
+        // Ocultar error anterior
+        _textoError.style.display = DisplayStyle.None;
+
+        // Validar campos vacíos
+        if (string.IsNullOrEmpty(_inputUsuario.value) ||
+            string.IsNullOrEmpty(_inputContrasena.value))
         {
             MostrarError("Por favor llena todos los campos");
             return;
         }
 
-        // Llamar al AuthManager
+        // Llamar al AuthManager con las credenciales
         AuthManager.Instance.Login(
-            inputUsuario.text.Trim(),
-            inputContrasena.text,
+            _inputUsuario.value.Trim(),
+            _inputContrasena.value,
             onSuccess: () =>
             {
-                // Login exitoso — ir a pantalla de progreso
-                // o mostrar tutorial si es primera vez
+                // Si nunca vio el tutorial → TutorialScene
+                // Si ya lo vio → MapaScene
                 if (!GameManager.Instance.TutorialMecanicas)
                     SceneManager.LoadScene("TutorialScene");
                 else
-                    SceneManager.LoadScene("MapaScene");
+                    SceneManager.LoadScene("MainMenu");
             },
             onError: (error) =>
             {
@@ -66,17 +90,17 @@ public class LoginController : MonoBehaviour
     }
 
     // ───────────────────────────────────────────────────────────
-    // BOTÓN REGISTRARSE — ir a pantalla de registro
+    // BOTÓN REGISTRARSE
     // ───────────────────────────────────────────────────────────
-    public void OnClickRegistrarse()
+    private void OnClickRegistrarse()
     {
         SceneManager.LoadScene("RegistroScene");
     }
 
     // ───────────────────────────────────────────────────────────
-    // BOTÓN ADMIN — abre panel web en nueva pestaña
+    // BOTÓN ADMIN
     // ───────────────────────────────────────────────────────────
-    public void OnClickAdmin()
+    private void OnClickAdmin()
     {
         Application.OpenURL("https://leximath.app/admin");
     }
@@ -86,7 +110,7 @@ public class LoginController : MonoBehaviour
     // ───────────────────────────────────────────────────────────
     private void MostrarError(string mensaje)
     {
-        textError.text = mensaje;
-        textError.gameObject.SetActive(true);
+        _textoError.text = mensaje;
+        _textoError.style.display = DisplayStyle.Flex;
     }
 }
