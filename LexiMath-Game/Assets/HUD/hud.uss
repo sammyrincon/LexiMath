@@ -339,11 +339,6 @@
     width: 60px;
     height: 60px;
 }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
 
 .label-nivel {
     -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
@@ -353,6 +348,7 @@
     margin-bottom: 3px;
     -unity-text-outline-width: 1px;
     -unity-text-outline-color: rgb(0, 0, 0);
+    left: 55px;
 }
 
 .estrellas-container {
@@ -453,12 +449,6 @@
     width: 90%;
 }
 
-<<<<<<< Updated upstream
-.label-nivel {
-    left: 55px;
-}
->>>>>>> Stashed changes
-=======
 .coins-container {
     position: absolute;
     top: 50px;
@@ -500,9 +490,8 @@
     left: 0;
     right: 0;
     bottom: 0;
+    display: none;
 }
-
-
 
 .mapVictory {
     align-self: center;
@@ -658,4 +647,3 @@
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
 }
->>>>>>> Stashed changes
