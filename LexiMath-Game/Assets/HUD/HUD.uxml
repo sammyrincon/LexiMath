@@ -21,6 +21,10 @@
                         <ui:Button text="Salir" name="button-salir" class="buttons-menu"/>
                     </ui:VisualElement>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+                    <ui:VisualElement name="right-page-container" class="right-page-container" style="position: absolute; display: none;"/>
+>>>>>>> Stashed changes
 =======
                     <ui:VisualElement name="right-page-container" class="right-page-container" style="position: absolute; display: none;"/>
 >>>>>>> Stashed changes
@@ -34,7 +38,34 @@
                     <ui:VisualElement name="control-left" class="control-left" style="flex-grow: 1;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
+<<<<<<< Updated upstream
             <ui:Label name="label-nivel" text="Level 1" class="label-nivel"/>
+=======
+            <ui:VisualElement name="CoinsContainer" class="coins-container" style="flex-grow: 1;">
+                <ui:Label text="0" name="ContadorTexto" class="contador-texto"/>
+                <ui:Image name="coin-image" class="coin-image"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Victory-panel" class="victory-panel" style="flex-grow: 1;">
+                <ui:VisualElement name="mapVictory" class="mapVictory" style="flex-grow: 1;">
+                    <ui:Label text="¡Enhorabuena!&#10;Nivel Terminado" name="victoryTitle" class="victoryTitle"/>
+                    <ui:VisualElement name="starsContainer" class="stars-container" style="flex-grow: 1;">
+                        <ui:VisualElement name="Star3" class="star3" style="flex-grow: 1;"/>
+                        <ui:VisualElement name="Star1" class="star1" style="flex-grow: 1;"/>
+                        <ui:VisualElement name="Star2" class="star2" style="flex-grow: 1;"/>
+                        <ui:Label text="Puntos" name="pointsText" class="points-text"/>
+                    </ui:VisualElement>
+                    <ui:Label text="0&#10;" name="PointsNumber" class="points-number"/>
+                    <ui:VisualElement name="warningLevel" class="warning-level" style="flex-grow: 1;">
+                        <ui:Label text="Necesitas 2 estrellas para pasar de nivel " name="warningLabel" class="warning-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="buttonsVictory" class="buttons-victory" style="flex-grow: 1;">
+                        <ui:Button text="Salir" name="menuButton" class="menu-button"/>
+                        <ui:Button text="Reintentar" name="retryButton" class="retry-button"/>
+                        <ui:Button text="Continuar" name="continueButton" class="continue-button"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+>>>>>>> Stashed changes
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
