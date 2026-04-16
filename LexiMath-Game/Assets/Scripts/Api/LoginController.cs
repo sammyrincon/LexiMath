@@ -12,44 +12,51 @@ public class LoginController : MonoBehaviour
     private UIDocument _doc;
 
     // ── Elementos del UXML ─────────────────────────────────────
-    private TextField  _inputUsuario;
-    private TextField  _inputContrasena;
-    private Button     _botonLogin;
-    private Button     _botonRegistrarse;
-    private Button     _botonAdmin;
-    private Label      _textoError;
+    private TextField _inputUsuario;
+    private TextField _inputContrasena;
+    private Button    _botonLogin;
+    private Button    _botonRegistrarse;
+    private Button    _botonAdmin;
+    private Label     _textoError;
+
+    // ── Cursor personalizado ───────────────────────────────────
+    [SerializeField] private Texture2D _cursorMano;
 
     // ───────────────────────────────────────────────────────────
     void OnEnable()
     {
-        // Obtener la raíz del documento UI
         _doc = GetComponent<UIDocument>();
         var root = _doc.rootVisualElement;
 
-        // Conectar elementos por nombre (igual que en el UXML)
-        _inputUsuario    = root.Q<TextField>("input-usuario");
-        _inputContrasena = root.Q<TextField>("input-contrasena");
-        _botonLogin      = root.Q<Button>("boton-login");
+        // Conectar elementos por nombre
+        _inputUsuario     = root.Q<TextField>("input-usuario");
+        _inputContrasena  = root.Q<TextField>("input-contrasena");
+        _botonLogin       = root.Q<Button>("boton-login");
         _botonRegistrarse = root.Q<Button>("boton-registrarse");
-        _botonAdmin      = root.Q<Button>("boton-admin");
-        _textoError      = root.Q<Label>("texto-error");
+        _botonAdmin       = root.Q<Button>("boton-admin");
+        _textoError       = root.Q<Label>("texto-error");
 
         // Ocultar error al inicio
         _textoError.style.display = DisplayStyle.None;
 
-        // Registrar eventos de los botones
-        _botonLogin.clicked      += OnClickLogin;
+        // Registrar eventos de botones
+        _botonLogin.clicked       += OnClickLogin;
         _botonRegistrarse.clicked += OnClickRegistrarse;
-        _botonAdmin.clicked      += OnClickAdmin;
+        _botonAdmin.clicked       += OnClickAdmin;
+
+        // Cursor personalizado
+        AgregarCursor(_botonLogin);
+        AgregarCursor(_botonRegistrarse);
+        AgregarCursor(_botonAdmin);
     }
 
     // ───────────────────────────────────────────────────────────
     void OnDisable()
     {
-        // Desregistrar eventos para evitar memory leaks
-        _botonLogin.clicked      -= OnClickLogin;
+        UnityEngine.Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        _botonLogin.clicked       -= OnClickLogin;
         _botonRegistrarse.clicked -= OnClickRegistrarse;
-        _botonAdmin.clicked      -= OnClickAdmin;
+        _botonAdmin.clicked       -= OnClickAdmin;
     }
 
     // ───────────────────────────────────────────────────────────
@@ -57,10 +64,8 @@ public class LoginController : MonoBehaviour
     // ───────────────────────────────────────────────────────────
     private void OnClickLogin()
     {
-        // Ocultar error anterior
         _textoError.style.display = DisplayStyle.None;
 
-        // Validar campos vacíos
         if (string.IsNullOrEmpty(_inputUsuario.value) ||
             string.IsNullOrEmpty(_inputContrasena.value))
         {
@@ -68,14 +73,11 @@ public class LoginController : MonoBehaviour
             return;
         }
 
-        // Llamar al AuthManager con las credenciales
         AuthManager.Instance.Login(
             _inputUsuario.value.Trim(),
             _inputContrasena.value,
             onSuccess: () =>
             {
-                // Si nunca vio el tutorial → TutorialScene
-                // Si ya lo vio → MapaScene
                 if (!GameManager.Instance.TutorialMecanicas)
                     SceneManager.LoadScene("TutorialScene");
                 else
@@ -92,17 +94,24 @@ public class LoginController : MonoBehaviour
     // ───────────────────────────────────────────────────────────
     // BOTÓN REGISTRARSE
     // ───────────────────────────────────────────────────────────
-    private void OnClickRegistrarse()
-    {
+    private void OnClickRegistrarse() =>
         SceneManager.LoadScene("RegistroScene");
-    }
 
     // ───────────────────────────────────────────────────────────
     // BOTÓN ADMIN
     // ───────────────────────────────────────────────────────────
-    private void OnClickAdmin()
-    {
+    private void OnClickAdmin() =>
         Application.OpenURL("https://leximath.app/admin");
+
+    // ───────────────────────────────────────────────────────────
+    // Cursor personalizado en botones
+    // ───────────────────────────────────────────────────────────
+    private void AgregarCursor(Button boton)
+    {
+        boton.RegisterCallback<MouseEnterEvent>(_ =>
+            UnityEngine.Cursor.SetCursor(_cursorMano, Vector2.zero, CursorMode.Auto));
+        boton.RegisterCallback<MouseLeaveEvent>(_ =>
+            UnityEngine.Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto));
     }
 
     // ───────────────────────────────────────────────────────────
