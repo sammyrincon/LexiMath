@@ -16,8 +16,10 @@
             <ui:VisualElement name="pause-screen" class="pause-screen" style="flex-grow: 1;">
                 <ui:VisualElement name="book-animation-container" class="book-animation-container" style="flex-grow: 1;">
                     <ui:VisualElement name="buttons-container" class="buttons-container" style="flex-grow: 1; position: absolute;">
-                        <ui:Button text="Continuar&#10;" name="button-continuar" class="buttons-menu"/>
-                        <ui:Button text="Sonido&#10;" name="button-sonido" class="buttons-menu"/>
+                        <ui:Button text="Continuar" name="button-continuar" class="buttons-menu"/>
+                        <ui:Button text="Sonido" name="button-sonido" class="buttons-menu"/>
+                        <ui:Button text="Controles" name="button-controles" class="buttons-menu"/>
+                        <ui:Button text="Gráficos" name="button-graficos" class="buttons-menu"/>
                         <ui:Button text="Salir" name="button-salir" class="buttons-menu"/>
                     </ui:VisualElement>
                     <ui:VisualElement name="right-page-container" class="right-page-container" style="position: absolute; display: none;"/>
