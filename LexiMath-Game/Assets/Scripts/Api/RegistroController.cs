@@ -4,13 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class RegistroController : MonoBehaviour
 {
-    private UIDocument   _doc;
-    private TextField    _inputNombre;
-    private TextField    _inputEdad;
+    private UIDocument    _doc;
+    private TextField     _inputNombre;
+    private TextField     _inputEdad;
     private DropdownField _dropdownGenero;
-    private Button       _botonSiguiente;
-    private Button       _botonCancelar;
-    private Label        _textoError;
+    private Button        _botonSiguiente;
+    private Button        _botonCancelar;
+    private Label         _textoError;
 
     [SerializeField] private Texture2D _cursorMano;
 
@@ -27,6 +27,16 @@ public class RegistroController : MonoBehaviour
         _textoError     = root.Q<Label>("texto-error");
 
         _textoError.style.display = DisplayStyle.None;
+
+        // Solo letras y espacios en nombre
+        _inputNombre.RegisterValueChangedCallback(evt =>
+        {
+            string soloLetras = "";
+            foreach (char c in evt.newValue)
+                if (char.IsLetter(c) || c == ' ') soloLetras += c;
+            if (_inputNombre.value != soloLetras)
+                _inputNombre.SetValueWithoutNotify(soloLetras);
+        });
 
         // Solo números en edad
         _inputEdad.RegisterValueChangedCallback(evt =>

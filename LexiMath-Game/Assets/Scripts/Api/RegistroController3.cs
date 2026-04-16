@@ -84,7 +84,7 @@ public class RegistroController3 : MonoBehaviour
             _inputNide.value.Trim(),
             onSuccess: () =>
             {
-                SceneManager.LoadScene("LoginScene");
+                SceneManager.LoadScene("BienvenidaScene");
             },
             onError: (error) =>
             {

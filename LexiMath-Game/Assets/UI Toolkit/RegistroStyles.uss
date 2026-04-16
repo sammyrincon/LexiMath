@@ -214,3 +214,72 @@
 #boton-registrarse:active {
     background-color: #2B8A3E;
 }
+
+/* ── Bienvenida ── */
+#texto-bienvenida {
+    background-color: #FD7E14;
+    color: #FFFFFF;
+    -unity-font-style: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    -unity-text-align: upper-center;
+}
+
+#panel-org {
+    background-color: #EBFBEE;
+    border-color: #51CF66;
+    border-width: 2px;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+}
+
+#texto-org-label {
+    color: #2B8A3E;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+#texto-org {
+    color: #1C6B31;
+    font-size: 16px;
+    -unity-font-style: bold;
+}
+
+#boton-empezar {
+    height: 56px;
+    background-color: #51CF66;
+    border-color: #2B8A3E;
+    border-width: 3px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+#boton-empezar:hover {
+    background-color: #40C057;
+}
+
+#boton-empezar:active {
+    background-color: #2B8A3E;
+}
+
+#boton-cerrar-sesion {
+    height: 48px;
+    background-color: #FF6B6B;
+    border-color: #C92A2A;
+    border-width: 2px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    -unity-font-style: bold;
+}
+
+#boton-cerrar-sesion:hover {
+    background-color: #FA5252;
+}
+
+#boton-cerrar-sesion:active {
+    background-color: #C92A2A;
+}

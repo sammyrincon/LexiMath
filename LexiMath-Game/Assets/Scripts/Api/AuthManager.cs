@@ -1,16 +1,12 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-/// <summary>
-/// AuthManager — maneja login y registro de estudiantes
-/// Se comunica con ApiManager para llamar a la API REST.
-/// </summary>
 public class AuthManager : MonoBehaviour
 {
-    // ── Singleton ──────────────────────────────────────────────
     public static AuthManager Instance { get; private set; }
+
+    private RegistroRequest _registroTemp;
 
     void Awake()
     {
@@ -21,11 +17,10 @@ public class AuthManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        _registroTemp = new RegistroRequest();
     }
 
-    // ───────────────────────────────────────────────────────────
-    // LOGIN — POST /login
-    // ───────────────────────────────────────────────────────────
+    // ── LOGIN ──────────────────────────────────────────────────
     public void Login(string usuario, string contrasena,
         Action onSuccess, Action<string> onError)
     {
@@ -38,13 +33,8 @@ public class AuthManager : MonoBehaviour
         StartCoroutine(ApiManager.Instance.Post("/login", body,
             (json) =>
             {
-                // Parsear respuesta del servidor
                 LoginResponse resp = JsonUtility.FromJson<LoginResponse>(json);
-
-                // Guardar JWT en ApiManager
                 ApiManager.Instance.SetToken(resp.token);
-
-                // Guardar datos del jugador en GameManager
                 GameManager.Instance.SetDatosJugador(
                     resp.estudiante.id_estudiante,
                     resp.estudiante.nombre,
@@ -53,19 +43,13 @@ public class AuthManager : MonoBehaviour
                     resp.estudiante.tutorial_mecanicas,
                     resp.estudiante.tutorial_ui
                 );
-
                 onSuccess?.Invoke();
             },
             (error) => onError?.Invoke(error)
         ));
     }
 
-    // ───────────────────────────────────────────────────────────
-    // REGISTRO — 3 pasos, datos se acumulan localmente
-    // ───────────────────────────────────────────────────────────
-    private RegistroRequest _registroTemp = new RegistroRequest();
-
-    // Paso 1 — nombre, edad, género
+    // ── REGISTRO ───────────────────────────────────────────────
     public void GuardarPaso1(string nombre, int edad, string genero)
     {
         _registroTemp.nombre = nombre;
@@ -73,7 +57,6 @@ public class AuthManager : MonoBehaviour
         _registroTemp.genero = genero;
     }
 
-    // Paso 2 — usuario, correo tutor, contraseña
     public void GuardarPaso2(string usuario, string correo_tutor,
         string contrasena)
     {
@@ -82,15 +65,18 @@ public class AuthManager : MonoBehaviour
         _registroTemp.contrasena   = contrasena;
     }
 
-    // Paso 3 — código NIDE y envío final a la API
-    // POST /registro
     public void RegistrarPaso3(string codigo_nide,
         Action onSuccess, Action<string> onError)
     {
-        _registroTemp.codigo_nide = codigo_nide;
+        _registroTemp.codigo_acceso = codigo_nide;
 
         StartCoroutine(ApiManager.Instance.Post("/registro", _registroTemp,
-            (json) => onSuccess?.Invoke(),
+            (json) =>
+            {
+                // Guardar usuario en GameManager para pantalla de bienvenida
+                GameManager.Instance.NombreEstudiante = _registroTemp.usuario;
+                onSuccess?.Invoke();
+            },
             (error) => onError?.Invoke(error)
         ));
     }
@@ -114,7 +100,7 @@ public class RegistroRequest
     public string usuario;
     public string correo_tutor;
     public string contrasena;
-    public string codigo_nide;
+    public string codigo_acceso;
 }
 
 [Serializable]
