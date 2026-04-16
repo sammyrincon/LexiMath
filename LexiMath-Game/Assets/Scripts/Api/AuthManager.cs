@@ -43,6 +43,7 @@ public class AuthManager : MonoBehaviour
                     resp.estudiante.tutorial_mecanicas,
                     resp.estudiante.tutorial_ui
                 );
+                ProgresoManager.Instance.CargarProgreso();
                 onSuccess?.Invoke();
             },
             (error) => onError?.Invoke(error)

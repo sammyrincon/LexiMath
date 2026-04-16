@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 2037315114}
   - component: {fileID: 2037315113}
   - component: {fileID: 2037315115}
+  - component: {fileID: 2037315116}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -408,6 +409,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95bb4d7600451b94fa740a1d06811534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApiManager
+--- !u!114 &2037315116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037315111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ae56f22775cff499b89e8ec9e7b397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProgresoManager
 --- !u!1001 &5147284508552910494
 PrefabInstance:
   m_ObjectHideFlags: 0

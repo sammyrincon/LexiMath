@@ -303,3 +303,16 @@
     padding: 0;
     margin: 0;
 }
+
+/* ── Niveles bloqueados y completados ── */
+.nivel-bloqueado {
+    background-color: #DEE2E6;
+    color: #868E96;
+}
+
+.nivel-completado {
+    background-color: #EBFBEE;
+    color: #2B8A3E;
+    border-color: #51CF66;
+    border-width: 1px;
+}

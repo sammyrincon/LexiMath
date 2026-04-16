@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
@@ -95,6 +96,9 @@ public class MainMenuController : MonoBehaviour
         _btnSeccionMates.text       = "▶  MATEMÁTICAS";
         _btnSeccionEspanol.text     = "▶  ESPAÑOL";
 
+        // ── Actualizar progreso ───────────────────────────────
+        ActualizarProgreso();
+
         // ── Eventos ───────────────────────────────────────────
         _botonMenu.clicked         += AbrirMenu;
         _botonCerrarMenu.clicked   += CerrarMenu;
@@ -158,6 +162,64 @@ public class MainMenuController : MonoBehaviour
         _listaEspanol.style.display = _espanolExpandido
             ? DisplayStyle.Flex : DisplayStyle.None;
         _btnSeccionEspanol.text = (_espanolExpandido ? "▼" : "▶") + "  ESPAÑOL";
+    }
+
+    // ── Progreso de niveles ───────────────────────────────────
+    private void ActualizarProgreso()
+    {
+        if (ProgresoManager.Instance == null) return;
+
+        ActualizarNivel(_nivelMates1,   1);
+        ActualizarNivel(_nivelMates2,   2);
+        ActualizarNivel(_nivelMates3,   3);
+        ActualizarNivel(_nivelMates4,   4);
+        ActualizarNivel(_nivelMates5,   5);
+        ActualizarNivel(_nivelEspanol1, 6);
+        ActualizarNivel(_nivelEspanol2, 7);
+        ActualizarNivel(_nivelEspanol3, 8);
+        ActualizarNivel(_nivelEspanol4, 9);
+        ActualizarNivel(_nivelEspanol5, 10);
+
+        ActualizarEstrellaMateria("mates",   new int[]{1,2,3,4,5});
+        ActualizarEstrellaMateria("espanol", new int[]{6,7,8,9,10});
+    }
+
+    private void ActualizarNivel(Button boton, int idNivel)
+    {
+        if (boton == null) return;
+
+        bool desbloqueado = ProgresoManager.Instance.EstaDesbloqueado(idNivel);
+        int  estrellas    = ProgresoManager.Instance.GetEstrellas(idNivel);
+
+        // Obtener texto base sin iconos
+        string textoBase = boton.text;
+
+        if (!desbloqueado)
+        {
+            boton.AddToClassList("nivel-bloqueado");
+            boton.text = textoBase + " 🔒";
+            boton.SetEnabled(false);
+        }
+        else if (estrellas > 0)
+        {
+            boton.AddToClassList("nivel-completado");
+            string estrellaStr = new string('★', estrellas) +
+                                 new string('☆', 3 - estrellas);
+            boton.text = "✅ " + textoBase + " " + estrellaStr;
+        }
+    }
+
+    private void ActualizarEstrellaMateria(string materia, int[] ids)
+    {
+        int totalEstrellas = 0;
+        foreach (int id in ids)
+            totalEstrellas += ProgresoManager.Instance.GetEstrellas(id);
+
+        string estrellaStr = new string('★', Mathf.Min(totalEstrellas, 5)) +
+                             new string('☆', Mathf.Max(0, 5 - totalEstrellas));
+
+        var label = _doc.rootVisualElement.Q<Label>($"estrellas-{materia}");
+        if (label != null) label.text = estrellaStr;
     }
 
     // ── Footer ────────────────────────────────────────────────
