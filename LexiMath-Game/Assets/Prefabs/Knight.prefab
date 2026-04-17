@@ -13,11 +13,12 @@ GameObject:
   - component: {fileID: 1972870647156162887}
   - component: {fileID: 6208862332899800445}
   - component: {fileID: 4639479855894813931}
-  - component: {fileID: 1541894423653898051}
-  - component: {fileID: 5642502416051894443}
-  m_Layer: 0
+  - component: {fileID: 8068776660613156511}
+  - component: {fileID: 6547500567574141378}
+  - component: {fileID: 5135710740671869044}
+  m_Layer: 8
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 815424164945274260, guid: 6bb1d5525b22370478c1218476ee39f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -113,7 +114,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -163,7 +164,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.26, y: 0.37}
+    oldSize: {x: 0.75, y: 1.09375}
     newSize: {x: 0.26, y: 0.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -193,7 +194,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1541894423653898051
+--- !u!114 &8068776660613156511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,32 +203,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 5789260677353908231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70d27fce05ffde44489f75d1373ea532, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 5
-  jumpForce: 12
-  groundCheck: {fileID: 1838087332425878027}
-  groundCheckRadius: 0.2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
---- !u!114 &5642502416051894443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5789260677353908231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8409f6c12fcaabb49aad6eaacedda881, type: 3}
+  m_Script: {fileID: 11500000, guid: cac7ccc087602494cb1360985269812a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   projectilePrefab: {fileID: 0}
   firePoint: {fileID: 0}
   projectileSpeed: 10
   fireRate: 0.5
+--- !u!114 &6547500567574141378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5789260677353908231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38db4b149f4225b4caacdb188f81451e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  moveSpeed: 5
+  jumpForce: 12
+  groundCheck: {fileID: 0}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &5135710740671869044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5789260677353908231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3a177434b7c234ba335d71e8fc0d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMelee
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  attackDamage: 1
+  attackRate: 0.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &7140387755932234299
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1838087332425878027}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6735449766536652246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
