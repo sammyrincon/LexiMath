@@ -28,7 +28,6 @@ public class SamuraiBoss : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         
-        // Busca al player automáticamente 
         if (jugador == null)
         {
             GameObject objJugador = GameObject.FindGameObjectWithTag("Player");
@@ -38,17 +37,14 @@ public class SamuraiBoss : MonoBehaviour
 
     void Update()
     {
-        // Si ya perdió, solo ejecuta la huida
         if (estaHuyendo)
         {
             HuirFueraDePantalla();
             return; 
         }
 
-        // 2. Si no hay jugador en la escena, no hace nada
         if (jugador == null) return;
 
-        // 3. Lógica principal de la Máquina de Estados
         float distanciaAlJugador = Vector2.Distance(transform.position, jugador.position);
 
         if (distanciaAlJugador <= distanciaAtaque)
@@ -65,35 +61,35 @@ public class SamuraiBoss : MonoBehaviour
         }
     }
 
-
+    void MirarHaciaJugador()
+    {
+        float direccion = jugador.position.x > transform.position.x ? 1 : -1;
+        
+        if (direccion > 0)
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        else
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+    }
 
     void PerseguirJugador()
     {
         anim.SetBool("IsRunning", true);
         
-        // Decide hacia dónde caminar
         float direccion = jugador.position.x > transform.position.x ? 1 : -1;
-        
-        // linearVelocity es la forma correcta y optimizada en Unity 6
         rb.linearVelocity = new Vector2(direccion * velocidadSeguimiento, rb.linearVelocity.y);
         
-        // Voltea el sprite usando rotación (la mejor práctica para los colliders)
-        if (direccion > 0)
-            transform.rotation = Quaternion.Euler(0, 0, 0); // Derecha
-        else
-            transform.rotation = Quaternion.Euler(0, 180, 0); // Izquierda
+        MirarHaciaJugador(); 
     }
 
     void IntentarAtacar()
     {
-        Detenerse(); // Frena para no patinar mientras golpea
+        Detenerse(); 
+        MirarHaciaJugador(); 
         
         if (Time.time >= tiempoUltimoAtaque + cooldownAtaque)
         {
-            // Lanza un número aleatorio entre 1 y 3 para variar el ataque
             int numAtaque = Random.Range(1, 4); 
             anim.SetTrigger("Attack" + numAtaque);
-            
             tiempoUltimoAtaque = Time.time;
         }
     }
@@ -104,15 +100,12 @@ public class SamuraiBoss : MonoBehaviour
         anim.SetBool("IsRunning", false);
     }
 
-    // --- SISTEMA DE DAÑO Y DERROTA ---
-
     private void OnTriggerEnter2D(Collider2D colision)
     {
-        // Detecta el golpe del jugador basándose en el Tag
         if (colision.CompareTag(tagAtaqueJugador) && !estaHuyendo)
         {
             RecibirDano(1);
-            Destroy(colision.gameObject); // Destruye el proyectil tras el impacto
+            Destroy(colision.gameObject);
         }
     }
 
@@ -127,11 +120,9 @@ public class SamuraiBoss : MonoBehaviour
         }
         else
         {
-   
             estaHuyendo = true;
             anim.SetTrigger("Flee");
             
-
             Collider2D col = GetComponent<Collider2D>();
             if (col != null) col.enabled = false;
             
@@ -141,7 +132,6 @@ public class SamuraiBoss : MonoBehaviour
 
     void HuirFueraDePantalla()
     {
-        // Obliga al Samurái a mirar hacia la derecha y correr a máxima velocidad
         transform.rotation = Quaternion.Euler(0, 0, 0);
         rb.linearVelocity = new Vector2(velocidadHuida, rb.linearVelocity.y);
     }

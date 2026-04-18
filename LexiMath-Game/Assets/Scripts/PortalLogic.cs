@@ -1,23 +1,46 @@
 using UnityEngine;
 
-public class PortalLogic : MonoBehaviour
+public class Portal : MonoBehaviour
 {
-    private Animator anim;
-    public float radioDeteccion = 5f;
+    [Header("Referencias")]
     public Transform jugador;
+    private Animator animator;
 
-    void Start() {
-        anim = GetComponent<Animator>();
+    [Header("Configuración")]
+    public float distanciaApertura = 5f;
+    
+    private bool estaAbierto = false;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+
+        if (jugador == null)
+        {
+            GameObject objJugador = GameObject.FindGameObjectWithTag("Player");
+            if (objJugador != null) jugador = objJugador.transform;
+        }
     }
 
-    void Update() {
+    void Update()
+    {
+        if (jugador == null || estaAbierto) return;
+
         float distancia = Vector2.Distance(transform.position, jugador.position);
-        anim.SetBool("PlayerNear", distancia < radioDeteccion);
+
+        if (distancia <= distanciaApertura)
+        {
+            estaAbierto = true;
+            animator.SetTrigger("Open");
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player")) {
-            anim.SetTrigger("PlayerEntered");
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && estaAbierto)
+        {
+            collision.gameObject.SetActive(false);
+            animator.SetTrigger("Close");
         }
     }
 }
