@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: a3d6d47451481b14c9194d784bb79463
+guid: 12320559f05b541458f923bd42b43e2d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1805158079502305607
-    second: Flag_0
+      213: -6150384008709971305
+    second: JUMP_0
+  - first:
+      213: -4959259091351612375
+    second: JUMP_1
+  - first:
+      213: 1131083306628328740
+    second: JUMP_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flag_0
+      name: JUMP_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 174
-        height: 63
+        x: 43
+        y: 4
+        width: 47
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 749492c85b53d0910800000000000000
-      internalID: 1805158079502305607
+      spriteID: 7926998845275aaa0800000000000000
+      internalID: -6150384008709971305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 5
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9245cd6b12c2d2bb0800000000000000
+      internalID: -4959259091351612375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JUMP_2
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 6
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42da4fe464a62bf00800000000000000
+      internalID: 1131083306628328740
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Flag_0: 1805158079502305607
+      JUMP_0: -6150384008709971305
+      JUMP_1: -4959259091351612375
+      JUMP_2: 1131083306628328740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
