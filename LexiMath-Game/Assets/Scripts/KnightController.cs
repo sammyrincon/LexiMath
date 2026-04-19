@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// KnightController — LexiMath (todo-en-uno)
+/// KnightController — LexiMath (estilo simple de clase)
 /// 
 /// CONTROLES:
 ///   Mover   → A / D  ó  ← / →
@@ -9,14 +9,12 @@ using UnityEngine;
 ///   Atacar  → X
 /// 
 /// SETUP EN UNITY:
-///   1. Knight debe tener:
-///        • Rigidbody2D
-///        • CapsuleCollider2D  (Is Trigger = false, es el cuerpo)
-///        • BoxCollider2D      (Is Trigger = true, en los pies)
-///        • Animator
-///        • SpriteRenderer
-///   2. Asigna el BoxCollider de los pies al campo "footCollider"
-///   3. Ground Layer = Ground
+///   Knight debe tener:
+///     • Rigidbody2D
+///     • CapsuleCollider2D  (Is Trigger = false — cuerpo)
+///     • BoxCollider2D      (Is Trigger = true  — pies, detecta suelo)
+///     • Animator
+///     • SpriteRenderer
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
@@ -30,22 +28,17 @@ public class KnightController : MonoBehaviour
     [Header("Ataque")]
     public float cooldownAtaque = 0.5f;
 
-    [Header("Detección de suelo")]
-    [Tooltip("Capa del suelo (Ground)")]
-    public LayerMask groundLayer;
-
-    [Tooltip("BoxCollider2D en los pies del Knight (Is Trigger = true)")]
-    public BoxCollider2D footCollider;
+    // ── Estado ────────────────────────────────────────────────
+    public bool estaEnPiso { get; private set; } = false;
 
     // ── Referencias ───────────────────────────────────────────
     private Rigidbody2D    _rb;
     private Animator       _anim;
     private SpriteRenderer _sprite;
 
-    // ── Estado ────────────────────────────────────────────────
+    // ── Privados ──────────────────────────────────────────────
     private float _inputH;
-    private bool  _enSuelo         = false;
-    private bool  _miraDerecha     = true;
+    private bool  _miraDerecha           = true;
     private float _tiempoSiguienteAtaque = 0f;
 
     void Awake()
@@ -57,13 +50,10 @@ public class KnightController : MonoBehaviour
 
     void Update()
     {
-        // Detectar suelo usando el collider de los pies
-        _enSuelo = DetectarSuelo();
-
         _inputH = Input.GetAxisRaw("Horizontal");
 
         // Salto
-        if (Input.GetKeyDown(KeyCode.Space) && _enSuelo)
+        if (Input.GetKeyDown(KeyCode.Space) && estaEnPiso)
         {
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, fuerzaSalto);
             _anim.SetTrigger("Jump");
@@ -82,7 +72,7 @@ public class KnightController : MonoBehaviour
 
         // Animator params
         _anim.SetFloat("Speed", Mathf.Abs(_inputH));
-        _anim.SetBool("IsGrounded", _enSuelo);
+        _anim.SetBool("IsGrounded", estaEnPiso);
     }
 
     void FixedUpdate()
@@ -90,34 +80,20 @@ public class KnightController : MonoBehaviour
         _rb.linearVelocity = new Vector2(_inputH * velocidad, _rb.linearVelocity.y);
     }
 
-    /// <summary>
-    /// Detecta el suelo usando Physics2D.OverlapBox con las dimensiones del footCollider.
-    /// </summary>
-    private bool DetectarSuelo()
+    // ── Detección de suelo (como en clase) ────────────────────
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (footCollider == null) return false;
+        estaEnPiso = true;
+    }
 
-        Vector2 centro = (Vector2)transform.position 
-                       + (Vector2)footCollider.offset * transform.lossyScale;
-        Vector2 size   = footCollider.size * Mathf.Abs(transform.lossyScale.x);
-
-        return Physics2D.OverlapBox(centro, size, 0f, groundLayer) != null;
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        estaEnPiso = false;
     }
 
     private void Voltear()
     {
         _miraDerecha = !_miraDerecha;
         _sprite.flipX = !_miraDerecha;
-    }
-
-    // ── Debug gizmo ──────────────────────────────────────────
-    void OnDrawGizmosSelected()
-    {
-        if (footCollider == null) return;
-        Vector2 centro = (Vector2)transform.position 
-                       + (Vector2)footCollider.offset * transform.lossyScale;
-        Vector2 size   = footCollider.size * Mathf.Abs(transform.lossyScale.x);
-        Gizmos.color = _enSuelo ? Color.green : Color.red;
-        Gizmos.DrawWireCube(centro, size);
     }
 }
