@@ -148,8 +148,8 @@ public class PlayerHealth : MonoBehaviour
     private void ActualizarBarra()
     {
         if (_healthFill == null) return;
-        float porcentaje = (_currentHealth / maxHealth) * 100f;
-        _healthFill.style.width = new Length(porcentaje, LengthUnit.Percent);
+        float porcentaje = (_currentHealth / maxHealth) * 76f;
+        _healthFill.style.width = new Length(porcentaje, LengthUnit.Pixel);
     }
 
     // ══════════════════════════════════════════════════════════
