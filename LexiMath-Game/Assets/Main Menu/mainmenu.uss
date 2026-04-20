@@ -1,3 +1,7 @@
+/* ══════════════════════════════════════════════════════════
+   LEXIMATH - Main Menu Styles (compacto, basado en original)
+   ══════════════════════════════════════════════════════════ */
+
 /* ── Root ── */
 .root {
     width: 100%;
@@ -36,6 +40,38 @@
     -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
 }
 .btn-hamburguesa:hover { background-color: rgb(255, 130, 40); }
+
+/* ── HUD superior derecho (estrellas + diamantes) ── */
+.hud-info {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    flex-direction: row;
+}
+.hud-pill {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(30, 40, 70);
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 4px 10px;
+    margin-left: 6px;
+    min-width: 58px;
+    justify-content: center;
+}
+.hud-icono {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 13px;
+    color: rgb(255, 210, 100);
+    margin-right: 5px;
+}
+.hud-label {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
 
 /* ── Contenido central ── */
 .contenido-central {
@@ -89,7 +125,7 @@
     -unity-text-align: upper-center;
 }
 
-/* ── Mundos ── */
+/* ── Mundos (cards clickables) ── */
 .mundos-container {
     flex-direction: row;
     margin-top: 14px;
@@ -98,6 +134,13 @@
 .mundo-card {
     align-items: center;
     margin: 0 18px;
+    padding: 4px;
+    background-color: rgba(0,0,0,0);
+    border-width: 0;
+    border-radius: 8px;
+}
+.mundo-card:hover {
+    background-color: rgba(255, 255, 255, 0.08);
 }
 .mundo-boton {
     width: 70px;
@@ -129,7 +172,9 @@
     margin-top: 2px;
 }
 
-/* ── Menú lateral ── */
+/* ══════════════════════════════════════════════════════════
+   MENÚ LATERAL (hamburguesa) - COMPACTO
+   ══════════════════════════════════════════════════════════ */
 .menu-lateral {
     position: absolute;
     top: 0;
@@ -170,6 +215,22 @@
     -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
 }
 
+/* ── Botón Tutorial (destacado arriba) ── */
+.btn-tutorial {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    background-color: rgb(120, 80, 180);
+    padding: 10px 14px;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0;
+    -unity-text-align: middle-left;
+}
+.btn-tutorial:hover { background-color: rgb(150, 100, 210); }
+
 /* ── Acordeones ── */
 .acordeon-header {
     flex-direction: row;
@@ -198,7 +259,7 @@
     color: rgb(255, 255, 255);
 }
 
-/* ── Contenido del acordeón (lista de niveles) ── */
+/* ── Contenido del acordeón ── */
 .acordeon-contenido {
     flex-direction: column;
     background-color: rgb(240, 245, 255);
@@ -239,8 +300,16 @@
     -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
     font-size: 10px;
     color: rgb(40, 40, 60);
+    flex-grow: 1;
 }
 .nivel-nombre-bloqueado { color: rgb(160, 160, 160); }
+
+/* ── Candado para niveles bloqueados ── */
+.nivel-candado {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 11px;
+    color: rgb(180, 150, 60);
+}
 
 /* ── Espaciador ── */
 .menu-spacer { flex-grow: 1; }
