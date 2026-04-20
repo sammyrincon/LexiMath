@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 /// QuestionManager — LexiMath
 /// 
 /// Controla toda la mecánica de preguntas:
+///   • Espera a que un NPCTrigger lo active con IniciarPreguntas()
 ///   • Asigna valores a los 3 AnswerBlocks de la escena
 ///   • Muestra la pregunta en el NPC (caja de diálogo)
 ///   • Al acertar: siguiente pregunta + estrella
@@ -18,7 +19,7 @@ using UnityEngine.UIElements;
 ///   3. En el Inspector:
 ///        • Question Data → el ScriptableObject de preguntas
 ///        • Bloques → arrastra los 3 AnswerBlocks de la escena
-///        • NPC Dialog Box → el GameObject del NPC con caja de diálogo
+///        • NPC Dialog → el componente NPCDialog del NPC
 /// </summary>
 public class QuestionManager : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class QuestionManager : MonoBehaviour
     public AnswerBlock[] bloques = new AnswerBlock[3];
 
     [Header("NPC y Diálogo")]
-    [Tooltip("GameObject con NPCDialog - la caja de diálogo del NPC")]
+    [Tooltip("Componente NPCDialog del NPC que hace las preguntas")]
     public NPCDialog npcDialog;
 
     [Header("Recompensas")]
@@ -46,8 +47,10 @@ public class QuestionManager : MonoBehaviour
     private int _preguntaActual = 0;
     private int _estrellasGanadas = 0;
     private bool _esperandoRespuesta = false;
+    private bool _yaIniciado = false;
 
     public int EstrellasGanadas => _estrellasGanadas;
+    public bool YaIniciado => _yaIniciado;
 
     void Start()
     {
@@ -56,6 +59,25 @@ public class QuestionManager : MonoBehaviour
             Debug.LogError("[QuestionManager] No hay preguntas asignadas!");
             return;
         }
+
+        // IMPORTANTE: Los bloques empiezan OCULTOS
+        // Solo aparecen cuando el NPC activa las preguntas
+        OcultarTodosLosBloques();
+    }
+
+    // ══════════════════════════════════════════════════════════
+    //  API PÚBLICA — llamada por NPCTrigger
+    // ══════════════════════════════════════════════════════════
+
+    /// <summary>
+    /// Llamado por el NPCTrigger cuando el jugador se acerca.
+    /// Arranca la primera pregunta.
+    /// </summary>
+    public void IniciarPreguntas()
+    {
+        if (_yaIniciado) return; // Evitar reinicios accidentales
+        _yaIniciado = true;
+
         MostrarPregunta(_preguntaActual);
     }
 
@@ -82,7 +104,7 @@ public class QuestionManager : MonoBehaviour
         opciones.AddRange(p.distractores);
         Barajar(opciones);
 
-        // Asignar a cada bloque
+        // Asignar a cada bloque y ACTIVARLOS
         for (int i = 0; i < bloques.Length && i < opciones.Count; i++)
         {
             bool esCorrecta = (opciones[i] == p.respuestaCorrecta);
@@ -91,6 +113,15 @@ public class QuestionManager : MonoBehaviour
         }
 
         _esperandoRespuesta = true;
+    }
+
+    private void OcultarTodosLosBloques()
+    {
+        foreach (var b in bloques)
+        {
+            if (b != null)
+                b.gameObject.SetActive(false);
+        }
     }
 
     // ══════════════════════════════════════════════════════════
@@ -124,6 +155,9 @@ public class QuestionManager : MonoBehaviour
         // Esperar para que el jugador vea el feedback
         yield return new WaitForSeconds(delayFeedback);
 
+        // Ocultar bloques viejos antes de mostrar los nuevos
+        OcultarTodosLosBloques();
+
         // Siguiente pregunta
         _preguntaActual++;
         MostrarPregunta(_preguntaActual);
@@ -139,13 +173,14 @@ public class QuestionManager : MonoBehaviour
         if (npcDialog != null)
             npcDialog.MostrarDialogo("¡Incorrecto! Inténtalo de nuevo.");
 
-        // Hacer daño al jugador
+        // Hacer daño al jugador (si existe PlayerHealth en la escena)
         if (PlayerHealth.Instance != null)
             PlayerHealth.Instance.RecibirDano(danoPorFallar);
 
         yield return new WaitForSeconds(delayFeedback);
 
-        // Volver a mostrar la misma pregunta
+        // Ocultar bloques y volver a mostrar la misma pregunta
+        OcultarTodosLosBloques();
         MostrarPregunta(_preguntaActual);
     }
 
@@ -160,7 +195,9 @@ public class QuestionManager : MonoBehaviour
         if (npcDialog != null)
             npcDialog.MostrarDialogo($"¡Completaste el nivel! Estrellas: {_estrellasGanadas}");
 
-        // Aquí puedes conectar al panel de victoria del HUD si lo quieres
+        OcultarTodosLosBloques();
+
+        // TODO: Aquí puedes conectar al panel de victoria del HUD si lo quieres
     }
 
     // ══════════════════════════════════════════════════════════
