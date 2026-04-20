@@ -426,10 +426,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 394417458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69c072d841468347a71cda8fcbc363b, type: 3}
+  m_Script: {fileID: 11500000, guid: b9d47f76cb5c2f4489012210009cf5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 100
+  danoPorGolpe: 20
+  umbralPeligro: 0.2
+  knightAnimator: {fileID: 123074459}
+  tiempoInvulnerable: 1
+  nombreEscenaMenu: MainMenu
 --- !u!114 &394417462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,7 +449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
   m_PanelSettings: {fileID: 11400000, guid: 094517f9e7f584149aafceb25b5c9703, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: ed983e2d2163b1f40851e16e6420403c, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: d96751ae3d904234ab97849799c7ebbd, type: 3}
   m_SortingOrder: 0
   m_Position: 0
   m_WorldSpaceSizeMode: 1
@@ -1385,6 +1390,67 @@ Transform:
   - {fileID: 1793317481}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &992426685
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1635947224579295350, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_Name
+      value: MushroomEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.4722204
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.026261
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368809525846779484, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 432760903420280361, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1635947224579295350, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1738816317}
+  m_SourcePrefab: {fileID: 100100000, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
 --- !u!1 &1006188775
 GameObject:
   m_ObjectHideFlags: 0
@@ -8699,6 +8765,38 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1738816311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1635947224579295350, guid: 1166330827657ec4398a6a98585f8ffa, type: 3}
+  m_PrefabInstance: {fileID: 992426685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1738816317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738816311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f243e265390144cb8a7d025d3d45c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBasic
+  maxHealth: 3
+  patrolSpeed: 1.5
+  patrolRange: 3
+  attackRange: 1
+  attackDamage: 1
+  attackCooldown: 1.5
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  danoAlJugador: 20
+  groundCheck: {fileID: 0}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1759178848
 GameObject:
   m_ObjectHideFlags: 0
@@ -9899,3 +9997,4 @@ SceneRoots:
   - {fileID: 123074463}
   - {fileID: 821562841}
   - {fileID: 394417463}
+  - {fileID: 992426685}

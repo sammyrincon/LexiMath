@@ -58,6 +58,23 @@
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
+            <!-- ═══════════════════════════════════════════════════════
+                 NUEVO: Marco rojo de vida baja (parpadea cuando hay poca vida)
+                 ═══════════════════════════════════════════════════════ -->
+            <ui:VisualElement name="danger-frame" class="danger-frame danger-hidden" picking-mode="Ignore"/>
+            <!-- ═══════════════════════════════════════════════════════
+                 NUEVO: Pantalla de Game Over
+                 ═══════════════════════════════════════════════════════ -->
+            <ui:VisualElement name="gameover-panel" class="gameover-panel gameover-hidden">
+                <ui:VisualElement name="gameover-box" class="gameover-box">
+                    <ui:Label text="¡PERDISTE!" name="gameover-title" class="gameover-title"/>
+                    <ui:Label text="Inténtalo de nuevo" name="gameover-subtitle" class="gameover-subtitle"/>
+                    <ui:VisualElement name="gameover-buttons" class="gameover-buttons">
+                        <ui:Button text="Menú Principal" name="gameover-menu-btn" class="gameover-btn gameover-btn-menu"/>
+                        <ui:Button text="Reintentar"     name="gameover-retry-btn" class="gameover-btn gameover-btn-retry"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

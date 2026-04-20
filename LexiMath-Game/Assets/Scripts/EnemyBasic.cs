@@ -15,6 +15,10 @@ public class EnemyBasic : MonoBehaviour
     public float attackCooldown = 1.5f;
     public LayerMask playerLayer;
 
+    [Header("Daño al jugador")]
+    [Tooltip("Cantidad de HP que le quita al jugador por ataque")]
+    public float danoAlJugador = 20f;
+
     [Header("Ground Check")]
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
@@ -91,6 +95,12 @@ public class EnemyBasic : MonoBehaviour
 
         if (animator != null)
             animator.SetTrigger("Attack");
+
+        // ══════════════════════════════════════════════════════
+        //  NUEVO — Hacer daño al jugador
+        // ══════════════════════════════════════════════════════
+        if (PlayerHealth.Instance != null)
+            PlayerHealth.Instance.RecibirDano(danoAlJugador);
 
         Invoke(nameof(FinishAttack), 0.5f);
     }
