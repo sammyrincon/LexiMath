@@ -1,215 +1,64 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.Events;
 
-/// <summary>
-/// QuestionManager — LexiMath
-/// 
-/// Controla toda la mecánica de preguntas:
-///   • Espera a que un NPCTrigger lo active con IniciarPreguntas()
-///   • Asigna valores a los 3 AnswerBlocks de la escena
-///   • Muestra la pregunta en el NPC (caja de diálogo)
-///   • Al acertar: siguiente pregunta + estrella
-///   • Al fallar: pierde vida + repite misma pregunta
-/// 
-/// SETUP EN UNITY:
-///   1. Crea GameObject "QuestionManager" en la escena
-///   2. Asigna este script
-///   3. En el Inspector:
-///        • Question Data → el ScriptableObject de preguntas
-///        • Bloques → arrastra los 3 AnswerBlocks de la escena
-///        • NPC Dialog → el componente NPCDialog del NPC
-/// </summary>
 public class QuestionManager : MonoBehaviour
 {
-    [Header("Datos")]
-    public QuestionData questionData;
+    [Header("Referencia al PlayerHealth (sin Singleton)")]
+    [SerializeField] private PlayerHealth playerHealth;
 
-    [Header("Bloques de respuesta en la escena")]
-    public AnswerBlock[] bloques = new AnswerBlock[3];
+    [Header("Daño cuando falla una respuesta")]
+    [SerializeField] private int damageOnWrong = 1;
 
-    [Header("NPC y Diálogo")]
-    [Tooltip("Componente NPCDialog del NPC que hace las preguntas")]
-    public NPCDialog npcDialog;
+    [Header("Eventos (opcional)")]
+    public UnityEvent onCorrect;
+    public UnityEvent onWrong;
 
-    [Header("Recompensas")]
-    [Tooltip("Daño al jugador cuando responde mal (HP)")]
-    public float danoPorFallar = 20f;
-
-    [Tooltip("Estrellas ganadas por pregunta correcta")]
-    public int estrellasPorAcierto = 1;
-
-    [Header("Delays")]
-    public float delayFeedback = 1.5f;
-
-    // ── Estado ────────────────────────────────────────────────
-    private int _preguntaActual = 0;
-    private int _estrellasGanadas = 0;
-    private bool _esperandoRespuesta = false;
-    private bool _yaIniciado = false;
-
-    public int EstrellasGanadas => _estrellasGanadas;
-    public bool YaIniciado => _yaIniciado;
-
-    void Start()
+    private void Awake()
     {
-        if (questionData == null || questionData.preguntas.Count == 0)
-        {
-            Debug.LogError("[QuestionManager] No hay preguntas asignadas!");
-            return;
-        }
-
-        // IMPORTANTE: Los bloques empiezan OCULTOS
-        // Solo aparecen cuando el NPC activa las preguntas
-        OcultarTodosLosBloques();
+#if UNITY_2022_2_OR_NEWER
+        if (playerHealth == null) playerHealth = FindFirstObjectByType<PlayerHealth>();
+#else
+        if (playerHealth == null) playerHealth = FindObjectOfType<PlayerHealth>();
+#endif
     }
 
-    // ══════════════════════════════════════════════════════════
-    //  API PÚBLICA — llamada por NPCTrigger
-    // ══════════════════════════════════════════════════════════
-
-    /// <summary>
-    /// Llamado por el NPCTrigger cuando el jugador se acerca.
-    /// Arranca la primera pregunta.
-    /// </summary>
-    public void IniciarPreguntas()
+    // ✅ Métodos comunes que suelen usar AnswerBlock/NPCTrigger
+    public void StartQuestions()
     {
-        if (_yaIniciado) return; // Evitar reinicios accidentales
-        _yaIniciado = true;
-
-        MostrarPregunta(_preguntaActual);
+        // Aquí puedes abrir UI de preguntas, pausar juego, etc.
+        Debug.Log("Iniciando preguntas...");
     }
 
-    // ══════════════════════════════════════════════════════════
-    //  MOSTRAR PREGUNTA
-    // ══════════════════════════════════════════════════════════
-
-    private void MostrarPregunta(int indice)
+    public void AnswerCorrect()
     {
-        if (indice >= questionData.preguntas.Count)
-        {
-            CompletarNivel();
-            return;
-        }
-
-        Question p = questionData.preguntas[indice];
-
-        // Mostrar el enunciado en la caja de diálogo del NPC
-        if (npcDialog != null)
-            npcDialog.MostrarDialogo(p.enunciado);
-
-        // Preparar las 3 opciones (correcta + 2 distractores) y barajar
-        List<string> opciones = new() { p.respuestaCorrecta };
-        opciones.AddRange(p.distractores);
-        Barajar(opciones);
-
-        // Asignar a cada bloque y ACTIVARLOS
-        for (int i = 0; i < bloques.Length && i < opciones.Count; i++)
-        {
-            bool esCorrecta = (opciones[i] == p.respuestaCorrecta);
-            bloques[i].Configurar(opciones[i], esCorrecta, this);
-            bloques[i].gameObject.SetActive(true);
-        }
-
-        _esperandoRespuesta = true;
+        onCorrect?.Invoke();
+        Debug.Log("Respuesta correcta ✅");
     }
 
-    private void OcultarTodosLosBloques()
+    public void AnswerWrong()
     {
-        foreach (var b in bloques)
+        onWrong?.Invoke();
+        Debug.Log("Respuesta incorrecta ❌");
+
+        if (playerHealth != null)
         {
-            if (b != null)
-                b.gameObject.SetActive(false);
+            // Dirección fake para knockback (si lo usas)
+            Vector2 hitPoint = transform.position;
+            Vector2 hitDir = Vector2.left;
+
+            playerHealth.TakeDamage(damageOnWrong, hitPoint, hitDir);
         }
     }
 
-    // ══════════════════════════════════════════════════════════
-    //  API PÚBLICA — llamada por AnswerBlock al ser golpeado
-    // ══════════════════════════════════════════════════════════
-
-    public void OnBloqueGolpeado(AnswerBlock bloque)
+    public void SubmitAnswer(bool isCorrect)
     {
-        if (!_esperandoRespuesta) return;
-        _esperandoRespuesta = false;
-
-        if (bloque.esCorrecto)
-            StartCoroutine(ProcesarAcierto());
-        else
-            StartCoroutine(ProcesarFallo());
+        if (isCorrect) AnswerCorrect();
+        else AnswerWrong();
     }
 
-    // ══════════════════════════════════════════════════════════
-    //  ACIERTO — siguiente pregunta + estrella
-    // ══════════════════════════════════════════════════════════
-
-    private IEnumerator ProcesarAcierto()
+    public void SubmitAnswer(int chosenIndex, int correctIndex)
     {
-        // Feedback en el NPC
-        if (npcDialog != null)
-            npcDialog.MostrarDialogo("¡Correcto! 🌟");
-
-        // Sumar estrellas
-        _estrellasGanadas += estrellasPorAcierto;
-
-        // Esperar para que el jugador vea el feedback
-        yield return new WaitForSeconds(delayFeedback);
-
-        // Ocultar bloques viejos antes de mostrar los nuevos
-        OcultarTodosLosBloques();
-
-        // Siguiente pregunta
-        _preguntaActual++;
-        MostrarPregunta(_preguntaActual);
-    }
-
-    // ══════════════════════════════════════════════════════════
-    //  FALLO — pierde vida + misma pregunta
-    // ══════════════════════════════════════════════════════════
-
-    private IEnumerator ProcesarFallo()
-    {
-        // Feedback
-        if (npcDialog != null)
-            npcDialog.MostrarDialogo("¡Incorrecto! Inténtalo de nuevo.");
-
-        // Hacer daño al jugador (si existe PlayerHealth en la escena)
-        if (PlayerHealth.Instance != null)
-            PlayerHealth.Instance.RecibirDano(danoPorFallar);
-
-        yield return new WaitForSeconds(delayFeedback);
-
-        // Ocultar bloques y volver a mostrar la misma pregunta
-        OcultarTodosLosBloques();
-        MostrarPregunta(_preguntaActual);
-    }
-
-    // ══════════════════════════════════════════════════════════
-    //  NIVEL COMPLETADO
-    // ══════════════════════════════════════════════════════════
-
-    private void CompletarNivel()
-    {
-        Debug.Log($"[QuestionManager] ¡Nivel completado! Estrellas: {_estrellasGanadas}");
-
-        if (npcDialog != null)
-            npcDialog.MostrarDialogo($"¡Completaste el nivel! Estrellas: {_estrellasGanadas}");
-
-        OcultarTodosLosBloques();
-
-        // TODO: Aquí puedes conectar al panel de victoria del HUD si lo quieres
-    }
-
-    // ══════════════════════════════════════════════════════════
-    //  HELPER
-    // ══════════════════════════════════════════════════════════
-
-    private void Barajar<T>(List<T> lista)
-    {
-        for (int i = lista.Count - 1; i > 0; i--)
-        {
-            int j = Random.Range(0, i + 1);
-            (lista[i], lista[j]) = (lista[j], lista[i]);
-        }
+        if (chosenIndex == correctIndex) AnswerCorrect();
+        else AnswerWrong();
     }
 }

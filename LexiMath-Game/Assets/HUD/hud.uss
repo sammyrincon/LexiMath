@@ -647,12 +647,6 @@
     border-bottom-color: rgba(0, 0, 0, 0);
 }
 
-
-/* ═══════════════════════════════════════════════════════════════
-   SISTEMA DE VIDA BAJA Y GAME OVER
-   ═══════════════════════════════════════════════════════════════ */
-
-
 /* ── MARCO ROJO DE VIDA BAJA ────────────────────────────────── */
 .danger-frame {
     position: absolute;
@@ -668,7 +662,6 @@
 .danger-hidden {
     display: none;
 }
-
 
 /* ── GAME OVER ─────────────────────────────────────────────── */
 .gameover-panel {
@@ -732,6 +725,7 @@
     background-color: rgb(80, 100, 220);
     border-color: rgb(40, 60, 160);
 }
+
 .gameover-btn-menu:hover {
     background-color: rgb(100, 120, 240);
 }
@@ -740,6 +734,121 @@
     background-color: rgb(200, 100, 20);
     border-color: rgb(120, 60, 10);
 }
+
 .gameover-btn-retry:hover {
     background-color: rgb(220, 120, 30);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NUEVO: PANEL DE PREGUNTAS (Bloque Interactivo)
+   ═══════════════════════════════════════════════════════════════ */
+.question-panel {
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-hidden {
+    display: none;
+}
+
+.question-box {
+    width: 500px;
+    padding: 30px;
+    background-color: rgb(240, 230, 200); 
+    border-radius: 15px;
+    border-width: 4px;
+    border-color: rgb(120, 60, 10);
+    align-items: center;
+}
+
+.question-text {
+    font-size: 24px;
+    color: rgb(80, 40, 10);
+    margin-bottom: 20px;
+    -unity-font-style: bold;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.answers-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.answer-btn {
+    width: 40%;
+    height: 50px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: rgb(200, 150, 80);
+    border-radius: 8px;
+    color: white;
+    border-bottom-width: 6px;
+    border-bottom-color: rgb(150, 100, 50);
+}
+
+.btn-correct {
+    background-color: rgb(50, 200, 50); 
+    border-bottom-color: rgb(30, 150, 30);
+}
+
+.btn-incorrect {
+    background-color: rgb(200, 50, 50); 
+    border-bottom-color: rgb(150, 30, 30);
+}
+
+.help-btn {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(100, 150, 220);
+    color: white;
+    border-radius: 8px;
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(60, 100, 180);
+}
+
+.popup-box {
+    transition-property: scale;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out-bounce;
+    scale: 1 1;
+}
+
+.anim-button {
+    transition-property: scale, background-color;
+    transition-duration: 0.1s, 0.2s;
+    transition-timing-function: ease-out, ease-in-out;
+}
+
+.anim-button:hover {
+    scale: 1.05 1.05;
+}
+
+.anim-button:active {
+    scale: 0.95 0.95;
+    border-bottom-width: 2px;
+}
+
+.anim-dpad {
+    transition-property: scale, opacity;
+    transition-duration: 0.1s;
+}
+
+.anim-dpad:hover {
+    scale: 1.1 1.1;
+    opacity: 1;
+}
+
+.anim-dpad:active {
+    scale: 0.9 0.9;
+    opacity: 0.8;
 }

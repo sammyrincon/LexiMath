@@ -89,8 +89,8 @@ public class AnswerBlock : MonoBehaviour
 
         StartCoroutine(AnimacionRebote());
 
-        if (_manager != null)
-            _manager.OnBloqueGolpeado(this);
+      //  if (_manager != null)
+        //    _manager.OnBloqueGolpeado(this);
     }
 
     private IEnumerator AnimacionRebote()

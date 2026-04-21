@@ -1,5 +1,5 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/HUD/hud.uss?fileID=7433441132597879392&amp;guid=c3db689f49f9f9748a846004c5fe2b98&amp;type=3#hud"/>
+    <Style src="project://database/Assets/HUD/hud.uss?fileID=7433441132597879392&amp;guid=9a127a670fa6c7c4ea57cd2a4d5b3426&amp;type=3#hud"/>
     <ui:VisualElement name="main-hud" class="main-hud" style="flex-grow: 1;">
         <ui:VisualElement name="hud-container" picking-mode="Ignore" style="flex-grow: 1; opacity: 1;">
             <ui:VisualElement name="health-bar-container" class="health-bar-container" style="flex-grow: 1;">
@@ -16,35 +16,35 @@
             <ui:VisualElement name="pause-screen" class="pause-screen" style="flex-grow: 1;">
                 <ui:VisualElement name="book-animation-container" class="book-animation-container" style="flex-grow: 1;">
                     <ui:VisualElement name="buttons-container" class="buttons-container" style="flex-grow: 1; position: absolute;">
-                        <ui:Button text="Continuar" name="button-continuar" class="buttons-menu"/>
-                        <ui:Button text="Sonido" name="button-sonido" class="buttons-menu"/>
-                        <ui:Button text="Controles" name="button-controles" class="buttons-menu"/>
-                        <ui:Button text="Gráficos" name="button-graficos" class="buttons-menu"/>
-                        <ui:Button text="Salir" name="button-salir" class="buttons-menu"/>
+                        <ui:Button text="Continuar" name="button-continuar" class="buttons-menu anim-button"/>
+                        <ui:Button text="Sonido" name="button-sonido" class="buttons-menu anim-button"/>
+                        <ui:Button text="Controles" name="button-controles" class="buttons-menu anim-button"/>
+                        <ui:Button text="Gráficos" name="button-graficos" class="buttons-menu anim-button"/>
+                        <ui:Button text="Salir" name="button-salir" class="buttons-menu anim-button"/>
                     </ui:VisualElement>
-                    <ui:VisualElement name="right-page-container" class="right-page-container" style="position: absolute; display: none;"/>
+                    <ui:VisualElement name="right-page-container" class="right-page-container" style="position: absolute;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="controls-container" class="controls-container" style="flex-grow: 1;">
                 <ui:VisualElement name="d-pad-container" class="d-pad-container" style="flex-grow: 1;">
-                    <ui:VisualElement name="control-up" class="control-up" style="flex-grow: 1;"/>
-                    <ui:VisualElement name="control-down" class="control-down" style="flex-grow: 1;"/>
-                    <ui:VisualElement name="control-right" class="control-right" style="flex-grow: 1;"/>
-                    <ui:VisualElement name="control-left" class="control-left" style="flex-grow: 1;"/>
+                    <ui:VisualElement name="control-up" class="control-up anim-dpad" style="flex-grow: 1;"/>
+                    <ui:VisualElement name="control-down" class="control-down anim-dpad" style="flex-grow: 1;"/>
+                    <ui:VisualElement name="control-right" class="control-right anim-dpad" style="flex-grow: 1;"/>
+                    <ui:VisualElement name="control-left" class="control-left anim-dpad" style="flex-grow: 1;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:Label name="label-nivel" text="Level 1" class="label-nivel"/>
-            <ui:VisualElement name="CoinsContainer" class="coins-container" style="flex-grow: 1;">
+            <ui:Label name="label-nivel" text="Level 1" class="label-nivel anim-pop"/>
+            <ui:VisualElement name="CoinsContainer" class="coins-container anim-pop" style="flex-grow: 1;">
                 <ui:Label text="0" name="ContadorTexto" class="contador-texto"/>
                 <ui:Image name="coin-image" class="coin-image"/>
             </ui:VisualElement>
-            <ui:VisualElement name="Victory-panel" class="victory-panel" style="flex-grow: 1;">
-                <ui:VisualElement name="mapVictory" class="mapVictory" style="flex-grow: 1;">
+            <ui:VisualElement name="Victory-panel" class="victory-panel panel-hidden" style="flex-grow: 1;">
+                <ui:VisualElement name="mapVictory" class="mapVictory popup-box" style="flex-grow: 1;">
                     <ui:Label text="¡Enhorabuena!&#10;Nivel Terminado" name="victoryTitle" class="victoryTitle"/>
                     <ui:VisualElement name="starsContainer" class="stars-container" style="flex-grow: 1;">
-                        <ui:VisualElement name="Star3" class="star3" style="flex-grow: 1;"/>
-                        <ui:VisualElement name="Star1" class="star1" style="flex-grow: 1;"/>
-                        <ui:VisualElement name="Star2" class="star2" style="flex-grow: 1;"/>
+                        <ui:VisualElement name="Star3" class="star3 anim-star" style="flex-grow: 1;"/>
+                        <ui:VisualElement name="Star1" class="star1 anim-star" style="flex-grow: 1;"/>
+                        <ui:VisualElement name="Star2" class="star2 anim-star" style="flex-grow: 1;"/>
                         <ui:Label text="Puntos" name="pointsText" class="points-text"/>
                     </ui:VisualElement>
                     <ui:Label text="0&#10;" name="PointsNumber" class="points-number"/>
@@ -52,27 +52,33 @@
                         <ui:Label text="Necesitas 2 estrellas para pasar de nivel " name="warningLabel" class="warning-label"/>
                     </ui:VisualElement>
                     <ui:VisualElement name="buttonsVictory" class="buttons-victory" style="flex-grow: 1;">
-                        <ui:Button text="Salir" name="menuButton" class="menu-button"/>
-                        <ui:Button text="Reintentar" name="retryButton" class="retry-button"/>
-                        <ui:Button text="Continuar" name="continueButton" class="continue-button"/>
+                        <ui:Button text="Salir" name="menuButton" class="menu-button anim-button"/>
+                        <ui:Button text="Reintentar" name="retryButton" class="retry-button anim-button"/>
+                        <ui:Button text="Continuar" name="continueButton" class="continue-button anim-button"/>
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-            <!-- ═══════════════════════════════════════════════════════
-                 NUEVO: Marco rojo de vida baja (parpadea cuando hay poca vida)
-                 ═══════════════════════════════════════════════════════ -->
-            <ui:VisualElement name="danger-frame" class="danger-frame danger-hidden" picking-mode="Ignore"/>
-            <!-- ═══════════════════════════════════════════════════════
-                 NUEVO: Pantalla de Game Over
-                 ═══════════════════════════════════════════════════════ -->
-            <ui:VisualElement name="gameover-panel" class="gameover-panel gameover-hidden">
-                <ui:VisualElement name="gameover-box" class="gameover-box">
+            <ui:VisualElement name="danger-frame" picking-mode="Ignore" class="danger-frame danger-hidden"/>
+            <ui:VisualElement name="gameover-panel" class="gameover-panel panel-hidden">
+                <ui:VisualElement name="gameover-box" class="gameover-box popup-box">
                     <ui:Label text="¡PERDISTE!" name="gameover-title" class="gameover-title"/>
                     <ui:Label text="Inténtalo de nuevo" name="gameover-subtitle" class="gameover-subtitle"/>
                     <ui:VisualElement name="gameover-buttons" class="gameover-buttons">
-                        <ui:Button text="Menú Principal" name="gameover-menu-btn" class="gameover-btn gameover-btn-menu"/>
-                        <ui:Button text="Reintentar"     name="gameover-retry-btn" class="gameover-btn gameover-btn-retry"/>
+                        <ui:Button text="Menú Principal" name="gameover-menu-btn" class="gameover-btn gameover-btn-menu anim-button"/>
+                        <ui:Button text="Reintentar" name="gameover-retry-btn" class="gameover-btn gameover-btn-retry anim-button"/>
                     </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="question-panel" class="question-panel panel-hidden" style="flex-grow: 1;">
+                <ui:VisualElement name="question-box" class="question-box popup-box">
+                    <ui:Label text="¿Pregunta de ejemplo?" name="question-text" class="question-text"/>
+                    <ui:VisualElement name="answers-grid" class="answers-grid">
+                        <ui:Button text="Opción A" name="btn-answer-0" class="answer-btn anim-button"/>
+                        <ui:Button text="Opción B" name="btn-answer-1" class="answer-btn anim-button"/>
+                        <ui:Button text="Opción C" name="btn-answer-2" class="answer-btn anim-button"/>
+                        <ui:Button text="Opción D" name="btn-answer-3" class="answer-btn anim-button"/>
+                    </ui:VisualElement>
+                    <ui:Button text="Ayuda" name="btn-help" class="help-btn anim-button"/>
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>

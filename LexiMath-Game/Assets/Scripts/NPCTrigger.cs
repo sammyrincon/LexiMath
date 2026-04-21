@@ -78,8 +78,8 @@ public class NPCTrigger : MonoBehaviour
         }
 
         // 2. Pedir al QuestionManager que arranque las preguntas
-        if (questionManager != null)
-            questionManager.IniciarPreguntas();
+      //  if (questionManager != null)
+         //   questionManager.IniciarPreguntas();
         else
             Debug.LogError("[NPCTrigger] No se asignó QuestionManager!");
     }

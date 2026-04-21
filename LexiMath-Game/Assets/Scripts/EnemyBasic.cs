@@ -99,8 +99,8 @@ public class EnemyBasic : MonoBehaviour
         // ══════════════════════════════════════════════════════
         //  NUEVO — Hacer daño al jugador
         // ══════════════════════════════════════════════════════
-        if (PlayerHealth.Instance != null)
-            PlayerHealth.Instance.RecibirDano(danoAlJugador);
+        //if (PlayerHealth.Instance != null)
+          //  PlayerHealth.Instance.RecibirDano(danoAlJugador);
 
         Invoke(nameof(FinishAttack), 0.5f);
     }
