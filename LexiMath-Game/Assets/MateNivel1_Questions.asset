@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c94c0108f1d92f42b3a88dd74cf9640, type: 3}
+  m_Name: MateNivel1_Questions
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionData
+  nombreNivel: Nivel 1
+  preguntas:
+  - enunciado: "\xBFCu\xE1nto es 1 + 1?"
+    respuestaCorrecta: 2
+    distractores:
+    - 3
+    - 4
+  - enunciado: "\xBFCu\xE1nto es 2 + 3?"
+    respuestaCorrecta: 5
+    distractores:
+    - 4
+    - 6
+  - enunciado: "\xBFCu\xE1nto es 4 + 2?"
+    respuestaCorrecta: 6
+    distractores:
+    - 5
+    - 7
+  - enunciado: "\xBFCu\xE1nto es 3 + 4?"
+    respuestaCorrecta: 7
+    distractores:
+    - 5
+    - 9
+  - enunciado: "\xBFCu\xE1nto es 5 + 6?"
+    respuestaCorrecta: 11
+    distractores:
+    - 12
+    - 10

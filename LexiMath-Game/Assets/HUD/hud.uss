@@ -50,7 +50,6 @@
     left: 47px;
     background-color: rgba(0, 0, 0, 0);
     flex-shrink: 0;
-    max-width: 76px;
 }
 
 .home-button {
@@ -271,24 +270,24 @@
 
 .buttons-container {
     width: 100px;
-    height: 200px;
+    height: 220px;
     justify-content: center;
     align-content: center;
-    top: 20%;
+    top: 15%;
     left: 20%;
 }
 
 .buttons-menu {
     -unity-text-align: upper-center;
     width: 80px;
-    height: 30px;
+    height: 26px;
     -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
     align-content: center;
     align-self: center;
     position: relative;
-    margin-top: 10px;
+    margin-top: 4px;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     margin-left: 10px;
     background-image: url("project://database/Assets/UI%20Character/MediavelUI/Mediavel.png?fileID=9120660117641809374&guid=61514b8e8dd6a744fb2a0563a9ba7c7f&type=3#Mediavel_220");
     background-color: rgba(0, 0, 0, 0);
@@ -354,8 +353,8 @@
 .estrellas-container {
     position: absolute;
     top: 18px;
-    left: 50%;
-    translate: -50% 0;
+    left: 0;
+    right: 0;
     align-items: center;
     justify-content: center;
 }
@@ -646,4 +645,210 @@
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+/* ── MARCO ROJO DE VIDA BAJA ────────────────────────────────── */
+.danger-frame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-width: 20px;
+    border-color: rgba(255, 0, 0, 0.85);
+    background-color: rgba(255, 0, 0, 0.08);
+}
+
+.danger-hidden {
+    display: none;
+}
+
+/* ── GAME OVER ─────────────────────────────────────────────── */
+.gameover-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-content: center;
+}
+
+.gameover-hidden {
+    display: none;
+}
+
+.gameover-box {
+    width: 480px;
+    padding: 40px;
+    background-color: rgba(30, 15, 15, 0.95);
+    border-width: 5px;
+    border-color: rgb(200, 40, 40);
+    border-radius: 12px;
+    align-items: center;
+}
+
+.gameover-title {
+    font-size: 48px;
+    -unity-font-style: bold;
+    color: rgb(255, 60, 60);
+    -unity-text-align: middle-center;
+    margin-bottom: 14px;
+    letter-spacing: 4px;
+}
+
+.gameover-subtitle {
+    font-size: 18px;
+    color: rgb(230, 220, 220);
+    -unity-text-align: middle-center;
+    margin-bottom: 28px;
+}
+
+.gameover-buttons {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gameover-btn {
+    width: 180px;
+    padding: 12px 18px;
+    margin: 0 8px;
+    font-size: 16px;
+    -unity-font-style: bold;
+    border-width: 3px;
+    border-radius: 6px;
+    color: white;
+}
+
+.gameover-btn-menu {
+    background-color: rgb(80, 100, 220);
+    border-color: rgb(40, 60, 160);
+}
+
+.gameover-btn-menu:hover {
+    background-color: rgb(100, 120, 240);
+}
+
+.gameover-btn-retry {
+    background-color: rgb(200, 100, 20);
+    border-color: rgb(120, 60, 10);
+}
+
+.gameover-btn-retry:hover {
+    background-color: rgb(220, 120, 30);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NUEVO: PANEL DE PREGUNTAS (Bloque Interactivo)
+   ═══════════════════════════════════════════════════════════════ */
+.question-panel {
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-hidden {
+    display: none;
+}
+
+.question-box {
+    width: 500px;
+    padding: 30px;
+    background-color: rgb(240, 230, 200); 
+    border-radius: 15px;
+    border-width: 4px;
+    border-color: rgb(120, 60, 10);
+    align-items: center;
+}
+
+.question-text {
+    font-size: 24px;
+    color: rgb(80, 40, 10);
+    margin-bottom: 20px;
+    -unity-font-style: bold;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.answers-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.answer-btn {
+    width: 40%;
+    height: 50px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: rgb(200, 150, 80);
+    border-radius: 8px;
+    color: white;
+    border-bottom-width: 6px;
+    border-bottom-color: rgb(150, 100, 50);
+}
+
+.btn-correct {
+    background-color: rgb(50, 200, 50); 
+    border-bottom-color: rgb(30, 150, 30);
+}
+
+.btn-incorrect {
+    background-color: rgb(200, 50, 50); 
+    border-bottom-color: rgb(150, 30, 30);
+}
+
+.help-btn {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(100, 150, 220);
+    color: white;
+    border-radius: 8px;
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(60, 100, 180);
+}
+
+.popup-box {
+    transition-property: scale;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out-bounce;
+    scale: 1 1;
+}
+
+.anim-button {
+    transition-property: scale, background-color;
+    transition-duration: 0.1s, 0.2s;
+    transition-timing-function: ease-out, ease-in-out;
+}
+
+.anim-button:hover {
+    scale: 1.05 1.05;
+}
+
+.anim-button:active {
+    scale: 0.95 0.95;
+    border-bottom-width: 2px;
+}
+
+.anim-dpad {
+    transition-property: scale, opacity;
+    transition-duration: 0.1s;
+}
+
+.anim-dpad:hover {
+    scale: 1.1 1.1;
+    opacity: 1;
+}
+
+.anim-dpad:active {
+    scale: 0.9 0.9;
+    opacity: 0.8;
 }
