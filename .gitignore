@@ -18,6 +18,9 @@
 # OS junk
 .DS_Store
 Thumbs.db
+Thumbs.db.meta
+**/Thumbs.db
+**/Thumbs.db.meta
 
 # Builds
 *.apk
