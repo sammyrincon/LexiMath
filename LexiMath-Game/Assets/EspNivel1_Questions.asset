@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c94c0108f1d92f42b3a88dd74cf9640, type: 3}
+  m_Name: EspNivel1_Questions
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionData
+  nombreNivel: Nivel 1
+  preguntas:
+  - enunciado: "\xBFCu\xE1ntas s\xEDlabas tiene MARIPOSA?"
+    respuestaCorrecta: 4
+    distractores:
+    - 3
+    - 5
+  - enunciado: "\xBFCu\xE1l es lo contrario de GRANDE?"
+    respuestaCorrecta: "PEQUE\xD1O"
+    distractores:
+    - ALTO
+    - ROJO
+  - enunciado: "\xBFQu\xE9 palabra es un color?"
+    respuestaCorrecta: AZUL
+    distractores:
+    - MESA
+    - PERRO
+  - enunciado: "\xBFCon qu\xE9 vocal empieza ELEFANTE?"
+    respuestaCorrecta: E
+    distractores:
+    - A
+    - I
+  - enunciado: "\xBFCu\xE1l de estas es una consonante?"
+    respuestaCorrecta: P
+    distractores:
+    - A
+    - E
