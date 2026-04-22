@@ -8,11 +8,11 @@ public class KnightController : MonoBehaviour
 {
     [Header("Configuración de Movimiento")]
     [SerializeField] private float velocidadX = 6f;
-    [SerializeField] private float velocidadY = 14f;
+    [SerializeField] private float velocidadY = 6f;
 
-    [Header("Control en aire (para escaleras/plataformas)")]
+    [Header("Control en aire")]
     [Range(0f, 1f)]
-    [SerializeField] private float controlEnAire = 1f; // 1 = control completo en el aire
+    [SerializeField] private float controlEnAire = 1f;
 
     [Header("Input Actions")]
     [SerializeField] private InputAction accionMover;
@@ -20,7 +20,8 @@ public class KnightController : MonoBehaviour
     [SerializeField] private InputAction accionAtacar;
 
     [Header("Detección de Suelo")]
-    [SerializeField] private LayerMask capaSuelo;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float radioSuelo = 0.25f;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -57,28 +58,38 @@ public class KnightController : MonoBehaviour
 
     void Update()
     {
-        Vector2 movimiento = accionMover.ReadValue<Vector2>();
+        Collider2D suelo = Physics2D.OverlapCircle(groundCheck.position, radioSuelo);
+        isGrounded = suelo != null;
 
-        // ✅ Movimiento horizontal SIEMPRE (suelo + aire)
+        if (suelo != null)
+        {
+            Debug.Log("Detectando suelo: " + suelo.name);
+        }
+
+        Vector2 movimiento = accionMover.ReadValue<Vector2>();
         float factor = isGrounded ? 1f : controlEnAire;
+
         rb.linearVelocity = new Vector2(movimiento.x * velocidadX * factor, rb.linearVelocity.y);
 
-        // ✅ Flip SIEMPRE (para corregir en el aire)
-        if (movimiento.x > 0) sprite.flipX = false;
-        else if (movimiento.x < 0) sprite.flipX = true;
+        if (movimiento.x > 0)
+            sprite.flipX = false;
+        else if (movimiento.x < 0)
+            sprite.flipX = true;
 
-        // ✅ Animator: actualiza ambos SIEMPRE
         anim.SetBool("isGrounded", isGrounded);
-        anim.SetFloat("Speed", Mathf.Abs(movimiento.x)); // <- clave: no lo apagues en el aire
+        anim.SetFloat("Speed", Mathf.Abs(movimiento.x));
     }
 
     private void Saltar(InputAction.CallbackContext context)
     {
+        Debug.Log("Intento de salto. isGrounded = " + isGrounded);
+
         if (!isGrounded) return;
 
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, velocidadY);
         anim.SetTrigger("Jump");
-        isGrounded = false;
+
+        Debug.Log("SALTO aplicado");
     }
 
     private void Atacar(InputAction.CallbackContext context)
@@ -87,15 +98,11 @@ public class KnightController : MonoBehaviour
             anim.SetTrigger("Attack");
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnDrawGizmosSelected()
     {
-        if (((1 << collision.gameObject.layer) & capaSuelo) != 0)
-            isGrounded = true;
-    }
+        if (groundCheck == null) return;
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (((1 << collision.gameObject.layer) & capaSuelo) != 0)
-            isGrounded = false;
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(groundCheck.position, radioSuelo);
     }
 }

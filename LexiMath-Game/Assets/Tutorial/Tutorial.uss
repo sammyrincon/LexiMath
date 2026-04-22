@@ -1,0 +1,573 @@
+/* ═══════════════════════════════════════════════════════════════
+   Tutorial.uss  —  LexiMath Tutorial UI
+   Paleta: fondo oscuro #1a1a2e, amarillo #f5c842, verde #3ecf6a,
+           rojo #e94545, azul #4a9eff, morado #7c4dff, gris #2d2d4a
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── ROOT ──────────────────────────────────────────────────────── */
+.tutorial-root {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ── TOP BAR ───────────────────────────────────────────────────── */
+.top-bar {
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    flex-direction: column;
+}
+
+/* Progress dots */
+.progress-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(10, 10, 24, 0.85);
+    border-radius: 30px;
+    padding: 6px 20px;
+    margin-bottom: 6px;
+}
+
+.step-dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.3);
+}
+
+.step-active {
+    background-color: rgb(245, 200, 66);
+    border-color: rgb(245, 200, 66);
+}
+
+.step-done {
+    background-color: rgb(62, 207, 106);
+    border-color: rgb(62, 207, 106);
+}
+
+.step-pending {
+    background-color: rgba(255,255,255,0.12);
+}
+
+.dot-label {
+    font-size: 13px;
+    color: rgb(20, 20, 40);
+    -unity-font-style: bold;
+}
+
+.step-pending .dot-label {
+    color: rgba(255,255,255,0.5);
+}
+
+.progress-line {
+    width: 40px;
+    height: 3px;
+    background-color: rgba(255,255,255,0.2);
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.label-paso {
+    font-size: 11px;
+    color: rgb(245, 200, 66);
+    letter-spacing: 2px;
+    -unity-font-style: bold;
+    background-color: rgba(10, 10, 24, 0.7);
+    padding: 3px 16px;
+    border-radius: 10px;
+}
+
+/* ── PANELES OVERLAY ───────────────────────────────────────────── */
+.panel-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    flex-direction: column;
+}
+
+.panel-oculto {
+    display: none;
+}
+
+/* ── INFO BOXES (cajitas del Figma) ────────────────────────────── */
+.info-box {
+    background-color: rgba(10, 14, 30, 0.88);
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: rgba(255,255,255,0.15);
+    padding: 10px 14px;
+    position: absolute;
+    max-width: 200px;
+}
+
+.info-box-left {
+    left: 20px;
+    top: 38%;
+}
+
+.info-box-center {
+    left: 28%;
+    top: 33%;
+}
+
+.info-box-right {
+    right: 20px;
+    top: 43%;
+}
+
+.info-box-brinca {
+    left: 42%;
+    top: 56%;
+}
+
+.info-titulo {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+}
+
+.info-amarillo {
+    color: rgb(245, 200, 66);
+}
+
+.info-verde {
+    color: rgb(62, 207, 106);
+}
+
+.info-desc {
+    font-size: 11px;
+    color: rgba(255,255,255,0.85);
+    white-space: normal;
+}
+
+/* ── CHECKS DE MOVIMIENTO ──────────────────────────────────────── */
+.checks-container {
+    position: absolute;
+    left: 20px;
+    top: 54%;
+    flex-direction: column;
+}
+
+.check-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    background-color: rgba(10,14,30,0.8);
+    border-width: 1px;
+    border-color: rgba(255,255,255,0.1);
+}
+
+.check-pendiente {
+    border-color: rgba(255,255,255,0.15);
+}
+
+.check-completo {
+    border-color: rgb(62, 207, 106);
+    background-color: rgba(62, 207, 106, 0.12);
+}
+
+.check-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.9);
+}
+
+.check-completo .check-label {
+    color: rgb(62, 207, 106);
+}
+
+/* ── HINT FLOTANTE ─────────────────────────────────────────────── */
+.label-hint {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    translate: -50% 0;
+    background-color: rgba(233, 69, 69, 0.9);
+    color: white;
+    font-size: 13px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    -unity-font-style: bold;
+}
+
+/* ── PREGUNTA ──────────────────────────────────────────────────── */
+.question-box {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 15%;
+    background-color: rgb(240, 240, 225);
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: rgb(245, 200, 66);
+    padding: 20px;
+    align-items: center;
+}
+
+.label-pregunta {
+    font-size: 36px;
+    color: rgb(20, 20, 40);
+    -unity-font-style: bold;
+    margin-bottom: 20px;
+    -unity-text-align: middle-center;
+}
+
+.answers-row {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.btn-respuesta {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    font-size: 26px;
+    -unity-font-style: bold;
+    background-color: rgb(245, 200, 66);
+    color: rgb(20, 20, 40);
+    border-radius: 10px;
+    border-width: 0;
+}
+
+.btn-respuesta:hover {
+    background-color: rgb(255, 220, 80);
+    scale: 1.05 1.05;
+}
+
+.respuesta-correcta {
+    background-color: rgb(62, 207, 106) !important;
+    color: white !important;
+}
+
+.respuesta-incorrecta {
+    background-color: rgb(233, 69, 69) !important;
+    color: white !important;
+}
+
+.label-instruccion-pregunta {
+    font-size: 13px;
+    color: rgba(20,20,40,0.7);
+    background-color: rgb(220, 215, 180);
+    padding: 6px 30px;
+    border-radius: 0 0 8px 8px;
+    -unity-text-align: middle-center;
+}
+
+/* Resultado pregunta */
+.label-resultado {
+    position: absolute;
+    right: 10%;
+    top: 65%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    white-space: normal;
+}
+
+.resultado-correcto {
+    background-color: rgba(62, 207, 106, 0.2);
+    border-width: 1px;
+    border-color: rgb(62, 207, 106);
+    color: rgb(62, 207, 106);
+}
+
+.resultado-incorrecto {
+    background-color: rgba(233, 69, 69, 0.2);
+    border-width: 1px;
+    border-color: rgb(233, 69, 69);
+    color: rgb(233, 69, 69);
+}
+
+/* Cómo responder */
+.info-box-derecha-oscura {
+    position: absolute;
+    right: 20px;
+    top: 22%;
+    max-width: 180px;
+    background-color: rgba(10,14,30,0.88);
+}
+
+.info-titulo-oscuro {
+    font-size: 12px;
+    color: rgb(62, 207, 106);
+    -unity-font-style: bold;
+    margin-bottom: 6px;
+}
+
+.info-desc-oscuro {
+    font-size: 11px;
+    color: rgba(255,255,255,0.85);
+    white-space: normal;
+}
+
+/* ── PODERES ───────────────────────────────────────────────────── */
+.titulo-poderes {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    translate: -50% 0;
+    background-color: rgb(124, 77, 255);
+    color: white;
+    font-size: 16px;
+    -unity-font-style: bold;
+    padding: 6px 30px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+}
+
+.poderes-grid {
+    position: absolute;
+    top: 22%;
+    left: 4%;
+    right: 4%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.poder-card {
+    flex: 1;
+    margin: 0 6px;
+    border-radius: 14px;
+    padding: 12px 10px;
+    align-items: center;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.2);
+}
+
+.poder-fuego  { background-color: rgb(180, 50, 50); }
+.poder-rayo   { background-color: rgb(180, 140, 30); }
+.poder-hielo  { background-color: rgb(50, 100, 180); }
+.poder-mipoder { background-color: rgb(30, 80, 50); }
+
+.poder-seleccionado {
+    border-color: rgb(62, 207, 106);
+    border-width: 3px;
+}
+
+.poder-arrows {
+    background-color: rgba(10,14,30,0.6);
+    border-radius: 6px;
+    padding: 4px 8px;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.arrows-label {
+    font-size: 14px;
+    color: rgb(245, 200, 66);
+    -unity-text-align: middle-center;
+}
+
+.arrows-sub {
+    font-size: 9px;
+    color: rgba(255,255,255,0.6);
+    -unity-text-align: middle-center;
+}
+
+.poder-icon {
+    font-size: 28px;
+    margin-bottom: 6px;
+    -unity-text-align: middle-center;
+}
+
+.poder-nombre {
+    font-size: 14px;
+    color: white;
+    -unity-font-style: bold;
+    margin-bottom: 6px;
+    -unity-text-align: middle-center;
+}
+
+.poder-nombre-verde {
+    color: rgb(62, 207, 106);
+}
+
+.poder-desc {
+    font-size: 10px;
+    color: rgba(255,255,255,0.8);
+    -unity-text-align: middle-center;
+    white-space: normal;
+    margin-bottom: 8px;
+}
+
+.poder-precio {
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(10,14,30,0.6);
+    padding: 3px 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.poder-guardado {
+    color: rgb(62, 207, 106);
+}
+
+.btn-comprar {
+    background-color: rgb(233, 120, 30);
+    color: white;
+    -unity-font-style: bold;
+    font-size: 12px;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.btn-comprar:hover {
+    background-color: rgb(255, 140, 50);
+}
+
+.btn-seleccionar {
+    background-color: rgb(62, 207, 106);
+    color: rgb(10, 40, 20);
+    -unity-font-style: bold;
+    font-size: 12px;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 6px 0;
+    width: 100%;
+}
+
+/* ── JEFE FINAL ────────────────────────────────────────────────── */
+.titulo-jefe {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    translate: -50% 0;
+    background-color: rgb(124, 77, 255);
+    color: white;
+    font-size: 18px;
+    -unity-font-style: bold;
+    padding: 8px 30px;
+    border-radius: 8px;
+}
+
+.label-carga {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    translate: -50% 0;
+    background-color: rgb(245, 200, 66);
+    color: rgb(20,20,40);
+    font-size: 13px;
+    -unity-font-style: bold;
+    padding: 6px 24px;
+    border-radius: 8px;
+}
+
+.boss-health-container {
+    position: absolute;
+    right: 20px;
+    top: 36%;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.boss-health-label {
+    font-size: 11px;
+    color: rgb(233, 69, 69);
+    margin-bottom: 4px;
+}
+
+.boss-health-bar-bg {
+    height: 14px;
+    background-color: rgba(10,14,30,0.7);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.boss-health-bar-fill {
+    height: 100%;
+    width: 75%;
+    background-color: rgb(233, 69, 69);
+    border-radius: 7px;
+    transition-property: width;
+    transition-duration: 0.3s;
+}
+
+/* ── PANEL FINAL ───────────────────────────────────────────────── */
+.panel-final {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(10, 14, 30, 0.95);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-final {
+    font-size: 32px;
+    color: rgb(245, 200, 66);
+    -unity-font-style: bold;
+    margin-bottom: 16px;
+}
+
+.subtitulo-final {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+}
+
+/* ── TRANSICIÓN ────────────────────────────────────────────────── */
+.panel-transicion {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(10, 14, 30, 0.75);
+}
+
+/* ── NAV BAR INFERIOR ──────────────────────────────────────────── */
+.nav-bar {
+    position: absolute;
+    bottom: 14px;
+    left: 20px;
+    right: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-nav {
+    font-size: 13px;
+    -unity-font-style: bold;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 10px 24px;
+}
+
+.btn-atras {
+    background-color: rgba(40, 40, 70, 0.9);
+    color: rgba(255,255,255,0.8);
+}
+
+.btn-atras:hover {
+    background-color: rgba(60, 60, 100, 0.9);
+}
+
+.btn-siguiente {
+    background-color: rgb(62, 207, 106);
+    color: rgb(10, 40, 20);
+}
+
+.btn-siguiente:hover {
+    background-color: rgb(80, 230, 120);
+}
+
+.btn-siguiente:disabled {
+    background-color: rgba(62, 207, 106, 0.3);
+    color: rgba(10, 40, 20, 0.5);
+}
+
+.label-contador {
+    font-size: 13px;
+    color: rgb(245, 200, 66);
+    -unity-font-style: bold;
+}
