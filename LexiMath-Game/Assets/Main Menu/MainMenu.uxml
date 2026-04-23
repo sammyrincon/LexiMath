@@ -1,0 +1,95 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="False">
+    <Style src="project://database/Assets/Main%20Menu/mainmenu.uss?fileID=7433441132597879392&amp;guid=08c4fe42bfc1c3045875d59c89172c51&amp;type=3#mainmenu"/>
+
+    <ui:VisualElement name="root" class="root">
+
+        <!-- Nubes decorativas -->
+        <ui:VisualElement name="nube-1" class="nube"/>
+        <ui:VisualElement name="nube-2" class="nube"/>
+        <ui:VisualElement name="nube-3" class="nube"/>
+
+        <!-- Botón hamburguesa -->
+        <ui:Button name="btn-hamburguesa" text="≡" class="btn-hamburguesa"/>
+
+        <!-- HUD superior derecho -->
+        <ui:VisualElement class="hud-info">
+            <ui:VisualElement class="hud-pill">
+                <ui:Label text="★" class="hud-icono"/>
+                <ui:Label name="lbl-estrellas" text="0" class="hud-label"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="hud-pill">
+                <ui:Label text="◆" class="hud-icono"/>
+                <ui:Label name="lbl-diamantes" text="0" class="hud-label"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Contenido central -->
+        <ui:VisualElement name="contenido-central" class="contenido-central">
+            <ui:Label text="LEXIMATH" class="titulo"/>
+            <ui:VisualElement name="personaje-container" class="personaje-container"/>
+            <ui:VisualElement class="dialogo-container">
+                <ui:Label text="¡Bienvenido, joven mago!&#10;Abre el menú para elegir tu aventura." class="label-dialogo"/>
+            </ui:VisualElement>
+
+            <!-- Cards de mundos (circulitos 1 y 2 como en el original) -->
+            <ui:VisualElement class="mundos-container">
+                <ui:Button name="btn-card-mates" class="mundo-card">
+                    <ui:VisualElement class="mundo-boton mundo-boton-naranja">
+                        <ui:Label text="1" class="mundo-numero"/>
+                    </ui:VisualElement>
+                    <ui:Label text="MATES" class="mundo-nombre"/>
+                    <ui:Label text="○○○○○" class="mundo-progreso"/>
+                </ui:Button>
+                <ui:Button name="btn-card-espanol" class="mundo-card">
+                    <ui:VisualElement class="mundo-boton mundo-boton-verde">
+                        <ui:Label text="2" class="mundo-numero"/>
+                    </ui:VisualElement>
+                    <ui:Label text="ESPAÑOL" class="mundo-nombre"/>
+                    <ui:Label text="○○○○○" class="mundo-progreso"/>
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- ═══ MENÚ LATERAL (hamburguesa) ═══ -->
+        <ui:VisualElement name="menu-lateral" class="menu-lateral" style="display: none;">
+
+            <!-- Header -->
+            <ui:VisualElement class="menu-header">
+                <ui:Label text="MENÚ" class="menu-titulo"/>
+                <ui:Button name="btn-cerrar-menu" text="✕" class="btn-cerrar"/>
+            </ui:VisualElement>
+
+            <!-- Botón Tutorial (acceso directo arriba) -->
+            <ui:Button name="btn-tutorial" text="TUTORIAL" class="btn-tutorial"/>
+
+            <!-- Acordeón Matemáticas -->
+            <ui:Button name="btn-mates-header" class="acordeon-header acordeon-naranja">
+                <ui:Label text="MATEMÁTICAS" class="acordeon-titulo"/>
+                <ui:Label name="flecha-mates" text="∧" class="acordeon-flecha"/>
+            </ui:Button>
+            <ui:VisualElement name="niveles-mates" class="acordeon-contenido"/>
+
+            <!-- Acordeón Español -->
+            <ui:Button name="btn-espanol-header" class="acordeon-header acordeon-verde">
+                <ui:Label text="ESPAÑOL" class="acordeon-titulo"/>
+                <ui:Label name="flecha-espanol" text="∨" class="acordeon-flecha"/>
+            </ui:Button>
+            <ui:VisualElement name="niveles-espanol" class="acordeon-contenido" style="display: none;"/>
+
+            <!-- Espaciador flexible -->
+            <ui:VisualElement class="menu-spacer"/>
+
+            <!-- Footer -->
+            <ui:VisualElement class="menu-footer">
+                <ui:Button name="btn-perfil" text="PERFIL" class="btn-footer btn-azul"/>
+                <ui:Button name="btn-config" text="CONFIG" class="btn-footer btn-gris"/>
+                <ui:Button name="btn-salir"  text="SALIR"  class="btn-footer btn-rojo"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
