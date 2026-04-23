@@ -15,7 +15,7 @@ public class PlayerAttackHitbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (((1 << other.gameObject.layer) & enemyLayer) == 0) return;
+        if (enemyLayer.value != 0 && ((1 << other.gameObject.layer) & enemyLayer) == 0) return;
 
         IDamageable dmg = other.GetComponent<IDamageable>();
         if (dmg == null) dmg = other.GetComponentInParent<IDamageable>();

@@ -1,96 +1,187 @@
 using UnityEngine;
-using TMPro;
 
 public class TutorialManager : MonoBehaviour
 {
-    [Header("UI")]
-    public GameObject dialoguePanel;
-    public TextMeshProUGUI dialogueText;
-    public TextMeshProUGUI[] checklistLabels;
-
-    [Header("References")]
-    public PlayerController playerController;
-    public PlayerMelee playerMelee;
-    public EnemyBasic enemy;
-
-    private int currentStep = 0;
-    private bool[] completed = new bool[4];
-    private string[] stepNames = { "MOVER", "SALTAR", "ATACAR", "DERROTAR" };
-    private string[] instructions = {
-        "← → Mueve al caballero izquierda y derecha",
-        "↑ o ESPACIO para saltar",
-        "X para atacar con la espada",
-        "¡Acércate al enemigo y derrótalo!"
-    };
-
-    private bool hasMoved = false;
-    private bool hasJumped = false;
-    private bool hasAttacked = false;
-
-    void Start()
+    private enum TutorialStep
     {
-        for (int i = 0; i < checklistLabels.Length; i++)
-        {
-            checklistLabels[i].text = stepNames[i];
-            checklistLabels[i].color = Color.white;
-        }
-        ShowStep(0);
+        Move = 0,
+        Jump = 1,
+        Attack = 2,
+        KillEnemy = 3,
+        EnterPortal = 4,
+        Completed = 5
     }
 
-    void Update()
+    [Header("Gameplay")]
+    [SerializeField] private GameObject portalObject;
+
+    [Header("Move UI")]
+    [SerializeField] private GameObject keysRow;
+    [SerializeField] private GameObject actionTextMover;
+
+    [Header("Jump UI")]
+    [SerializeField] private GameObject keySlot3;
+    [SerializeField] private GameObject actionTextSaltar;
+
+    [Header("Attack UI")]
+    [SerializeField] private GameObject keySlot4;
+    [SerializeField] private GameObject actionTextAtacar;
+
+    [Header("Optional UI")]
+    [SerializeField] private GameObject actionTextEnemy;
+    [SerializeField] private GameObject actionTextPortal;
+    [SerializeField] private GameObject actionTextCompletado;
+
+    private TutorialStep currentStep = TutorialStep.Move;
+
+    private bool hasMoved;
+    private bool hasJumped;
+    private bool hasAttacked;
+    private bool enemyKilled;
+    private bool portalEntered;
+
+    private void Start()
     {
-        if (currentStep == 0 && !hasMoved)
+        if (portalObject != null)
         {
-            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.1f)
-            {
-                hasMoved = true;
-                CompleteStep(0);
-                ShowStep(1);
-            }
-        }
-        else if (currentStep == 1 && !hasJumped)
-        {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                hasJumped = true;
-                CompleteStep(1);
-                ShowStep(2);
-            }
-        }
-        else if (currentStep == 2 && !hasAttacked)
-        {
-            if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Z))
-            {
-                hasAttacked = true;
-                CompleteStep(2);
-                ShowStep(3);
-            }
+            portalObject.SetActive(false);
         }
 
-        if (currentStep == 3 && enemy == null)
+        ShowCurrentStep();
+    }
+
+    public void OnPlayerMove()
+    {
+        hasMoved = true;
+        TryAdvanceStep();
+    }
+
+    public void OnPlayerJump()
+    {
+        hasJumped = true;
+        TryAdvanceStep();
+    }
+
+    public void OnPlayerAttack()
+    {
+        hasAttacked = true;
+        TryAdvanceStep();
+    }
+
+    public void OnEnemyKilled()
+    {
+        hasAttacked = true;
+        enemyKilled = true;
+
+        if (currentStep < TutorialStep.KillEnemy)
         {
-            CompleteStep(3);
-            dialogueText.text = "¡Perfecto! Has derrotado al enemigo";
-            Invoke(nameof(FinishTutorial), 3f);
+            currentStep = TutorialStep.KillEnemy;
+        }
+
+        if (portalObject != null)
+        {
+            portalObject.SetActive(true);
+        }
+
+        TryAdvanceStep();
+    }
+
+    public void OnPortalEntered()
+    {
+        portalEntered = true;
+        TryAdvanceStep();
+    }
+
+    private void TryAdvanceStep()
+    {
+        while (CanCompleteCurrentStep())
+        {
+            currentStep++;
+        }
+
+        ShowCurrentStep();
+    }
+
+    private bool CanCompleteCurrentStep()
+    {
+        switch (currentStep)
+        {
+            case TutorialStep.Move:
+                return hasMoved;
+
+            case TutorialStep.Jump:
+                return hasJumped;
+
+            case TutorialStep.Attack:
+                return hasAttacked;
+
+            case TutorialStep.KillEnemy:
+                return enemyKilled;
+
+            case TutorialStep.EnterPortal:
+                return portalEntered;
+
+            default:
+                return false;
         }
     }
 
-    void ShowStep(int step)
+    private void ShowCurrentStep()
     {
-        currentStep = step;
-        dialogueText.text = instructions[step];
+        HideAllPrompts();
+
+        switch (currentStep)
+        {
+            case TutorialStep.Move:
+                SetActive(keysRow, true);
+                SetActive(actionTextMover, true);
+                break;
+
+            case TutorialStep.Jump:
+                SetActive(keySlot3, true);
+                SetActive(actionTextSaltar, true);
+                break;
+
+            case TutorialStep.Attack:
+                SetActive(keySlot4, true);
+                SetActive(actionTextAtacar, true);
+                break;
+
+            case TutorialStep.KillEnemy:
+                SetActive(actionTextEnemy, true);
+                break;
+
+            case TutorialStep.EnterPortal:
+                SetActive(actionTextPortal, true);
+                break;
+
+            case TutorialStep.Completed:
+                SetActive(actionTextCompletado, true);
+                break;
+        }
     }
 
-    void CompleteStep(int index)
+    private void HideAllPrompts()
     {
-        completed[index] = true;
-        checklistLabels[index].text = "✓ " + stepNames[index];
-        checklistLabels[index].color = Color.green;
+        SetActive(keysRow, false);
+        SetActive(actionTextMover, false);
+
+        SetActive(keySlot3, false);
+        SetActive(actionTextSaltar, false);
+
+        SetActive(keySlot4, false);
+        SetActive(actionTextAtacar, false);
+
+        SetActive(actionTextEnemy, false);
+        SetActive(actionTextPortal, false);
+        SetActive(actionTextCompletado, false);
     }
 
-    void FinishTutorial()
+    private void SetActive(GameObject target, bool value)
     {
-        PlayerPrefs.SetInt("TutorialCompleted", 1);
-        dialogueText.text = "¡Tutorial completado!";
+        if (target != null)
+        {
+            target.SetActive(value);
+        }
     }
 }
