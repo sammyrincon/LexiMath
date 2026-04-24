@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 3b84e381d3ac3e042a0852c3104ed93b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4375000451048315502
+    second: OceanKnight_Jump_0
+  - first:
+      213: -5717056245148304158
+    second: OceanKnight_Jump_1
+  - first:
+      213: -1214774642727819409
+    second: OceanKnight_Jump_2
+  - first:
+      213: -1574819529680473961
+    second: OceanKnight_Jump_3
+  - first:
+      213: -2738321036941597457
+    second: OceanKnight_Jump_4
+  - first:
+      213: 9019603369083516218
+    second: OceanKnight_Jump_5
+  - first:
+      213: 1788212511749170545
+    second: OceanKnight_Jump_6
+  - first:
+      213: -1381260709418954903
+    second: OceanKnight_Jump_7
+  - first:
+      213: -3366617073130366613
+    second: OceanKnight_Jump_8
+  - first:
+      213: -8145211226728439076
+    second: OceanKnight_Jump_9
+  - first:
+      213: 7773210082432928152
+    second: OceanKnight_Jump_10
+  - first:
+      213: 1086819426357039547
+    second: OceanKnight_Jump_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OceanKnight_Jump_0
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 69
+        width: 71
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295671ff440e843c0800000000000000
+      internalID: -4375000451048315502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_1
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 81
+        width: 71
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ecb103a2afe8a0b0800000000000000
+      internalID: -5717056245148304158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_2
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 88
+        width: 78
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f676e0a06e0442fe0800000000000000
+      internalID: -1214774642727819409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_3
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 88
+        width: 78
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7903c044bfd152ae0800000000000000
+      internalID: -1574819529680473961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_4
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 88
+        width: 78
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4ed1076878ff9d0800000000000000
+      internalID: -2738321036941597457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_5
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 92
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35b32de9711c2d70800000000000000
+      internalID: 9019603369083516218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_6
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 93
+        width: 74
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175e7b91ec101d810800000000000000
+      internalID: 1788212511749170545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_7
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 86
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f01e8f3b6c4dce0800000000000000
+      internalID: -1381260709418954903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_8
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 86
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b699c4deb9f5741d0800000000000000
+      internalID: -3366617073130366613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_9
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 86
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2e3526b8566fe80800000000000000
+      internalID: -8145211226728439076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_10
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 71
+        width: 74
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89946efb26dffdb60800000000000000
+      internalID: 7773210082432928152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Jump_11
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 70
+        width: 80
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb151039288251f00800000000000000
+      internalID: 1086819426357039547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      OceanKnight_Jump_0: -4375000451048315502
+      OceanKnight_Jump_1: -5717056245148304158
+      OceanKnight_Jump_10: 7773210082432928152
+      OceanKnight_Jump_11: 1086819426357039547
+      OceanKnight_Jump_2: -1214774642727819409
+      OceanKnight_Jump_3: -1574819529680473961
+      OceanKnight_Jump_4: -2738321036941597457
+      OceanKnight_Jump_5: 9019603369083516218
+      OceanKnight_Jump_6: 1788212511749170545
+      OceanKnight_Jump_7: -1381260709418954903
+      OceanKnight_Jump_8: -3366617073130366613
+      OceanKnight_Jump_9: -8145211226728439076
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

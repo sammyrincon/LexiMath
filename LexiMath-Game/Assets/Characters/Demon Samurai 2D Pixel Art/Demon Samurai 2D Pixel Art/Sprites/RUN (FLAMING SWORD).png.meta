@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -93,7 +93,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -141,8 +141,8 @@ TextureImporter:
         y: 7
         width: 55
         height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.49090907, y: 0.11764707}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -160,11 +160,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 161
-        y: 7
+        y: 14
         width: 56
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -182,11 +182,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 289
-        y: 8
+        y: 15
         width: 55
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5090909, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,13 +203,13 @@ TextureImporter:
       name: RUN (FLAMING SWORD)_3
       rect:
         serializedVersion: 2
-        x: 420
+        x: 419
         y: 7
         width: 51
         height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.50980395, y: 0.09615385}
+      border: {x: 0, y: 5, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -226,12 +226,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 548
-        y: 5
+        y: 4
         width: 52
         height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.094339624}
+      border: {x: 0, y: 5, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -251,9 +251,9 @@ TextureImporter:
         y: 8
         width: 54
         height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.078431375}
+      border: {x: 0, y: 4, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -273,9 +273,9 @@ TextureImporter:
         y: 8
         width: 55
         height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.49090907, y: 0.07692308}
+      border: {x: 0, y: 4, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -292,12 +292,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 932
-        y: 7
+        y: 8
         width: 51
         height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.50980395, y: 0.07692308}
+      border: {x: 0, y: 4, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9f1bf3878ef4fa146ae767c2da8723aa
     internalID: 0
     vertices: []
     indices: 

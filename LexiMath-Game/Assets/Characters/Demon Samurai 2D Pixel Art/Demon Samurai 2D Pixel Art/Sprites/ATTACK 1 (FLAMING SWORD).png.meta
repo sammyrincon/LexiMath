@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -93,7 +93,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -137,12 +137,12 @@ TextureImporter:
       name: ATTACK 1 (FLAMING SWORD)_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 11
-        width: 64
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 26
+        y: 12
+        width: 62
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: ATTACK 1 (FLAMING SWORD)_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 11
-        width: 64
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 153
+        y: 12
+        width: 62
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: ATTACK 1 (FLAMING SWORD)_2
       rect:
         serializedVersion: 2
-        x: 280
-        y: 11
-        width: 64
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 281
+        y: 12
+        width: 62
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: ATTACK 1 (FLAMING SWORD)_3
       rect:
         serializedVersion: 2
-        x: 425
-        y: 11
-        width: 68
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 426
+        y: 12
+        width: 66
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: ATTACK 1 (FLAMING SWORD)_4
       rect:
         serializedVersion: 2
-        x: 561
-        y: 11
-        width: 60
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 562
+        y: 12
+        width: 58
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: ATTACK 1 (FLAMING SWORD)_5
       rect:
         serializedVersion: 2
-        x: 689
-        y: 11
-        width: 52
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 690
+        y: 12
+        width: 50
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,11 +269,11 @@ TextureImporter:
       name: ATTACK 1 (FLAMING SWORD)_6
       rect:
         serializedVersion: 2
-        x: 733
-        y: 34
-        width: 9
-        height: 7
-      alignment: 0
+        x: 734
+        y: 35
+        width: 7
+        height: 5
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -291,12 +291,12 @@ TextureImporter:
       name: ATTACK 1 (FLAMING SWORD)_7
       rect:
         serializedVersion: 2
-        x: 817
-        y: 11
-        width: 49
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 818
+        y: 12
+        width: 47
+        height: 57
+      alignment: 9
+      pivot: {x: 0.48936167, y: -0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 41030326c4ddf7a46a66d3e892057352
     internalID: 0
     vertices: []
     indices: 
@@ -321,7 +321,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       ATTACK 1 (FLAMING SWORD)_0: 2047307306033424355
       ATTACK 1 (FLAMING SWORD)_1: -496707884526086150

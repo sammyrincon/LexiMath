@@ -1,0 +1,1250 @@
+fileFormatVersion: 2
+guid: 546fbcb258468af47a4ef471c2f72395
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4092026268259594448
+    second: OceanKnight_MagicAttack_0
+  - first:
+      213: 1101547255100703046
+    second: OceanKnight_MagicAttack_1
+  - first:
+      213: -7791813912782107564
+    second: OceanKnight_MagicAttack_2
+  - first:
+      213: -7324708648646342445
+    second: OceanKnight_MagicAttack_3
+  - first:
+      213: 7706498057569251289
+    second: OceanKnight_MagicAttack_4
+  - first:
+      213: -5368809391203624610
+    second: OceanKnight_MagicAttack_5
+  - first:
+      213: 6212268725098469365
+    second: OceanKnight_MagicAttack_6
+  - first:
+      213: 2553360065132021054
+    second: OceanKnight_MagicAttack_7
+  - first:
+      213: 5737438311651740557
+    second: OceanKnight_MagicAttack_8
+  - first:
+      213: -7195264564362525393
+    second: OceanKnight_MagicAttack_9
+  - first:
+      213: -8788544221263331563
+    second: OceanKnight_MagicAttack_10
+  - first:
+      213: 4422883983708369140
+    second: OceanKnight_MagicAttack_11
+  - first:
+      213: -4036727805390027904
+    second: OceanKnight_MagicAttack_12
+  - first:
+      213: -2000125513509579245
+    second: OceanKnight_MagicAttack_13
+  - first:
+      213: 1762735299480520903
+    second: OceanKnight_MagicAttack_14
+  - first:
+      213: -8473329020753798367
+    second: OceanKnight_MagicAttack_15
+  - first:
+      213: 5877839370421236306
+    second: OceanKnight_MagicAttack_16
+  - first:
+      213: 3849258619439117031
+    second: OceanKnight_MagicAttack_17
+  - first:
+      213: 8033820743100756916
+    second: OceanKnight_MagicAttack_18
+  - first:
+      213: -7774617436764161008
+    second: OceanKnight_MagicAttack_19
+  - first:
+      213: -8875176184131795333
+    second: OceanKnight_MagicAttack_20
+  - first:
+      213: -7741731451657137242
+    second: OceanKnight_MagicAttack_21
+  - first:
+      213: -6802736981032562873
+    second: OceanKnight_MagicAttack_22
+  - first:
+      213: 7539467829260739148
+    second: OceanKnight_MagicAttack_23
+  - first:
+      213: 2312071628158178637
+    second: OceanKnight_MagicAttack_24
+  - first:
+      213: -7123440099616240885
+    second: OceanKnight_MagicAttack_25
+  - first:
+      213: -3402323180394633256
+    second: OceanKnight_MagicAttack_26
+  - first:
+      213: -1591762529753765315
+    second: OceanKnight_MagicAttack_27
+  - first:
+      213: 57110281507695912
+    second: OceanKnight_MagicAttack_28
+  - first:
+      213: 1652526768589294645
+    second: OceanKnight_MagicAttack_29
+  - first:
+      213: -5789547130258802793
+    second: OceanKnight_MagicAttack_30
+  - first:
+      213: 8902498566947109673
+    second: OceanKnight_MagicAttack_31
+  - first:
+      213: 6871390687309960629
+    second: OceanKnight_MagicAttack_32
+  - first:
+      213: 676764076572928627
+    second: OceanKnight_MagicAttack_33
+  - first:
+      213: 8675985548006528968
+    second: OceanKnight_MagicAttack_34
+  - first:
+      213: 6844810103090126215
+    second: OceanKnight_MagicAttack_35
+  - first:
+      213: -5673547096966309583
+    second: OceanKnight_MagicAttack_36
+  - first:
+      213: 7423046658266486477
+    second: OceanKnight_MagicAttack_37
+  - first:
+      213: 1841545692568346376
+    second: OceanKnight_MagicAttack_38
+  - first:
+      213: -8056495083626897647
+    second: OceanKnight_MagicAttack_39
+  - first:
+      213: 3536432050238331541
+    second: OceanKnight_MagicAttack_40
+  - first:
+      213: -7128795967101863470
+    second: OceanKnight_MagicAttack_41
+  - first:
+      213: -3011336535642569068
+    second: OceanKnight_MagicAttack_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 71
+        width: 76
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fc1dc1ac33637c0800000000000000
+      internalID: -4092026268259594448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 71
+        width: 79
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641859b646b794f00800000000000000
+      internalID: 1101547255100703046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 70
+        width: 79
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c0da4778aedd390800000000000000
+      internalID: -7791813912782107564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_3
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 68
+        width: 78
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d80432ca48695a90800000000000000
+      internalID: -7324708648646342445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_4
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 66
+        width: 78
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df27af072bf2fa60800000000000000
+      internalID: 7706498057569251289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_5
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 63
+        width: 78
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59d68acd482e75b0800000000000000
+      internalID: -5368809391203624610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_6
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 65
+        width: 79
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f753c0dd79663650800000000000000
+      internalID: 6212268725098469365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_7
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 63
+        width: 80
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35ccd1737b5f6320800000000000000
+      internalID: 2553360065132021054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_8
+      rect:
+        serializedVersion: 2
+        x: 2402
+        y: 63
+        width: 81
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b08b60fb97f9f40800000000000000
+      internalID: 5737438311651740557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_9
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 63
+        width: 88
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2547383009452c90800000000000000
+      internalID: -7195264564362525393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_10
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 63
+        width: 101
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f79ce2891d80680800000000000000
+      internalID: -8788544221263331563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_11
+      rect:
+        serializedVersion: 2
+        x: 3266
+        y: 63
+        width: 102
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0b3bbbc8d316d30800000000000000
+      internalID: 4422883983708369140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_12
+      rect:
+        serializedVersion: 2
+        x: 3554
+        y: 63
+        width: 102
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08309c0d279aaf7c0800000000000000
+      internalID: -4036727805390027904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_13
+      rect:
+        serializedVersion: 2
+        x: 3842
+        y: 63
+        width: 98
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316d01d41702e34e0800000000000000
+      internalID: -2000125513509579245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_14
+      rect:
+        serializedVersion: 2
+        x: 4130
+        y: 63
+        width: 78
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8049e5a6e767810800000000000000
+      internalID: 1762735299480520903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_15
+      rect:
+        serializedVersion: 2
+        x: 4418
+        y: 63
+        width: 78
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b16f43620b86a80800000000000000
+      internalID: -8473329020753798367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_16
+      rect:
+        serializedVersion: 2
+        x: 4706
+        y: 63
+        width: 78
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25273c8e3c7429150800000000000000
+      internalID: 5877839370421236306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_17
+      rect:
+        serializedVersion: 2
+        x: 4994
+        y: 63
+        width: 78
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e27744f1505b6530800000000000000
+      internalID: 3849258619439117031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_18
+      rect:
+        serializedVersion: 2
+        x: 5282
+        y: 63
+        width: 78
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b37fad966ddd7f60800000000000000
+      internalID: 8033820743100756916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_19
+      rect:
+        serializedVersion: 2
+        x: 5570
+        y: 63
+        width: 97
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c3d1902a20b1490800000000000000
+      internalID: -7774617436764161008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_20
+      rect:
+        serializedVersion: 2
+        x: 5858
+        y: 58
+        width: 138
+        height: 130
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7641d1884a05d480800000000000000
+      internalID: -8875176184131795333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_21
+      rect:
+        serializedVersion: 2
+        x: 6146
+        y: 58
+        width: 167
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3d18d1348df8490800000000000000
+      internalID: -7741731451657137242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_22
+      rect:
+        serializedVersion: 2
+        x: 6434
+        y: 58
+        width: 144
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f042912c2d791a0800000000000000
+      internalID: -6802736981032562873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_23
+      rect:
+        serializedVersion: 2
+        x: 6722
+        y: 57
+        width: 175
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42629e7b0291a860800000000000000
+      internalID: 7539467829260739148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_24
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 101
+        width: 8
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4590ab55e0261020800000000000000
+      internalID: 2312071628158178637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_25
+      rect:
+        serializedVersion: 2
+        x: 6881
+        y: 78
+        width: 20
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0bc99398f4742d90800000000000000
+      internalID: -7123440099616240885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_26
+      rect:
+        serializedVersion: 2
+        x: 7010
+        y: 56
+        width: 179
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7208df71588c0d0800000000000000
+      internalID: -3402323180394633256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_27
+      rect:
+        serializedVersion: 2
+        x: 7306
+        y: 56
+        width: 72
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3aef37a96ce8e9e0800000000000000
+      internalID: -1591762529753765315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_28
+      rect:
+        serializedVersion: 2
+        x: 7596
+        y: 52
+        width: 165
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82de94a9f75eac000800000000000000
+      internalID: 57110281507695912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_29
+      rect:
+        serializedVersion: 2
+        x: 6577
+        y: 93
+        width: 6
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cc69f2754fee610800000000000000
+      internalID: 1652526768589294645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_30
+      rect:
+        serializedVersion: 2
+        x: 6584
+        y: 68
+        width: 25
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797ba823f8567afa0800000000000000
+      internalID: -5789547130258802793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_31
+      rect:
+        serializedVersion: 2
+        x: 6571
+        y: 77
+        width: 12
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b7e4877470c8b70800000000000000
+      internalID: 8902498566947109673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_32
+      rect:
+        serializedVersion: 2
+        x: 6579
+        y: 80
+        width: 6
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b599068c651c5f50800000000000000
+      internalID: 6871390687309960629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_33
+      rect:
+        serializedVersion: 2
+        x: 6590
+        y: 61
+        width: 20
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37aefdc8759546900800000000000000
+      internalID: 676764076572928627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_34
+      rect:
+        serializedVersion: 2
+        x: 7377
+        y: 60
+        width: 11
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c71a5973ea476870800000000000000
+      internalID: 8675985548006528968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_35
+      rect:
+        serializedVersion: 2
+        x: 7389
+        y: 64
+        width: 8
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d11bdf586adfe50800000000000000
+      internalID: 6844810103090126215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_36
+      rect:
+        serializedVersion: 2
+        x: 7397
+        y: 60
+        width: 7
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139dfdc99f28341b0800000000000000
+      internalID: -5673547096966309583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_37
+      rect:
+        serializedVersion: 2
+        x: 7068
+        y: 55
+        width: 17
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6df115b95f30760800000000000000
+      internalID: 7423046658266486477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_38
+      rect:
+        serializedVersion: 2
+        x: 7357
+        y: 52
+        width: 45
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fdf2bec0c7e8910800000000000000
+      internalID: 1841545692568346376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_39
+      rect:
+        serializedVersion: 2
+        x: 7401
+        y: 53
+        width: 13
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fdcb51864913090800000000000000
+      internalID: -8056495083626897647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_40
+      rect:
+        serializedVersion: 2
+        x: 7416
+        y: 53
+        width: 18
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a13ce763ee31130800000000000000
+      internalID: 3536432050238331541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_41
+      rect:
+        serializedVersion: 2
+        x: 7436
+        y: 55
+        width: 18
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9f7a086dd611d90800000000000000
+      internalID: -7128795967101863470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_MagicAttack_42
+      rect:
+        serializedVersion: 2
+        x: 7457
+        y: 56
+        width: 18
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4968ed520659536d0800000000000000
+      internalID: -3011336535642569068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0a68ccdf857adbd4080f037ef83d71d8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      OceanKnight_MagicAttack_0: -4092026268259594448
+      OceanKnight_MagicAttack_1: 1101547255100703046
+      OceanKnight_MagicAttack_10: -8788544221263331563
+      OceanKnight_MagicAttack_11: 4422883983708369140
+      OceanKnight_MagicAttack_12: -4036727805390027904
+      OceanKnight_MagicAttack_13: -2000125513509579245
+      OceanKnight_MagicAttack_14: 1762735299480520903
+      OceanKnight_MagicAttack_15: -8473329020753798367
+      OceanKnight_MagicAttack_16: 5877839370421236306
+      OceanKnight_MagicAttack_17: 3849258619439117031
+      OceanKnight_MagicAttack_18: 8033820743100756916
+      OceanKnight_MagicAttack_19: -7774617436764161008
+      OceanKnight_MagicAttack_2: -7791813912782107564
+      OceanKnight_MagicAttack_20: -8875176184131795333
+      OceanKnight_MagicAttack_21: -7741731451657137242
+      OceanKnight_MagicAttack_22: -6802736981032562873
+      OceanKnight_MagicAttack_23: 7539467829260739148
+      OceanKnight_MagicAttack_24: 2312071628158178637
+      OceanKnight_MagicAttack_25: -7123440099616240885
+      OceanKnight_MagicAttack_26: -3402323180394633256
+      OceanKnight_MagicAttack_27: -1591762529753765315
+      OceanKnight_MagicAttack_28: 57110281507695912
+      OceanKnight_MagicAttack_29: 1652526768589294645
+      OceanKnight_MagicAttack_3: -7324708648646342445
+      OceanKnight_MagicAttack_30: -5789547130258802793
+      OceanKnight_MagicAttack_31: 8902498566947109673
+      OceanKnight_MagicAttack_32: 6871390687309960629
+      OceanKnight_MagicAttack_33: 676764076572928627
+      OceanKnight_MagicAttack_34: 8675985548006528968
+      OceanKnight_MagicAttack_35: 6844810103090126215
+      OceanKnight_MagicAttack_36: -5673547096966309583
+      OceanKnight_MagicAttack_37: 7423046658266486477
+      OceanKnight_MagicAttack_38: 1841545692568346376
+      OceanKnight_MagicAttack_39: -8056495083626897647
+      OceanKnight_MagicAttack_4: 7706498057569251289
+      OceanKnight_MagicAttack_40: 3536432050238331541
+      OceanKnight_MagicAttack_41: -7128795967101863470
+      OceanKnight_MagicAttack_42: -3011336535642569068
+      OceanKnight_MagicAttack_5: -5368809391203624610
+      OceanKnight_MagicAttack_6: 6212268725098469365
+      OceanKnight_MagicAttack_7: 2553360065132021054
+      OceanKnight_MagicAttack_8: 5737438311651740557
+      OceanKnight_MagicAttack_9: -7195264564362525393
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
