@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy
+  - PlayerHead
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - UI
   - Enemy
   - 'Ground '
-  - 
+  - Player
   - 
   - 
   - 
@@ -41,6 +42,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fondo
+    uniqueID: 2616316957
+    locked: 0
+  - name: 'Piso '
+    uniqueID: 3928155349
+    locked: 0
+  - name: Enemigos
+    uniqueID: 2355515505
+    locked: 0
+  - name: Jugador
+    uniqueID: 2712581339
+    locked: 0
+  - name: Vehiculos
+    uniqueID: 3408957627
+    locked: 0
+  - name: Boss
+    uniqueID: 4206940691
     locked: 0
   m_RenderingLayers:
   - Default

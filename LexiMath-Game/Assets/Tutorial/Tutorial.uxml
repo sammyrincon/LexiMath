@@ -1,0 +1,206 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Tutorial/Tutorial.uss"/>
+
+    <!-- ROOT -->
+    <ui:VisualElement name="tutorial-root" class="tutorial-root">
+
+        <!-- ══ BARRA SUPERIOR ══════════════════════════════════════════ -->
+        <ui:VisualElement name="top-bar" class="top-bar">
+
+            <!-- Progress dots -->
+            <ui:VisualElement name="progress-container" class="progress-container">
+                <ui:VisualElement name="step-dot-1" class="step-dot step-active">
+                    <ui:Label text="1" name="dot-label-1" class="dot-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="progress-line-1" class="progress-line"/>
+                <ui:VisualElement name="step-dot-2" class="step-dot step-pending">
+                    <ui:Label text="2" name="dot-label-2" class="dot-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="progress-line-2" class="progress-line"/>
+                <ui:VisualElement name="step-dot-3" class="step-dot step-pending">
+                    <ui:Label text="3" name="dot-label-3" class="dot-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="progress-line-3" class="progress-line"/>
+                <ui:VisualElement name="step-dot-4" class="step-dot step-pending">
+                    <ui:Label text="4" name="dot-label-4" class="dot-label"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Nombre del paso actual -->
+            <ui:Label name="label-paso-actual" text="PASO 1: MOVER" class="label-paso"/>
+
+        </ui:VisualElement>
+
+        <!-- ══ PANEL PASO 1: MOVIMIENTO ═══════════════════════════════ -->
+        <ui:VisualElement name="panel-movimiento" class="panel-overlay">
+
+            <!-- Info: Saltar -->
+            <ui:VisualElement name="panel-info-saltar" class="info-box info-box-left">
+                <ui:Label text="Saltar" class="info-titulo"/>
+                <ui:Label text="Salta 2 veces para un salto doble" class="info-desc"/>
+            </ui:VisualElement>
+
+            <!-- Info: Espada -->
+            <ui:VisualElement name="panel-info-espada" class="info-box info-box-center">
+                <ui:Label text="⚔ ESPADA: 0 ataques&#10;Empieza sin espada.&#10;Responde bien → +5 ataques&#10;Sin espada: ¡salta encima!" class="info-desc"/>
+            </ui:VisualElement>
+
+            <!-- Info: Monedas -->
+            <ui:VisualElement name="panel-info-monedas" class="info-box info-box-right">
+                <ui:Label text="Ganas espadas al responder bien" class="info-desc info-verde"/>
+            </ui:VisualElement>
+
+            <!-- Info: Brinca -->
+            <ui:VisualElement name="panel-info-brinca" class="info-box info-box-brinca">
+                <ui:Label text="⬇ ¡BRINCA!" class="info-titulo info-amarillo"/>
+            </ui:VisualElement>
+
+            <!-- Checks de progreso -->
+            <ui:VisualElement name="checks-container" class="checks-container">
+                <ui:VisualElement name="check-mov-0" class="check-item check-pendiente">
+                    <ui:Label text="← → Mover" class="check-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="check-mov-1" class="check-item check-pendiente">
+                    <ui:Label text="↑ Saltar" class="check-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="check-mov-2" class="check-item check-pendiente">
+                    <ui:Label text="X Atacar" class="check-label"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <!-- ══ PANEL PASO 2: PREGUNTAS ════════════════════════════════ -->
+        <ui:VisualElement name="panel-preguntas" class="panel-overlay panel-oculto">
+
+            <!-- Caja principal de pregunta -->
+            <ui:VisualElement name="question-box" class="question-box">
+                <ui:Label name="label-pregunta" text="4 × 2 = ?" class="label-pregunta"/>
+
+                <ui:VisualElement name="answers-row" class="answers-row">
+                    <ui:Button name="btn-respuesta-0" text="6" class="btn-respuesta"/>
+                    <ui:Button name="btn-respuesta-1" text="8" class="btn-respuesta"/>
+                    <ui:Button name="btn-respuesta-2" text="9" class="btn-respuesta"/>
+                </ui:VisualElement>
+
+                <ui:Label text="Salta para responder" class="label-instruccion-pregunta"/>
+            </ui:VisualElement>
+
+            <!-- Panel: Cómo responder -->
+            <ui:VisualElement name="panel-como-responder" class="info-box info-box-derecha-oscura">
+                <ui:Label text="¿CÓMO RESPONDER?" class="info-titulo-oscuro"/>
+                <ui:Label text="1. Lee la pregunta&#10;2. Muévete al número&#10;3. ¡Salta encima!" class="info-desc-oscuro"/>
+            </ui:VisualElement>
+
+            <!-- Panel resultado -->
+            <ui:VisualElement name="panel-resultado" class="panel-oculto">
+                <ui:Label name="label-resultado" text="" class="label-resultado resultado-correcto"/>
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <!-- ══ PANEL PASO 3: PODERES ══════════════════════════════════ -->
+        <ui:VisualElement name="panel-poderes" class="panel-overlay panel-oculto">
+
+            <ui:Label text="✕ ELIGE TU PODER" class="titulo-poderes"/>
+
+            <ui:VisualElement name="poderes-grid" class="poderes-grid">
+
+                <!-- Fuego -->
+                <ui:VisualElement name="card-poder-0" class="poder-card poder-fuego">
+                    <ui:VisualElement name="poder-arrows-0" class="poder-arrows">
+                        <ui:Label text="↑ ↑ ↑" class="arrows-label"/>
+                        <ui:Label text="3 saltos + confirmar" class="arrows-sub"/>
+                    </ui:VisualElement>
+                    <ui:Label text="🔥" class="poder-icon"/>
+                    <ui:Label text="FUEGO" class="poder-nombre"/>
+                    <ui:Label text="Quema al jefe&#10;3 veces seguidas" class="poder-desc"/>
+                    <ui:Label text="$ 500" class="poder-precio"/>
+                    <ui:Button name="btn-poder-0" text="COMPRAR" class="btn-comprar"/>
+                </ui:VisualElement>
+
+                <!-- Rayo -->
+                <ui:VisualElement name="card-poder-1" class="poder-card poder-rayo">
+                    <ui:VisualElement name="poder-arrows-1" class="poder-arrows">
+                        <ui:Label text="↑ ↑ ↑" class="arrows-label"/>
+                        <ui:Label text="3 saltos + confirmar" class="arrows-sub"/>
+                    </ui:VisualElement>
+                    <ui:Label text="⚡" class="poder-icon"/>
+                    <ui:Label text="RAYO" class="poder-nombre"/>
+                    <ui:Label text="Daño instantáneo" class="poder-desc"/>
+                    <ui:Label text="$ 500" class="poder-precio"/>
+                    <ui:Button name="btn-poder-1" text="COMPRAR" class="btn-comprar"/>
+                </ui:VisualElement>
+
+                <!-- Hielo -->
+                <ui:VisualElement name="card-poder-2" class="poder-card poder-hielo">
+                    <ui:VisualElement name="poder-arrows-2" class="poder-arrows">
+                        <ui:Label text="↑ ↑ ↑" class="arrows-label"/>
+                        <ui:Label text="3 saltos + confirmar" class="arrows-sub"/>
+                    </ui:VisualElement>
+                    <ui:Label text="❄" class="poder-icon"/>
+                    <ui:Label text="HIELO" class="poder-nombre"/>
+                    <ui:Label text="Congela al jefe&#10;5 segundos" class="poder-desc"/>
+                    <ui:Label text="$ 500" class="poder-precio"/>
+                    <ui:Button name="btn-poder-2" text="COMPRAR" class="btn-comprar"/>
+                </ui:VisualElement>
+
+                <!-- Mi Poder (guardado) -->
+                <ui:VisualElement name="card-poder-3" class="poder-card poder-mipoder poder-seleccionado">
+                    <ui:VisualElement name="poder-arrows-3" class="poder-arrows">
+                        <ui:Label text="↑ ↑ ↑" class="arrows-label"/>
+                        <ui:Label text="3 saltos + confirmar" class="arrows-sub"/>
+                    </ui:VisualElement>
+                    <ui:Label text="💎" class="poder-icon"/>
+                    <ui:Label text="MI PODER" class="poder-nombre poder-nombre-verde"/>
+                    <ui:Label text="Tu poder guardado en tu perfil" class="poder-desc"/>
+                    <ui:Label text="✓ GUARDADO" class="poder-precio poder-guardado"/>
+                    <ui:Button name="btn-poder-3" text="SELECCIONAR" class="btn-seleccionar"/>
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- ══ PANEL PASO 4: JEFE FINAL ═══════════════════════════════ -->
+        <ui:VisualElement name="panel-jefe" class="panel-overlay panel-oculto">
+
+            <ui:Label name="label-poder-activo" text="¡DERROTA AL JEFE!" class="titulo-jefe"/>
+            <ui:Label name="label-poder-carga" text="PODER: 100% — LISTO PARA USAR" class="label-carga"/>
+
+            <!-- Barra de vida del jefe (se actualiza desde TutorialHUD) -->
+            <ui:VisualElement name="boss-health-container" class="boss-health-container">
+                <ui:Label text="● JEFE FINAL" class="boss-health-label"/>
+                <ui:VisualElement name="boss-health-bar-bg" class="boss-health-bar-bg">
+                    <ui:VisualElement name="boss-health-bar-fill" class="boss-health-bar-fill"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Panel cómo ganar -->
+            <ui:VisualElement name="panel-como-ganar" class="info-box info-box-left">
+                <ui:Label text="¿CÓMO GANAR?" class="info-titulo-oscuro"/>
+                <ui:Label text="1. Usa tu poder elegido (✱)&#10;2. Ataca con la espada ⚔&#10;3. Salta sobre el jefe si&#10;   no tienes espada" class="info-desc-oscuro"/>
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <!-- ══ PANEL FINAL ════════════════════════════════════════════ -->
+        <ui:VisualElement name="panel-final" class="panel-final panel-oculto">
+            <ui:Label text="🎉 ¡TUTORIAL COMPLETADO!" class="titulo-final"/>
+            <ui:Label text="Cargando el juego..." class="subtitulo-final"/>
+        </ui:VisualElement>
+
+        <!-- ══ TRANSICIÓN (fade) ══════════════════════════════════════ -->
+        <ui:VisualElement name="panel-transicion" class="panel-transicion panel-oculto"/>
+
+        <!-- ══ HINT FLOTANTE ══════════════════════════════════════════ -->
+        <ui:Label name="label-hint" text="" class="label-hint panel-oculto"/>
+
+        <!-- ══ NAVEGACIÓN INFERIOR ═══════════════════════════════════ -->
+        <ui:VisualElement name="nav-bar" class="nav-bar">
+            <ui:Button name="btn-atras" text="← ATRÁS" class="btn-nav btn-atras"/>
+            <ui:Label name="label-contador" text="1 / 4" class="label-contador"/>
+            <ui:Button name="btn-siguiente" text="SIGUIENTE →" class="btn-nav btn-siguiente"/>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
