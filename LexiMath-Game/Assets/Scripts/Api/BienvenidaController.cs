@@ -41,7 +41,8 @@ public class BienvenidaController : MonoBehaviour
     }
 
     private void OnClickEmpezar() =>
-        SceneManager.LoadScene("TutorialScene");
+        // SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("MainMenu");
 
     private void OnClickCerrarSesion()
     {
