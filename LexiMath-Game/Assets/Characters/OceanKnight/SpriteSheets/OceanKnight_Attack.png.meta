@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 63a6929057c43ed4ea24dcb17a3eb21d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2505128586295883189
+    second: OceanKnight_Attack_0
+  - first:
+      213: -5791353477494392415
+    second: OceanKnight_Attack_1
+  - first:
+      213: 3768954975316445850
+    second: OceanKnight_Attack_2
+  - first:
+      213: -2505777857636990491
+    second: OceanKnight_Attack_3
+  - first:
+      213: 2630633289452671296
+    second: OceanKnight_Attack_4
+  - first:
+      213: -2257538833159957450
+    second: OceanKnight_Attack_5
+  - first:
+      213: 5296229168860837648
+    second: OceanKnight_Attack_6
+  - first:
+      213: 5028015388412629471
+    second: OceanKnight_Attack_7
+  - first:
+      213: 4557449984722379336
+    second: OceanKnight_Attack_8
+  - first:
+      213: 5251026690257953995
+    second: OceanKnight_Attack_9
+  - first:
+      213: 7908645519740448547
+    second: OceanKnight_Attack_10
+  - first:
+      213: -2214136761940297425
+    second: OceanKnight_Attack_11
+  - first:
+      213: 8665679304300575860
+    second: OceanKnight_Attack_12
+  - first:
+      213: -8292945487404853712
+    second: OceanKnight_Attack_13
+  - first:
+      213: 2420894595752243482
+    second: OceanKnight_Attack_14
+  - first:
+      213: 3632780821500524883
+    second: OceanKnight_Attack_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OceanKnight_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 72
+        width: 78
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a4821d2defb3dd0800000000000000
+      internalID: -2505128586295883189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 72
+        width: 78
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9393532baf0afa0800000000000000
+      internalID: -5791353477494392415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 72
+        width: 77
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5069604, y: 0.44975698}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a8d2ec4940e4430800000000000000
+      internalID: 3768954975316445850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 72
+        width: 61
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5161483, y: 0.29520756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1028d8050b93dd0800000000000000
+      internalID: -2505777857636990491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 72
+        width: 49
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5706787, y: 0.27397457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041d4200a03e18420800000000000000
+      internalID: 2630633289452671296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 72
+        width: 48
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5156657, y: 0.2812227}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634d9d6646c9ba0e0800000000000000
+      internalID: -2257538833159957450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 69
+        width: 120
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5095927, y: 0.34675524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01733035e5cff7940800000000000000
+      internalID: 5296229168860837648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 74
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd1588f2b5917c540800000000000000
+      internalID: 5028015388412629471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 68
+        width: 112
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5088392, y: 0.42356917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842acfc5d905f3f30800000000000000
+      internalID: 4557449984722379336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 67
+        width: 117
+        height: 43
+      alignment: 9
+      pivot: {x: 0.49048477, y: 0.62947524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4abe224f46fd840800000000000000
+      internalID: 5251026690257953995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 66
+        width: 87
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5012123, y: 0.68075687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f2d9ac23721cd60800000000000000
+      internalID: 7908645519740448547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 65
+        width: 85
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5163201, y: 0.6429142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f293a64985ec541e0800000000000000
+      internalID: -2214136761940297425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 59
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c3a4e1a6da24870800000000000000
+      internalID: 8665679304300575860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 3292
+        y: 67
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0361e81640a89ec80800000000000000
+      internalID: -8292945487404853712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 3298
+        y: 70
+        width: 45
+        height: 48
+      alignment: 9
+      pivot: {x: 0.50667316, y: 0.5834219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11b972feceb89120800000000000000
+      internalID: 2420894595752243482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Attack_15
+      rect:
+        serializedVersion: 2
+        x: 3557
+        y: 70
+        width: 74
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359f36ce8ea3a6230800000000000000
+      internalID: 3632780821500524883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: adda716bbda16bb47864b6dae901d9e9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      OceanKnight_Attack_0: -2505128586295883189
+      OceanKnight_Attack_1: -5791353477494392415
+      OceanKnight_Attack_10: 7908645519740448547
+      OceanKnight_Attack_11: -2214136761940297425
+      OceanKnight_Attack_12: 8665679304300575860
+      OceanKnight_Attack_13: -8292945487404853712
+      OceanKnight_Attack_14: 2420894595752243482
+      OceanKnight_Attack_15: 3632780821500524883
+      OceanKnight_Attack_2: 3768954975316445850
+      OceanKnight_Attack_3: -2505777857636990491
+      OceanKnight_Attack_4: 2630633289452671296
+      OceanKnight_Attack_5: -2257538833159957450
+      OceanKnight_Attack_6: 5296229168860837648
+      OceanKnight_Attack_7: 5028015388412629471
+      OceanKnight_Attack_8: 4557449984722379336
+      OceanKnight_Attack_9: 5251026690257953995
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
