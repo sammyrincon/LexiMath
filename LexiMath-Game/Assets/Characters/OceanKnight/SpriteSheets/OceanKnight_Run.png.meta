@@ -131,12 +131,12 @@ TextureImporter:
       name: OceanKnight_Run_0
       rect:
         serializedVersion: 2
-        x: 101
-        y: 71
-        width: 65
-        height: 57
+        x: 102
+        y: 72
+        width: 63
+        height: 55
       alignment: 9
-      pivot: {x: 0.5000005, y: 0}
+      pivot: {x: 0.49805027, y: 0.4668758}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -154,11 +154,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 390
-        y: 70
-        width: 65
-        height: 56
+        y: 72
+        width: 63
+        height: 54
       alignment: 9
-      pivot: {x: 0.5000005, y: 0}
+      pivot: {x: 0.49, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -176,11 +176,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 677
-        y: 71
-        width: 66
-        height: 55
+        y: 72
+        width: 64
+        height: 53
       alignment: 9
-      pivot: {x: 0.50145096, y: -0.0019162265}
+      pivot: {x: 0.4956951, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: OceanKnight_Run_3
       rect:
         serializedVersion: 2
-        x: 964
-        y: 71
-        width: 65
-        height: 57
+        x: 963
+        y: 72
+        width: 63
+        height: 55
       alignment: 9
-      pivot: {x: 0.49999812, y: 0.003851873}
+      pivot: {x: 0.50337726, y: 0.49}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: OceanKnight_Run_4
       rect:
         serializedVersion: 2
-        x: 1253
-        y: 71
-        width: 65
-        height: 57
+        x: 1254
+        y: 72
+        width: 63
+        height: 55
       alignment: 9
-      pivot: {x: 0.50000376, y: 0.003851873}
+      pivot: {x: 0.49200538, y: 0.49}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: OceanKnight_Run_5
       rect:
         serializedVersion: 2
-        x: 1541
-        y: 71
-        width: 65
-        height: 55
+        x: 1542
+        y: 72
+        width: 63
+        height: 53
       alignment: 9
-      pivot: {x: 0.4946871, y: 0.0038518733}
+      pivot: {x: 0.51598924, y: 0.49}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,28 +255,6 @@ TextureImporter:
       bones: []
       spriteID: 0dd7e3a266a375420800000000000000
       internalID: 2618625918809046480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OceanKnight_Run_6
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 27
-        width: 2
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3676d25ecfe07824c96736ac9f38f544
-      internalID: 668444606
       vertices: []
       indices: 
       edges: []
@@ -293,7 +271,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       OceanKnight_Run_0: 5826085024209501017
       OceanKnight_Run_1: 355595887204137560
@@ -301,7 +281,6 @@ TextureImporter:
       OceanKnight_Run_3: 8851625547947149024
       OceanKnight_Run_4: -3922305931008605656
       OceanKnight_Run_5: 2618625918809046480
-      OceanKnight_Run_6: 668444606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

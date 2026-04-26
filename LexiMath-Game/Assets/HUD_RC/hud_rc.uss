@@ -17,7 +17,7 @@
 }
 
 .health-frame {
-    background-image: url("project://database/Assets/HUD/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=2800000&guid=dce6f5913aa8921429fe5181db32e07c&type=3#health_bar_decoration");
+    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=2800000&guid=dce6f5913aa8921429fe5181db32e07c&type=3#health_bar_decoration");
     background-size: 100px 25px;
     width: 150px;
     height: 40px;
@@ -28,12 +28,14 @@
 }
 
 .menu-container {
+    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=2800000&guid=dce6f5913aa8921429fe5181db32e07c&type=3#health_bar_decoration");
 }
 
 .main-hud {
 }
 
 .settings-overlay {
+    display: flex;
 }
 
 .health-bar-fill {
@@ -45,7 +47,7 @@
     width: 76px;
     height: 15px;
     background-size: 100% 100%;
-    background-image: url("project://database/Assets/HUD/Hearts/Hearts/PNG/health_bar/health_bar.png?fileID=2800000&guid=cc2ae19d769fb4342930af1239ad2a63&type=3#health_bar");
+    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar.png?fileID=2800000&guid=cc2ae19d769fb4342930af1239ad2a63&type=3#health_bar");
     -unity-background-scale-mode: scale-and-crop;
     left: 47px;
     background-color: rgba(0, 0, 0, 0);
@@ -263,9 +265,10 @@
     width: 400px;
     height: 300px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("project://database/Assets/HUD/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/2%20-%20Gold/Pixel%20Book/Sprites/Open%20&%20Close/Open/1.png?fileID=2800000&guid=eec0ce09a0161f244b1ac153e82674ff&type=3#1");
+    background-image: url("project://database/Assets/HUD_RC/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/1%20-%20Brown/Pixel%20Book/Sprites/Open%20&%20Close/Close/8.png?fileID=2800000&guid=c910b2ef899629e45a31d1a4b5803294&type=3#8");
     -unity-background-scale-mode: scale-to-fit;
     position: absolute;
+    display: flex;
 }
 
 .buttons-container {
@@ -647,9 +650,6 @@
     border-bottom-color: rgba(0, 0, 0, 0);
 }
 
-
-
-
 .danger-frame {
     position: absolute;
     left: 0;
@@ -664,7 +664,6 @@
 .danger-hidden {
     display: none;
 }
-
 
 .gameover-panel {
     position: absolute;
@@ -727,6 +726,7 @@
     background-color: rgb(80, 100, 220);
     border-color: rgb(40, 60, 160);
 }
+
 .gameover-btn-menu:hover {
     background-color: rgb(100, 120, 240);
 }
@@ -735,19 +735,24 @@
     background-color: rgb(200, 100, 20);
     border-color: rgb(120, 60, 10);
 }
+
 .gameover-btn-retry:hover {
     background-color: rgb(220, 120, 30);
 }
+
 .math-overlay {
     position: absolute;
-    left: 0; right: 0; top: 0; bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
     align-items: center;
     justify-content: center;
 }
 
 .panel-box {
-    background-color: rgb(30, 30, 46); 
+    background-color: rgb(30, 30, 46);
     border-width: 4px;
     border-color: rgb(15, 15, 25);
     border-radius: 12px;
@@ -782,7 +787,7 @@
     width: 48%;
     height: 50px;
     margin-bottom: 10px;
-    background-color: rgb(90, 124, 250); 
+    background-color: rgb(90, 124, 250);
     color: white;
     font-size: 18px;
     -unity-font-style: bold;
@@ -798,11 +803,87 @@
 .hint-button {
     width: 100%;
     height: 40px;
-    background-color: rgb(244, 196, 83); 
+    background-color: rgb(244, 196, 83);
     color: white;
     font-size: 16px;
     -unity-font-style: bold;
     border-radius: 4px;
     border-bottom-width: 4px;
     border-bottom-color: rgb(200, 150, 50);
+}
+.guide-overlay {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-box {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(245, 230, 190); 
+    border-width: 6px;
+    border-color: rgb(100, 60, 20);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.guide-title {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(80, 40, 10);
+    -unity-text-align: middle-center;
+    margin-bottom: 10px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(100, 60, 20);
+}
+
+.guide-content {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.section-header {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: rgb(150, 50, 20);
+    margin-top: 15px;
+}
+
+.guide-text {
+    font-size: 14px;
+    color: rgb(40, 40, 40);
+    white-space: normal;
+    margin-bottom: 10px;
+}
+
+.guide-close-btn {
+    height: 40px;
+    background-color: rgb(120, 70, 30);
+    color: white;
+    -unity-font-style: bold;
+    border-radius: 5px;
+}
+
+.guide-content .unity-base-slider__dragger {
+    background-color: rgb(120, 70, 30); 
+    border-width: 0;
+    border-radius: 4px;
+    width: 8px;
+}
+
+.guide-content .unity-base-slider__tracker {
+    background-color: rgba(100, 60, 20, 0.15);
+    border-width: 0;
+    border-radius: 4px;
+}
+
+.guide-content .unity-base-slider__dragger:hover {
+    background-color: rgb(150, 90, 40); 
+}
+
+.guide-content .unity-scroller__low-button,
+.guide-content .unity-scroller__high-button {
+    display: none;
 }

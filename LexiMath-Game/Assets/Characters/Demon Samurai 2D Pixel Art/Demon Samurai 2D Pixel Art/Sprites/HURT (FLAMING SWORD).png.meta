@@ -125,12 +125,12 @@ TextureImporter:
       name: HURT (FLAMING SWORD)_0
       rect:
         serializedVersion: 2
-        x: 45
-        y: 11
-        width: 37
-        height: 51
-      alignment: 9
-      pivot: {x: 0.43243244, y: 0.039215688}
+        x: 46
+        y: 12
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: HURT (FLAMING SWORD)_1
       rect:
         serializedVersion: 2
-        x: 173
-        y: 11
-        width: 37
-        height: 51
-      alignment: 9
-      pivot: {x: 0.3783784, y: 0.019607844}
+        x: 174
+        y: 12
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: HURT (FLAMING SWORD)_2
       rect:
         serializedVersion: 2
-        x: 302
-        y: 11
-        width: 40
-        height: 51
-      alignment: 9
-      pivot: {x: 0.3, y: 0.019607844}
+        x: 303
+        y: 12
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: HURT (FLAMING SWORD)_3
       rect:
         serializedVersion: 2
-        x: 432
-        y: 11
-        width: 39
-        height: 51
-      alignment: 9
-      pivot: {x: 0.51282054, y: 0}
+        x: 433
+        y: 12
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,7 +221,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       HURT (FLAMING SWORD)_0: -7538709160421141474
       HURT (FLAMING SWORD)_1: 4246100150918717534

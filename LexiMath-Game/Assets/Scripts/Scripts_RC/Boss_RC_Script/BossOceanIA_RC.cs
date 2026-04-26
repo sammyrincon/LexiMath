@@ -25,6 +25,15 @@ public class BossOceanIA : MonoBehaviour
     public int cantidadACurar = 50;
     public int limiteSaludParaCurar = 100; 
 
+    [Header("Configuración de Audio")]
+    public AudioSource audioSource;
+    public AudioClip sonidoCaminar;
+    public AudioClip sonidoAtaqueNormal;
+    public AudioClip sonidoMagia;
+    public AudioClip sonidoCura;
+    public AudioClip sonidoDolor;
+    public AudioClip sonidoMuerte;
+
     // Referencias a los componentes (Automáticas)
     private Animator animator;
     private Transform jugador;
@@ -37,24 +46,25 @@ public class BossOceanIA : MonoBehaviour
 
     void Start()
     {
-        // 1. Buscar al Jugador
         GameObject objetoJugador = GameObject.FindGameObjectWithTag("Player");
         if (objetoJugador != null)
         {
             jugador = objetoJugador.transform;
         }
 
-        // 2. Enlazar componentes del cuerpo
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         miSalud = GetComponent<Sistema_Salud_RC>(); 
+        
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
 
-        // 3. AUTOMATIZACIÓN DE ARMAS (Con tus nombres exactos)
         ArmaEnemigoRC[] todasLasArmas = GetComponentsInChildren<ArmaEnemigoRC>();
         
         foreach (ArmaEnemigoRC arma in todasLasArmas)
         {
-            // Nombres actualizados según tu jerarquía
             if (arma.gameObject.name == "Hitbox_Attack")
             {
                 hitboxAtaqueNormal = arma;
@@ -79,10 +89,6 @@ public class BossOceanIA : MonoBehaviour
 
         if (direccion.x < 0) spriteRenderer.flipX = true;
         else if (direccion.x > 0) spriteRenderer.flipX = false;
-
-        // ==========================================
-        // ÁRBOL DE DECISIONES DE LA IA
-        // ==========================================
 
         if (miSalud.saludActual <= limiteSaludParaCurar && temporizadorCura >= cooldownCura)
         {
@@ -119,10 +125,7 @@ public class BossOceanIA : MonoBehaviour
     {
         animator.SetFloat("Speed", 0f);
     }
-
-    // ==========================================
-    // DAÑO POR CONTACTO FÍSICO
-    // ==========================================
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -135,10 +138,8 @@ public class BossOceanIA : MonoBehaviour
         }
     }
 
-    // ==========================================
-    // PUENTE PARA LOS EVENTOS DE ANIMACIÓN
-    // ==========================================
-    
+    // --- EVENTOS PARA ACTIVAR/DESACTIVAR HITBOXES (Ya no tienen audio) ---
+
     public void PrenderAtaqueNormal()
     {
         if (hitboxAtaqueNormal != null) hitboxAtaqueNormal.ActivarHitbox();
@@ -157,5 +158,43 @@ public class BossOceanIA : MonoBehaviour
     public void ApagarAtaqueMagico()
     {
         if (hitboxMagia != null) hitboxMagia.ApagarHitbox();
+    }
+
+    public void ReproducirSonidoAtaqueNormal() 
+    {
+        ReproducirSonido(sonidoAtaqueNormal);
+    }
+
+    public void ReproducirSonidoAtaqueMagico() 
+    {
+        ReproducirSonido(sonidoMagia);
+    }
+
+    public void ReproducirPasoCaminar()
+    {
+        ReproducirSonido(sonidoCaminar);
+    }
+
+    public void ReproducirSonidoCura() 
+    {
+        ReproducirSonido(sonidoCura);
+    }
+
+    public void ReproducirSonidoDolor()
+    {
+        ReproducirSonido(sonidoDolor);
+    }
+
+    public void ReproducirSonidoMuerte()
+    {
+        ReproducirSonido(sonidoMuerte);
+    }
+
+    private void ReproducirSonido(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 }

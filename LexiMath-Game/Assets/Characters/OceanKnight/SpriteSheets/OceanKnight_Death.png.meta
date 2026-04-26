@@ -173,12 +173,12 @@ TextureImporter:
       name: OceanKnight_Death_0
       rect:
         serializedVersion: 2
-        x: 124
-        y: 61
-        width: 31
-        height: 65
-      alignment: 9
-      pivot: {x: 0.58216363, y: 0.18844347}
+        x: 125
+        y: 62
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: OceanKnight_Death_1
       rect:
         serializedVersion: 2
-        x: 412
-        y: 61
-        width: 32
-        height: 58
-      alignment: 9
-      pivot: {x: 0.53737545, y: 0.21233894}
+        x: 413
+        y: 62
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: OceanKnight_Death_2
       rect:
         serializedVersion: 2
-        x: 698
-        y: 61
-        width: 54
-        height: 58
-      alignment: 9
-      pivot: {x: 0.5663305, y: 0.15481804}
+        x: 699
+        y: 62
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: OceanKnight_Death_3
       rect:
         serializedVersion: 2
-        x: 988
-        y: 61
-        width: 48
-        height: 58
-      alignment: 9
-      pivot: {x: 0.49913153, y: 0.16120344}
+        x: 989
+        y: 62
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -261,12 +261,12 @@ TextureImporter:
       name: OceanKnight_Death_4
       rect:
         serializedVersion: 2
-        x: 1275
-        y: 61
-        width: 48
-        height: 58
-      alignment: 9
-      pivot: {x: 0.4956945, y: 0.16146417}
+        x: 1277
+        y: 62
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: OceanKnight_Death_5
       rect:
         serializedVersion: 2
-        x: 1564
-        y: 61
-        width: 54
-        height: 58
-      alignment: 9
-      pivot: {x: 0.48681188, y: 0.16142023}
+        x: 1565
+        y: 62
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,12 +305,12 @@ TextureImporter:
       name: OceanKnight_Death_6
       rect:
         serializedVersion: 2
-        x: 1851
-        y: 61
-        width: 64
-        height: 58
-      alignment: 9
-      pivot: {x: 0.4741993, y: 0.15709989}
+        x: 1853
+        y: 62
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -327,12 +327,12 @@ TextureImporter:
       name: OceanKnight_Death_7
       rect:
         serializedVersion: 2
-        x: 2133
-        y: 57
-        width: 75
-        height: 60
+        x: 2134
+        y: 58
+        width: 73
+        height: 58
       alignment: 9
-      pivot: {x: 0.45695314, y: 0.23851217}
+      pivot: {x: 0.50721717, y: 0.63483703}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: OceanKnight_Death_8
       rect:
         serializedVersion: 2
-        x: 2421
-        y: 57
-        width: 65
-        height: 60
+        x: 2422
+        y: 58
+        width: 63
+        height: 58
       alignment: 9
-      pivot: {x: 0.5042894, y: 0.23018532}
+      pivot: {x: 0.5246311, y: 0.7183813}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,10 +371,10 @@ TextureImporter:
       name: OceanKnight_Death_9
       rect:
         serializedVersion: 2
-        x: 2465
-        y: 59
-        width: 35
-        height: 9
+        x: 2466
+        y: 60
+        width: 33
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,12 +393,12 @@ TextureImporter:
       name: OceanKnight_Death_10
       rect:
         serializedVersion: 2
-        x: 2693
-        y: 61
-        width: 94
-        height: 37
+        x: 2695
+        y: 60
+        width: 92
+        height: 35
       alignment: 9
-      pivot: {x: 0.48606062, y: 0.27981815}
+      pivot: {x: 0.49635115, y: 1.0038195}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: OceanKnight_Death_11
       rect:
         serializedVersion: 2
-        x: 2977
-        y: 57
-        width: 85
-        height: 34
+        x: 2978
+        y: 58
+        width: 83
+        height: 32
       alignment: 9
-      pivot: {x: 0.5772432, y: 0.37100804}
+      pivot: {x: 0.5028944, y: 1.1215405}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -437,10 +437,10 @@ TextureImporter:
       name: OceanKnight_Death_12
       rect:
         serializedVersion: 2
-        x: 3041
-        y: 59
-        width: 35
-        height: 9
+        x: 3042
+        y: 60
+        width: 33
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,12 +459,12 @@ TextureImporter:
       name: OceanKnight_Death_13
       rect:
         serializedVersion: 2
-        x: 3265
+        x: 3266
         y: 52
-        width: 99
-        height: 43
+        width: 97
+        height: 41
       alignment: 9
-      pivot: {x: 0.5213413, y: 0.37288204}
+      pivot: {x: 0.5027006, y: 1.0723011}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -481,10 +481,10 @@ TextureImporter:
       name: OceanKnight_Death_14
       rect:
         serializedVersion: 2
-        x: 3553
-        y: 51
-        width: 58
-        height: 20
+        x: 3554
+        y: 52
+        width: 56
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,12 +503,12 @@ TextureImporter:
       name: OceanKnight_Death_15
       rect:
         serializedVersion: 2
-        x: 3580
-        y: 59
-        width: 72
-        height: 35
+        x: 3581
+        y: 60
+        width: 70
+        height: 33
       alignment: 9
-      pivot: {x: 0.4889662, y: 0.27945492}
+      pivot: {x: 0.49274555, y: 1.0640857}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -525,10 +525,10 @@ TextureImporter:
       name: OceanKnight_Death_16
       rect:
         serializedVersion: 2
-        x: 3841
-        y: 53
-        width: 57
-        height: 20
+        x: 3842
+        y: 54
+        width: 55
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,12 +547,12 @@ TextureImporter:
       name: OceanKnight_Death_17
       rect:
         serializedVersion: 2
-        x: 3868
-        y: 59
-        width: 72
-        height: 28
+        x: 3869
+        y: 60
+        width: 70
+        height: 26
       alignment: 9
-      pivot: {x: 0.46624756, y: 0.3300776}
+      pivot: {x: 0.4979771, y: 1.1214975}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -569,10 +569,10 @@ TextureImporter:
       name: OceanKnight_Death_18
       rect:
         serializedVersion: 2
-        x: 4129
-        y: 51
-        width: 58
-        height: 20
+        x: 4130
+        y: 52
+        width: 56
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,12 +591,12 @@ TextureImporter:
       name: OceanKnight_Death_19
       rect:
         serializedVersion: 2
-        x: 4154
+        x: 4157
         y: 59
-        width: 73
-        height: 25
+        width: 71
+        height: 23
       alignment: 9
-      pivot: {x: 0.47367963, y: 0.43490815}
+      pivot: {x: 0.49661642, y: 1.5091676}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -621,7 +621,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       OceanKnight_Death_0: 863164247630496964
       OceanKnight_Death_1: 8232244868531083575

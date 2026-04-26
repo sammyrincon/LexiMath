@@ -2,23 +2,19 @@
     <Style src="project://database/Assets/HUD_RC/hud_rc.uss?fileID=7433441132597879392&amp;guid=80653b9244979e242b967c8209282c84&amp;type=3#hud_rc"/>
     <ui:VisualElement name="main-hud" class="main-hud" style="flex-grow: 1;">
         <ui:VisualElement name="hud-container" picking-mode="Ignore" style="flex-grow: 1; opacity: 1;">
-            
-            <ui:VisualElement name="health-bar-container" class="health-bar-container" style="flex-grow: 1;">
+            <ui:VisualElement name="health-bar-container" class="health-bar-container" style="flex-grow: 1; display: flex;">
                 <ui:VisualElement name="health-bar-frame" class="health-frame" style="flex-grow: 1;">
                     <ui:VisualElement name="healthbar-fill" class="health-bar-fill" style="flex-grow: 1;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
-            
             <ui:Button text="" name="Button" class="home-button" style="position: absolute;">
                 <ui:Image class="image-button"/>
             </ui:Button>
-            
             <ui:VisualElement name="settings-overlay" class="settings-overlay" style="flex-grow: 1; position: absolute; top: 15px; right: 15px; background-size: 16px 16px;">
                 <ui:VisualElement name="settings-modal" style="flex-grow: 1;"/>
             </ui:VisualElement>
-            
-            <ui:VisualElement name="pause-screen" class="pause-screen" style="flex-grow: 1;">
-                <ui:VisualElement name="book-animation-container" class="book-animation-container" style="flex-grow: 1;">
+            <ui:VisualElement name="pause-screen" class="pause-screen" style="flex-grow: 1; display: none;">
+                <ui:VisualElement name="book-animation-container" class="book-animation-container" style="flex-grow: 1; width: 400px; height: 300px; display: flex; background-image: url(&quot;project://database/Assets/HUD_RC/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/1%20-%20Brown/Pixel%20Book/Sprites/Open%20&amp;%20Close/Open/1.png?fileID=2800000&amp;guid=d1b520fd89da2f24e8deb2b4b5a0f2fb&amp;type=3#1&quot;);">
                     <ui:VisualElement name="buttons-container" class="buttons-container" style="flex-grow: 1; position: absolute;">
                         <ui:Button text="Continuar" name="button-continuar" class="buttons-menu"/>
                         <ui:Button text="Sonido" name="button-sonido" class="buttons-menu"/>
@@ -29,7 +25,6 @@
                     <ui:VisualElement name="right-page-container" class="right-page-container" style="position: absolute; display: none;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
-            
             <ui:VisualElement name="controls-container" class="controls-container" style="flex-grow: 1;">
                 <ui:VisualElement name="d-pad-container" class="d-pad-container" style="flex-grow: 1;">
                     <ui:VisualElement name="control-up" class="control-up" style="flex-grow: 1;"/>
@@ -38,16 +33,13 @@
                     <ui:VisualElement name="control-left" class="control-left" style="flex-grow: 1;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
-            
-            <ui:Label name="label-nivel" text="Level 1" class="label-nivel"/>
-            
+            <ui:Label name="label-nivel" text="Nivel 1" class="label-nivel"/>
             <ui:VisualElement name="CoinsContainer" class="coins-container" style="flex-grow: 1;">
                 <ui:Label text="0" name="ContadorTexto" class="contador-texto"/>
                 <ui:Image name="coin-image" class="coin-image"/>
             </ui:VisualElement>
-            
-            <ui:VisualElement name="Victory-panel" class="victory-panel" style="flex-grow: 1;">
-                <ui:VisualElement name="mapVictory" class="mapVictory" style="flex-grow: 1;">
+            <ui:VisualElement name="Victory-panel" class="victory-panel" style="flex-grow: 1; display: none;">
+                <ui:VisualElement name="mapVictory" class="mapVictory" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/HUD_RC/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/1%20-%20Brown/Pixel%20Map/Sprites/Open%20&amp;%20Close/With%20Ribbon/Open/6.png?fileID=2800000&amp;guid=de2082bc1d809b343a8493a91459c850&amp;type=3#6&quot;); background-size: 150% 130%;">
                     <ui:Label text="¡Enhorabuena!&#10;Nivel Terminado" name="victoryTitle" class="victoryTitle"/>
                     <ui:VisualElement name="starsContainer" class="stars-container" style="flex-grow: 1;">
                         <ui:VisualElement name="Star3" class="star3" style="flex-grow: 1;"/>
@@ -66,35 +58,55 @@
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-            
-            <ui:VisualElement name="danger-frame" class="danger-frame danger-hidden" picking-mode="Ignore"/>
-            
-            <ui:VisualElement name="gameover-panel" class="gameover-panel gameover-hidden">
+            <ui:VisualElement name="danger-frame" picking-mode="Ignore" class="danger-frame danger-hidden" style="display: none;"/>
+            <ui:VisualElement name="gameover-panel" class="gameover-panel gameover-hidden" style="display: none;">
                 <ui:VisualElement name="gameover-box" class="gameover-box">
                     <ui:Label text="¡PERDISTE!" name="gameover-title" class="gameover-title"/>
                     <ui:Label text="Inténtalo de nuevo" name="gameover-subtitle" class="gameover-subtitle"/>
                     <ui:VisualElement name="gameover-buttons" class="gameover-buttons">
                         <ui:Button text="Menú Principal" name="gameover-menu-btn" class="gameover-btn gameover-btn-menu"/>
-                        <ui:Button text="Reintentar"     name="gameover-retry-btn" class="gameover-btn gameover-btn-retry"/>
+                        <ui:Button text="Reintentar" name="gameover-retry-btn" class="gameover-btn gameover-btn-retry"/>
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-
             <ui:VisualElement name="math-overlay" class="math-overlay" style="display: none;">
                 <ui:VisualElement class="panel-box">
                     <ui:VisualElement class="question-container">
-                        <ui:Label name="question-label" text="8 + 4 = ?" class="question-text" />
+                        <ui:Label name="question-label" text="8 + 4 = ?" class="question-text"/>
                     </ui:VisualElement>
                     <ui:VisualElement class="answers-grid">
-                        <ui:Button name="btn-ans-1" text="10" class="answer-button" />
-                        <ui:Button name="btn-ans-2" text="11" class="answer-button" />
-                        <ui:Button name="btn-ans-3" text="12" class="answer-button" />
-                        <ui:Button name="btn-ans-4" text="13" class="answer-button" />
+                        <ui:Button name="btn-ans-1" text="10" class="answer-button"/>
+                        <ui:Button name="btn-ans-2" text="11" class="answer-button"/>
+                        <ui:Button name="btn-ans-3" text="12" class="answer-button"/>
+                        <ui:Button name="btn-ans-4" text="13" class="answer-button"/>
                     </ui:VisualElement>
-                    <ui:Button name="btn-hint" text="💡 USAR PISTA (💰1)" class="hint-button" />
+                    <ui:Button name="btn-hint" text="AYUDA" class="hint-button"/>
                 </ui:VisualElement>
             </ui:VisualElement>
-
+            <ui:VisualElement name="guide-overlay" class="guide-overlay" style="display: none;">
+                <ui:VisualElement class="guide-box">
+                    <ui:Label text="Guía de LexiMath" class="guide-title"/>
+                    <ui:ScrollView class="guide-content">
+                        <ui:Label text="➕ SUMAS (¡Juntar cosas!)" class="section-header"/>
+                        <ui:Label text="Sumar es JUNTAR. Tienes 2 monedas y encuentras 3 más. ¡Ahora tienes 5 monedas! (2 + 3 = 5)" class="guide-text"/>
+                        <ui:Label text="➖ RESTAS (¡Quitar cosas!)" class="section-header"/>
+                        <ui:Label text="Restar es QUITAR. Tienes 5 vidas y un monstruo te quita 2. ¡Te quedan 3 vidas! (5 - 2 = 3)" class="guide-text"/>
+                        <ui:Label text="✖️ MULTIPLICACIÓN (¡Suma turbo!)" class="section-header"/>
+                        <ui:Label text="Es un atajo secreto para sumar súper rápido 🚀. &apos;3 x 2&apos; significa sumar el número 2 tres veces: 2 + 2 + 2 = 6." class="guide-text"/>
+                        <ui:Label text="➗ DIVISIÓN (¡Repartir parejo!)" class="section-header"/>
+                        <ui:Label text="Dividir es REPARTIR en partes iguales. Tienes 4 pociones para 2 héroes. ¡A cada uno le tocan 2! (4 ÷ 2 = 2)" class="guide-text"/>
+                        <ui:Label text="🅰️ VOCALES (¡Letras mágicas!)" class="section-header"/>
+                        <ui:Label text="Son 5 letras súper importantes: A, E, I, O, U." class="guide-text"/>
+                        <ui:Label text="💪 Fuertes (abre mucho la boca): A, E, O." class="guide-text"/>
+                        <ui:Label text="🤫 Débiles (boca chiquita): I, U." class="guide-text"/>
+                        <ui:Label text="✍️ PALABRAS Y ORACIONES" class="section-header"/>
+                        <ui:Label text="🏃‍♂️ Verbos: Son acciones. ¡Cosas que haces! (correr, saltar, pelear)." class="guide-text"/>
+                        <ui:Label text="🐶 Sustantivos: Son cosas, animales o personajes (perro, Mael, espada)." class="guide-text"/>
+                        <ui:Label text="✨ Adjetivos: Te dicen cómo es algo (grande, rojo, valiente)." class="guide-text"/>
+                    </ui:ScrollView>
+                    <ui:Button name="btn-close-guide" text="VOLVER AL RETO" class="guide-close-btn"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

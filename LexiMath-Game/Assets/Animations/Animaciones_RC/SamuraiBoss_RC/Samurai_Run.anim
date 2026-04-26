@@ -33,9 +33,11 @@ AnimationClip:
     - time: 0.41666666
       value: {fileID: 7901629565876178619, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
     - time: 0.5
-      value: {fileID: 6907575970955607641, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
+      value: {fileID: 0}
     - time: 0.5833333
-      value: {fileID: -240870782119167357, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
+      value: {fileID: 0}
+    - time: 0.6666667
+      value: {fileID: -7559637446464829598, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -64,14 +66,15 @@ AnimationClip:
     - {fileID: -1748482149210149379, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
     - {fileID: -4594542464004144625, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
     - {fileID: 7901629565876178619, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
-    - {fileID: 6907575970955607641, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
-    - {fileID: -240870782119167357, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: -7559637446464829598, guid: 747e1655575c16940a5e4e4331cb1e20, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666666
+    m_StopTime: 0.75
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -90,4 +93,25 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: ReproducirPasoCaminar
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0
+    functionName: ReproducirSonidoEscape
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.33333334
+    functionName: ReproducirPasoCaminar
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

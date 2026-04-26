@@ -131,12 +131,12 @@ TextureImporter:
       name: OceanKnight_Idle_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 70
-        width: 79
-        height: 51
-      alignment: 9
-      pivot: {x: 0.50157106, y: 0.0010414872}
+        x: 100
+        y: 71
+        width: 77
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: OceanKnight_Idle_1
       rect:
         serializedVersion: 2
-        x: 387
+        x: 388
         y: 71
-        width: 80
-        height: 52
-      alignment: 9
-      pivot: {x: 0.5, y: -0.0023426642}
+        width: 78
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: OceanKnight_Idle_2
       rect:
         serializedVersion: 2
-        x: 676
-        y: 70
-        width: 78
-        height: 53
-      alignment: 9
-      pivot: {x: 0.5, y: 0.0032332798}
+        x: 677
+        y: 71
+        width: 76
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: OceanKnight_Idle_3
       rect:
         serializedVersion: 2
-        x: 964
-        y: 70
-        width: 77
-        height: 54
-      alignment: 9
-      pivot: {x: 0.49641636, y: 0.0067511667}
+        x: 965
+        y: 71
+        width: 75
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: OceanKnight_Idle_4
       rect:
         serializedVersion: 2
-        x: 1251
-        y: 70
-        width: 78
-        height: 53
-      alignment: 9
-      pivot: {x: 0.49999842, y: -0.0039949236}
+        x: 1252
+        y: 71
+        width: 76
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: OceanKnight_Idle_5
       rect:
         serializedVersion: 2
-        x: 1539
-        y: 70
-        width: 78
-        height: 51
-      alignment: 9
-      pivot: {x: 0.5160147, y: -0.026573779}
+        x: 1540
+        y: 71
+        width: 76
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,7 +271,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       OceanKnight_Idle_0: 6986799956070250977
       OceanKnight_Idle_1: 4956137925273852677

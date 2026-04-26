@@ -212,12 +212,12 @@ TextureImporter:
       name: OceanKnight_Heal_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 70
-        width: 79
-        height: 51
-      alignment: 9
-      pivot: {x: 0.5000014, y: -0.004111944}
+        x: 100
+        y: 71
+        width: 77
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: OceanKnight_Heal_1
       rect:
         serializedVersion: 2
-        x: 395
-        y: 58
-        width: 67
-        height: 64
+        x: 396
+        y: 59
+        width: 65
+        height: 62
       alignment: 9
-      pivot: {x: 0.49672005, y: 0.005582392}
+      pivot: {x: 0.50791675, y: 0.6245347}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: OceanKnight_Heal_2
       rect:
         serializedVersion: 2
-        x: 706
-        y: 55
-        width: 36
-        height: 68
+        x: 707
+        y: 56
+        width: 34
+        height: 66
       alignment: 9
-      pivot: {x: 0.5532515, y: 0.2589872}
+      pivot: {x: 0.5250693, y: 0.5980899}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: OceanKnight_Heal_3
       rect:
         serializedVersion: 2
-        x: 992
-        y: 59
-        width: 32
-        height: 67
-      alignment: 9
-      pivot: {x: 0.583086, y: 0.2062937}
+        x: 993
+        y: 60
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: OceanKnight_Heal_4
       rect:
         serializedVersion: 2
-        x: 1278
-        y: 66
-        width: 34
-        height: 60
-      alignment: 9
-      pivot: {x: 0.6779929, y: 0.10928421}
+        x: 1279
+        y: 67
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: OceanKnight_Heal_5
       rect:
         serializedVersion: 2
-        x: 1566
-        y: 62
-        width: 37
-        height: 64
-      alignment: 9
-      pivot: {x: 0.52037257, y: 0.17127514}
+        x: 1567
+        y: 63
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,12 +344,12 @@ TextureImporter:
       name: OceanKnight_Heal_6
       rect:
         serializedVersion: 2
-        x: 1854
-        y: 62
-        width: 37
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5884911, y: 0.16517532}
+        x: 1855
+        y: 63
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,12 +366,12 @@ TextureImporter:
       name: OceanKnight_Heal_7
       rect:
         serializedVersion: 2
-        x: 2142
-        y: 64
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5135033, y: 0.15128636}
+        x: 2143
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -388,12 +388,12 @@ TextureImporter:
       name: OceanKnight_Heal_8
       rect:
         serializedVersion: 2
-        x: 2430
-        y: 62
-        width: 41
-        height: 70
-      alignment: 9
-      pivot: {x: 0.5094917, y: 0.15104054}
+        x: 2431
+        y: 63
+        width: 39
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -410,12 +410,12 @@ TextureImporter:
       name: OceanKnight_Heal_9
       rect:
         serializedVersion: 2
-        x: 2718
-        y: 62
-        width: 40
-        height: 74
-      alignment: 9
-      pivot: {x: 0.46049803, y: 0.13779171}
+        x: 2719
+        y: 63
+        width: 38
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -432,12 +432,12 @@ TextureImporter:
       name: OceanKnight_Heal_10
       rect:
         serializedVersion: 2
-        x: 3006
-        y: 62
-        width: 40
-        height: 74
+        x: 3007
+        y: 63
+        width: 38
+        height: 72
       alignment: 9
-      pivot: {x: 0.49641722, y: 0.14269659}
+      pivot: {x: 0.5170577, y: 0.4603871}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -454,12 +454,12 @@ TextureImporter:
       name: OceanKnight_Heal_11
       rect:
         serializedVersion: 2
-        x: 3294
-        y: 62
-        width: 41
-        height: 76
+        x: 3295
+        y: 63
+        width: 39
+        height: 74
       alignment: 9
-      pivot: {x: 0.4757348, y: 0.14001887}
+      pivot: {x: 0.507343, y: 0.44326577}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -476,12 +476,12 @@ TextureImporter:
       name: OceanKnight_Heal_12
       rect:
         serializedVersion: 2
-        x: 3582
-        y: 62
-        width: 43
-        height: 82
-      alignment: 9
-      pivot: {x: 0.45759335, y: 0.13195187}
+        x: 3583
+        y: 63
+        width: 41
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -498,12 +498,12 @@ TextureImporter:
       name: OceanKnight_Heal_13
       rect:
         serializedVersion: 2
-        x: 3870
-        y: 62
-        width: 45
-        height: 78
-      alignment: 9
-      pivot: {x: 0.46146375, y: 0.1414343}
+        x: 3871
+        y: 63
+        width: 43
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -520,12 +520,12 @@ TextureImporter:
       name: OceanKnight_Heal_14
       rect:
         serializedVersion: 2
-        x: 4158
-        y: 62
-        width: 44
-        height: 79
+        x: 4159
+        y: 63
+        width: 42
+        height: 77
       alignment: 9
-      pivot: {x: 0.46188077, y: 0.13236411}
+      pivot: {x: 0.51221865, y: 0.44668877}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -542,12 +542,12 @@ TextureImporter:
       name: OceanKnight_Heal_15
       rect:
         serializedVersion: 2
-        x: 4446
-        y: 61
-        width: 42
-        height: 79
+        x: 4447
+        y: 63
+        width: 40
+        height: 77
       alignment: 9
-      pivot: {x: 0.4724586, y: 0.14523692}
+      pivot: {x: 0.5203247, y: 0.44016156}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -564,12 +564,12 @@ TextureImporter:
       name: OceanKnight_Heal_16
       rect:
         serializedVersion: 2
-        x: 4734
-        y: 62
-        width: 43
-        height: 76
+        x: 4735
+        y: 63
+        width: 41
+        height: 74
       alignment: 9
-      pivot: {x: 0.45847338, y: 0.15272552}
+      pivot: {x: 0.49311644, y: 0.34247878}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -586,12 +586,12 @@ TextureImporter:
       name: OceanKnight_Heal_17
       rect:
         serializedVersion: 2
-        x: 5022
-        y: 62
-        width: 42
-        height: 67
-      alignment: 9
-      pivot: {x: 0.47874814, y: 0.15336688}
+        x: 5023
+        y: 63
+        width: 40
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -608,12 +608,12 @@ TextureImporter:
       name: OceanKnight_Heal_18
       rect:
         serializedVersion: 2
-        x: 5309
+        x: 5311
         y: 63
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.54079473, y: 0.14742517}
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -630,12 +630,12 @@ TextureImporter:
       name: OceanKnight_Heal_19
       rect:
         serializedVersion: 2
-        x: 5598
-        y: 62
-        width: 41
-        height: 63
-      alignment: 9
-      pivot: {x: 0.47076267, y: 0.17844705}
+        x: 5599
+        y: 63
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -652,12 +652,12 @@ TextureImporter:
       name: OceanKnight_Heal_20
       rect:
         serializedVersion: 2
-        x: 5885
-        y: 62
-        width: 41
-        height: 62
-      alignment: 9
-      pivot: {x: 0.5366687, y: 0.17574519}
+        x: 5887
+        y: 63
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -674,12 +674,12 @@ TextureImporter:
       name: OceanKnight_Heal_21
       rect:
         serializedVersion: 2
-        x: 6174
-        y: 62
-        width: 45
-        height: 70
-      alignment: 9
-      pivot: {x: 0.5000434, y: 0.16378348}
+        x: 6175
+        y: 63
+        width: 43
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -696,12 +696,12 @@ TextureImporter:
       name: OceanKnight_Heal_22
       rect:
         serializedVersion: 2
-        x: 6462
-        y: 62
-        width: 46
-        height: 73
-      alignment: 9
-      pivot: {x: 0.481785, y: 0.15443514}
+        x: 6463
+        y: 63
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -718,12 +718,12 @@ TextureImporter:
       name: OceanKnight_Heal_23
       rect:
         serializedVersion: 2
-        x: 6750
-        y: 62
-        width: 41
-        height: 72
-      alignment: 9
-      pivot: {x: 0.47977802, y: 0.147494}
+        x: 6751
+        y: 63
+        width: 39
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -740,10 +740,10 @@ TextureImporter:
       name: OceanKnight_Heal_24
       rect:
         serializedVersion: 2
-        x: 6790
-        y: 103
-        width: 7
-        height: 7
+        x: 6791
+        y: 104
+        width: 5
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -762,12 +762,12 @@ TextureImporter:
       name: OceanKnight_Heal_25
       rect:
         serializedVersion: 2
-        x: 7037
-        y: 62
-        width: 45
-        height: 69
-      alignment: 9
-      pivot: {x: 0.4735677, y: 0.16151926}
+        x: 7039
+        y: 63
+        width: 43
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -784,12 +784,12 @@ TextureImporter:
       name: OceanKnight_Heal_26
       rect:
         serializedVersion: 2
-        x: 7326
-        y: 62
-        width: 42
-        height: 65
-      alignment: 9
-      pivot: {x: 0.52307713, y: 0.16193683}
+        x: 7327
+        y: 63
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -806,12 +806,12 @@ TextureImporter:
       name: OceanKnight_Heal_27
       rect:
         serializedVersion: 2
-        x: 7613
-        y: 64
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.4754348, y: 0.13898885}
+        x: 7615
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -828,12 +828,12 @@ TextureImporter:
       name: OceanKnight_Heal_28
       rect:
         serializedVersion: 2
-        x: 7902
-        y: 62
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.4709124, y: 0.17229974}
+        x: 7903
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -850,12 +850,12 @@ TextureImporter:
       name: OceanKnight_Heal_29
       rect:
         serializedVersion: 2
-        x: 8190
-        y: 62
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.43915087, y: 0.17281473}
+        x: 8191
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -872,12 +872,12 @@ TextureImporter:
       name: OceanKnight_Heal_30
       rect:
         serializedVersion: 2
-        x: 8478
-        y: 62
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.47974795, y: 0.1660366}
+        x: 8479
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -894,12 +894,12 @@ TextureImporter:
       name: OceanKnight_Heal_31
       rect:
         serializedVersion: 2
-        x: 8766
-        y: 62
-        width: 38
-        height: 64
-      alignment: 9
-      pivot: {x: 0.48275596, y: 0.15877962}
+        x: 8767
+        y: 63
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -916,12 +916,12 @@ TextureImporter:
       name: OceanKnight_Heal_32
       rect:
         serializedVersion: 2
-        x: 9052
-        y: 54
-        width: 37
-        height: 69
-      alignment: 9
-      pivot: {x: 0.60106105, y: 0.26335576}
+        x: 9053
+        y: 55
+        width: 35
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -946,7 +946,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       OceanKnight_Heal_0: 8860817721052681629
       OceanKnight_Heal_1: -4762348757227209553

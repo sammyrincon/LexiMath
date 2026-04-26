@@ -134,10 +134,10 @@ TextureImporter:
       name: OceanKnight_Roll_0
       rect:
         serializedVersion: 2
-        x: 97
-        y: 71
-        width: 79
-        height: 52
+        x: 98
+        y: 72
+        width: 77
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: OceanKnight_Roll_1
       rect:
         serializedVersion: 2
-        x: 401
-        y: 75
-        width: 61
-        height: 39
+        x: 402
+        y: 76
+        width: 59
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +178,10 @@ TextureImporter:
       name: OceanKnight_Roll_2
       rect:
         serializedVersion: 2
-        x: 710
-        y: 65
-        width: 46
-        height: 60
+        x: 711
+        y: 66
+        width: 44
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,10 +200,10 @@ TextureImporter:
       name: OceanKnight_Roll_3
       rect:
         serializedVersion: 2
-        x: 996
-        y: 67
-        width: 75
-        height: 34
+        x: 997
+        y: 68
+        width: 73
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +222,10 @@ TextureImporter:
       name: OceanKnight_Roll_4
       rect:
         serializedVersion: 2
-        x: 1285
-        y: 52
-        width: 59
-        height: 57
+        x: 1286
+        y: 53
+        width: 57
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: OceanKnight_Roll_5
       rect:
         serializedVersion: 2
-        x: 1544
-        y: 58
-        width: 69
-        height: 53
+        x: 1545
+        y: 59
+        width: 67
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,10 +266,10 @@ TextureImporter:
       name: OceanKnight_Roll_6
       rect:
         serializedVersion: 2
-        x: 1826
-        y: 71
-        width: 77
-        height: 48
+        x: 1827
+        y: 72
+        width: 75
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5db0027cf7de12145920f3c5585be03e
     internalID: 0
     vertices: []
     indices: 
@@ -296,7 +296,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       OceanKnight_Roll_0: 8502920919516511264
       OceanKnight_Roll_1: 7662291351604319597

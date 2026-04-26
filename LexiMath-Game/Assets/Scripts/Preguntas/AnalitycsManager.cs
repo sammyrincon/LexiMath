@@ -40,4 +40,4 @@ public class AnalyticsManager : MonoBehaviour
             }
         }
     }
-}
+}      
