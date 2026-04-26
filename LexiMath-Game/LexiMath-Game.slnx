@@ -1,4 +1,3 @@
 ﻿<Solution>
-  <Project Path="Tests.csproj" />
   <Project Path="LexiMathGame.csproj" />
 </Solution>
