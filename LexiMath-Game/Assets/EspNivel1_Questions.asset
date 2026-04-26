@@ -14,28 +14,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestionData
   nombreNivel: Nivel 1
   preguntas:
-  - enunciado: "\xBFCu\xE1ntas s\xEDlabas tiene MARIPOSA?"
-    respuestaCorrecta: 4
+  - enunciado: "\xBFCu\xE1ntas vocales tiene el abecedario?"
+    respuestaCorrecta: 5
     distractores:
     - 3
-    - 5
-  - enunciado: "\xBFCu\xE1l es lo contrario de GRANDE?"
-    respuestaCorrecta: "PEQUE\xD1O"
+    - 7
+  - enunciado: "\xBFCu\xE1l de estas palabras empieza con la vocal a?"
+    respuestaCorrecta: "\xC1rbol"
     distractores:
-    - ALTO
-    - ROJO
-  - enunciado: "\xBFQu\xE9 palabra es un color?"
-    respuestaCorrecta: AZUL
+    - "Igl\xFA"
+    - Oso
+  - enunciado: "\xBFQu\xE9 vocal falta en la palabra: c_sa?"
+    respuestaCorrecta: a
     distractores:
-    - MESA
-    - PERRO
+    - o
+    - u
   - enunciado: "\xBFCon qu\xE9 vocal empieza ELEFANTE?"
     respuestaCorrecta: E
     distractores:
     - A
     - I
-  - enunciado: "\xBFCu\xE1l de estas es una consonante?"
-    respuestaCorrecta: P
+  - enunciado: " \xBFCu\xE1ntas vocales hay en la palabra mariposa?"
+    respuestaCorrecta: 4
     distractores:
-    - A
-    - E
+    - 3
+    - 2
+  - enunciado: "\xBFCu\xE1l de estas palabras empieza con la vocal o?"
+    respuestaCorrecta: Oso
+    distractores:
+    - Uva
+    - Isla
+  - enunciado: "\xBFCu\xE1l es la vocal que est\xE1 entre la a y la i?"
+    respuestaCorrecta: e
+    distractores:
+    - o
+    - u
+  - enunciado: "\xBFQu\xE9 vocal se repite en la palabra \"Mariposa\"?"
+    respuestaCorrecta: a
+    distractores:
+    - o
+    - i
+  - enunciado: "\xBFCu\xE1l de estas palabras empieza con la vocal i?"
+    respuestaCorrecta: "Igl\xFA"
+    distractores:
+    - Abeja
+    - "U\xF1a"
+  - enunciado: "\xBFCu\xE1ntas vocales diferentes hay en la palabra murci\xE9lago?"
+    respuestaCorrecta: 5
+    distractores:
+    - 3
+    - 4
