@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Rock2_shadow2_2.png.meta
+guid: 9a2c10f72fdaf2a4680354e5eada28ad
+========
 guid: 9da8041016af81640821d9b872d6ff17
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/1 - Brown/Content/Map/Design/6.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3465286685962602723
-    second: 6_0
+      213: -506558425105188304
+    second: Rock2_shadow2_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 6_0
+      name: Rock2_shadow2_2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5
+        y: 2
         width: 53
-        height: 123
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e801b981eb271030800000000000000
-      internalID: 3465286685962602723
+      spriteID: 03abf95dbc758f8f0800000000000000
+      internalID: -506558425105188304
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      6_0: 3465286685962602723
+      Rock2_shadow2_2_0: -506558425105188304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

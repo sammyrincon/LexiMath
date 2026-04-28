@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Pustules_shadow2_1.png.meta
+guid: 5c7a7ebed339c4f42b9440b1f291371b
+========
 guid: 4ba3403cc3e429c4581c9c5b528651aa
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Day & Night Cycle/2 Day/3.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6470460504253458178
-    second: 3_0
+      213: 1177988572300795839
+    second: Pustules_shadow2_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_0
+      name: Pustules_shadow2_1_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 19
-        width: 44
-        height: 44
+        x: 11
+        y: 14
+        width: 41
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef817ce047e4436a0800000000000000
-      internalID: -6470460504253458178
+      spriteID: fbf55718d5e095010800000000000000
+      internalID: 1177988572300795839
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      3_0: -6470460504253458178
+      Pustules_shadow2_1_0: 1177988572300795839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

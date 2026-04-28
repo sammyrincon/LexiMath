@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Fetus_shadow2_2.png.meta
+guid: 7fa63e62085816a4fad0505d515b7cbf
+========
 guid: 22a6c87603c1617448801f863521626f
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Day & Night Cycle/1 Dawn/1.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -855298285791758126
-    second: 1_0
+      213: 4552351305282846337
+    second: Fetus_shadow2_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,11 +117,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_0
+      name: Fetus_shadow2_2_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 19
+        x: 10
+        y: 10
         width: 44
         height: 44
       alignment: 0
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d8b16a9dbe5124f0800000000000000
-      internalID: -855298285791758126
+      spriteID: 18e7b2c84633d2f30800000000000000
+      internalID: 4552351305282846337
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1_0: -855298285791758126
+      Fetus_shadow2_2_0: 4552351305282846337
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

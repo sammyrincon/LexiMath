@@ -1,4 +1,7 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free Industrial Zone Tileset/2 Background/5.png.meta
+guid: 2efde65f1a5b1134f8c4c4ad349d6d42
+========
 <<<<<<<< HEAD:LexiMath-Game/Assets/Lifty's Pixel Art Pack/Pixel Art Pack/Characters/1/PlayerAnimations/Idle_Full/Idle2.png.meta
 guid: 465263858da72c34c8b03c578b7d37af
 AssetOrigin:
@@ -11,6 +14,7 @@ AssetOrigin:
 ========
 guid: 4290c78279245964fabfe64371d3ae27
 >>>>>>>> d7b7938b85db54ad3a8c538b0f7ac287332157e2:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/5.png.meta
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/5.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +123,33 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free Industrial Zone Tileset/2 Background/5.png.meta
+    sprites:
+    - serializedVersion: 2
+      name: 5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 576
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f86b71495bf25930800000000000000
+      internalID: 4130640169021434097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+========
     sprites: []
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/5.png.meta
     outline: []
     customData: 
     physicsShape: []

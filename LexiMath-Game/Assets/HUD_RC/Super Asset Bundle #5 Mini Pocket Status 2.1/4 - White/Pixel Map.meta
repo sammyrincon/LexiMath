@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Miguel/animations/Animaciones_RC/Chest_RC/Animales/Gato1Maullido.anim.meta
+guid: 07ffb6b5106f8144ab0c52554f3dfc50
+NativeFormatImporter:
+========
 guid: 0d8fb5f3be438204880951a07e45b6e1
 folderAsset: yes
 DefaultImporter:
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/4 - White/Pixel Map.meta
   externalObjects: {}
+  mainObjectFileID: 7400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -1,19 +1,23 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free Industrial Zone Tileset/4 Animated objects/Screen1.png.meta
+guid: 96e0af92084d39c4e9f35c96dd119276
+========
 guid: add981cc40cb17b4f9364694ca762c1a
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Recycle Bin/6.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3465286685962602723
-    second: 6_0
+      213: -8041905129856747306
+    second: Screen1_0
   - first:
-      213: 6653994858678897968
-    second: 6_1
+      213: -3030808635134170949
+    second: Screen1_1
   - first:
-      213: -9091539399625358973
-    second: 6_2
+      213: -2379172616375398318
+    second: Screen1_2
   - first:
-      213: 781045095500365311
-    second: 6_3
+      213: 7517042639464761519
+    second: Screen1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,35 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 6_0
+      name: Screen1_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 29
-        width: 32
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e801b981eb271030800000000000000
-      internalID: 3465286685962602723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 6_1
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 2
+        x: 2
+        y: 7
         width: 28
-        height: 28
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03dc4d0d11db75c50800000000000000
-      internalID: 6653994858678897968
+      spriteID: 6d83f7964e9656090800000000000000
+      internalID: -8041905129856747306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6_2
+      name: Screen1_1
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 14
-        height: 12
+        x: 34
+        y: 7
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 381ccd7c51d54d180800000000000000
-      internalID: -9091539399625358973
+      spriteID: bb824a0ba9760f5d0800000000000000
+      internalID: -3030808635134170949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6_3
+      name: Screen1_2
       rect:
         serializedVersion: 2
-        x: 46
-        y: 2
-        width: 13
-        height: 14
+        x: 66
+        y: 7
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +185,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ffd3cde4064d6da00800000000000000
-      internalID: 781045095500365311
+      spriteID: 2509b9d5c1b7bfed0800000000000000
+      internalID: -2379172616375398318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Screen1_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 7
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa803ce1476e15860800000000000000
+      internalID: 7517042639464761519
       vertices: []
       indices: 
       edges: []
@@ -223,10 +227,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      6_0: 3465286685962602723
-      6_1: 6653994858678897968
-      6_2: -9091539399625358973
-      6_3: 781045095500365311
+      Screen1_0: -8041905129856747306
+      Screen1_1: -3030808635134170949
+      Screen1_2: -2379172616375398318
+      Screen1_3: 7517042639464761519
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

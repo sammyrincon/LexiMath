@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Eye_plant_shadow1_1.png.meta
+guid: 602c1b08b774ec84bbb5f49a7bd2253a
+========
 guid: 6f7099a2a5203254f9437b74521980e4
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/4 - White/Pixel Book/Sprites/Categories/Appear/without icons/7.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7028616704906629411
-    second: 7_0
+      213: -3889837729679232985
+    second: Eye_plant_shadow1_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 7_0
+      name: Eye_plant_shadow1_1_0
       rect:
         serializedVersion: 2
-        x: 143
-        y: 167
-        width: 525
-        height: 314
+        x: 5
+        y: 3
+        width: 53
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 321165667a9aa8160800000000000000
-      internalID: 7028616704906629411
+      spriteID: 720be80b135840ac0800000000000000
+      internalID: -3889837729679232985
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      7_0: 7028616704906629411
+      Eye_plant_shadow1_1_0: -3889837729679232985
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

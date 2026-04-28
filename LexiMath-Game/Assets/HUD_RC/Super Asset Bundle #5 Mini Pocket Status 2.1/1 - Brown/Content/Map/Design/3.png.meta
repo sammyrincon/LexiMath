@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Cooker/Cooker_02.png.meta
+guid: f8177b2052cd7d64a98ed69a9f5995d8
+========
 guid: 38118b86c5d1b8249988315cf7a492ef
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/1 - Brown/Content/Map/Design/3.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6470460504253458178
-    second: 3_0
+      213: 477947388007440407
+    second: Cooker_02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_0
+      name: Cooker_02_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 42
+        x: 13
+        y: 9
+        width: 38
         height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef817ce047e4436a0800000000000000
-      internalID: -6470460504253458178
+      spriteID: 710628bfd9202a600800000000000000
+      internalID: 477947388007440407
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      3_0: -6470460504253458178
+      Cooker_02_0: 477947388007440407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

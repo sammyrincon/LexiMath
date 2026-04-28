@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/RF_Catacombs_v1.0/candleA_02.png.meta
+guid: 5a13647258d72e84a9c95e3f0a5822a1
+========
 guid: d145865f327da2b48b40a234dd92092d
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/10.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5099292496197868168
-    second: 10_0
+      213: -2362936533959396447
+    second: candleA_02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 10_0
+      name: candleA_02_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 15
+        width: 7
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 875af4eed7cab39b0800000000000000
-      internalID: -5099292496197868168
+      spriteID: 1a3be82edb9253fd0800000000000000
+      internalID: -2362936533959396447
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      10_0: -5099292496197868168
+      candleA_02_0: -2362936533959396447
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

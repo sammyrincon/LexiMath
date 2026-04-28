@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Ruins_shadow1_6.png.meta
+guid: a2030518dbea28f40bc047a236a2098b
+========
 guid: 54102fef7d4eefe4abc2b9dc030454d1
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/2 - Gold/Content/Side Tabs/Animated/4.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4178046375966092550
-    second: 4_0
+      213: -2087190046447897074
+    second: Ruins_shadow1_6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4_0
+      name: Ruins_shadow1_6_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af2de6115f89406c0800000000000000
-      internalID: -4178046375966092550
+      spriteID: e06fdbe06bfc803e0800000000000000
+      internalID: -2087190046447897074
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      4_0: -4178046375966092550
+      Ruins_shadow1_6_0: -2087190046447897074
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

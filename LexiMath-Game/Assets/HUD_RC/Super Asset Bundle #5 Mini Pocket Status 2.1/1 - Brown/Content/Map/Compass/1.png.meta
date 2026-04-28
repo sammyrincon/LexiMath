@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free Industrial Zone Tileset/3 Objects/1.png.meta
+guid: 49dd5701f8d7e3547b58111b58007c74
+========
 guid: 4a60230fca616df4394cfebe1231dbf4
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/1 - Brown/Content/Map/Compass/1.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -116,9 +120,9 @@ TextureImporter:
       name: 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 25
+        x: 10
+        y: 4
+        width: 13
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}

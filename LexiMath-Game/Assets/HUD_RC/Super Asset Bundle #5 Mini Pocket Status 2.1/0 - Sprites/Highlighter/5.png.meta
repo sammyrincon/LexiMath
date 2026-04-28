@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/RF_Catacombs_v1.0/PSD/Anim/spike.psd.meta
+guid: 801ed7cca1414304c87530a5a15097ba
+========
 guid: 21f317ce58ba69043b62cf173ca35d4f
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Highlighter/5.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4130640169021434097
-    second: 5_0
+      213: -1929834416523346238
+    second: spike_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 5_0
+      name: spike_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f86b71495bf25930800000000000000
-      internalID: 4130640169021434097
+      spriteID: 2ce7dc7a2d9d735e0800000000000000
+      internalID: -1929834416523346238
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      5_0: 4130640169021434097
+      spike_0: -1929834416523346238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,17 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Characters/knight-character-sprites-pixel-art/Knight_2/Hurt.png.meta
+guid: becab573af0daee45aafcfd83ece0e82
+========
 guid: bbb9441b1f59443478be230b8a2f1658
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/3 - Silver/Content/icons/2.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6937817954938267909
-    second: 2_0
+      213: -2048800907179887802
+    second: Hurt_0
   - first:
-      213: 3191122964850554743
-    second: 2_1
+      213: 490842205202310979
+    second: Hurt_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +120,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2_0
+      name: Hurt_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 7
-        width: 28
-        height: 34
+        x: 6
+        y: 0
+        width: 48
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5092c600ca4184060800000000000000
-      internalID: 6937817954938267909
+      spriteID: 6437b001e623193e0800000000000000
+      internalID: -2048800907179887802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2_1
+      name: Hurt_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 12
-        width: 10
-        height: 10
+        x: 84
+        y: 0
+        width: 48
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +157,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7773282ed65294c20800000000000000
-      internalID: 3191122964850554743
+      spriteID: 3476ad19262dfc600800000000000000
+      internalID: 490842205202310979
       vertices: []
       indices: 
       edges: []
@@ -173,8 +177,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2_0: 6937817954938267909
-      2_1: 3191122964850554743
+      Hurt_0: -2048800907179887802
+      Hurt_1: 490842205202310979
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

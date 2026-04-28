@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Tubular_plant_shadow2_1.png.meta
+guid: 1c120a28f749da247b08fffe3a3b3fd5
+========
 guid: 57a2ff93f02067849b6ee681fe1717d3
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/1 - Brown/Content/icons/1.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -855298285791758126
-    second: 1_0
+      213: 1675722299447400227
+    second: Tubular_plant_shadow2_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_0
+      name: Tubular_plant_shadow2_1_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 6
-        width: 34
+        x: 17
+        y: 14
+        width: 29
         height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d8b16a9dbe5124f0800000000000000
-      internalID: -855298285791758126
+      spriteID: 32753c09d8c514710800000000000000
+      internalID: 1675722299447400227
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1_0: -855298285791758126
+      Tubular_plant_shadow2_1_0: 1675722299447400227
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

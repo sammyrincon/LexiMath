@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Meat_flower_shadow2_2.png.meta
+guid: be42a7cd2756f3249964bcf1576e2034
+========
 guid: 6fc3be7f664aeaa45b4d0bce990a15b7
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/13.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8389134475083476877
-    second: 13_0
+      213: 951087123191069556
+    second: Meat_flower_shadow2_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 13_0
+      name: Meat_flower_shadow2_2_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 2
-        width: 14
-        height: 12
+        y: 3
+        width: 62
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8f65588b513c6470800000000000000
-      internalID: 8389134475083476877
+      spriteID: 47b704013b0f23d00800000000000000
+      internalID: 951087123191069556
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      13_0: 8389134475083476877
+      Meat_flower_shadow2_2_0: 951087123191069556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

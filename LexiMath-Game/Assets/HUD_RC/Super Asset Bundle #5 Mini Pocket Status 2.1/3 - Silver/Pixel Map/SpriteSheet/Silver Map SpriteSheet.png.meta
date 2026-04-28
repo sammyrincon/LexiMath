@@ -1,40 +1,44 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Characters/free-werewolf-sprite-sheets-pixel-art/White_Werewolf/Jump.png.meta
+guid: 8932fc28b191fb04bb77c02b807aaf59
+========
 guid: 0ea93e236cc0dcb419eb0b2d2b848a5d
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/3 - Silver/Pixel Map/SpriteSheet/Silver Map SpriteSheet.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8460298222535879379
-    second: Silver Map SpriteSheet_0
+      213: 7460046300004610927
+    second: Jump_0
   - first:
-      213: 7102092952412356698
-    second: Silver Map SpriteSheet_1
+      213: 7034338576483803127
+    second: Jump_1
   - first:
-      213: -7245958439462101500
-    second: Silver Map SpriteSheet_2
+      213: 6054277451648750542
+    second: Jump_2
   - first:
-      213: -8270895216509894673
-    second: Silver Map SpriteSheet_3
+      213: 6937500446539429301
+    second: Jump_3
   - first:
-      213: 1478329270062284314
-    second: Silver Map SpriteSheet_4
+      213: 3580086529375993838
+    second: Jump_4
   - first:
-      213: -3641731873936360342
-    second: Silver Map SpriteSheet_5
+      213: 3630178267427638470
+    second: Jump_5
   - first:
-      213: -597997814873703439
-    second: Silver Map SpriteSheet_6
+      213: 3900142949445631465
+    second: Jump_6
   - first:
-      213: 2797663310436441083
-    second: Silver Map SpriteSheet_7
+      213: 3967418731061993063
+    second: Jump_7
   - first:
-      213: -8066219660257912794
-    second: Silver Map SpriteSheet_8
+      213: 3330681223243198311
+    second: Jump_8
   - first:
-      213: -8728210831458368328
-    second: Silver Map SpriteSheet_9
+      213: -5679318689324892672
+    second: Jump_9
   - first:
-      213: 8325067806892314068
-    second: Silver Map SpriteSheet_10
+      213: 8986021004954451436
+    second: Jump_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -143,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Silver Map SpriteSheet_0
+      name: Jump_0
       rect:
         serializedVersion: 2
-        x: 287
-        y: 527
-        width: 66
-        height: 306
+        x: 11
+        y: 0
+        width: 100
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +162,86 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d2551e7579bf69a80800000000000000
-      internalID: -8460298222535879379
+      spriteID: f63fdb7b598678760800000000000000
+      internalID: 7460046300004610927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Silver Map SpriteSheet_1
+      name: Jump_1
       rect:
         serializedVersion: 2
-        x: 873
-        y: 529
+        x: 139
+        y: 0
+        width: 99
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffd4217aadfe9160800000000000000
+      internalID: 7034338576483803127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 97
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec35e2de34d150450800000000000000
+      internalID: 6054277451648750542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_3
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 11
+        width: 83
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5b81156e3f64060800000000000000
+      internalID: 6937500446539429301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_4
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1
         width: 78
-        height: 306
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a50085669e3bf8260800000000000000
-      internalID: 7102092952412356698
+      spriteID: eeffd98fab50fa130800000000000000
+      internalID: 3580086529375993838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Silver Map SpriteSheet_2
+      name: Jump_5
       rect:
         serializedVersion: 2
-        x: 1375
-        y: 527
-        width: 258
-        height: 318
+        x: 667
+        y: 8
+        width: 87
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40e1e96a03f217b90800000000000000
-      internalID: -7245958439462101500
+      spriteID: 6cc0e5596ebf06230800000000000000
+      internalID: 3630178267427638470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Silver Map SpriteSheet_3
+      name: Jump_6
       rect:
         serializedVersion: 2
-        x: 1919
-        y: 527
-        width: 354
-        height: 318
+        x: 793
+        y: 6
+        width: 100
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +294,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fef33752f90e73d80800000000000000
-      internalID: -8270895216509894673
+      spriteID: 9ed73f24957102630800000000000000
+      internalID: 3900142949445631465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Silver Map SpriteSheet_4
+      name: Jump_7
       rect:
         serializedVersion: 2
-        x: 2437
-        y: 527
-        width: 502
-        height: 316
+        x: 915
+        y: 0
+        width: 109
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +316,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1eff1b73a4148410800000000000000
-      internalID: 1478329270062284314
+      spriteID: 76e5e2cc05a1f0730800000000000000
+      internalID: 3967418731061993063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Silver Map SpriteSheet_5
+      name: Jump_8
       rect:
         serializedVersion: 2
-        x: 3039
-        y: 527
-        width: 482
-        height: 318
+        x: 1046
+        y: 0
+        width: 97
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +338,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6c3ec6c728f57dc0800000000000000
-      internalID: -3641731873936360342
+      spriteID: 76f69730de4f83e20800000000000000
+      internalID: 3330681223243198311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Silver Map SpriteSheet_6
+      name: Jump_9
       rect:
         serializedVersion: 2
-        x: 79
-        y: 95
-        width: 482
-        height: 318
+        x: 1181
+        y: 0
+        width: 95
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +360,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1fb3efbd72c73b7f0800000000000000
-      internalID: -597997814873703439
+      spriteID: 00e7d8c0eb10f21b0800000000000000
+      internalID: -5679318689324892672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Silver Map SpriteSheet_7
+      name: Jump_10
       rect:
         serializedVersion: 2
-        x: 671
-        y: 95
-        width: 482
-        height: 318
+        x: 1311
+        y: 0
+        width: 92
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,74 +382,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bfb15bb45fb43d620800000000000000
-      internalID: 2797663310436441083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Silver Map SpriteSheet_8
-      rect:
-        serializedVersion: 2
-        x: 1263
-        y: 95
-        width: 482
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6281e06a4f70f0090800000000000000
-      internalID: -8066219660257912794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Silver Map SpriteSheet_9
-      rect:
-        serializedVersion: 2
-        x: 1855
-        y: 95
-        width: 482
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b4053a2e7a2fd680800000000000000
-      internalID: -8728210831458368328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Silver Map SpriteSheet_10
-      rect:
-        serializedVersion: 2
-        x: 2447
-        y: 95
-        width: 482
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4dd4bd0ff05988370800000000000000
-      internalID: 8325067806892314068
+      spriteID: ced32887e72c4bc70800000000000000
+      internalID: 8986021004954451436
       vertices: []
       indices: 
       edges: []
@@ -398,17 +402,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Silver Map SpriteSheet_0: -8460298222535879379
-      Silver Map SpriteSheet_1: 7102092952412356698
-      Silver Map SpriteSheet_10: 8325067806892314068
-      Silver Map SpriteSheet_2: -7245958439462101500
-      Silver Map SpriteSheet_3: -8270895216509894673
-      Silver Map SpriteSheet_4: 1478329270062284314
-      Silver Map SpriteSheet_5: -3641731873936360342
-      Silver Map SpriteSheet_6: -597997814873703439
-      Silver Map SpriteSheet_7: 2797663310436441083
-      Silver Map SpriteSheet_8: -8066219660257912794
-      Silver Map SpriteSheet_9: -8728210831458368328
+      Jump_0: 7460046300004610927
+      Jump_1: 7034338576483803127
+      Jump_10: 8986021004954451436
+      Jump_2: 6054277451648750542
+      Jump_3: 6937500446539429301
+      Jump_4: 3580086529375993838
+      Jump_5: 3630178267427638470
+      Jump_6: 3900142949445631465
+      Jump_7: 3967418731061993063
+      Jump_8: 3330681223243198311
+      Jump_9: -5679318689324892672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Medieval Warrior Pack/Sprites.meta
+guid: e720e87c91cc0f14ab6cbfe8c1b3491f
+========
 guid: 21a47a8a92a2ec740b33d4123bcf8190
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/Characters/Demon Samurai 2D Pixel Art/Demon Samurai 2D Pixel Art/Sprites.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

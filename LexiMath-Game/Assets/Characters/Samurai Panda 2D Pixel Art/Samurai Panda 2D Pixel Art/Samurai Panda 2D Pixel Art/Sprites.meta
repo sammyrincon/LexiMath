@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Characters/FREE_Samurai 2D Pixel Art v1.2/Sprites.meta
+guid: ce6017914fd06f74baef69921c38516e
+========
 guid: b09a86f9a3f58f44cbc6dfc0eda7233b
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/Characters/Samurai Panda 2D Pixel Art/Samurai Panda 2D Pixel Art/Samurai Panda 2D Pixel Art/Sprites.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

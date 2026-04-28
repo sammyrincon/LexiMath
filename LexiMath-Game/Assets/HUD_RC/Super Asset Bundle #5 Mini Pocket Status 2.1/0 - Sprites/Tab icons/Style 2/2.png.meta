@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/RF_Catacombs_v1.0/torch_4.png.meta
+guid: 81fc65f4881171e41b08179804cc605b
+========
 guid: 52a93f51dddff73429e01a9690f45f05
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Tab icons/Style 2/2.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6937817954938267909
-    second: 2_0
+      213: -3778551003262922573
+    second: torch_4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2_0
+      name: torch_4_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5092c600ca4184060800000000000000
-      internalID: 6937817954938267909
+      spriteID: 3b051d4d1e3ef8bc0800000000000000
+      internalID: -3778551003262922573
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2_0: 6937817954938267909
+      torch_4_0: -3778551003262922573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

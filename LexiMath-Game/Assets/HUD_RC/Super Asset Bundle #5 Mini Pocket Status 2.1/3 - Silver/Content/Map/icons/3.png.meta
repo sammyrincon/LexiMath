@@ -1,16 +1,20 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Butchery/Butchery_01-Sheet.png.meta
+guid: 45e85f5f9e53cc547a1868476e6228d1
+========
 guid: e05bc81078a31b1468d34cbaac37b757
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/3 - Silver/Content/Map/icons/3.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6470460504253458178
-    second: 3_0
+      213: -1784731013225969279
+    second: Butchery_01-Sheet_0
   - first:
-      213: 6623151957235123224
-    second: 3_1
+      213: -6699830377728170428
+    second: Butchery_01-Sheet_1
   - first:
-      213: 2161284124966242572
-    second: 3_2
+      213: 4687313342773659461
+    second: Butchery_01-Sheet_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_0
+      name: Butchery_01-Sheet_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 5
-        width: 8
-        height: 10
+        x: 16
+        y: 25
+        width: 7
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,42 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef817ce047e4436a0800000000000000
-      internalID: -6470460504253458178
+      spriteID: 1890b01799c5b37e0800000000000000
+      internalID: -1784731013225969279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_1
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 15
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 814ce683d992aeb50800000000000000
-      internalID: 6623151957235123224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_2
+      name: Butchery_01-Sheet_1
       rect:
         serializedVersion: 2
         x: 19
-        y: 11
-        width: 8
-        height: 10
+        y: 15
+        width: 30
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +160,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c09cd4fe57c6efd10800000000000000
-      internalID: 2161284124966242572
+      spriteID: 4462428c4cb6503a0800000000000000
+      internalID: -6699830377728170428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Butchery_01-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54709fa96aeac0140800000000000000
+      internalID: 4687313342773659461
       vertices: []
       indices: 
       edges: []
@@ -198,9 +202,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      3_0: -6470460504253458178
-      3_1: 6623151957235123224
-      3_2: 2161284124966242572
+      Butchery_01-Sheet_0: -1784731013225969279
+      Butchery_01-Sheet_1: -6699830377728170428
+      Butchery_01-Sheet_2: 4687313342773659461
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

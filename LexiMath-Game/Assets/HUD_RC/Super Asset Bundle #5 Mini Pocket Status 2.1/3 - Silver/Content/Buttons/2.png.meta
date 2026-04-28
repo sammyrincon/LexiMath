@@ -1,19 +1,23 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Pixel Crawler - Free Pack/Environment/Structures/Stations/Bonfire/Bonfire_03-Sheet.png.meta
+guid: c827667946933a249b701c08b7e495ad
+========
 guid: 7e63fe10cda734b4f820f3e303ba84eb
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/3 - Silver/Content/Buttons/2.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6937817954938267909
-    second: 2_0
+      213: 5989395443681209957
+    second: Bonfire_03-Sheet_0
   - first:
-      213: 3191122964850554743
-    second: 2_1
+      213: -3952316392366093792
+    second: Bonfire_03-Sheet_1
   - first:
-      213: 5382512944479897801
-    second: 2_2
+      213: -6871641387244503986
+    second: Bonfire_03-Sheet_2
   - first:
-      213: -5515383189529662604
-    second: 2_3
+      213: 6432504202524935157
+    second: Bonfire_03-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,34 +126,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2_0
+      name: Bonfire_03-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
-        width: 21
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5092c600ca4184060800000000000000
-      internalID: 6937817954938267909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2_1
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 4
-        width: 19
+        y: 9
+        width: 32
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -159,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7773282ed65294c20800000000000000
-      internalID: 3191122964850554743
+      spriteID: 56e26ff3c6b9e1350800000000000000
+      internalID: 5989395443681209957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2_2
+      name: Bonfire_03-Sheet_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 0
-        width: 9
-        height: 6
+        x: 32
+        y: 9
+        width: 32
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c88aa6510782ba40800000000000000
-      internalID: 5382512944479897801
+      spriteID: 02ac0117e2d8629c0800000000000000
+      internalID: -3952316392366093792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2_3
+      name: Bonfire_03-Sheet_2
       rect:
         serializedVersion: 2
-        x: 38
-        y: 2
-        width: 21
-        height: 7
+        x: 64
+        y: 9
+        width: 32
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +185,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47b6cebf53c6573b0800000000000000
-      internalID: -5515383189529662604
+      spriteID: e4c3b69d09603a0a0800000000000000
+      internalID: -6871641387244503986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonfire_03-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 9
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3c4b7cd78d44950800000000000000
+      internalID: 6432504202524935157
       vertices: []
       indices: 
       edges: []
@@ -223,10 +227,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2_0: 6937817954938267909
-      2_1: 3191122964850554743
-      2_2: 5382512944479897801
-      2_3: -5515383189529662604
+      Bonfire_03-Sheet_0: 5989395443681209957
+      Bonfire_03-Sheet_1: -3952316392366093792
+      Bonfire_03-Sheet_2: -6871641387244503986
+      Bonfire_03-Sheet_3: 6432504202524935157
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

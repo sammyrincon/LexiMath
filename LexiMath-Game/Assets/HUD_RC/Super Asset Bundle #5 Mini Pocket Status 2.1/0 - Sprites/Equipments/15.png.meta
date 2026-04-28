@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free Industrial Zone Tileset/3 Objects/Box1.png.meta
+guid: 3caeed1dfd274834d9d95008e6da269a
+========
 guid: 015514ebf657f4e4a8a06635f8186296
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/15.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4349915267927364619
-    second: 15_0
+      213: 4941240919024178222
+    second: Box1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 15_0
+      name: Box1_0
       rect:
         serializedVersion: 2
         x: 1
         y: 0
-        width: 14
-        height: 15
+        width: 30
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b04dbdba3e00e5c30800000000000000
-      internalID: 4349915267927364619
+      spriteID: e249f00af60d29440800000000000000
+      internalID: 4941240919024178222
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      15_0: 4349915267927364619
+      Box1_0: 4941240919024178222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

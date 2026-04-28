@@ -1,4 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/RF_Catacombs_v1.0/PSD/Anim/torch.psd.meta
+guid: c86e1dd691cfac8478aceeb9b81e051f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7509860518518112746
+    second: torch_0
+========
 <<<<<<<< HEAD:LexiMath-Game/Assets/Lifty's Pixel Art Pack/Pixel Art Pack/Characters/1/PlayerAnimations/Idle_Full/Idle1.png.meta
 guid: 8c560bb7ef8153f488f83ef0503d4ac1
 AssetOrigin:
@@ -13,6 +21,7 @@ guid: 6f2a7fd66b6de514c87f82a8be9438f3
 >>>>>>>> d7b7938b85db54ad3a8c538b0f7ac287332157e2:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/2.png.meta
 TextureImporter:
   internalIDToNameTable: []
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/2.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,7 +128,33 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/RF_Catacombs_v1.0/PSD/Anim/torch.psd.meta
+    sprites:
+    - serializedVersion: 2
+      name: torch_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1c0074a52683860800000000000000
+      internalID: 7509860518518112746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+========
     sprites: []
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/2.png.meta
     outline: []
     customData: 
     physicsShape: []
@@ -133,7 +168,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/RF_Catacombs_v1.0/PSD/Anim/torch.psd.meta
+    nameFileIdTable:
+      torch_0: 7509860518518112746
+========
     nameFileIdTable: {}
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/2.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

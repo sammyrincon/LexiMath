@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Pixel Crawler - Free Pack/Environment/Structures/Stations/Cooking Station/Butchery/Butchery_04.png.meta
+guid: b01e4b6a5b3cd2b408d6e88db5f45172
+========
 guid: 22bd3dd8a3df15d41a3ae7b24408d0cb
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/4 - White/Pixel Book/Sprites/Page Flip/Left/5.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4130640169021434097
-    second: 5_0
+      213: 8502006367863873750
+    second: Butchery_04_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 5_0
+      name: Butchery_04_0
       rect:
         serializedVersion: 2
-        x: 143
-        y: 167
-        width: 490
-        height: 325
+        x: 0
+        y: 0
+        width: 70
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f86b71495bf25930800000000000000
-      internalID: 4130640169021434097
+      spriteID: 6d0a2aafeb13df570800000000000000
+      internalID: 8502006367863873750
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      5_0: 4130640169021434097
+      Butchery_04_0: 8502006367863873750
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

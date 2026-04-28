@@ -1,40 +1,41 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Characters/MainCharacter(FreePack)/Idle.png.meta
+guid: 6a56c8b56362c1644b0d17617416f27e
+========
 guid: 49c68a93470394a47999a54a4c388f94
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/1 - Brown/Pixel Map/SpriteSheet/Brown Map SpriteSheet.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4015864360689555583
-    second: Brown Map SpriteSheet_0
+      213: 4723107735738678597
+    second: Idle_0
   - first:
-      213: -3046653488289051904
-    second: Brown Map SpriteSheet_1
+      213: -7385789195546760866
+    second: Idle_1
   - first:
-      213: 132054730521912177
-    second: Brown Map SpriteSheet_2
+      213: 3234629978573100161
+    second: Idle_2
   - first:
-      213: -1317603505687506385
-    second: Brown Map SpriteSheet_3
+      213: 6373048116405451881
+    second: Idle_3
   - first:
-      213: -2198088504976504741
-    second: Brown Map SpriteSheet_4
+      213: 7264182050183361747
+    second: Idle_4
   - first:
-      213: 4581131652775171187
-    second: Brown Map SpriteSheet_5
+      213: -2834552850196481573
+    second: Idle_5
   - first:
-      213: 8442314108260265396
-    second: Brown Map SpriteSheet_6
+      213: 3278449094680734212
+    second: Idle_6
   - first:
-      213: 1171041140548632160
-    second: Brown Map SpriteSheet_7
+      213: 3384493420599841878
+    second: Idle_7
   - first:
-      213: -352782280983159210
-    second: Brown Map SpriteSheet_8
+      213: -2331352242086191015
+    second: Idle_8
   - first:
-      213: 5775928941487937260
-    second: Brown Map SpriteSheet_9
-  - first:
-      213: 3754512831642535502
-    second: Brown Map SpriteSheet_10
+      213: -3914248031228685145
+    second: Idle_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -143,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_0
+      name: Idle_0
       rect:
         serializedVersion: 2
-        x: 287
-        y: 527
-        width: 66
-        height: 306
+        x: 75
+        y: 31
+        width: 45
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f785d0deb573bb730800000000000000
-      internalID: 4015864360689555583
+      spriteID: 54d7a982679db8140800000000000000
+      internalID: 4723107735738678597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_1
+      name: Idle_1
       rect:
         serializedVersion: 2
-        x: 873
-        y: 529
-        width: 78
-        height: 306
+        x: 267
+        y: 31
+        width: 45
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00b83d45bcc18b5d0800000000000000
-      internalID: -3046653488289051904
+      spriteID: e596485bbd7608990800000000000000
+      internalID: -7385789195546760866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_2
+      name: Idle_2
       rect:
         serializedVersion: 2
-        x: 1375
-        y: 527
-        width: 258
-        height: 318
+        x: 459
+        y: 31
+        width: 45
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1732ba7e31725d100800000000000000
-      internalID: 132054730521912177
+      spriteID: 184dda4e3d6b3ec20800000000000000
+      internalID: 3234629978573100161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_3
+      name: Idle_3
       rect:
         serializedVersion: 2
-        x: 1919
-        y: 527
-        width: 354
-        height: 318
+        x: 651
+        y: 31
+        width: 45
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f22dfa0b79ee6bde0800000000000000
-      internalID: -1317603505687506385
+      spriteID: 96cb1dafe7d917850800000000000000
+      internalID: 6373048116405451881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_4
+      name: Idle_4
       rect:
         serializedVersion: 2
-        x: 2437
-        y: 527
-        width: 502
-        height: 316
+        x: 843
+        y: 31
+        width: 45
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5881049622de71e0800000000000000
-      internalID: -2198088504976504741
+      spriteID: 3d4b2fc561f8fc460800000000000000
+      internalID: 7264182050183361747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_5
+      name: Idle_5
       rect:
         serializedVersion: 2
-        x: 3039
-        y: 527
-        width: 482
-        height: 318
+        x: 1035
+        y: 31
+        width: 45
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37456f067f2739f30800000000000000
-      internalID: 4581131652775171187
+      spriteID: bd9b7fa6335a9a8d0800000000000000
+      internalID: -2834552850196481573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_6
+      name: Idle_6
       rect:
         serializedVersion: 2
-        x: 79
-        y: 95
-        width: 482
-        height: 318
+        x: 1227
+        y: 31
+        width: 45
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4bd2f11c3ff192570800000000000000
-      internalID: 8442314108260265396
+      spriteID: 40a65a6e4146f7d20800000000000000
+      internalID: 3278449094680734212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_7
+      name: Idle_7
       rect:
         serializedVersion: 2
-        x: 671
-        y: 95
-        width: 482
-        height: 318
+        x: 1419
+        y: 31
+        width: 45
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 06ef4cf76bf504010800000000000000
-      internalID: 1171041140548632160
+      spriteID: 654108f85d228fe20800000000000000
+      internalID: 3384493420599841878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_8
+      name: Idle_8
       rect:
         serializedVersion: 2
-        x: 1263
-        y: 95
-        width: 482
-        height: 318
+        x: 1611
+        y: 31
+        width: 45
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +335,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65e52f2726aaa1bf0800000000000000
-      internalID: -352782280983159210
+      spriteID: 9506424ec7f55afd0800000000000000
+      internalID: -2331352242086191015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown Map SpriteSheet_9
+      name: Idle_9
       rect:
         serializedVersion: 2
-        x: 1855
-        y: 95
-        width: 482
-        height: 318
+        x: 1803
+        y: 31
+        width: 45
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,30 +357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce6594525c8382050800000000000000
-      internalID: 5775928941487937260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Brown Map SpriteSheet_10
-      rect:
-        serializedVersion: 2
-        x: 2447
-        y: 95
-        width: 482
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e4603b23785ba1430800000000000000
-      internalID: 3754512831642535502
+      spriteID: 7a497d7772ccda9c0800000000000000
+      internalID: -3914248031228685145
       vertices: []
       indices: 
       edges: []
@@ -398,17 +377,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Brown Map SpriteSheet_0: 4015864360689555583
-      Brown Map SpriteSheet_1: -3046653488289051904
-      Brown Map SpriteSheet_10: 3754512831642535502
-      Brown Map SpriteSheet_2: 132054730521912177
-      Brown Map SpriteSheet_3: -1317603505687506385
-      Brown Map SpriteSheet_4: -2198088504976504741
-      Brown Map SpriteSheet_5: 4581131652775171187
-      Brown Map SpriteSheet_6: 8442314108260265396
-      Brown Map SpriteSheet_7: 1171041140548632160
-      Brown Map SpriteSheet_8: -352782280983159210
-      Brown Map SpriteSheet_9: 5775928941487937260
+      Idle_0: 4723107735738678597
+      Idle_1: -7385789195546760866
+      Idle_2: 3234629978573100161
+      Idle_3: 6373048116405451881
+      Idle_4: 7264182050183361747
+      Idle_5: -2834552850196481573
+      Idle_6: 3278449094680734212
+      Idle_7: 3384493420599841878
+      Idle_8: -2331352242086191015
+      Idle_9: -3914248031228685145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

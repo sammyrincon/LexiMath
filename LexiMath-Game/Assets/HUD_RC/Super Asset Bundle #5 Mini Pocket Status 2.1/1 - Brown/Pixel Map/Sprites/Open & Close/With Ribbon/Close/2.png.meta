@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Veins_shadow2_3.png.meta
+guid: 497f884369afed94a817368cd8fda94d
+========
 guid: 790857e7292ada548990e4a3446d2864
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/1 - Brown/Pixel Map/Sprites/Open & Close/With Ribbon/Close/2.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6937817954938267909
-    second: 2_0
+      213: 8935887124542737451
+    second: Veins_shadow2_3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2_0
+      name: Veins_shadow2_3_0
       rect:
         serializedVersion: 2
-        x: 69
+        x: 59
         y: 63
-        width: 502
-        height: 316
+        width: 137
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5092c600ca4184060800000000000000
-      internalID: 6937817954938267909
+      spriteID: b2c4b53def5a20c70800000000000000
+      internalID: 8935887124542737451
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2_0: 6937817954938267909
+      Veins_shadow2_3_0: 8935887124542737451
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

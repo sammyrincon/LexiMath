@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Tentacle_plant_shadow2_3.png.meta
+guid: d0992e83e4ef41f46b14a0108de1ec17
+========
 guid: 300fbbcfd08777849bb657fcae5297d9
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/2 - Gold/Content/Holders/27.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5622901713081898559
-    second: 27_0
+      213: -8025304212866614269
+    second: Tentacle_plant_shadow2_3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 27_0
+      name: Tentacle_plant_shadow2_3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 5
+        y: 3
+        width: 53
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c961d0fea077f1b0800000000000000
-      internalID: -5622901713081898559
+      spriteID: 30cb3a9965460a090800000000000000
+      internalID: -8025304212866614269
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      27_0: -5622901713081898559
+      Tentacle_plant_shadow2_3_0: -8025304212866614269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

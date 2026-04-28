@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free Industrial Zone Tileset/3 Objects/Locker1.png.meta
+guid: df1dec2a15323cb4eafd32ea890ec455
+========
 guid: 24a8cfe16d544ff4db49feb0a9bbc2ac
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/2 - Gold/Content/Side Tabs/Animated/1.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -855298285791758126
-    second: 1_0
+      213: -8024731280582424380
+    second: Locker1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_0
+      name: Locker1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 11
+        y: 8
+        width: 32
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d8b16a9dbe5124f0800000000000000
-      internalID: -855298285791758126
+      spriteID: 4c84beaca6d62a090800000000000000
+      internalID: -8024731280582424380
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1_0: -855298285791758126
+      Locker1_0: -8024731280582424380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

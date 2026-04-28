@@ -1,10 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/Free-Cursed-Land-Top-Down-Pixel-Art-Tileset/PNG/Objects_separetely/Bones_shadow2_6.png.meta
+guid: 77e524f2428860d4cb66686f31ab2fca
+========
 guid: 8a1ac16d9afa847498bdf8b134bb601a
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/4 - White/Content/Map/Design/3.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6470460504253458178
-    second: 3_0
+      213: -3233604809843153967
+    second: Bones_shadow2_6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_0
+      name: Bones_shadow2_6_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 42
+        x: 13
+        y: 14
+        width: 37
         height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef817ce047e4436a0800000000000000
-      internalID: -6470460504253458178
+      spriteID: 1d3ed4dce8def13d0800000000000000
+      internalID: -3233604809843153967
       vertices: []
       indices: 
       edges: []
@@ -148,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      3_0: -6470460504253458178
+      Bones_shadow2_6_0: -3233604809843153967
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
