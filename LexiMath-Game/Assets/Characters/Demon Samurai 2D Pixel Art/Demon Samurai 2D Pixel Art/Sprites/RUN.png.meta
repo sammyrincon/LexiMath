@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -93,7 +93,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -137,11 +137,11 @@ TextureImporter:
       name: RUN_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 8
-        width: 38
-        height: 50
-      alignment: 0
+        x: 51
+        y: 9
+        width: 36
+        height: 48
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -159,11 +159,11 @@ TextureImporter:
       name: RUN_1
       rect:
         serializedVersion: 2
-        x: 179
-        y: 10
-        width: 38
-        height: 49
-      alignment: 0
+        x: 180
+        y: 11
+        width: 36
+        height: 47
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -181,11 +181,11 @@ TextureImporter:
       name: RUN_2
       rect:
         serializedVersion: 2
-        x: 305
-        y: 12
-        width: 39
-        height: 48
-      alignment: 0
+        x: 306
+        y: 13
+        width: 37
+        height: 46
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -203,11 +203,11 @@ TextureImporter:
       name: RUN_3
       rect:
         serializedVersion: 2
-        x: 433
-        y: 10
-        width: 38
-        height: 49
-      alignment: 0
+        x: 434
+        y: 11
+        width: 36
+        height: 47
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -225,11 +225,11 @@ TextureImporter:
       name: RUN_4
       rect:
         serializedVersion: 2
-        x: 562
-        y: 8
-        width: 38
-        height: 50
-      alignment: 0
+        x: 563
+        y: 9
+        width: 36
+        height: 48
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -247,11 +247,11 @@ TextureImporter:
       name: RUN_5
       rect:
         serializedVersion: 2
-        x: 691
-        y: 10
-        width: 38
-        height: 49
-      alignment: 0
+        x: 692
+        y: 11
+        width: 36
+        height: 47
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -269,11 +269,11 @@ TextureImporter:
       name: RUN_6
       rect:
         serializedVersion: 2
-        x: 818
-        y: 11
-        width: 38
-        height: 49
-      alignment: 0
+        x: 819
+        y: 12
+        width: 36
+        height: 47
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -291,11 +291,11 @@ TextureImporter:
       name: RUN_7
       rect:
         serializedVersion: 2
-        x: 945
-        y: 10
-        width: 38
-        height: 49
-      alignment: 0
+        x: 946
+        y: 11
+        width: 36
+        height: 47
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 84ce0256db4fe4643877d63d67214e70
     internalID: 0
     vertices: []
     indices: 
@@ -321,7 +321,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       RUN_0: -4726913989911992049
       RUN_1: -1224304467317232117

@@ -39,3 +39,28 @@ MonoBehaviour:
     distractores:
     - 12
     - 10
+  - enunciado: "\xBFCu\xE1nto es 9 + 1?"
+    respuestaCorrecta: 10
+    distractores:
+    - 11
+    - 8
+  - enunciado: "\xBFCu\xE1nto es 3 + 6?"
+    respuestaCorrecta: 9
+    distractores:
+    - 10
+    - 7
+  - enunciado: "\xBFCu\xE1nto es 8 + 6?"
+    respuestaCorrecta: 14
+    distractores:
+    - 12
+    - 15
+  - enunciado: "\xBFCu\xE1nto es 8 + 7?"
+    respuestaCorrecta: 15
+    distractores:
+    - 12
+    - 17
+  - enunciado: "\xBFCu\xE1nto es 14 + 6?"
+    respuestaCorrecta: 20
+    distractores:
+    - 17
+    - 21

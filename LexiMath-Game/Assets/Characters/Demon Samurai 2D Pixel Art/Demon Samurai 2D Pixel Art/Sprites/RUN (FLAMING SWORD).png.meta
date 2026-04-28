@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -93,7 +93,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -137,10 +137,10 @@ TextureImporter:
       name: RUN (FLAMING SWORD)_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 7
-        width: 55
-        height: 51
+        x: 34
+        y: 8
+        width: 53
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: RUN (FLAMING SWORD)_1
       rect:
         serializedVersion: 2
-        x: 161
-        y: 7
-        width: 56
-        height: 52
+        x: 162
+        y: 8
+        width: 54
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: RUN (FLAMING SWORD)_2
       rect:
         serializedVersion: 2
-        x: 289
-        y: 8
-        width: 55
-        height: 52
+        x: 290
+        y: 9
+        width: 53
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +203,10 @@ TextureImporter:
       name: RUN (FLAMING SWORD)_3
       rect:
         serializedVersion: 2
-        x: 420
-        y: 7
-        width: 51
-        height: 52
+        x: 421
+        y: 8
+        width: 49
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +225,10 @@ TextureImporter:
       name: RUN (FLAMING SWORD)_4
       rect:
         serializedVersion: 2
-        x: 548
-        y: 5
-        width: 52
-        height: 53
+        x: 549
+        y: 6
+        width: 50
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: RUN (FLAMING SWORD)_5
       rect:
         serializedVersion: 2
-        x: 675
-        y: 8
-        width: 54
-        height: 51
+        x: 676
+        y: 9
+        width: 52
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +269,20 @@ TextureImporter:
       name: RUN (FLAMING SWORD)_6
       rect:
         serializedVersion: 2
-        x: 801
-        y: 8
-        width: 55
-        height: 52
+        x: 802
+        y: 9
+        width: 53
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95e35d76fb3acdf50800000000000000
-      internalID: 6907575970955607641
+      spriteID: 28f12ac9b5af7e94e945b98852590f16
+      internalID: -97639150
       vertices: []
       indices: 
       edges: []
@@ -291,20 +291,20 @@ TextureImporter:
       name: RUN (FLAMING SWORD)_7
       rect:
         serializedVersion: 2
-        x: 932
-        y: 7
-        width: 51
-        height: 52
+        x: 933
+        y: 8
+        width: 49
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 38a3403cc4148acf0800000000000000
-      internalID: -240870782119167357
+      spriteID: 3aa48a78c899f81468ce96a21270221d
+      internalID: -1877419628
       vertices: []
       indices: 
       edges: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9f1bf3878ef4fa146ae767c2da8723aa
     internalID: 0
     vertices: []
     indices: 
@@ -321,7 +321,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       RUN (FLAMING SWORD)_0: -7559637446464829598
       RUN (FLAMING SWORD)_1: 3226962168225316987
@@ -329,8 +331,8 @@ TextureImporter:
       RUN (FLAMING SWORD)_3: -1748482149210149379
       RUN (FLAMING SWORD)_4: -4594542464004144625
       RUN (FLAMING SWORD)_5: 7901629565876178619
-      RUN (FLAMING SWORD)_6: 6907575970955607641
-      RUN (FLAMING SWORD)_7: -240870782119167357
+      RUN (FLAMING SWORD)_6: -97639150
+      RUN (FLAMING SWORD)_7: -1877419628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
