@@ -8,7 +8,7 @@ public class BossAttackHitbox : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerHealth ph = other.GetComponent<PlayerHealth>();
+            PlayerHealth_SR ph = other.GetComponent<PlayerHealth_SR>();
             if (ph != null) ph.TakeDamage(damage);
         }
     }

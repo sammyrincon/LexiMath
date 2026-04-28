@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Martial Hero/Sprites/Fall.png.meta
 guid: ab9c6780bd1ac3c4fb318722a17a5862
 AssetOrigin:
   serializedVersion: 1
@@ -7,6 +8,9 @@ AssetOrigin:
   packageVersion: 1.0
   assetPath: Assets/Martial Hero/Sprites/Fall.png
   uploadId: 372436
+========
+guid: 66bd1bda75c8db34fa1d98e2c7c4ab31
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/1 - Brown/Content/Map/icons/3.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Characters/free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Jump.png.meta
 guid: 686b0ebf3350c114bb6363c4b298ed5b
+========
+guid: 271173911f3896e4b930e99fd7828c6c
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/4 - White/Pixel Map/SpriteSheet/White Map SpriteSheet.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:

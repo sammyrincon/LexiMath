@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth_SR : MonoBehaviour
 {
-    public static PlayerHealth Instance;
+    public static PlayerHealth_SR Instance;
     
     [Header("Health")]
     public int maxHealth = 100;

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c94c0108f1d92f42b3a88dd74cf9640, type: 3}
+  m_Name: EspNivel1_Questions
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionData
+  nombreNivel: Nivel 1
+  preguntas:
+  - enunciado: "\xBFCu\xE1ntas vocales tiene el abecedario?"
+    respuestaCorrecta: 5
+    distractores:
+    - 3
+    - 7
+  - enunciado: "\xBFCu\xE1l de estas palabras empieza con la vocal a?"
+    respuestaCorrecta: "\xC1rbol"
+    distractores:
+    - "Igl\xFA"
+    - Oso
+  - enunciado: "\xBFQu\xE9 vocal falta en la palabra: c_sa?"
+    respuestaCorrecta: a
+    distractores:
+    - o
+    - u
+  - enunciado: "\xBFCon qu\xE9 vocal empieza ELEFANTE?"
+    respuestaCorrecta: E
+    distractores:
+    - A
+    - I
+  - enunciado: " \xBFCu\xE1ntas vocales hay en la palabra mariposa?"
+    respuestaCorrecta: 4
+    distractores:
+    - 3
+    - 2
+  - enunciado: "\xBFCu\xE1l de estas palabras empieza con la vocal o?"
+    respuestaCorrecta: Oso
+    distractores:
+    - Uva
+    - Isla
+  - enunciado: "\xBFCu\xE1l es la vocal que est\xE1 entre la a y la i?"
+    respuestaCorrecta: e
+    distractores:
+    - o
+    - u
+  - enunciado: "\xBFQu\xE9 vocal se repite en la palabra \"Mariposa\"?"
+    respuestaCorrecta: a
+    distractores:
+    - o
+    - i
+  - enunciado: "\xBFCu\xE1l de estas palabras empieza con la vocal i?"
+    respuestaCorrecta: "Igl\xFA"
+    distractores:
+    - Abeja
+    - "U\xF1a"
+  - enunciado: "\xBFCu\xE1ntas vocales diferentes hay en la palabra murci\xE9lago?"
+    respuestaCorrecta: 5
+    distractores:
+    - 3
+    - 4

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Characters/free-townspeople-cyberpunk-pixel-art/4/Idle.png.meta
 guid: f489be4c23baaf145b179bac032aaf36
+========
+guid: 19c7620d69d14df419ab32bf1926ddf5
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/2 - Gold/Content/Buttons/1.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:

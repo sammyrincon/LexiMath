@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Characters/FREE_Cat 2D Pixel Art/Sprites.meta
 guid: bf4dc4cc17058ee469976d7d81d70b00
+========
+guid: 09601c37f5887234cac1856770cdd986
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/Characters/EVil Wizard 2/EVil Wizard 2/Sprites.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

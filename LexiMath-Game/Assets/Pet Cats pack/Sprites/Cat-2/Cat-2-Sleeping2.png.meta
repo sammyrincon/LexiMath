@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Pet Cats pack/Sprites/Cat-2/Cat-2-Sleeping2.png.meta
 guid: 0e37b2279198f31458e0c161688379fd
 AssetOrigin:
   serializedVersion: 1
@@ -9,6 +10,14 @@ AssetOrigin:
   uploadId: 578467
 TextureImporter:
   internalIDToNameTable: []
+========
+guid: af2dd76aea1342f4bad448913c1466f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8039885727193263474
+    second: background_night_0
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/Backgrounds/SSW2_SET2_v1.0/_PSD/background_night.psd.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -130,13 +139,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Pet Cats pack/Sprites/Cat-2/Cat-2-Sleeping2.png.meta
       name: Cat-2-Sleeping2_0
+========
+      name: background_night_0
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/Backgrounds/SSW2_SET2_v1.0/_PSD/background_night.psd.meta
       rect:
         serializedVersion: 2
         x: 0
         y: 0
+<<<<<<<< HEAD:LexiMath-Game/Assets/Pet Cats pack/Sprites/Cat-2/Cat-2-Sleeping2.png.meta
         width: 50
         height: 50
+========
+        width: 640
+        height: 640
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/Backgrounds/SSW2_SET2_v1.0/_PSD/background_night.psd.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +163,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<<< HEAD:LexiMath-Game/Assets/Pet Cats pack/Sprites/Cat-2/Cat-2-Sleeping2.png.meta
       spriteID: 5284c424002236d4b96331bc21a8fee1
       internalID: -1888303508
+========
+      spriteID: 27d6614c879639f60800000000000000
+      internalID: 8039885727193263474
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/Backgrounds/SSW2_SET2_v1.0/_PSD/background_night.psd.meta
       vertices: []
       indices: 
       edges: []
@@ -155,7 +178,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -165,7 +188,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:LexiMath-Game/Assets/Pet Cats pack/Sprites/Cat-2/Cat-2-Sleeping2.png.meta
       Cat-2-Sleeping2_0: -1888303508
+========
+      background_night_0: 8039885727193263474
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/Backgrounds/SSW2_SET2_v1.0/_PSD/background_night.psd.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

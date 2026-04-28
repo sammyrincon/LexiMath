@@ -180,7 +180,7 @@ public class BossController : MonoBehaviour
         }
         else
         {
-            PlayerHealth.Instance.TakeDamage(damageOnFinalFail);
+            PlayerHealth_SR.Instance.TakeDamage(damageOnFinalFail);
             currentHealth = maxHealth / 2;
             finalQuestionTriggered = false;
             animator.SetBool("isDefending", false);

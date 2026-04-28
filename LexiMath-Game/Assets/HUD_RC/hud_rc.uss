@@ -1,0 +1,889 @@
+:root {
+}
+
+.health-bar-container {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    justify-content: center;
+    align-self: center;
+    align-content: auto;
+    width: 15%;
+    height: 10%;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 50% 50%;
+}
+
+.health-frame {
+    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=2800000&guid=dce6f5913aa8921429fe5181db32e07c&type=3#health_bar_decoration");
+    background-size: 100px 25px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-container {
+    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=2800000&guid=dce6f5913aa8921429fe5181db32e07c&type=3#health_bar_decoration");
+}
+
+.main-hud {
+}
+
+.settings-overlay {
+    display: flex;
+}
+
+.health-bar-fill {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: auto;
+    width: 76px;
+    height: 15px;
+    background-size: 100% 100%;
+    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar.png?fileID=2800000&guid=cc2ae19d769fb4342930af1239ad2a63&type=3#health_bar");
+    -unity-background-scale-mode: scale-and-crop;
+    left: 47px;
+    background-color: rgba(0, 0, 0, 0);
+    flex-shrink: 0;
+}
+
+.home-button {
+    top: 10px;
+    right: 15px;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    width: 30px;
+    height: 30px;
+    background-image: url("project://database/Assets/UI%20Character/MediavelUI/Mediavel.png?fileID=-4438855966236845718&guid=61514b8e8dd6a744fb2a0563a9ba7c7f&type=3#Mediavel_453");
+    background-color: rgba(149, 149, 149, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+}
+
+.image-button {
+    position: absolute;
+    top: 20px;
+    right: 4px;
+    align-self: center;
+    justify-content: center;
+    align-content: auto;
+    width: 20px;
+    height: 15px;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Extras.png?fileID=2659928716049758086&guid=e9fb8c319a15ea04fa479edb81844eca&type=3#Keyboard Extras_1");
+    overflow: visible;
+    opacity: 0.85;
+    visibility: visible;
+    background-size: 125% 125%;
+    -unity-text-align: upper-left;
+}
+
+.up-button {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-size: 95% 90%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 120px;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=-2789869647701826152&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_0");
+    background-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    left: 60px;
+}
+
+.down-botton {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 150px;
+    right: auto;
+    left: 60px;
+    align-self: center;
+    align-items: center;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=3071471213083671370&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_1");
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0.02);
+    background-size: 95% 90%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.left-button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-size: 100% 100%;
+    align-self: center;
+    align-items: center;
+    top: 135px;
+    left: 30px;
+    bottom: 0;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=-3836678269060062180&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_2");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.right-button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 90px;
+    top: 135px;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=1106243997726028932&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_3");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.attack-button {
+    width: 15px;
+    height: 15px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=744142123&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_39");
+}
+
+.controls-container {
+    width: 100%;
+    height: 70px;
+    align-content: center;
+    align-self: center;
+    justify-content: flex-start;
+    top: auto;
+    align-items: center;
+    background-size: 100% 10%;
+    position: absolute;
+    bottom: 0;
+}
+
+.actions-area {
+    background-size: 25% 25%;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    top: 280px;
+    width: 200px;
+    -unity-text-align: upper-center;
+    background-color: rgba(76, 76, 76, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.label-controls {
+    position: relative;
+    height: 15px;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    top: 170px;
+    bottom: auto;
+    color: rgb(255, 255, 255);
+}
+
+.ultimate-button {
+    width: 15px;
+    height: 15px;
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Letters%20and%20Symbols.png?fileID=-1405171431&guid=4a24f143d6d970d458a87d30a5a6b456&type=3#Keyboard Letters and Symbols_16");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    top: 25px;
+    bottom: 0;
+}
+
+.label-attack {
+    left: 35px;
+    top: -10px;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    color: rgb(255, 255, 255);
+}
+
+.label-ultimate {
+    align-items: center;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-text-align: upper-center;
+    top: -15px;
+    left: 50px;
+}
+
+.space-button {
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    top: 150px;
+    left: 160px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Sprites/Keyboard/Keyboard%20Extras.png?fileID=5398998059697563366&guid=e9fb8c319a15ea04fa479edb81844eca&type=3#Keyboard Extras_10");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.pause-screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.78);
+}
+
+.book-animation-container {
+    align-items: center;
+    align-self: center;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/HUD_RC/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/1%20-%20Brown/Pixel%20Book/Sprites/Open%20&%20Close/Close/8.png?fileID=2800000&guid=c910b2ef899629e45a31d1a4b5803294&type=3#8");
+    -unity-background-scale-mode: scale-to-fit;
+    position: absolute;
+    display: flex;
+}
+
+.buttons-container {
+    width: 100px;
+    height: 220px;
+    justify-content: center;
+    align-content: center;
+    top: 15%;
+    left: 20%;
+}
+
+.buttons-menu {
+    -unity-text-align: upper-center;
+    width: 80px;
+    height: 26px;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    align-content: center;
+    align-self: center;
+    position: relative;
+    margin-top: 4px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    background-image: url("project://database/Assets/UI%20Character/MediavelUI/Mediavel.png?fileID=9120660117641809374&guid=61514b8e8dd6a744fb2a0563a9ba7c7f&type=3#Mediavel_220");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    left: -30px;
+}
+
+.control-up {
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 20px;
+}
+
+.control-down {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 20px;
+}
+
+.control-right {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 20px;
+}
+
+.control-left {
+    top: 20px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.d-pad-container {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    background-size: 100px 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.label-nivel {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 11px;
+    color: rgb(255, 220, 50);
+    -unity-font-style: bold;
+    margin-bottom: 3px;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    left: 55px;
+}
+
+.estrellas-container {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-estrellas {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 14px;
+    color: rgb(255, 210, 0);
+    -unity-font-style: bold;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+}
+
+.right-page-container {
+    position: absolute;
+    left: 52%;
+    top: 8%;
+    width: 44%;
+    height: 84%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    overflow: hidden;
+}
+
+.right-page-title {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 13px;
+    color: rgb(80, 40, 10);
+    -unity-text-align: upper-center;
+    margin-bottom: 10px;
+    -unity-font-style: bold;
+}
+
+.right-page-label {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 9px;
+    color: rgb(60, 30, 5);
+    margin-top: 6px;
+    align-self: flex-start;
+    margin-left: 4px;
+}
+
+.right-page-slider {
+    width: 90%;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.right-page-row {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+    margin-top: 4px;
+    padding-bottom: 3px;
+    border-bottom-width: 1px;
+    border-color: rgba(160, 110, 60, 0.4);
+}
+
+.right-page-key {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 9px;
+    color: rgb(120, 60, 10);
+    -unity-font-style: bold;
+}
+
+.right-page-button {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 9px;
+    margin-top: 5px;
+    width: 80%;
+    height: 22px;
+    background-image: url("project://database/Assets/UI%20Character/MediavelUI/Mediavel.png?fileID=9120660117641809374&guid=61514b8e8dd6a744fb2a0563a9ba7c7f&type=3#Mediavel_220");
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    color: rgb(60, 30, 5);
+    -unity-text-align: upper-center;
+}
+
+.right-page-toggle {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 9px;
+    color: rgb(60, 30, 5);
+    margin-top: 8px;
+    width: 90%;
+}
+
+.coins-container {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 120px;
+    height: 25px;
+    justify-content: center;
+    align-self: center;
+}
+
+.coin-image {
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Sprites/coins-chests-etc-2-0.png?fileID=712486646&guid=1d1f04dc0919b5141acd9e66f928432e&type=3#coins-chests-etc-2-0_54");
+}
+
+.contador-texto {
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    color: rgb(255, 165, 0);
+    font-size: 15px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.victory-panel {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.51);
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.mapVictory {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    background-image: url("project://database/Assets/HUD/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/1%20-%20Brown/Pixel%20Map/SpriteSheet/Brown%20Map%20SpriteSheet.png?fileID=4581131652775171187&guid=38c409f3316ca4b479c07640879a4c44&type=3#Brown Map SpriteSheet_5");
+}
+
+.victoryTitle {
+    position: absolute;
+    top: 40px;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 20px;
+}
+
+.stars-container {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    flex-direction: row;
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    top: 100px;
+}
+
+.star1 {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 35px;
+    height: 40px;
+    max-width: 35px;
+    top: -8px;
+    left: -60px;
+    background-image: url("project://database/Assets/Sprites/coins-chests-etc-2-0.png?fileID=-1848202386&guid=1d1f04dc0919b5141acd9e66f928432e&type=3#coins-chests-etc-2-0_457");
+}
+
+.star2 {
+    width: 35px;
+    top: 4px;
+    position: absolute;
+    height: 40px;
+    left: 110px;
+    background-image: url("project://database/Assets/Sprites/coins-chests-etc-2-0.png?fileID=1113886084&guid=1d1f04dc0919b5141acd9e66f928432e&type=3#coins-chests-etc-2-0_459");
+}
+
+.star3 {
+    width: 35px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    top: -8px;
+    left: 170px;
+    background-image: url("project://database/Assets/Sprites/coins-chests-etc-2-0.png?fileID=-1848202386&guid=1d1f04dc0919b5141acd9e66f928432e&type=3#coins-chests-etc-2-0_457");
+}
+
+.points-text {
+    position: absolute;
+    top: 50px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 15px;
+    left: auto;
+}
+
+.points-number {
+    top: 175px;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    -unity-text-align: upper-center;
+    font-size: 20px;
+    color: rgb(201, 37, 37);
+}
+
+.warning-level {
+    position: absolute;
+    top: 200px;
+    width: 250px;
+    height: 30px;
+}
+
+.warning-label {
+    -unity-text-align: middle-center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    font-size: 12px;
+    background-color: rgb(213, 66, 66);
+}
+
+.buttons-victory {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    top: 230px;
+    flex-direction: row;
+    justify-content: center;
+    -unity-text-align: upper-center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.menu-button {
+    background-image: url("project://database/Assets/Sprites/MediavelUI/MediavelUI/Mediavel.png?fileID=-6017327766909238773&guid=f512aff6acbcf6f4d8f74435500db21b&type=3#Mediavel_85");
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    background-color: rgba(0, 0, 0, 0);
+    height: 40px;
+    width: 100px;
+    border-top-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.retry-button {
+    background-image: url("project://database/Assets/Sprites/MediavelUI/MediavelUI/Mediavel.png?fileID=-6962545943071106848&guid=f512aff6acbcf6f4d8f74435500db21b&type=3#Mediavel_86");
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    height: 40px;
+    width: 100px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.continue-button {
+    background-image: url("project://database/Assets/Sprites/MediavelUI/MediavelUI/Mediavel.png?fileID=-6017327766909238773&guid=f512aff6acbcf6f4d8f74435500db21b&type=3#Mediavel_85");
+    -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
+    background-color: rgba(0, 0, 0, 0);
+    height: 40px;
+    width: 100px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.danger-frame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-width: 20px;
+    border-color: rgba(255, 0, 0, 0.85);
+    background-color: rgba(255, 0, 0, 0.08);
+}
+
+.danger-hidden {
+    display: none;
+}
+
+.gameover-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-content: center;
+}
+
+.gameover-hidden {
+    display: none;
+}
+
+.gameover-box {
+    width: 480px;
+    padding: 40px;
+    background-color: rgba(30, 15, 15, 0.95);
+    border-width: 5px;
+    border-color: rgb(200, 40, 40);
+    border-radius: 12px;
+    align-items: center;
+}
+
+.gameover-title {
+    font-size: 48px;
+    -unity-font-style: bold;
+    color: rgb(255, 60, 60);
+    -unity-text-align: middle-center;
+    margin-bottom: 14px;
+    letter-spacing: 4px;
+}
+
+.gameover-subtitle {
+    font-size: 18px;
+    color: rgb(230, 220, 220);
+    -unity-text-align: middle-center;
+    margin-bottom: 28px;
+}
+
+.gameover-buttons {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gameover-btn {
+    width: 180px;
+    padding: 12px 18px;
+    margin: 0 8px;
+    font-size: 16px;
+    -unity-font-style: bold;
+    border-width: 3px;
+    border-radius: 6px;
+    color: white;
+}
+
+.gameover-btn-menu {
+    background-color: rgb(80, 100, 220);
+    border-color: rgb(40, 60, 160);
+}
+
+.gameover-btn-menu:hover {
+    background-color: rgb(100, 120, 240);
+}
+
+.gameover-btn-retry {
+    background-color: rgb(200, 100, 20);
+    border-color: rgb(120, 60, 10);
+}
+
+.gameover-btn-retry:hover {
+    background-color: rgb(220, 120, 30);
+}
+
+.math-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-box {
+    background-color: rgb(30, 30, 46);
+    border-width: 4px;
+    border-color: rgb(15, 15, 25);
+    border-radius: 12px;
+    padding: 20px;
+    width: 450px;
+}
+
+.question-container {
+    background-color: rgb(40, 40, 60);
+    border-width: 2px;
+    border-color: rgb(15, 15, 25);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.question-text {
+    color: white;
+    font-size: 24px;
+    -unity-font-style: bold;
+}
+
+.answers-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.answer-button {
+    width: 48%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(90, 124, 250);
+    color: white;
+    font-size: 18px;
+    -unity-font-style: bold;
+    border-radius: 4px;
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(60, 90, 200);
+}
+
+.answer-button:hover {
+    background-color: rgb(110, 140, 255);
+}
+
+.hint-button {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(244, 196, 83);
+    color: white;
+    font-size: 16px;
+    -unity-font-style: bold;
+    border-radius: 4px;
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(200, 150, 50);
+}
+.guide-overlay {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-box {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(245, 230, 190); 
+    border-width: 6px;
+    border-color: rgb(100, 60, 20);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.guide-title {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(80, 40, 10);
+    -unity-text-align: middle-center;
+    margin-bottom: 10px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(100, 60, 20);
+}
+
+.guide-content {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.section-header {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: rgb(150, 50, 20);
+    margin-top: 15px;
+}
+
+.guide-text {
+    font-size: 14px;
+    color: rgb(40, 40, 40);
+    white-space: normal;
+    margin-bottom: 10px;
+}
+
+.guide-close-btn {
+    height: 40px;
+    background-color: rgb(120, 70, 30);
+    color: white;
+    -unity-font-style: bold;
+    border-radius: 5px;
+}
+
+.guide-content .unity-base-slider__dragger {
+    background-color: rgb(120, 70, 30); 
+    border-width: 0;
+    border-radius: 4px;
+    width: 8px;
+}
+
+.guide-content .unity-base-slider__tracker {
+    background-color: rgba(100, 60, 20, 0.15);
+    border-width: 0;
+    border-radius: 4px;
+}
+
+.guide-content .unity-base-slider__dragger:hover {
+    background-color: rgb(150, 90, 40); 
+}
+
+.guide-content .unity-scroller__low-button,
+.guide-content .unity-scroller__high-button {
+    display: none;
+}

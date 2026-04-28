@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Pixel Monster Pack/32x32 monsters/cerberus-black.png.meta
 guid: 7b5003f1c938a804a8c25728d3f30398
 AssetOrigin:
   serializedVersion: 1
@@ -7,6 +8,9 @@ AssetOrigin:
   packageVersion: 1.0
   assetPath: Assets/Pixel Monster Pack/32x32 monsters/cerberus-black.png
   uploadId: 145235
+========
+guid: 48efa5a576b5807418a7551c573787f3
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/2 - Gold/Pixel Book/Sprites/Categories/Appear/without icons/8.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Medieval Warrior Pack/Sprites/Jump.png.meta
 guid: 206b2c968fc112143a4255529de21650
 AssetOrigin:
   serializedVersion: 1
@@ -7,6 +8,9 @@ AssetOrigin:
   packageVersion: 1.0
   assetPath: Assets/Medieval Warrior Pack/Sprites/Jump.png
   uploadId: 343852
+========
+guid: 2d7599f11aa4f1e4aae44ec2999afae0
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Recycle Bin/2.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:

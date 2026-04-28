@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LexiMath-Game/Assets/Characters/free-townspeople-cyberpunk-pixel-art/10/Walk.png.meta
 guid: 786f2dd5c1f27284abcd526803272845
+========
+guid: 262fa6504a4bf944db7e004b3ea638ff
+>>>>>>>> origin/test_BB_RC:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Highlighter/4.png.meta
 TextureImporter:
   internalIDToNameTable:
   - first:
