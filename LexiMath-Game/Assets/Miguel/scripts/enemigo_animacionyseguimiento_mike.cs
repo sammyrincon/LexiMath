@@ -3,7 +3,9 @@ using UnityEngine;
 public class enemigo_animacionyseguimiento_mike : MonoBehaviour
 {
     private Transform player;
+    [SerializeField]
     private float speed = 3f;
+    [SerializeField]
     private float followRange = 5f;
 
     private Rigidbody2D rb;

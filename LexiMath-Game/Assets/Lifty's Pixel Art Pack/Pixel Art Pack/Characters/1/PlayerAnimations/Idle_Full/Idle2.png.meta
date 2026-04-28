@@ -1,16 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:LexiMath-Game/Assets/Lifty's Pixel Art Pack/Pixel Art Pack/Characters/1/PlayerAnimations/Idle_Full/Idle2.png.meta
 guid: 3479c418f3ce26a439fcd619e4fc4175
-AssetOrigin:
-  serializedVersion: 1
-  productId: 195739
-  packageName: Pixel Art Environment/Platformer Pack
-  packageVersion: 1.0
-  assetPath: Assets/Lifty's Pixel Art Pack/Pixel Art Pack/Characters/1/PlayerAnimations/Idle_Full/Idle2.png
-  uploadId: 434447
-========
-guid: 4290c78279245964fabfe64371d3ae27
->>>>>>>> d7b7938b85db54ad3a8c538b0f7ac287332157e2:LexiMath-Game/Assets/HUD_RC/Super Asset Bundle #5 Mini Pocket Status 2.1/0 - Sprites/Equipments/5.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -76,7 +65,7 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform

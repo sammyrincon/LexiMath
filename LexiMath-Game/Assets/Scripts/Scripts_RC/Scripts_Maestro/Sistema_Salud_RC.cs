@@ -36,6 +36,10 @@ public class Sistema_Salud_RC : MonoBehaviour
     public void Curar(int cantidad)
 {
     saludActual += cantidad;
+    if(saludActual > saludMaxima)
+    {
+        saludActual = saludMaxima; // Asegura que la salud no exceda el máximo
+    }
     Debug.Log("¡El personaje se curó! Salud actual: " + saludActual);
 }
 }

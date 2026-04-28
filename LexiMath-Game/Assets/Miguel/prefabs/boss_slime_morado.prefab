@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 1135237476157092085}
   - component: {fileID: 6566009755972899553}
   - component: {fileID: 4514800786500492828}
+  - component: {fileID: 4671622182661981695}
   m_Layer: 0
   m_Name: boss_slime_morado
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +35,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1246706606550165958}
   - {fileID: 1695534593901317996}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 6e175e605bbaef146a4382f730be4afa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ed6ace7839376f4fbea4dcaff76d096, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131,17 +131,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0000076293945, y: -2.625549}
+  m_Offset: {x: -0.0000076293945, y: 0.15792906}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    border: {x: 1.25, y: 0, z: 1.25, w: 5.375}
+    pivot: {x: 0.5, y: 0.15}
     oldSize: {x: 8, y: 8}
     newSize: {x: 8, y: 8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.6784515, y: 2.7489018}
+  m_Size: {x: 5.6784515, y: 2.7371628}
   m_EdgeRadius: 0
 --- !u!50 &1135237476157092085
 Rigidbody2D:
@@ -180,7 +180,7 @@ Animator:
   m_GameObject: {fileID: 1521855567104597378}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9049d94e830cdba46949f6dd7d39b17b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 580e73bfaf4a9dc45b0e6226d17d6823, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -204,84 +204,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccd56d0096cb68449b742a2ea1cbccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow2D
---- !u!1 &3819532311610866877
-GameObject:
+  speed: 2
+  followRange: 5
+--- !u!114 &4671622182661981695
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1246706606550165958}
-  - component: {fileID: 2167388062006937694}
-  m_Layer: 0
-  m_Name: ataque_izquierda
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1246706606550165958
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3819532311610866877}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -2.514186, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6560915978948491478}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2167388062006937694
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3819532311610866877}
+  m_GameObject: {fileID: 1521855567104597378}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -1.0549774, y: -0.027658463}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.2680054, y: 2.936102}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08fbf0d017f93b48b4c22a5a7ffc8de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LexiMathGame::Sistema_Salud_RC
+  saludMaxima: 150
 --- !u!1 &9107691051244770002
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1695534593901317996}
   - component: {fileID: 273200167024405747}
+  - component: {fileID: 3800962433041571069}
   m_Layer: 0
   m_Name: ataque_derecha
   m_TagString: Untagged
@@ -348,7 +286,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.9680557, y: -0.027658582}
+  m_Offset: {x: -0.7164154, y: 2.689239}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -358,5 +296,18 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.9361115, y: 2.9361022}
+  m_Size: {x: 6.3050537, y: 3.0810032}
   m_EdgeRadius: 0
+--- !u!114 &3800962433041571069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107691051244770002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ac35941d8da724eb378853467a16fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LexiMathGame::AtaqueEnemigoRC
+  danoAtaque: 10

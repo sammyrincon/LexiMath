@@ -13,6 +13,9 @@ public class EnemigoSeguidor : MonoBehaviour
     public float tiempoEntreAtaques = 1.5f; 
     private float temporizadorAtaque = 0f;
 
+    [Header("Configuración de Obstáculos")]
+    public LayerMask wallLayer;
+
     private Animator animator;
     private Transform jugador;
 
@@ -38,11 +41,17 @@ public class EnemigoSeguidor : MonoBehaviour
 
             if (distancia > distanciaDeAtaque)
             {
-                direccion.Normalize(); 
-                transform.position = (Vector2)transform.position + (direccion * velocidad * Time.deltaTime);
+                direccion.Normalize();
+                if (Physics2D.Raycast(transform.position, direccion, velocidad * Time.deltaTime + 0.1f, wallLayer).collider == null)
+                {
+                    transform.position = (Vector2)transform.position + (direccion * velocidad * Time.deltaTime);
+                    animator.SetFloat("Speed", 1f);
+                }
+                else
+                {
+                    animator.SetFloat("Speed", 0f);
+                }
                 
-                animator.SetFloat("Speed", 1f); 
-
                 if (direccion.x < 0)
                 {
                     transform.eulerAngles = new Vector3(0, 180, 0);
