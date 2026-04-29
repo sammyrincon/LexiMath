@@ -1,0 +1,62 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyles.uss?fileID=7433441132597879392&amp;guid=d18ff17182dd65a40996e3a6851fd702&amp;type=3#MainMenuStyles"/>
+    <ui:VisualElement name="root">
+        <ui:VisualElement name="header">
+            <ui:Button name="boton-menu" text="≡" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 36px;"/>
+            <ui:Label name="texto-logo" text="LEXIMATH" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 44px; overflow: visible;"/>
+            <ui:VisualElement name="panel-puntos" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 26px;">
+                <ui:Label name="label-puntos" text="Puntos" style="font-size: 24px;"/>
+                <ui:Label name="texto-puntos" text="0" style="font-size: 24px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="contenido">
+            <ui:VisualElement name="espacio-caballero" style="height: 280px;"/>
+            <ui:VisualElement name="panel-bienvenida">
+                <ui:Label name="texto-bienvenida" text="¡Bienvenido, Nombre!" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 30px;"/>
+                <ui:Label name="texto-subtitulo" text="Abre el menú para elegir tu aventura" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 24px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="panel-materias" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 20px;">
+                <ui:VisualElement name="materia-mates" style="font-size: 24px;">
+                    <ui:Button name="boton-mates" text="1" style="font-size: 40px;"/>
+                    <ui:Label name="label-mates" text="MATES" style="font-size: 20px;"/>
+                    <ui:Label name="estrellas-mates" text="☆☆☆☆☆" style="font-size: 28px;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="materia-espanol">
+                    <ui:Button name="boton-espanol" text="2" style="font-size: 40px;"/>
+                    <ui:Label name="label-espanol" text="ESPAÑOL" style="font-size: 20px;"/>
+                    <ui:Label name="estrellas-espanol" text="☆☆☆☆☆" style="font-size: 28px;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="overlay" style="display: none;"/>
+        <ui:VisualElement name="menu-lateral" style="display: none;">
+            <ui:VisualElement name="menu-header">
+                <ui:Label name="menu-titulo" text="MENÚ" style="font-size: 26px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                <ui:Button name="boton-cerrar-menu" text="✕" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 28px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="menu-contenido">
+                <ui:Button name="btn-seccion-mates" text="▼  MATEMÁTICAS" class="btn-seccion btn-mates" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                <ui:VisualElement name="lista-mates">
+                    <ui:Button name="nivel-mates-1" text="1  Tierra de las Sumas" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                    <ui:Button name="nivel-mates-2" text="2  Valle de las Restas" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                    <ui:Button name="nivel-mates-3" text="3  Cueva de la Multiplicación" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                    <ui:Button name="nivel-mates-4" text="4  Puente de la División" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                    <ui:Button name="nivel-mates-5" text="5  Fracciones — Final Boss" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                </ui:VisualElement>
+                <ui:Button name="btn-seccion-espanol" text="▼  ESPAÑOL" class="btn-seccion btn-espanol" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                <ui:VisualElement name="lista-espanol" style="display: none;">
+                    <ui:Button name="nivel-espanol-1" text="1  Aldea de las Vocales" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                    <ui:Button name="nivel-espanol-2" text="2  Plaza de las Palabras" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                    <ui:Button name="nivel-espanol-3" text="3  Torre de las Oraciones" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                    <ui:Button name="nivel-espanol-4" text="4  Castillo de la Gramática" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                    <ui:Button name="nivel-espanol-5" text="5  Repaso — Final Boss" class="btn-nivel" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="menu-footer">
+                <ui:Button name="boton-perfil" text="👤  PERFIL" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 22px;"/>
+                <ui:Button name="boton-config" text="⚙  CONFIGURACIÓN" style="font-size: 22px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+                <ui:Button name="boton-salir" text="⇥  CERRAR SESIÓN" style="font-size: 22px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
