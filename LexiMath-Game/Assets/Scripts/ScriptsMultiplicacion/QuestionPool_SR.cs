@@ -3,13 +3,13 @@ using UnityEngine;
 
 public static class QuestionPool
 {
-    public static QuestionData GenerateMultiplicationQuestion(int minFactor = 2, int maxFactor = 9)
+    public static QuestionData_SR GenerateMultiplicationQuestion(int minFactor = 2, int maxFactor = 9)
     {
         int a = Random.Range(minFactor, maxFactor + 1);
         int b = Random.Range(minFactor, maxFactor + 1);
         int correct = a * b;
         
-        QuestionData q = new QuestionData();
+        QuestionData_SR q = new QuestionData_SR();
         q.questionText = $"{a} × {b} = ?";
         q.correctAnswer = correct;
         q.options = GenerateOptions(correct);
@@ -40,7 +40,7 @@ public static class QuestionPool
         return result;
     }
     
-    public static QuestionData GenerateBossQuestion()
+    public static QuestionData_SR GenerateBossQuestion()
     {
         return GenerateMultiplicationQuestion(6, 12);
     }

@@ -9,58 +9,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c94c0108f1d92f42b3a88dd74cf9640, type: 3}
+  m_Script: {fileID: 11500000, guid: b5dc7e856d4292441bf6d1ae3c13cc04, type: 3}
   m_Name: EspNivel1_Questions
   m_EditorClassIdentifier: Assembly-CSharp::QuestionData
   nombreNivel: Nivel 1
   preguntas:
-  - enunciado: "\xBFCu\xE1ntas vocales tiene el abecedario?"
-    respuestaCorrecta: 5
+  - enunciado: "\xBFQu\xE9 vocal falta? G_TO (animal que ma\xFAlla)"
+    respuestaCorrecta: A
     distractores:
-    - 3
-    - 7
-  - enunciado: "\xBFCu\xE1l de estas palabras empieza con la vocal a?"
-    respuestaCorrecta: "\xC1rbol"
+    - E
+    - O
+  - enunciado: "\xBFQu\xE9 vocal falta? S_L (estrella del d\xEDa)"
+    respuestaCorrecta: O
     distractores:
-    - "Igl\xFA"
-    - Oso
-  - enunciado: "\xBFQu\xE9 vocal falta en la palabra: c_sa?"
-    respuestaCorrecta: a
+    - U
+    - I
+  - enunciado: "\xBFQu\xE9 vocal falta? L_NA (brilla de noche)"
+    respuestaCorrecta: U
     distractores:
-    - o
-    - u
-  - enunciado: "\xBFCon qu\xE9 vocal empieza ELEFANTE?"
+    - O
+    - A
+  - enunciado: "\xBFQu\xE9 vocal falta? P_RA (fruta)"
     respuestaCorrecta: E
     distractores:
     - A
     - I
-  - enunciado: " \xBFCu\xE1ntas vocales hay en la palabra mariposa?"
-    respuestaCorrecta: 4
+  - enunciado: "\xBFQu\xE9 vocal falta? M_SA (mueble)"
+    respuestaCorrecta: E
     distractores:
-    - 3
-    - 2
-  - enunciado: "\xBFCu\xE1l de estas palabras empieza con la vocal o?"
-    respuestaCorrecta: Oso
-    distractores:
-    - Uva
-    - Isla
-  - enunciado: "\xBFCu\xE1l es la vocal que est\xE1 entre la a y la i?"
-    respuestaCorrecta: e
-    distractores:
-    - o
-    - u
-  - enunciado: "\xBFQu\xE9 vocal se repite en la palabra \"Mariposa\"?"
-    respuestaCorrecta: a
-    distractores:
-    - o
-    - i
-  - enunciado: "\xBFCu\xE1l de estas palabras empieza con la vocal i?"
-    respuestaCorrecta: "Igl\xFA"
-    distractores:
-    - Abeja
-    - "U\xF1a"
-  - enunciado: "\xBFCu\xE1ntas vocales diferentes hay en la palabra murci\xE9lago?"
+    - A
+    - I
+  - enunciado: "\xBFCu\xE1ntas vocales tiene la palabra \"MURCI\xC9LAGO\"?"
     respuestaCorrecta: 5
     distractores:
-    - 3
     - 4
+    - 3
+  - enunciado: "\xBFQu\xE9 vocal se repite en la palabra \"IGUANA\"?"
+    respuestaCorrecta: A
+    distractores:
+    - I
+    - U
+  - enunciado: "\xBFCu\xE1l es la primera vocal del abecedario?"
+    respuestaCorrecta: A
+    distractores:
+    - E
+    - I
+  - enunciado: "\xBFCuantas vocales hay en el abecedario?"
+    respuestaCorrecta: 5
+    distractores:
+    - 4
+    - 6
+  - enunciado: "\xBFCuantas vocales tiene la palabra \"ABEJA\"?"
+    respuestaCorrecta: 3
+    distractores:
+    - 4
+    - 2

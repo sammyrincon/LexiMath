@@ -168,7 +168,7 @@ public class BossController : MonoBehaviour
         animator.SetBool("isAttacking", false);
         animator.SetBool("isRunning", false);
         
-        QuestionData bossQuestion = QuestionPool.GenerateBossQuestion();
+        QuestionData_SR bossQuestion = QuestionPool.GenerateBossQuestion();
         QuestionUIManager.Instance.ShowQuestion(bossQuestion, OnFinalAnswered);
     }
     

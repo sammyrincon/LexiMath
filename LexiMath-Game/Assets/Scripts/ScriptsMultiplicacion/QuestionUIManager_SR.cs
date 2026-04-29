@@ -12,7 +12,7 @@ public class QuestionUIManager : MonoBehaviour
     public TextMeshProUGUI questionText;
     public Button[] optionButtons;
     
-    private QuestionData currentQuestion;
+    private QuestionData_SR currentQuestion;
     private Action<bool> onAnswerCallback;
     
     private void Awake()
@@ -24,7 +24,7 @@ public class QuestionUIManager : MonoBehaviour
             questionPanel.SetActive(false);
     }
     
-    public void ShowQuestion(QuestionData question, Action<bool> callback)
+    public void ShowQuestion(QuestionData_SR question, Action<bool> callback)
     {
         currentQuestion = question;
         onAnswerCallback = callback;

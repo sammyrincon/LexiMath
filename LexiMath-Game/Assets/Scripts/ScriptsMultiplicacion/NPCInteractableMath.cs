@@ -61,7 +61,7 @@ public class NPCInteractableMath : MonoBehaviour
     private void TriggerQuestion()
     {
         Debug.Log($"{npcName}: Resuelve esta multiplicación para ganar mi recompensa...");
-        QuestionData question = QuestionPool.GenerateMultiplicationQuestion();
+        QuestionData_SR question = QuestionPool.GenerateMultiplicationQuestion();
         QuestionUIManager.Instance.ShowQuestion(question, OnAnswered);
     }
     
