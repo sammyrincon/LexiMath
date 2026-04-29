@@ -522,7 +522,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 394417458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5379d821cb1a4b44ca90063e18c91e7e, type: 3}
+  m_Script: {fileID: 11500000, guid: c5c68f99ed40b574d8805dbe9a9ebb43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HUDController
 --- !u!114 &394417460
@@ -534,9 +534,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 394417458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3339611afbc38d840be0f60749ee91b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c14d40cff8d5774abb6aeae906215f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookPauseController
+  framesDelLibro:
+  - {fileID: -855298285791758126, guid: d1b520fd89da2f24e8deb2b4b5a0f2fb, type: 3}
+  - {fileID: 6937817954938267909, guid: 00be2cdb1c43ef94faed4d7cd5adb869, type: 3}
+  - {fileID: -6470460504253458178, guid: 1fe5ca60eabd60f4b8fc93ad021765ab, type: 3}
+  - {fileID: -4178046375966092550, guid: 85b3ca5a368d01544b9176e5b48bcd56, type: 3}
+  - {fileID: 4130640169021434097, guid: 3f253b33df6209d4598876ce90584286, type: 3}
+  - {fileID: 3465286685962602723, guid: 87ecd306776505845ac192e3994eee6e, type: 3}
+  - {fileID: 7028616704906629411, guid: 7967e00352be0e14298b587595e2aeac, type: 3}
+  - {fileID: 8288426215254106694, guid: 640395664b9ce344b9cdab3a6e6a11aa, type: 3}
+  velocidadFrame: 0.05
+  audioMixer: {fileID: 0}
 --- !u!114 &394417461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,9 +557,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 394417458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d47f76cb5c2f4489012210009cf5cf, type: 3}
+  m_Script: {fileID: 11500000, guid: e7a748a517b7a6e458bd26d81b1bc6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 100
+  danoPorGolpe: 20
+  umbralPeligro: 0.2
+  knightAnimator: {fileID: 542194825}
+  tiempoInvulnerable: 1
+  nombreEscenaMenu: MainMenu
 --- !u!114 &394417462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
   m_PanelSettings: {fileID: 11400000, guid: 094517f9e7f584149aafceb25b5c9703, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: d96751ae3d904234ab97849799c7ebbd, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: a93946fc4964b984398c5e2f373e4f0d, type: 3}
   m_SortingOrder: 0
   m_Position: 0
   m_WorldSpaceSizeMode: 1
@@ -4864,6 +4881,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &542194825 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3770633135886836132, guid: 7a32f702db809f4449ad15d6e172dd28, type: 3}
+  m_PrefabInstance: {fileID: 8998868799785028683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &601448992 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4052318491626968001, guid: bc31bb6f0ba69b543a4bfd2c07f2b1f8, type: 3}
