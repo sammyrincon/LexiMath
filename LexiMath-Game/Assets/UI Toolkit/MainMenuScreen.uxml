@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyles.uss?fileID=7433441132597879392&amp;guid=d18ff17182dd65a40996e3a6851fd702&amp;type=3#MainMenuStyles"/>
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyles.uss?fileID=7433441132597879392&amp;guid=d18ff17182dd65a40996e3a6851fd702&amp;type=3"/>
     <ui:VisualElement name="root">
         <ui:VisualElement name="header">
-            <ui:Button name="boton-menu" text="≡" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 36px;"/>
+            <ui:Button name="boton-menu" text="≡" style="-unity-font-definition: initial; font-size: 36px;"/>
             <ui:Label name="texto-logo" text="LEXIMATH" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 44px; overflow: visible;"/>
             <ui:VisualElement name="panel-puntos" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 26px;">
                 <ui:Label name="label-puntos" text="Puntos" style="font-size: 24px;"/>

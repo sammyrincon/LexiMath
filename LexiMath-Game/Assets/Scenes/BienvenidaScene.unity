@@ -236,6 +236,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1313808544308277960, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
+      propertyPath: m_Size.x
+      value: 0.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313808544308277960, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
+      propertyPath: m_Size.y
+      value: 1.21875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313808544308277960, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 815424164945274260, guid: 58c3289ee85d12a4886c64fa6fbdaac4, type: 3}
+    - target: {fileID: 1313808544308277960, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7738306057683103782, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
       propertyPath: m_Name
       value: KnightDisplay
