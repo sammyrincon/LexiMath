@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
-public class KnightController : MonoBehaviour
+public class KnightControllerRM : MonoBehaviour
 {
     [Header("Movimiento")]
     [SerializeField] private float velocidadX = 6f;

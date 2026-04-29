@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerHealth : MonoBehaviour, IDamageable
+public class PlayerHealthRM : MonoBehaviour, IDamageable
 {
     [Header("Vida")]
     [SerializeField] private int maxHP = 5;
@@ -54,11 +54,11 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
         if (controllerToDisable == null)
         {
-            controllerToDisable = GetComponent<KnightController>();
+            controllerToDisable = GetComponent<KnightControllerRM>();
 
             if (controllerToDisable == null)
             {
-                controllerToDisable = GetComponent<PlayerController>();
+                controllerToDisable = GetComponent<KnightControllerRM>();
             }
         }
 
