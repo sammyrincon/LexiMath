@@ -3,26 +3,32 @@ using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
-    [Header("Scene")]
-    [SerializeField] private string sceneToLoad = "LoginScene";
+    [Header("Escena destino")]
+    [SerializeField] private string sceneToLoad = "MainMenu";
+
+    [Header("Referencias")]
     [SerializeField] private TutorialManager tutorialManager;
 
+    // ──────────────────────────────────────────────────────────
     private void Awake()
     {
         if (tutorialManager == null)
-        {
-            tutorialManager = FindObjectOfType<TutorialManager>();
-        }
+            tutorialManager = Object.FindFirstObjectByType<TutorialManager>();
     }
 
+    // ──────────────────────────────────────────────────────────
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player"))
-        {
-            return;
-        }
+        if (!collision.CompareTag("Player")) return;
 
+        // Notificar al TutorialManager
         tutorialManager?.OnPortalEntered();
+
+        // Marcar tutorial como completado en GameManager
+        if (GameManager.Instance != null)
+            GameManager.Instance.SetTutorialCompletado();
+
+        // Navegar al MainMenu
         SceneManager.LoadScene(sceneToLoad);
     }
 }

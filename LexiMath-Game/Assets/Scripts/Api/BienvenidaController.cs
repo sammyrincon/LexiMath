@@ -40,10 +40,9 @@ public class BienvenidaController : MonoBehaviour
         _botonCerrarSesion.clicked -= OnClickCerrarSesion;
     }
 
-    private void OnClickEmpezar() =>
-        // SceneManager.LoadScene("TutorialScene");
-        SceneManager.LoadScene("MainMenu");
-
+    private void OnClickEmpezar() {
+        SceneManager.LoadScene("TutorialScene");
+    }
     private void OnClickCerrarSesion()
     {
         // Limpiar token y datos

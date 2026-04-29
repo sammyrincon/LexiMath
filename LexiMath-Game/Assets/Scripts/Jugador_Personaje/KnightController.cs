@@ -8,7 +8,7 @@ public class KnightController : MonoBehaviour
 {
     [Header("Movimiento")]
     [SerializeField] private float velocidadX = 6f;
-    [SerializeField] private float velocidadY = 6f;
+    [SerializeField] private float velocidadY = 4f;
 
     [Header("Control en aire")]
     [Range(0f, 1f)]
@@ -47,7 +47,7 @@ public class KnightController : MonoBehaviour
 
         if (tutorialManager == null)
         {
-            tutorialManager = FindObjectOfType<TutorialManager>();
+            tutorialManager = Object.FindFirstObjectByType<TutorialManager>();
         }
     }
 

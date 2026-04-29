@@ -84,4 +84,10 @@ public class GameManager : MonoBehaviour
         PuntosSesion += 35;
         AtaquesEspada += 5;
     }
+
+    public void SetTutorialCompletado()
+    {
+        TutorialMecanicas = true;
+        Debug.Log("[GameManager] Tutorial completado — TutorialMecanicas = true");
+    }
 }

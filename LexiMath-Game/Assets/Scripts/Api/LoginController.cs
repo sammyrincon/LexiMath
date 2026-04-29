@@ -78,11 +78,10 @@ public class LoginController : MonoBehaviour
             _inputContrasena.value,
             onSuccess: () =>
             {
-                // if (!GameManager.Instance.TutorialMecanicas)
-                //     SceneManager.LoadScene("TutorialScene"); // TEMPORAL: escena en construcción
-                // else
-                //     SceneManager.LoadScene("MainMenu");
-                SceneManager.LoadScene("MainMenu");
+                if (!GameManager.Instance.TutorialMecanicas)
+                    SceneManager.LoadScene("TutorialScene"); 
+                else
+                    SceneManager.LoadScene("MainMenu");
             },
             onError: (error) =>
             {

@@ -50,7 +50,7 @@ public class EnemyBasic : MonoBehaviour, IDamageable
 
         if (tutorialManager == null)
         {
-            tutorialManager = FindObjectOfType<TutorialManager>();
+            tutorialManager = Object.FindFirstObjectByType<TutorialManager>();
         }
 
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
