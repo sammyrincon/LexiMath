@@ -17,7 +17,7 @@
 }
 
 .health-frame {
-    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=2800000&guid=dce6f5913aa8921429fe5181db32e07c&type=3#health_bar_decoration");
+    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=21300000&guid=87357ddfe8fa5aa4f96eb030f647305f&type=3#health_bar_decoration");
     background-size: 100px 25px;
     width: 150px;
     height: 40px;
@@ -28,7 +28,7 @@
 }
 
 .menu-container {
-    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=2800000&guid=dce6f5913aa8921429fe5181db32e07c&type=3#health_bar_decoration");
+    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=21300000&guid=87357ddfe8fa5aa4f96eb030f647305f&type=3#health_bar_decoration");
 }
 
 .main-hud {
@@ -47,7 +47,7 @@
     width: 76px;
     height: 15px;
     background-size: 100% 100%;
-    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar.png?fileID=2800000&guid=cc2ae19d769fb4342930af1239ad2a63&type=3#health_bar");
+    background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar.png?fileID=21300000&guid=550d944cab0955c42b6c375d73cd0e7e&type=3#health_bar");
     -unity-background-scale-mode: scale-and-crop;
     left: 47px;
     background-color: rgba(0, 0, 0, 0);
@@ -62,7 +62,7 @@
     align-content: center;
     width: 30px;
     height: 30px;
-    background-image: url("project://database/Assets/UI%20Character/MediavelUI/Mediavel.png?fileID=-4438855966236845718&guid=61514b8e8dd6a744fb2a0563a9ba7c7f&type=3#Mediavel_453");
+    background-image: url("project://database/Assets/HUD_RC/MediavelUI/Mediavel.png?fileID=1526374452393191072&guid=89f96f4e59cbd9e40b2e1226c230b831&type=3#Mediavel_461");
     background-color: rgba(149, 149, 149, 0);
     -unity-background-image-tint-color: rgb(255, 255, 255);
     border-top-color: rgba(0, 0, 0, 0);
@@ -299,6 +299,7 @@
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
     left: -30px;
+    display: flex;
 }
 
 .control-up {
@@ -466,7 +467,7 @@
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("project://database/Assets/Sprites/coins-chests-etc-2-0.png?fileID=712486646&guid=1d1f04dc0919b5141acd9e66f928432e&type=3#coins-chests-etc-2-0_54");
+    background-image: url("project://database/Assets/Sprites/UI%20Bundle/coins-chests-etc-2-0%20(1).png?fileID=1511078757&guid=8e130ecf71d6ba74b830e7ddfaa3a9bb&type=3#coins-chests-etc-2-0 (1)_54");
 }
 
 .contador-texto {
@@ -504,6 +505,7 @@
     width: 60%;
     height: 80%;
     background-image: url("project://database/Assets/HUD/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/1%20-%20Brown/Pixel%20Map/SpriteSheet/Brown%20Map%20SpriteSheet.png?fileID=4581131652775171187&guid=38c409f3316ca4b479c07640879a4c44&type=3#Brown Map SpriteSheet_5");
+    display: none;
 }
 
 .victoryTitle {
@@ -511,6 +513,12 @@
     top: 40px;
     -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
     font-size: 20px;
+    left: 125px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    -unity-text-align: upper-center;
 }
 
 .stars-container {
@@ -535,7 +543,7 @@
     max-width: 35px;
     top: -8px;
     left: -60px;
-    background-image: url("project://database/Assets/Sprites/coins-chests-etc-2-0.png?fileID=-1848202386&guid=1d1f04dc0919b5141acd9e66f928432e&type=3#coins-chests-etc-2-0_457");
+    background-image: url("project://database/Assets/Sprites/UI%20Bundle/coins-chests-etc-2-0%20(1).png?fileID=-1253405469&guid=8e130ecf71d6ba74b830e7ddfaa3a9bb&type=3#coins-chests-etc-2-0 (1)_467");
 }
 
 .star2 {
@@ -556,7 +564,7 @@
     position: absolute;
     top: -8px;
     left: 170px;
-    background-image: url("project://database/Assets/Sprites/coins-chests-etc-2-0.png?fileID=-1848202386&guid=1d1f04dc0919b5141acd9e66f928432e&type=3#coins-chests-etc-2-0_457");
+    background-image: url("project://database/Assets/Sprites/UI%20Bundle/coins-chests-etc-2-0%20(1).png?fileID=-1253405469&guid=8e130ecf71d6ba74b830e7ddfaa3a9bb&type=3#coins-chests-etc-2-0 (1)_467");
 }
 
 .points-text {
@@ -588,6 +596,7 @@
     top: 200px;
     width: 250px;
     height: 30px;
+    -unity-text-align: upper-center;
 }
 
 .warning-label {
@@ -599,6 +608,8 @@
     -unity-font-definition: url("project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&guid=4556de84cb5c3cc4d8a26ae9ef1f2788&type=3#Minecraft");
     font-size: 12px;
     background-color: rgb(213, 66, 66);
+    width: 250px;
+    height: 20px;
 }
 
 .buttons-victory {
@@ -811,9 +822,13 @@
     border-bottom-width: 4px;
     border-bottom-color: rgb(200, 150, 50);
 }
+
 .guide-overlay {
     position: absolute;
-    left: 0; top: 0; right: 0; bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.85);
     align-items: center;
     justify-content: center;
@@ -822,7 +837,7 @@
 .guide-box {
     width: 500px;
     height: 400px;
-    background-color: rgb(245, 230, 190); 
+    background-color: rgb(245, 230, 190);
     border-width: 6px;
     border-color: rgb(100, 60, 20);
     border-radius: 10px;
@@ -867,7 +882,7 @@
 }
 
 .guide-content .unity-base-slider__dragger {
-    background-color: rgb(120, 70, 30); 
+    background-color: rgb(120, 70, 30);
     border-width: 0;
     border-radius: 4px;
     width: 8px;
@@ -880,7 +895,7 @@
 }
 
 .guide-content .unity-base-slider__dragger:hover {
-    background-color: rgb(150, 90, 40); 
+    background-color: rgb(150, 90, 40);
 }
 
 .guide-content .unity-scroller__low-button,

@@ -2270,6 +2270,9 @@ MonoBehaviour:
   distanciaDeAtaque: 1.5
   danoDeAtaque: 20
   tiempoEntreAtaques: 1.5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &1636749494
 Rigidbody2D:
   serializedVersion: 5
