@@ -10,6 +10,7 @@ public class Sistema_Salud_RC : MonoBehaviour
     void Start()
     {
         saludActual = saludMaxima;
+        animator = GetComponent<Animator>();
     }
 
     // Metodo para recbir daño 
@@ -30,7 +31,7 @@ public class Sistema_Salud_RC : MonoBehaviour
     private void Morir()
     {
         animator.SetTrigger("Death");
-        Destroy(gameObject);
+        Destroy(gameObject,0.5f);
         
     }
     public void Curar(int cantidad)
@@ -38,7 +39,7 @@ public class Sistema_Salud_RC : MonoBehaviour
     saludActual += cantidad;
     if(saludActual > saludMaxima)
     {
-        saludActual = saludMaxima; // Asegura que la salud no exceda el máximo
+        saludActual = saludMaxima; 
     }
     Debug.Log("¡El personaje se curó! Salud actual: " + saludActual);
 }
