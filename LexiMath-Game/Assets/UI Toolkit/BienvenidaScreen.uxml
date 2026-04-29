@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/RegistroStyles.uss?fileID=7433441132597879392&amp;guid=22dd5d14b6b8d6549baa0cc09a07a5cf&amp;type=3#RegistroStyles"/>
+    <ui:VisualElement name="root">
+        <ui:VisualElement name="panel-registro">
+            <ui:Label name="texto-bienvenida" text="¡BIENVENIDO, [NOMBRE]!" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 26px;"/>
+            <ui:VisualElement name="panel-org">
+                <ui:Label name="texto-org-label" text="✅ Eres parte de:" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 14px;"/>
+                <ui:Label name="texto-org" text="N I D E" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 24px; align-items: stretch; justify-content: flex-start; align-self: center; align-content: flex-start;"/>
+            </ui:VisualElement>
+            <ui:Button name="boton-empezar" text="▶ ¡EMPEZAR AVENTURA!" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 20px;"/>
+            <ui:Button name="boton-cerrar-sesion" text="CERRAR SESIÓN" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 20px;"/>
+        </ui:VisualElement>
+        <ui:Label name="texto-footer" text="© 2026 LEXI MATH" style="font-size: 18px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+    </ui:VisualElement>
+</ui:UXML>

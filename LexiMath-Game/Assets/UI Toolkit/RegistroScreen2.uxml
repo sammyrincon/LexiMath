@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/RegistroStyles.uss?fileID=7433441132597879392&amp;guid=22dd5d14b6b8d6549baa0cc09a07a5cf&amp;type=3#RegistroStyles"/>
+    <ui:VisualElement name="root">
+        <ui:Label name="texto-titulo" text="NUEVO JUGADOR" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 40px;"/>
+        <ui:Label name="texto-subtitulo" text="✦ MATEMATICAS &amp; ESPAÑOL ✦" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 18px;"/>
+        <ui:VisualElement name="espacio-caballero" style="height: 200px;"/>
+        <ui:VisualElement name="panel-registro">
+            <ui:Label name="texto-paso" text="PASO 2 DE 3" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:Label name="texto-instruccion" text="TUS CREDENCIALES" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:Label text="USUARIO" class="label-campo" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:TextField name="input-usuario" class="input-field" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:Label text="CORREO DEL TUTOR" class="label-campo" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:TextField name="input-correo" class="input-field" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:Label text="CONTRASEÑA" class="label-campo" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:TextField name="input-contrasena" password="true" mask-character="X" class="input-field" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:Label text="CONFIRMAR CONTRASEÑA" class="label-campo" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:TextField name="input-confirmar" password="true" mask-character="X" class="input-field" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:Label name="texto-error" text="" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 16px;"/>
+            <ui:Button name="boton-siguiente" text="SIGUIENTE ▶" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:Button name="boton-atras" text="← ATRÁS" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ea9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+        </ui:VisualElement>
+        <ui:Label name="texto-footer" text="© 2026 LEXI MATH" style="font-size: 18px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+    </ui:VisualElement>
+</ui:UXML>

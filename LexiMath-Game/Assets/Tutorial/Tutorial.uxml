@@ -1,0 +1,78 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Tutorial/Tutorial.uss"/>
+
+    <ui:VisualElement name="tutorial-root" class="tutorial-root">
+
+        <!-- ══ BARRA SUPERIOR CON DOTS ════════════════════════════ -->
+        <ui:VisualElement name="top-bar" class="top-bar">
+
+            <ui:VisualElement name="progress-container" class="progress-container">
+                <ui:VisualElement name="step-dot-1" class="step-dot step-active">
+                    <ui:Label text="1" class="dot-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="progress-line-1" class="progress-line"/>
+                <ui:VisualElement name="step-dot-2" class="step-dot step-pending">
+                    <ui:Label text="2" class="dot-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="progress-line-2" class="progress-line"/>
+                <ui:VisualElement name="step-dot-3" class="step-dot step-pending">
+                    <ui:Label text="3" class="dot-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="progress-line-3" class="progress-line"/>
+                <ui:VisualElement name="step-dot-4" class="step-dot step-pending">
+                    <ui:Label text="4" class="dot-label"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:Label name="label-paso-actual" text="PASO 1: MOVER" class="label-paso"/>
+
+        </ui:VisualElement>
+
+        <!-- ══ PANEL PASO 1: MOVER ════════════════════════════════ -->
+        <ui:VisualElement name="panel-movimiento" class="panel-step">
+            <ui:VisualElement class="instruccion-box">
+                <ui:Label text="← →" class="instruccion-icono"/>
+                <ui:Label text="Muévete con las flechas" class="instruccion-texto"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- ══ PANEL PASO 2: SALTAR ═══════════════════════════════ -->
+        <ui:VisualElement name="panel-saltar" class="panel-step panel-oculto">
+            <ui:VisualElement class="instruccion-box">
+                <ui:Label text="↑" class="instruccion-icono"/>
+                <ui:Label text="Presiona ESPACIO o ↑ para saltar" class="instruccion-texto"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- ══ PANEL PASO 3: ATACAR ═══════════════════════════════ -->
+        <ui:VisualElement name="panel-atacar" class="panel-step panel-oculto">
+            <ui:VisualElement class="instruccion-box">
+                <ui:Label text="⚔" class="instruccion-icono"/>
+                <ui:Label text="Presiona X o Z para atacar" class="instruccion-texto"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- ══ PANEL PASO 4: MATAR ENEMIGO ════════════════════════ -->
+        <ui:VisualElement name="panel-matar" class="panel-step panel-oculto">
+            <ui:VisualElement class="instruccion-box">
+                <ui:Label text="💀" class="instruccion-icono"/>
+                <ui:Label text="¡Derrota al enemigo!" class="instruccion-texto"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- ══ PANEL PORTAL (aparece al matar al enemigo) ═════════ -->
+        <ui:VisualElement name="panel-portal" class="panel-portal panel-oculto">
+            <ui:VisualElement class="portal-box">
+                <ui:Label text="✨" class="instruccion-icono"/>
+                <ui:Label text="¡Entra al portal para continuar!" class="instruccion-texto"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- ══ PANEL FINAL ════════════════════════════════════════ -->
+        <ui:VisualElement name="panel-final" class="panel-final panel-oculto">
+            <ui:Label text="🎉 ¡TUTORIAL COMPLETADO!" class="titulo-final"/>
+            <ui:Label text="Entrando al portal..." class="subtitulo-final"/>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
