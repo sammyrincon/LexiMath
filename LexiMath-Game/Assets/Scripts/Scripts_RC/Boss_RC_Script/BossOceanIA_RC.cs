@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class BossOceanIA : MonoBehaviour
 {
+    [Header("Configuración de Rangos")]
+    public float distanciaDeteccion = 8f;
+    public float distanciaAtaqueNormal = 2f;
+    public float distanciaMagia = 6f;
+
     [Header("Configuración de Movimiento")]
     public float velocidad = 2.5f;
-    
-    [Tooltip("Distancia para dar el golpe cuerpo a cuerpo")]
-    public float distanciaAtaqueNormal = 2f;
-    
-    [Tooltip("Distancia máxima para lanzar magia")]
-    public float distanciaMagia = 6f;
 
     [Header("Tiempos de Recarga (Cooldowns)")]
     public float cooldownAtaque = 2f;
@@ -19,6 +18,7 @@ public class BossOceanIA : MonoBehaviour
     private float temporizadorAtaque = 0f;
     private float temporizadorMagia = 0f;
     private float temporizadorCura = 0f;
+    private bool jugadorDetectado = false;
 
     [Header("Configuración Especial")]
     public int danoPorTocar = 15;
@@ -34,13 +34,11 @@ public class BossOceanIA : MonoBehaviour
     public AudioClip sonidoDolor;
     public AudioClip sonidoMuerte;
 
-    // Referencias a los componentes (Automáticas)
     private Animator animator;
     private Transform jugador;
     private SpriteRenderer spriteRenderer;
     private Sistema_Salud_RC miSalud; 
     
-    // Variables privadas para los Hitboxes
     private ArmaEnemigoRC hitboxAtaqueNormal;
     private ArmaEnemigoRC hitboxMagia;
 
@@ -78,17 +76,39 @@ public class BossOceanIA : MonoBehaviour
 
     void Update()
     {
-        if (jugador == null || miSalud == null || miSalud.saludActual <= 0) return;
+        if (jugador == null || miSalud == null || miSalud.saludActual <= 0)
+        {
+            return;
+        }
+
+        float distancia = Vector2.Distance(transform.position, jugador.position);
+
+        if (!jugadorDetectado)
+        {
+            if (distancia <= distanciaDeteccion)
+            {
+                jugadorDetectado = true;
+            }
+            else
+            {
+                return;
+            }
+        }
 
         temporizadorAtaque += Time.deltaTime;
         temporizadorMagia += Time.deltaTime;
         temporizadorCura += Time.deltaTime;
 
-        float distancia = Vector2.Distance(transform.position, jugador.position);
         Vector2 direccion = jugador.position - transform.position;
 
-        if (direccion.x < 0) spriteRenderer.flipX = true;
-        else if (direccion.x > 0) spriteRenderer.flipX = false;
+        if (direccion.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (direccion.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
 
         if (miSalud.saludActual <= limiteSaludParaCurar && temporizadorCura >= cooldownCura)
         {
@@ -138,26 +158,36 @@ public class BossOceanIA : MonoBehaviour
         }
     }
 
-    // --- EVENTOS PARA ACTIVAR/DESACTIVAR HITBOXES (Ya no tienen audio) ---
-
     public void PrenderAtaqueNormal()
     {
-        if (hitboxAtaqueNormal != null) hitboxAtaqueNormal.ActivarHitbox();
+        if (hitboxAtaqueNormal != null)
+        {
+            hitboxAtaqueNormal.ActivarHitbox();
+        }
     }
 
     public void ApagarAtaqueNormal()
     {
-        if (hitboxAtaqueNormal != null) hitboxAtaqueNormal.ApagarHitbox();
+        if (hitboxAtaqueNormal != null)
+        {
+            hitboxAtaqueNormal.ApagarHitbox();
+        }
     }
 
     public void PrenderAtaqueMagico()
     {
-        if (hitboxMagia != null) hitboxMagia.ActivarHitbox();
+        if (hitboxMagia != null)
+        {
+            hitboxMagia.ActivarHitbox();
+        }
     }
 
     public void ApagarAtaqueMagico()
     {
-        if (hitboxMagia != null) hitboxMagia.ApagarHitbox();
+        if (hitboxMagia != null)
+        {
+            hitboxMagia.ApagarHitbox();
+        }
     }
 
     public void ReproducirSonidoAtaqueNormal() 

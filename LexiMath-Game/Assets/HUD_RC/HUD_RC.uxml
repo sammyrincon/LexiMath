@@ -4,7 +4,7 @@
         <ui:VisualElement name="hud-container" picking-mode="Ignore" style="flex-grow: 1; opacity: 1;">
             <ui:VisualElement name="health-bar-container" class="health-bar-container" style="flex-grow: 1; display: flex;">
                 <ui:VisualElement name="health-bar-frame" class="health-frame" style="flex-grow: 1;">
-                    <ui:VisualElement name="healthbar-fill" class="health-bar-fill" style="flex-grow: 1;"/>
+                    <ui:VisualElement name="healthbar-fill" class="health-bar-fill" style="flex-grow: 0;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:Button text="" name="Button" class="home-button" style="position: absolute;">

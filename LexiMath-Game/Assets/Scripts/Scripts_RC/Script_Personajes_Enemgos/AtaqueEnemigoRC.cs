@@ -10,11 +10,9 @@ public class AtaqueEnemigoRC : MonoBehaviour
     void Start()
     {
         hitbox = GetComponent<Collider2D>();
-        
         ApagarHitbox();
     }
 
-    #pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -24,12 +22,10 @@ public class AtaqueEnemigoRC : MonoBehaviour
             if (saludJugador != null)
             {
                 saludJugador.RecibirDano(danoAtaque);
-                
                 ApagarHitbox();
             }
         }
     }
-    #pragma warning restore IDE0051
 
     public void PrenderHitbox()
     {

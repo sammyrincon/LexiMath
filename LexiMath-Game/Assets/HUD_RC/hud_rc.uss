@@ -13,18 +13,19 @@
     align-items: center;
     flex-wrap: nowrap;
     background-color: rgba(0, 0, 0, 0);
-    background-size: 50% 50%;
+    background-size: 100% 100%;
 }
 
 .health-frame {
     background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar_decoration.png?fileID=2800000&guid=dce6f5913aa8921429fe5181db32e07c&type=3#health_bar_decoration");
-    background-size: 100px 25px;
-    width: 150px;
+    background-size: 100% 100%;
+    width: 160px;
     height: 40px;
     align-items: center;
     justify-content: center;
     align-self: center;
     background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
 }
 
 .menu-container {
@@ -45,11 +46,11 @@
     align-self: center;
     align-content: auto;
     width: 76px;
-    height: 15px;
+    height: 30px;
     background-size: 100% 100%;
     background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar.png?fileID=2800000&guid=cc2ae19d769fb4342930af1239ad2a63&type=3#health_bar");
-    -unity-background-scale-mode: scale-and-crop;
-    left: 47px;
+    -unity-background-scale-mode: stretch-to-fill;
+    left: 33px;
     background-color: rgba(0, 0, 0, 0);
     flex-shrink: 0;
 }
@@ -811,9 +812,13 @@
     border-bottom-width: 4px;
     border-bottom-color: rgb(200, 150, 50);
 }
+
 .guide-overlay {
     position: absolute;
-    left: 0; top: 0; right: 0; bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.85);
     align-items: center;
     justify-content: center;
@@ -822,7 +827,7 @@
 .guide-box {
     width: 500px;
     height: 400px;
-    background-color: rgb(245, 230, 190); 
+    background-color: rgb(245, 230, 190);
     border-width: 6px;
     border-color: rgb(100, 60, 20);
     border-radius: 10px;
@@ -867,7 +872,7 @@
 }
 
 .guide-content .unity-base-slider__dragger {
-    background-color: rgb(120, 70, 30); 
+    background-color: rgb(120, 70, 30);
     border-width: 0;
     border-radius: 4px;
     width: 8px;
@@ -880,7 +885,7 @@
 }
 
 .guide-content .unity-base-slider__dragger:hover {
-    background-color: rgb(150, 90, 40); 
+    background-color: rgb(150, 90, 40);
 }
 
 .guide-content .unity-scroller__low-button,

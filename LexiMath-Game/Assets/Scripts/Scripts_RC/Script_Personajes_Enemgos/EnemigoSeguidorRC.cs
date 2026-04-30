@@ -7,14 +7,12 @@ public class EnemigoSeguidor : MonoBehaviour
     public float distanciaDeAtaque = 1.5f;
 
     [Header("Configuración de Ataque")]
-    public int danoDeAtaque = 20;
-    
-    // NUEVO: Tiempo que debe esperar el enemigo entre cada golpe
     public float tiempoEntreAtaques = 1.5f; 
     private float temporizadorAtaque = 0f;
 
     private Animator animator;
     private Transform jugador;
+    private Sistema_Salud_RC salud;
 
     void Start()
     {
@@ -25,10 +23,16 @@ public class EnemigoSeguidor : MonoBehaviour
         }
 
         animator = GetComponent<Animator>(); 
+        salud = GetComponent<Sistema_Salud_RC>();
     }
 
     void Update()
     {
+        if (salud != null && salud.saludActual <= 0)
+        {
+            return;
+        }
+
         if (jugador != null)
         {
             temporizadorAtaque += Time.deltaTime;
@@ -61,19 +65,6 @@ public class EnemigoSeguidor : MonoBehaviour
                     animator.SetTrigger("Attack");
                     temporizadorAtaque = 0f; 
                 }
-            }
-        }
-    }
-    
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Sistema_Salud_RC saludJugador = collision.gameObject.GetComponent<Sistema_Salud_RC>();
-
-            if (saludJugador != null)
-            {
-                saludJugador.RecibirDano(danoDeAtaque);
             }
         }
     }

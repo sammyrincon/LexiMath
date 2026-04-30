@@ -51,7 +51,10 @@ public class MathChest : MonoBehaviour
             audioSource.Play();
         }
 
-        MathUIManager.Instance.GenerateAndShowQuestion(this);
+        if (MathUIManager.Instance != null)
+        {
+            MathUIManager.Instance.GenerateAndShowQuestion(this);
+        }
     }
 
     public void OnAnsweredCorrectly()
