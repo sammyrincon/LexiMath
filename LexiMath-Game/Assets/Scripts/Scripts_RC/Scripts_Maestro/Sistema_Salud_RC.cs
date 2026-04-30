@@ -14,7 +14,6 @@ public class Sistema_Salud_RC : MonoBehaviour
     {
         saludActual = saludMaxima;
         animator = GetComponent<Animator>();
-    }
 
         if (documentoUI != null)
         {
@@ -64,19 +63,23 @@ public class Sistema_Salud_RC : MonoBehaviour
 
     private void Morir()
     {
-        animator.SetTrigger("Death");
-        Destroy(gameObject,0.5f);
+        if (animator != null)
+        {
+            animator.SetTrigger("Death");
+        }
         
         Destroy(gameObject, 1.5f);
     }
 
     public void Curar(int cantidad)
-{
-    saludActual += cantidad;
-    if(saludActual > saludMaxima)
     {
-        saludActual = saludMaxima; 
+        saludActual += cantidad;
+        
+        if (saludActual > saludMaxima) 
+        {
+            saludActual = saludMaxima;
+        }
+        
+        ActualizarBarraVida();
     }
-    Debug.Log("¡El personaje se curó! Salud actual: " + saludActual);
-}
 }
