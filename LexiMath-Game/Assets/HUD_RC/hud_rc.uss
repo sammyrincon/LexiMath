@@ -13,7 +13,7 @@
     align-items: center;
     flex-wrap: nowrap;
     background-color: rgba(0, 0, 0, 0);
-    background-size: 50% 50%;
+    background-size: 100% 100%;
 }
 
 .health-frame {
@@ -25,6 +25,7 @@
     justify-content: center;
     align-self: center;
     background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
 }
 
 .menu-container {
@@ -45,7 +46,7 @@
     align-self: center;
     align-content: auto;
     width: 76px;
-    height: 15px;
+    height: 30px;
     background-size: 100% 100%;
     background-image: url("project://database/Assets/HUD_RC/Hearts/Hearts/PNG/health_bar/health_bar.png?fileID=21300000&guid=550d944cab0955c42b6c375d73cd0e7e&type=3#health_bar");
     -unity-background-scale-mode: scale-and-crop;

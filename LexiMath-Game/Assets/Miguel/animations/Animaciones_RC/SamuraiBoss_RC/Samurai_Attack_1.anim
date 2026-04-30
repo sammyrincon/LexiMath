@@ -31,9 +31,35 @@ AnimationClip:
     - time: 0.33333334
       value: {fileID: -3893265932395481535, guid: 463e8348c7a565347ae082a7a2842cd0, type: 3}
     - time: 0.41666666
-      value: {fileID: -4877070397022449183, guid: 463e8348c7a565347ae082a7a2842cd0, type: 3}
+      value: {fileID: 0}
     - time: 0.5
-      value: {fileID: -5169793458105273135, guid: 463e8348c7a565347ae082a7a2842cd0, type: 3}
+      value: {fileID: 0}
+    - time: 0.5833333
+      value: {fileID: -1761830185093388198, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - time: 0.6666667
+      value: {fileID: 7055562145001373994, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - time: 0.75
+      value: {fileID: 2521281158915421623, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - time: 0.8333333
+      value: {fileID: 3049719763689523062, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - time: 0.9166667
+      value: {fileID: -218095033, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - time: 1
+      value: {fileID: -1504588578, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - time: 1.0833334
+      value: {fileID: 8490610621437128927, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - time: 1.1666666
+      value: {fileID: -6885917528804674509, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - time: 1.25
+      value: {fileID: -2177436026744315796, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - time: 1.3333334
+      value: {fileID: 8736363486175530098, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - time: 1.4166666
+      value: {fileID: 1938251192016654180, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - time: 1.5
+      value: {fileID: -1518275472, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - time: 1.5833334
+      value: {fileID: -1504887672, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -61,14 +87,27 @@ AnimationClip:
     - {fileID: 7273190724691679224, guid: 463e8348c7a565347ae082a7a2842cd0, type: 3}
     - {fileID: -2835903327795631489, guid: 463e8348c7a565347ae082a7a2842cd0, type: 3}
     - {fileID: -3893265932395481535, guid: 463e8348c7a565347ae082a7a2842cd0, type: 3}
-    - {fileID: -4877070397022449183, guid: 463e8348c7a565347ae082a7a2842cd0, type: 3}
-    - {fileID: -5169793458105273135, guid: 463e8348c7a565347ae082a7a2842cd0, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: -1761830185093388198, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - {fileID: 7055562145001373994, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - {fileID: 2521281158915421623, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - {fileID: 3049719763689523062, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - {fileID: -218095033, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - {fileID: -1504588578, guid: 049d15bf76f3c0444808a576dcf71000, type: 3}
+    - {fileID: 8490610621437128927, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - {fileID: -6885917528804674509, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - {fileID: -2177436026744315796, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - {fileID: 8736363486175530098, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - {fileID: 1938251192016654180, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - {fileID: -1518275472, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
+    - {fileID: -1504887672, guid: 1a1824852ae2cd34d88d8ecd205126e4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5833333
+    m_StopTime: 1.6666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -89,28 +128,28 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: ApagarHitbox
+    functionName: ApagarAtaque
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.083333336
-    functionName: ApagarHitbox
+    functionName: ApagarAtaque
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.16666667
-    functionName: ApagarHitbox
+    functionName: PrenderAtaque
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.25
-    functionName: PrenderHitbox
+    functionName: PrenderAtaque
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -124,21 +163,119 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.33333334
-    functionName: PrenderHitbox
+    functionName: PrenderAtaque
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.41666666
-    functionName: ApagarHitbox
+    functionName: PrenderAtaque
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.5
-    functionName: ApagarHitbox
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5833333
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.6666667
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.75
+    functionName: ReproducirSonidoAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.75
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.8333333
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.9166667
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.0833334
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.1666666
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.25
+    functionName: ApagarAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.3333334
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.4166666
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.5
+    functionName: PrenderAtaque
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.5833334
+    functionName: PrenderAtaque
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
