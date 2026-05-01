@@ -26,6 +26,7 @@
     align-self: center;
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden;
+    left: 30px;
 }
 
 .menu-container {

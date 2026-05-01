@@ -7,13 +7,16 @@ public class Sistema_Salud_RC : MonoBehaviour
     public int saludActual { get; private set; }
     
     public UIDocument documentoUI;
+    public float tiempoMuerteJugador = 5.0f;
+    public float tiempoMuerteEnemigo = 0.5f;
+
     private VisualElement healthbar_fill; 
-    private Animator animator;
+    private Animator animador;
 
     void Start()
     {
         saludActual = saludMaxima;
-        animator = GetComponent<Animator>();
+        animador = GetComponent<Animator>();
 
         if (documentoUI != null)
         {
@@ -28,27 +31,19 @@ public class Sistema_Salud_RC : MonoBehaviour
     {
         saludActual -= cantidad;
         
-        if (saludActual < 0) 
+        if (saludActual <= 0) 
         {
             saludActual = 0;
-        }
-
-        ActualizarBarraVida();
-
-        if (animator != null)
-        {
-            animator.SetTrigger("Hurt"); 
-        }
-
-        EventosAtaqueRC eventosAtaque = GetComponent<EventosAtaqueRC>();
-        if (eventosAtaque != null)
-        {
-            eventosAtaque.DesactivarHitbox();
-        }
-
-        if (saludActual <= 0)
-        {
+            ActualizarBarraVida();
             Morir();
+        }
+        else
+        {
+            ActualizarBarraVida();
+            if (animador != null)
+            {
+                animador.SetTrigger("Hurt"); 
+            }
         }
     }
 
@@ -63,12 +58,19 @@ public class Sistema_Salud_RC : MonoBehaviour
 
     private void Morir()
     {
-        if (animator != null)
+        if (animador != null)
         {
-            animator.SetTrigger("Death");
+            animador.SetTrigger("Death");
         }
-        
-        Destroy(gameObject, 1.5f);
+
+        if (gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject, tiempoMuerteJugador);
+        }
+        else
+        {
+            Destroy(gameObject, tiempoMuerteEnemigo);
+        }
     }
 
     public void Curar(int cantidad)

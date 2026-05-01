@@ -14,6 +14,7 @@ public class ControladorJugadorRC : MonoBehaviour
 
     private Rigidbody2D cuerpoFisico;
     private Animator animador;
+    private SpriteRenderer spriteRenderer; 
     private EstadoPersonaje detectorSuelo;
     private Vector2 movimiento;
 
@@ -21,6 +22,7 @@ public class ControladorJugadorRC : MonoBehaviour
     {
         cuerpoFisico = GetComponent<Rigidbody2D>();
         animador = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); 
         detectorSuelo = GetComponentInChildren<EstadoPersonaje>();
     }
 
@@ -29,6 +31,9 @@ public class ControladorJugadorRC : MonoBehaviour
         accionMover.Enable();
         accionSalto.Enable();
         accionAtaque.Enable();
+
+        accionSalto.performed += Saltar;
+        accionAtaque.performed += Atacar;
     }
 
     private void OnDisable()
@@ -36,6 +41,33 @@ public class ControladorJugadorRC : MonoBehaviour
         accionMover.Disable();
         accionSalto.Disable();
         accionAtaque.Disable();
+
+        accionSalto.performed -= Saltar;
+        accionAtaque.performed -= Atacar;
+    }
+
+    private void Saltar(InputAction.CallbackContext context)
+    {
+        if (detectorSuelo != null)
+        {
+            if (detectorSuelo.estaEnPiso)
+            {
+                cuerpoFisico.linearVelocityY = fuerzaDeSalto;
+                
+                if (animador != null)
+                {
+                    animador.SetTrigger("Jump");
+                }
+            }
+        }
+    }
+
+    private void Atacar(InputAction.CallbackContext context)
+    {
+        if (animador != null)
+        {
+            animador.SetTrigger("Attack");
+        }
     }
 
     void Update()
@@ -52,37 +84,14 @@ public class ControladorJugadorRC : MonoBehaviour
             }
         }
 
+        // Cambio de dirección usando flipX
         if (movimiento.x < 0)
         {
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            spriteRenderer.flipX = true;
         }
         else if (movimiento.x > 0)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-
-        if (accionSalto.WasPressedThisFrame())
-        {
-            if (detectorSuelo != null)
-            {
-                if (detectorSuelo.estaEnPiso)
-                {
-                    cuerpoFisico.linearVelocityY = fuerzaDeSalto;
-                    
-                    if (animador != null)
-                    {
-                        animador.SetTrigger("Jump");
-                    }
-                }
-            }
-        }
-
-        if (accionAtaque.WasPressedThisFrame())
-        {
-            if (animador != null)
-            {
-                animador.SetTrigger("Attack");
-            }
+            spriteRenderer.flipX = false;
         }
     }
 
@@ -90,4 +99,4 @@ public class ControladorJugadorRC : MonoBehaviour
     {
         cuerpoFisico.linearVelocityX = movimiento.x * velocidad;
     }
-}  
+} 

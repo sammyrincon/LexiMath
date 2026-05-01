@@ -6,16 +6,22 @@ public class EventosAtaqueRC : MonoBehaviour
 
     private void Start()
     {
-        hitboxAtaque.SetActive(false);
+        DesactivarHitbox();
     }
 
     public void ActivarHitbox()
     {
-        hitboxAtaque.SetActive(true);
+        if (hitboxAtaque != null)
+        {
+            hitboxAtaque.SetActive(true);
+        }
     }
 
     public void DesactivarHitbox()
     {
-        hitboxAtaque.SetActive(false);
+        if (hitboxAtaque != null)
+        {
+            hitboxAtaque.SetActive(false);
+        }
     }
-}
+} 

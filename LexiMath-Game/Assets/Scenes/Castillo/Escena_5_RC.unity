@@ -197,76 +197,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.0459156, y: 1.6387246}
   m_EdgeRadius: 0
---- !u!1001 &277285167
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3387085139164216856, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: documentoUI
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3465144073932673321, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 237.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964859390946474965, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-      propertyPath: m_Name
-      value: JugadorPrincipal_RC
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
---- !u!4 &328339932 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3642556555046113178, guid: b6d1f914b5b62a6488758d9a8d5a334e, type: 3}
-  m_PrefabInstance: {fileID: 277285167}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &343142570
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ceb1e02301c3446b75d19e04c81b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArmaEnemigoRC
-  danoDelGolpe: 5
+  danoAtaque: 20
 --- !u!61 &344965365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -929,7 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ceb1e02301c3446b75d19e04c81b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArmaEnemigoRC
-  danoDelGolpe: 50
+  danoAtaque: 20
 --- !u!61 &888544900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2038,7 +1968,7 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 328339932}
+    TrackingTarget: {fileID: 0}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
@@ -2209,7 +2139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ceb1e02301c3446b75d19e04c81b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArmaEnemigoRC
-  danoDelGolpe: 20
+  danoAtaque: 20
 --- !u!114 &1636749491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2237,6 +2167,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Sistema_Salud_RC
   saludMaxima: 40
   documentoUI: {fileID: 0}
+  tiempoMuerteJugador: 5
+  tiempoMuerteEnemigo: 0.5
 --- !u!114 &1636749493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39117,6 +39049,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Sistema_Salud_RC
   saludMaxima: 500
   documentoUI: {fileID: 0}
+  tiempoMuerteJugador: 5
+  tiempoMuerteEnemigo: 0.5
 --- !u!61 &1814948822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39496,5 +39430,4 @@ SceneRoots:
   - {fileID: 1636749489}
   - {fileID: 1814948818}
   - {fileID: 1823601809}
-  - {fileID: 277285167}
   - {fileID: 1591458529}

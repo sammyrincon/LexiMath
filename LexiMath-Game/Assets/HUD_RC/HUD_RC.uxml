@@ -26,17 +26,21 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="controls-container" class="controls-container" style="flex-grow: 1;">
-                <ui:VisualElement name="d-pad-container" class="d-pad-container" style="flex-grow: 1;">
-                    <ui:VisualElement name="control-up" class="control-up" style="flex-grow: 1;"/>
-                    <ui:VisualElement name="control-down" class="control-down" style="flex-grow: 1;"/>
-                    <ui:VisualElement name="control-right" class="control-right" style="flex-grow: 1;"/>
-                    <ui:VisualElement name="control-left" class="control-left" style="flex-grow: 1;"/>
+                <ui:VisualElement name="d-pad-container" class="d-pad-container" style="flex-grow: 1; width: 85px; height: 85px; top: -5px;">
+                    <ui:VisualElement name="control-up" class="control-up" style="flex-grow: 1; height: 25px; position: absolute; width: 25px; background-image: url(&quot;project://database/Assets/Keyboard_RC/Keyboard%20Letters%20and%20Symbols%20(1).png?fileID=8816205334256277837&amp;guid=05a8e7db614cea144bdf3c091b04d130&amp;type=3#Keyboard Letters and Symbols (1)_0&quot;); background-color: rgba(0, 0, 0, 0); border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); top: 10px;"/>
+                    <ui:VisualElement name="control-down" class="control-down" style="flex-grow: 1; width: 25px; height: 25px; background-image: url(&quot;project://database/Assets/Keyboard_RC/Keyboard%20Letters%20and%20Symbols%20(1).png?fileID=1648370634778093375&amp;guid=05a8e7db614cea144bdf3c091b04d130&amp;type=3#Keyboard Letters and Symbols (1)_1&quot;); background-color: rgba(76, 76, 76, 0); border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); top: 50px;"/>
+                    <ui:VisualElement name="control-right" class="control-right" style="flex-grow: 1; width: 25px; height: 25px; background-image: url(&quot;project://database/Assets/Keyboard_RC/Keyboard%20Letters%20and%20Symbols%20(1).png?fileID=3986716159164981538&amp;guid=05a8e7db614cea144bdf3c091b04d130&amp;type=3#Keyboard Letters and Symbols (1)_3&quot;); background-color: rgba(0, 0, 0, 0); border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); top: 30px; left: 50px;"/>
+                    <ui:VisualElement name="control-left" class="control-left" style="flex-grow: 1; width: 25px; height: 25px; background-image: url(&quot;project://database/Assets/Keyboard_RC/Keyboard%20Letters%20and%20Symbols%20(1).png?fileID=4909580298764042641&amp;guid=05a8e7db614cea144bdf3c091b04d130&amp;type=3#Keyboard Letters and Symbols (1)_2&quot;); background-color: rgba(0, 0, 0, 0); border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); left: -10px; top: 30px;"/>
+                </ui:VisualElement>
+                <ui:Label text="Moverse " name="instruccion-texto" style="position: absolute; top: -28px; left: 15px; -unity-text-align: upper-center; width: 62px; color: rgb(255, 255, 255);"/>
+                <ui:VisualElement name="button-atacar" style="flex-grow: 1; position: absolute; width: 25px; height: 25px; top: 29px; left: 248px; background-image: url(&quot;project://database/Assets/Keyboard_RC/Keyboard%20Letters%20and%20Symbols%20(1).png?fileID=-137085519&amp;guid=05a8e7db614cea144bdf3c091b04d130&amp;type=3#Keyboard Letters and Symbols (1)_39&quot;);">
+                    <ui:Label text="Ataque" style="position: absolute; top: -30px; left: -14px; -unity-text-align: upper-center; color: rgb(255, 255, 255);"/>
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:Label name="label-nivel" text="Nivel 1" class="label-nivel"/>
+            <ui:Label name="label-nivel" text="Nivel 1" class="label-nivel" style="display: none;"/>
             <ui:VisualElement name="CoinsContainer" class="coins-container" style="flex-grow: 1;">
-                <ui:Label text="0" name="ContadorTexto" class="contador-texto"/>
-                <ui:Image name="coin-image" class="coin-image"/>
+                <ui:Label text="0" name="ContadorTexto" class="contador-texto" style="display: none;"/>
+                <ui:Image name="coin-image" class="coin-image" style="display: none;"/>
             </ui:VisualElement>
             <ui:VisualElement name="Victory-panel" class="victory-panel" style="flex-grow: 1; display: none;">
                 <ui:VisualElement name="mapVictory" class="mapVictory" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/HUD_RC/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/1%20-%20Brown/Pixel%20Map/Sprites/Open%20&amp;%20Close/With%20Ribbon/Open/6.png?fileID=2800000&amp;guid=de2082bc1d809b343a8493a91459c850&amp;type=3#6&quot;); background-size: 150% 130%;">
