@@ -6,6 +6,10 @@ public class MathUIManager : MonoBehaviour
 {
     public static MathUIManager Instance;
 
+    [Header("Música de Fondo")] 
+    public AudioClip musicaFondo;
+    private AudioSource reproductorMusica;
+
     private VisualElement overlay;
     private VisualElement guideOverlay;
     private Label questionLabel;
@@ -14,14 +18,13 @@ public class MathUIManager : MonoBehaviour
 
     private int currentCorrectIndex;
     private MathChest currentChest;
-    // Este es un struct privado para organizar las preguntas de texto, con su pregunta, respuesta correcta e incorrectas.
+
     private struct PreguntaTexto
     {
         public string pregunta;
         public string correcta;
         public string[] incorrectas;
     }
-    // Son los bancos de las preguntas de texto para cada tema, con 5 preguntas cada uno, con su pregunta, respuesta correcta e incorrectas.
 
     private PreguntaTexto[] bancoVocales = new PreguntaTexto[]
     {
@@ -58,13 +61,12 @@ public class MathUIManager : MonoBehaviour
         new PreguntaTexto { pregunta = "¿Cuál es un verbo?", correcta = "Correr", incorrectas = new string[] { "Mesa", "Lindo", "Ayer" } },
         new PreguntaTexto { pregunta = "¿Cuál es un sustantivo?", correcta = "Casa", incorrectas = new string[] { "Saltar", "Ayer", "Muy" } }
     };
-    // En el Awake se asigna la instancia para que sea accesible desde otros scripts, como el MathChest, y en el OnEnable se buscan los elementos de la UI y se configuran los eventos de los botones.
 
     private void Awake()
     {
         Instance = this;
+        reproductorMusica = GetComponent<AudioSource>(); 
     }
-    // Aqui se asignan los elementos de la UI a las variables, se configuran los eventos de los botones y se ocultan los paneles al inicio. Es importante que el nombre de los elementos en el UI Builder coincida con los nombres usados aquí para que se asignen correctamente.
 
     private void OnEnable()
     {
@@ -73,7 +75,7 @@ public class MathUIManager : MonoBehaviour
         overlay = root.Q<VisualElement>("math-overlay");
         guideOverlay = root.Q<VisualElement>("guide-overlay");
         questionLabel = root.Q<Label>("question-label");
-    // Se asignan los botones de respuesta y se configuran sus eventos para que llamen a la función OnAnswerClicked con el índice del botón cuando se haga clic en ellos.
+
         for (int i = 0; i < 4; i++)
         {
             int index = i;
@@ -87,7 +89,6 @@ public class MathUIManager : MonoBehaviour
         overlay.style.display = DisplayStyle.None;
         if (guideOverlay != null) guideOverlay.style.display = DisplayStyle.None;
     }
-    // En este método se genera la pregunta y las opciones de respuesta según el tema del cofre que se abrió. Para los temas de matemáticas se generan números aleatorios y se calcula la respuesta correcta, mientras que para los temas de texto se selecciona una pregunta aleatoria del banco correspondiente. Luego se mezclan las opciones de respuesta, se asignan a los botones y se muestra el panel de la pregunta. También se pausa el juego para que el jugador pueda responder sin presión de tiempo.
 
     public void GenerateAndShowQuestion(MathChest chestReference)
     {
@@ -166,8 +167,15 @@ public class MathUIManager : MonoBehaviour
 
         overlay.style.display = DisplayStyle.Flex;
         Time.timeScale = 0f;
+
+        // NUEVO: Reproducir la música en bucle cuando se abre la ventana
+        if (reproductorMusica != null && musicaFondo != null)
+        {
+            reproductorMusica.clip = musicaFondo;
+            reproductorMusica.loop = true;
+            reproductorMusica.Play();
+        }
     }
-    // En esta parte se configura la pregunta de texto seleccionando una aleatoria del banco correspondiente al tema, asignando su texto a la etiqueta de la pregunta, guardando la respuesta correcta y llenando la lista de opciones con la respuesta correcta e incorrectas para luego mezclarlas y asignarlas a los botones. Este método se llama desde el GenerateAndShowQuestion cuando el tema es de texto.
 
     private void ConfigurarPreguntaTexto(PreguntaTexto[] banco, out string correcta, List<string> opciones)
     {
@@ -183,7 +191,6 @@ public class MathUIManager : MonoBehaviour
             opciones.Add(wrong);
         }
     }
-    // En esta otra parte se generan opciones de respuesta para las preguntas de matemáticas creando números cercanos a la respuesta correcta para que el jugador tenga opciones plausibles pero no triviales. Se asegura de no repetir opciones y de no incluir números negativos.
 
     private List<string> GenerateMathOptions(int correctAns)
     {
@@ -200,7 +207,6 @@ public class MathUIManager : MonoBehaviour
         }
         return mathOptions;
     }
-    // Este método se llama cuando el jugador hace clic en una opción de respuesta. Verifica si el índice del botón clickeado coincide con el índice de la respuesta correcta. Si es correcto, llama al método OnAnsweredCorrectly del cofre para que se destruya y luego cierra los paneles. Si es incorrecto, simplemente cierra los paneles para que el jugador pueda intentarlo de nuevo o seguir jugando.
 
     private void OnAnswerClicked(int clickedIndex)
     {
@@ -214,7 +220,6 @@ public class MathUIManager : MonoBehaviour
             ClosePanels();
         }
     }
-    // Este método se llama cuando el jugador hace clic en el botón de pista. Simplemente muestra el panel de la guía con información útil para resolver la pregunta. El contenido de la guía se puede configurar en el UI Builder y puede incluir texto, imágenes o cualquier elemento visual que ayude al jugador a entender el concepto relacionado con la pregunta.
 
     private void OpenMathGuide()
     {
@@ -226,5 +231,10 @@ public class MathUIManager : MonoBehaviour
         overlay.style.display = DisplayStyle.None;
         if (guideOverlay != null) guideOverlay.style.display = DisplayStyle.None;
         Time.timeScale = 1f;
+
+        if (reproductorMusica != null)
+        {
+            reproductorMusica.Stop();
+        }
     }
 }

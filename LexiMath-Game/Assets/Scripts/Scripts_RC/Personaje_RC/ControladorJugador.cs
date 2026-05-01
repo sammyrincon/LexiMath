@@ -8,15 +8,21 @@ public class ControladorJugadorRC : MonoBehaviour
     [SerializeField] private InputAction accionSalto;
     [SerializeField] private InputAction accionAtaque;
 
-    [Header("Configuracion de Movimiento")]
+    [Header("Configuracion de Movimiento y Combate")]
     public float velocidad = 5f;
     public float fuerzaDeSalto = 10f;
+
+    [Header("Efectos de Sonido")]
+    [SerializeField] private AudioClip sonidoSalto;
+    [SerializeField] private AudioClip sonidoAtaque;
+    [SerializeField] private AudioClip sonidoPasos;
 
     private Rigidbody2D cuerpoFisico;
     private Animator animador;
     private SpriteRenderer spriteRenderer; 
     private EstadoPersonaje detectorSuelo;
     private Vector2 movimiento;
+    private AudioSource reproductorSonido; // La bocina
 
     void Awake()
     {
@@ -24,6 +30,7 @@ public class ControladorJugadorRC : MonoBehaviour
         animador = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>(); 
         detectorSuelo = GetComponentInChildren<EstadoPersonaje>();
+        reproductorSonido = GetComponent<AudioSource>(); // Conectamos la bocina
     }
 
     private void OnEnable()
@@ -48,25 +55,27 @@ public class ControladorJugadorRC : MonoBehaviour
 
     private void Saltar(InputAction.CallbackContext context)
     {
-        if (detectorSuelo != null)
+        if (detectorSuelo != null && detectorSuelo.estaEnPiso)
         {
-            if (detectorSuelo.estaEnPiso)
+            cuerpoFisico.linearVelocityY = fuerzaDeSalto;
+            if (animador != null) animador.SetTrigger("Jump");
+
+            // Reproducir sonido de salto
+            if (reproductorSonido != null && sonidoSalto != null)
             {
-                cuerpoFisico.linearVelocityY = fuerzaDeSalto;
-                
-                if (animador != null)
-                {
-                    animador.SetTrigger("Jump");
-                }
+                reproductorSonido.PlayOneShot(sonidoSalto);
             }
         }
     }
 
     private void Atacar(InputAction.CallbackContext context)
     {
-        if (animador != null)
+        if (animador != null) animador.SetTrigger("Attack");
+
+        // Reproducir sonido de ataque
+        if (reproductorSonido != null && sonidoAtaque != null)
         {
-            animador.SetTrigger("Attack");
+            reproductorSonido.PlayOneShot(sonidoAtaque);
         }
     }
 
@@ -77,21 +86,34 @@ public class ControladorJugadorRC : MonoBehaviour
         if (animador != null)
         {
             animador.SetFloat("Speed", Mathf.Abs(movimiento.x));
-            
-            if (detectorSuelo != null)
-            {
-                animador.SetBool("isGrounded", detectorSuelo.estaEnPiso);
-            }
+            if (detectorSuelo != null) animador.SetBool("isGrounded", detectorSuelo.estaEnPiso);
         }
 
-        // Cambio de dirección usando flipX
-        if (movimiento.x < 0)
+        if (movimiento.x < 0) spriteRenderer.flipX = true;
+        else if (movimiento.x > 0) spriteRenderer.flipX = false;
+
+        ManejarSonidoPasos();
+    }
+
+    private void ManejarSonidoPasos()
+    {
+        if (reproductorSonido == null || sonidoPasos == null) return;
+
+        if (Mathf.Abs(movimiento.x) > 0.1f && detectorSuelo != null && detectorSuelo.estaEnPiso)
         {
-            spriteRenderer.flipX = true;
+            if (reproductorSonido.clip != sonidoPasos || !reproductorSonido.isPlaying)
+            {
+                reproductorSonido.clip = sonidoPasos;
+                reproductorSonido.loop = true; 
+                reproductorSonido.Play();
+            }
         }
-        else if (movimiento.x > 0)
+        else
         {
-            spriteRenderer.flipX = false;
+            if (reproductorSonido.clip == sonidoPasos && reproductorSonido.isPlaying)
+            {
+                reproductorSonido.Stop();
+            }
         }
     }
 
@@ -99,4 +121,4 @@ public class ControladorJugadorRC : MonoBehaviour
     {
         cuerpoFisico.linearVelocityX = movimiento.x * velocidad;
     }
-} 
+}

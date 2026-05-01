@@ -10,13 +10,19 @@ public class Sistema_Salud_RC : MonoBehaviour
     public float tiempoMuerteJugador = 5.0f;
     public float tiempoMuerteEnemigo = 0.5f;
 
+    [Header("Efectos de Sonido")]
+    public AudioClip sonidoRecibirDano;
+    public AudioClip sonidoMuerte;
+
     private VisualElement healthbar_fill; 
     private Animator animador;
+    private AudioSource reproductorSonido; 
 
     void Start()
     {
         saludActual = saludMaxima;
         animador = GetComponent<Animator>();
+        reproductorSonido = GetComponent<AudioSource>(); 
 
         if (documentoUI != null)
         {
@@ -44,6 +50,12 @@ public class Sistema_Salud_RC : MonoBehaviour
             {
                 animador.SetTrigger("Hurt"); 
             }
+            
+            // Reproducir sonido de golpe
+            if (reproductorSonido != null && sonidoRecibirDano != null)
+            {
+                reproductorSonido.PlayOneShot(sonidoRecibirDano);
+            }
         }
     }
 
@@ -63,6 +75,11 @@ public class Sistema_Salud_RC : MonoBehaviour
             animador.SetTrigger("Death");
         }
 
+        if (reproductorSonido != null && sonidoMuerte != null)
+        {
+            reproductorSonido.PlayOneShot(sonidoMuerte);
+        }
+
         if (gameObject.CompareTag("Player"))
         {
             Destroy(gameObject, tiempoMuerteJugador);
@@ -75,13 +92,9 @@ public class Sistema_Salud_RC : MonoBehaviour
 
     public void Curar(int cantidad)
     {
+        // ... (Tu código de curar se queda igual)
         saludActual += cantidad;
-        
-        if (saludActual > saludMaxima) 
-        {
-            saludActual = saludMaxima;
-        }
-        
+        if (saludActual > saludMaxima) saludActual = saludMaxima;
         ActualizarBarraVida();
     }
 }
