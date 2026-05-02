@@ -6,20 +6,35 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: 02bc862b540b49b4e811e9cbf5132426
+  - enabled: 1
+    path: Assets/Scenes/RegistroScene.unity
+    guid: 3e0aa596e5a2c2d42ba4e50be155c431
+  - enabled: 1
+    path: Assets/Scenes/RegistroScene2.unity
+    guid: 9da9eeb519b1acf408ecfdee514d78f0
+  - enabled: 1
+    path: Assets/Scenes/RegistroScene3.unity
+    guid: 8d8fdf2edc07f364890adef52e9fe344
+  - enabled: 1
+    path: Assets/Scenes/BienvenidaScene.unity
+    guid: 6d61285bdb0ac7743938854e8655a9a7
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: a1f8d33c2f7888341a1ba24da951a948
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 7f6bb7669d4c9bb479ab2d738a2590e8
   - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/MainMenu - test.unity
-    guid: 76155cbddde3974448cb59406dcf4c6d
-  - enabled: 1
     path: Assets/Scenes/Nivel 1 Esp - BB.unity
-    guid: 8a3e09dc63be6ac4e8f638bb81c95a4d
+    guid: e98246d74fdc4ec45a3237724a8709e9
   - enabled: 1
     path: Assets/Scenes/Nivel 1 Mate - BB.unity
-    guid: d0493185f55338d40b9b465fcf8a6781
+    guid: 4a14a6488e1d756499281e47509347d0
+  - enabled: 1
+    path: Assets/Scenes/Oraciones_SR.unity
+    guid: 69fb0f23e19a69c4880407e8ae9d96f9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

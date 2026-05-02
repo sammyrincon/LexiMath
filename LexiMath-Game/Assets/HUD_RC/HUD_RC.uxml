@@ -33,8 +33,8 @@
             </ui:VisualElement>
             <ui:Label name="label-nivel" text="Nivel 1" class="label-nivel"/>
             <ui:VisualElement name="CoinsContainer" class="coins-container" style="flex-grow: 1;">
-                <ui:Label text="0" name="ContadorTexto" class="contador-texto"/>
                 <ui:Image name="coin-image" class="coin-image"/>
+                <ui:Label text="0" name="ContadorTexto" class="contador-texto"/>
             </ui:VisualElement>
             <ui:VisualElement name="Victory-panel" class="victory-panel" style="flex-grow: 1; display: none; top: 0; bottom: 0; right: 3px; left: -1px;">
                 <ui:VisualElement name="mapVictory" class="mapVictory" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/HUD_RC/Super%20Asset%20Bundle%20%235%20Mini%20Pocket%20Status%202.1/1%20-%20Brown/Pixel%20Map/Sprites/Open%20&amp;%20Close/With%20Ribbon/Open/6.png?fileID=2800000&amp;guid=de2082bc1d809b343a8493a91459c850&amp;type=3#6&quot;); background-size: 150% 130%;">
@@ -45,14 +45,21 @@
                         <ui:VisualElement name="Star2" class="star2" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/UI%20Bundle/coins-chests-etc-2-0%20(1).png?fileID=-1253405469&amp;guid=8e130ecf71d6ba74b830e7ddfaa3a9bb&amp;type=3#coins-chests-etc-2-0 (1)_467&quot;);"/>
                         <ui:Label text="Puntos" name="pointsText" class="points-text" style="-unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
                     </ui:VisualElement>
-                    <ui:Label text="0&#10;" name="PointsNumber" class="points-number" style="-unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
+                    <!-- Estadísticas: puntos y monedas -->
+                    <ui:VisualElement name="statsVictory" class="stats-victory">
+                        <ui:Label text="⭐" class="stat-icon-label"/>
+                        <ui:Label text="0" name="PointsNumber" class="points-number" style="-unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
+                        <ui:Label text="  🪙" class="stat-icon-label"/>
+                        <ui:Label text="0" name="monedasVictory" class="monedas-victory" style="-unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
+                    </ui:VisualElement>
                     <ui:VisualElement name="warningLevel" class="warning-level" style="flex-grow: 1;">
-                        <ui:Label text="Necesitar 2 estrellas para pasasr de nivel " name="warningLabel" class="warning-label" style="display: flex; color: rgb(27, 27, 27); -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
+                        <ui:Label text="¡Necesitas 2 estrellas para continuar!" name="warningLabel" class="warning-label" style="display: flex; color: rgb(27, 27, 27); -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
                     </ui:VisualElement>
                     <ui:VisualElement name="buttonsVictory" class="buttons-victory" style="flex-grow: 1;">
-                        <ui:Button text="Salir" name="menuButton" class="menu-button" style="background-image: url(&quot;project://database/Assets/HUD_RC/MediavelUI/Mediavel.png?fileID=-8282341939089721614&amp;guid=89f96f4e59cbd9e40b2e1226c230b831&amp;type=3#Mediavel_123&quot;); -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
+                        <ui:Button text="Menú" name="menuButton" class="menu-button" style="background-image: url(&quot;project://database/Assets/HUD_RC/MediavelUI/Mediavel.png?fileID=-8282341939089721614&amp;guid=89f96f4e59cbd9e40b2e1226c230b831&amp;type=3#Mediavel_123&quot;); -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
                         <ui:Button text="Reintentar" name="retryButton" class="retry-button" style="background-image: url(&quot;project://database/Assets/HUD_RC/MediavelUI/Mediavel.png?fileID=-8282341939089721614&amp;guid=89f96f4e59cbd9e40b2e1226c230b831&amp;type=3#Mediavel_123&quot;); -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
                         <ui:Button text="Continuar" name="continueButton" class="continue-button" style="background-image: url(&quot;project://database/Assets/HUD_RC/MediavelUI/Mediavel.png?fileID=-8282341939089721614&amp;guid=89f96f4e59cbd9e40b2e1226c230b831&amp;type=3#Mediavel_123&quot;); -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);"/>
+                        <ui:Button text="Cerrar" name="closeButton" class="close-button" style="background-image: url(&quot;project://database/Assets/HUD_RC/MediavelUI/Mediavel.png?fileID=-8282341939089721614&amp;guid=89f96f4e59cbd9e40b2e1226c230b831&amp;type=3#Mediavel_123&quot;); -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;); color: rgb(220, 60, 60);"/>
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>

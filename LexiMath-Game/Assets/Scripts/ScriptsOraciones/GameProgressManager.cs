@@ -16,6 +16,7 @@ public class GameProgressManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null) Instance = this;
+        else { Destroy(gameObject); return; }
         UpdateUI();
     }
     
@@ -41,6 +42,6 @@ public class GameProgressManager : MonoBehaviour
     private void UpdateUI()
     {
         if (progressText != null)
-            progressText.text = $"Ojos: {collected}/{totalCollectibles}";
+            progressText.text = $"Pergaminos: {collected}/{totalCollectibles}";
     }
 }

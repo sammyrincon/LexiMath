@@ -22,6 +22,7 @@ public class PlayerLives : MonoBehaviour
     private void Awake()
     {
         if (Instance == null) Instance = this;
+        else { Destroy(gameObject); return; }
         currentLives = maxLives;
         spriteRenderer = GetComponent<SpriteRenderer>();
         UpdateUI();
@@ -56,19 +57,18 @@ public class PlayerLives : MonoBehaviour
     private System.Collections.IEnumerator InvulnerabilityRoutine()
     {
         isInvulnerable = true;
-        
-        // Parpadeo visual
+
         float elapsed = 0f;
         while (elapsed < invulnerabilityTime)
         {
-            spriteRenderer.color = new Color(1f, 1f, 1f, 0.4f);
+            if (spriteRenderer != null) spriteRenderer.color = new Color(1f, 1f, 1f, 0.4f);
             yield return new WaitForSeconds(0.1f);
-            spriteRenderer.color = Color.white;
+            if (spriteRenderer != null) spriteRenderer.color = Color.white;
             yield return new WaitForSeconds(0.1f);
             elapsed += 0.2f;
         }
-        
-        spriteRenderer.color = Color.white;
+
+        if (spriteRenderer != null) spriteRenderer.color = Color.white;
         isInvulnerable = false;
     }
     

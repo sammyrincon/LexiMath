@@ -21,7 +21,11 @@ public class CaballeroChase : MonoBehaviour
     private Rigidbody2D rb;
     private Transform player;
     private int currentPatrolIndex = 0;
+    [Header("Chase Persistence")]
+    public float losePersistenceTime = 1.5f; // seconds to keep chasing after losing LOS
+
     private bool isChasing = false;
+    private float loseTimer = 0f;
     private Vector2 facingDirection = Vector2.right;
     
     private void Awake()
@@ -36,16 +40,21 @@ public class CaballeroChase : MonoBehaviour
         if (player == null) return;
         
         bool canSeePlayer = CanSeePlayer();
-        
+
         if (canSeePlayer)
         {
             isChasing = true;
+            loseTimer = losePersistenceTime;
             ChasePlayer();
         }
         else if (isChasing)
         {
-            // Pierde de vista al jugador, regresa a patrullar
-            isChasing = false;
+            // Keep chasing briefly after losing LOS so player can't trivially dodge
+            loseTimer -= Time.deltaTime;
+            if (loseTimer > 0f)
+                ChasePlayer();
+            else
+                isChasing = false;
         }
         else
         {
@@ -118,10 +127,8 @@ public class CaballeroChase : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
+        if (collision.gameObject.CompareTag("Player") && PlayerLives.Instance != null)
             PlayerLives.Instance.LoseLife();
-        }
     }
     
     private void OnDrawGizmosSelected()

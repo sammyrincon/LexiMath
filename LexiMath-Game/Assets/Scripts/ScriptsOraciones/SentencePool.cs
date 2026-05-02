@@ -37,17 +37,31 @@ public static class SentencePool
         return s;
     }
     
+    private static int lastIndex = -1;
+
     public static SentenceData GetRandomSentence()
     {
-        SentenceData original = sentences[Random.Range(0, sentences.Count)];
-        
-        // Devolver copia con opciones barajadas
+        // Pick a random index that differs from the last shown to avoid immediate repeats
+        int index;
+        if (sentences.Count > 1)
+        {
+            do { index = Random.Range(0, sentences.Count); }
+            while (index == lastIndex);
+        }
+        else
+        {
+            index = 0;
+        }
+        lastIndex = index;
+
+        SentenceData original = sentences[index];
+
         SentenceData copy = new SentenceData();
         copy.sentenceWithBlank = original.sentenceWithBlank;
         copy.correctWord = original.correctWord;
         copy.options = new List<string>(original.options);
         Shuffle(copy.options);
-        
+
         return copy;
     }
     

@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 196681190301804479e205c41b622a43
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3596504192223756028
+    second: parallaxcitydestroyedfrontsmoke_0
+  - first:
+      213: -8946053483693908729
+    second: parallaxcitydestroyedfrontsmoke_1
+  - first:
+      213: -2525803254780950284
+    second: parallaxcitydestroyedfrontsmoke_2
+  - first:
+      213: 1983158153536943671
+    second: parallaxcitydestroyedfrontsmoke_3
+  - first:
+      213: 7360651975634133354
+    second: parallaxcitydestroyedfrontsmoke_4
+  - first:
+      213: 5272838939030499201
+    second: parallaxcitydestroyedfrontsmoke_5
+  - first:
+      213: 6495125549097492442
+    second: parallaxcitydestroyedfrontsmoke_6
+  - first:
+      213: -7229041556762966280
+    second: parallaxcitydestroyedfrontsmoke_7
+  - first:
+      213: 6902985213984236466
+    second: parallaxcitydestroyedfrontsmoke_8
+  - first:
+      213: 3165051633052569747
+    second: parallaxcitydestroyedfrontsmoke_9
+  - first:
+      213: -3156324627455379251
+    second: parallaxcitydestroyedfrontsmoke_10
+  - first:
+      213: 3296206435167453059
+    second: parallaxcitydestroyedfrontsmoke_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_0
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 952
+        width: 945
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe33baf18959e130800000000000000
+      internalID: 3596504192223756028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_1
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1046
+        width: 333
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d57ca31cb39d380800000000000000
+      internalID: -8946053483693908729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_2
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 791
+        width: 1434
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f88142725b82fcd0800000000000000
+      internalID: -2525803254780950284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_3
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 913
+        width: 542
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7363dfa55d7958b10800000000000000
+      internalID: 1983158153536943671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_4
+      rect:
+        serializedVersion: 2
+        x: 3197
+        y: 771
+        width: 556
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6123f239f9462660800000000000000
+      internalID: 7360651975634133354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_5
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 520
+        width: 1152
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fa2ce0413ec2940800000000000000
+      internalID: 5272838939030499201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_6
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 685
+        width: 371
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf15853642532a50800000000000000
+      internalID: 6495125549097492442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_7
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 607
+        width: 118
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f64b9651094dab90800000000000000
+      internalID: -7229041556762966280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_8
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 434
+        width: 697
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3ed418a745ccf50800000000000000
+      internalID: 6902985213984236466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_9
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 89
+        width: 658
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3905edbe0b58ceb20800000000000000
+      internalID: 3165051633052569747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_10
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 77
+        width: 1047
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc874b8697b7234d0800000000000000
+      internalID: -3156324627455379251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parallaxcitydestroyedfrontsmoke_11
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 96
+        width: 241
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f338ae94a7ebd20800000000000000
+      internalID: 3296206435167453059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      parallaxcitydestroyedfrontsmoke_0: 3596504192223756028
+      parallaxcitydestroyedfrontsmoke_1: -8946053483693908729
+      parallaxcitydestroyedfrontsmoke_10: -3156324627455379251
+      parallaxcitydestroyedfrontsmoke_11: 3296206435167453059
+      parallaxcitydestroyedfrontsmoke_2: -2525803254780950284
+      parallaxcitydestroyedfrontsmoke_3: 1983158153536943671
+      parallaxcitydestroyedfrontsmoke_4: 7360651975634133354
+      parallaxcitydestroyedfrontsmoke_5: 5272838939030499201
+      parallaxcitydestroyedfrontsmoke_6: 6495125549097492442
+      parallaxcitydestroyedfrontsmoke_7: -7229041556762966280
+      parallaxcitydestroyedfrontsmoke_8: 6902985213984236466
+      parallaxcitydestroyedfrontsmoke_9: 3165051633052569747
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

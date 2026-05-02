@@ -192,7 +192,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7040812731440202777}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: eca7be9f069f03f4ebfb3555c49e5dc3, type: 2}
   m_CullingMode: 0
@@ -426,5 +426,3 @@ MonoBehaviour:
   attackHitbox: {fileID: 5650271734069308305}
   damageOnFinalFail: 50
   player: {fileID: 0}
-  spriteRenderer: {fileID: 4589153223864615722}
-  animator: {fileID: 2063552534050408551}

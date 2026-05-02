@@ -64,17 +64,14 @@ public class FinalDoor : MonoBehaviour
     {
         Debug.Log("¡VICTORIA! Has completado el calabozo.");
         if (GameUIManager.Instance != null)
+        {
             GameUIManager.Instance.ShowFinalVictory();
-        else
+            return;
+        }
 
-        {
         if (!string.IsNullOrEmpty(nextSceneName))
-        {
             SceneManager.LoadScene(nextSceneName);
-        }
         else
-            // Mostrar UI de victoria, pausar, etc.
             Time.timeScale = 0f;
-        }
     }
 }
