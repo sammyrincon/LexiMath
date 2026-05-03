@@ -30,9 +30,9 @@ public class PlayerHealthRM : MonoBehaviour, IDamageable
     [SerializeField] private float knockbackY = 6f;
 
     [Header("Referencias (opcional)")]
-    [SerializeField] private MonoBehaviour controllerToDisable; 
-    [SerializeField] private Collider2D bodyCollider;          
-    [SerializeField] private SpriteRenderer spriteRenderer;  
+    [SerializeField] private MonoBehaviour controllerToDisable;
+    [SerializeField] private Collider2D bodyCollider;
+    [SerializeField] private SpriteRenderer spriteRenderer;
     private int hp;
     private bool invincible;
     private bool isDead;
@@ -73,7 +73,7 @@ public class PlayerHealthRM : MonoBehaviour, IDamageable
 
         hp -= amount;
 
-        anim.ResetTrigger("Attack"); // opcional
+        anim.ResetTrigger("Attack");
         anim.SetTrigger("Hurt");
 
         if (useKnockback)
@@ -85,7 +85,6 @@ public class PlayerHealthRM : MonoBehaviour, IDamageable
         StartCoroutine(InvincibilityRoutine());
         StartCoroutine(HurtLockRoutine());
 
-        // Muerte
         if (hp <= 0)
         {
             Die();

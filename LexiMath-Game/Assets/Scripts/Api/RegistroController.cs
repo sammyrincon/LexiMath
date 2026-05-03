@@ -28,7 +28,6 @@ public class RegistroController : MonoBehaviour
 
         _textoError.style.display = DisplayStyle.None;
 
-        // Solo letras y espacios en nombre
         _inputNombre.RegisterValueChangedCallback(evt =>
         {
             string soloLetras = "";
@@ -38,7 +37,6 @@ public class RegistroController : MonoBehaviour
                 _inputNombre.SetValueWithoutNotify(soloLetras);
         });
 
-        // Solo números en edad
         _inputEdad.RegisterValueChangedCallback(evt =>
         {
             string soloNumeros = "";
@@ -50,16 +48,13 @@ public class RegistroController : MonoBehaviour
                 _inputEdad.SetValueWithoutNotify(soloNumeros);
         });
 
-        // Colores dropdown
         _dropdownGenero.RegisterValueChangedCallback(evt =>
             ActualizarColorGenero(evt.newValue));
         ActualizarColorGenero(_dropdownGenero.value);
 
-        // Botones
         _botonSiguiente.clicked += OnClickSiguiente;
         _botonCancelar.clicked  += OnClickCancelar;
 
-        // Cursor
         AgregarCursor(_botonSiguiente);
         AgregarCursor(_botonCancelar);
     }

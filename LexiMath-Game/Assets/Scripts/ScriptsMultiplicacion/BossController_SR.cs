@@ -175,7 +175,6 @@ public class BossController : MonoBehaviour
         else
         {
             PlayerHealth_SR.Instance.TakeDamage(damageOnFinalFail);
-            // Restore only 25% of max health so the boss stays beatable
             currentHealth = maxHealth / 4;
             finalQuestionTriggered = false;
             animator.SetBool("isDefending", false);

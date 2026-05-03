@@ -3,18 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// ProgresoManager — obtiene el progreso de niveles del estudiante
-/// desde la API y lo almacena para que el MainMenu lo muestre.
-/// </summary>
 public class ProgresoManager : MonoBehaviour
 {
     public static ProgresoManager Instance { get; private set; }
 
-    // ── Lista de progreso por nivel ────────────────────────────
     public List<ProgresoNivel> Progreso { get; private set; } = new List<ProgresoNivel>();
 
-    // ── Evento para notificar cuando el progreso está listo ────
     public event Action OnProgresoListo;
 
     void Awake()
@@ -28,7 +22,6 @@ public class ProgresoManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // ── Cargar progreso desde la API ───────────────────────────
     public void CargarProgreso()
     {
         string endpoint = $"/estudiante/{GameManager.Instance.IdEstudiante}/progreso";
@@ -47,7 +40,6 @@ public class ProgresoManager : MonoBehaviour
         ));
     }
 
-    // ── Helpers ───────────────────────────────────────────────
     public ProgresoNivel GetNivel(int idNivel)
     {
         return Progreso.Find(p => p.id_nivel == idNivel);
@@ -65,8 +57,6 @@ public class ProgresoManager : MonoBehaviour
         return nivel?.estrellas_max ?? 0;
     }
 }
-
-// ── Modelos de datos ───────────────────────────────────────────
 
 [Serializable]
 public class ProgresoNivel

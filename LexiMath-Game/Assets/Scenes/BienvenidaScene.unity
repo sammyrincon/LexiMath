@@ -188,79 +188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BienvenidaController
   _cursorMano: {fileID: 2800000, guid: 2882845d02e996145b39e53b186aa4ee, type: 3}
---- !u!1001 &306969939
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 194988003671540832, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1313808544308277960, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_Size.x
-      value: 0.875
-      objectReference: {fileID: 0}
-    - target: {fileID: 1313808544308277960, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_Size.y
-      value: 1.21875
-      objectReference: {fileID: 0}
-    - target: {fileID: 1313808544308277960, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 815424164945274260, guid: 58c3289ee85d12a4886c64fa6fbdaac4, type: 3}
-    - target: {fileID: 1313808544308277960, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7738306057683103782, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
-      propertyPath: m_Name
-      value: KnightDisplay
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f62053d62e737b24cb242894336ef0fd, type: 3}
 --- !u!1 &1688511502
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,10 +325,67 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1001 &6823725083267838808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 964443683576485484, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762042056994583983, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
+      propertyPath: m_Name
+      value: Knight_Menus
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd4471bd39fd1d2449a4e58cf3a72127, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1688511505}
-  - {fileID: 306969939}
   - {fileID: 130527646}
+  - {fileID: 6823725083267838808}

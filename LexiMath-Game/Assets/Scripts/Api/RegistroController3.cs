@@ -24,7 +24,6 @@ public class RegistroController3 : MonoBehaviour
 
         _textoError.style.display = DisplayStyle.None;
 
-        // Forzar formato NIDE-XXXX
         _inputNide.RegisterValueChangedCallback(evt =>
         {
             string valor = evt.newValue.ToUpper();

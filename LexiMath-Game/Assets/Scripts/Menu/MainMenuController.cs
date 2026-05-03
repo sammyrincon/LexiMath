@@ -7,14 +7,11 @@ public class MainMenuController : MonoBehaviour
 {
     private UIDocument _doc;
 
-    // ── Header ─────────────────────────────────────────────────
     private Button _botonMenu;
     private Label  _textoPuntos;
 
-    // ── Contenido ──────────────────────────────────────────────
     private Label _textoBienvenida;
 
-    // ── Menú lateral ───────────────────────────────────────────
     private VisualElement _overlay;
     private VisualElement _menuLateral;
     private Button        _botonCerrarMenu;
@@ -23,39 +20,31 @@ public class MainMenuController : MonoBehaviour
     private Button        _btnSeccionMates;
     private Button        _btnSeccionEspanol;
 
-    // ── Niveles Matemáticas ────────────────────────────────────
     private Button _nivelMates1, _nivelMates2, _nivelMates3,
                    _nivelMates4, _nivelMates5;
 
-    // ── Niveles Español ────────────────────────────────────────
     private Button _nivelEspanol1, _nivelEspanol2, _nivelEspanol3,
                    _nivelEspanol4, _nivelEspanol5;
 
-    // ── Footer menú ────────────────────────────────────────────
     private Button _botonPerfil;
     private Button _botonConfig;
     private Button _botonSalir;
 
     [SerializeField] private Texture2D _cursorMano;
 
-    // ── Estado del menú ────────────────────────────────────────
     private bool _matesExpandido   = false;
     private bool _espanolExpandido = false;
 
-    // ───────────────────────────────────────────────────────────
     void OnEnable()
     {
         _doc = GetComponent<UIDocument>();
         var root = _doc.rootVisualElement;
 
-        // Header
         _botonMenu   = root.Q<Button>("boton-menu");
         _textoPuntos = root.Q<Label>("texto-puntos");
 
-        // Bienvenida
         _textoBienvenida = root.Q<Label>("texto-bienvenida");
 
-        // Menú lateral
         _overlay           = root.Q<VisualElement>("overlay");
         _menuLateral       = root.Q<VisualElement>("menu-lateral");
         _botonCerrarMenu   = root.Q<Button>("boton-cerrar-menu");
@@ -64,42 +53,35 @@ public class MainMenuController : MonoBehaviour
         _btnSeccionMates   = root.Q<Button>("btn-seccion-mates");
         _btnSeccionEspanol = root.Q<Button>("btn-seccion-espanol");
 
-        // Niveles Matemáticas
         _nivelMates1 = root.Q<Button>("nivel-mates-1");
         _nivelMates2 = root.Q<Button>("nivel-mates-2");
         _nivelMates3 = root.Q<Button>("nivel-mates-3");
         _nivelMates4 = root.Q<Button>("nivel-mates-4");
         _nivelMates5 = root.Q<Button>("nivel-mates-5");
 
-        // Niveles Español
         _nivelEspanol1 = root.Q<Button>("nivel-espanol-1");
         _nivelEspanol2 = root.Q<Button>("nivel-espanol-2");
         _nivelEspanol3 = root.Q<Button>("nivel-espanol-3");
         _nivelEspanol4 = root.Q<Button>("nivel-espanol-4");
         _nivelEspanol5 = root.Q<Button>("nivel-espanol-5");
 
-        // Footer
         _botonPerfil = root.Q<Button>("boton-perfil");
         _botonConfig = root.Q<Button>("boton-config");
         _botonSalir  = root.Q<Button>("boton-salir");
 
-        // ── Llenar datos del jugador ───────────────────────────
         if (GameManager.Instance != null)
         {
             _textoBienvenida.text = $"¡Bienvenido, {GameManager.Instance.NombreEstudiante}!";
             _textoPuntos.text     = GameManager.Instance.PuntosTotal.ToString();
         }
 
-        // ── Estado inicial menú ────────────────────────────────
         _listaMates.style.display   = DisplayStyle.None;
         _listaEspanol.style.display = DisplayStyle.None;
         _btnSeccionMates.text       = "▶  MATEMÁTICAS";
         _btnSeccionEspanol.text     = "▶  ESPAÑOL";
 
-        // ── Actualizar progreso ───────────────────────────────
         ActualizarProgreso();
 
-        // ── Eventos ───────────────────────────────────────────
         _botonMenu.clicked         += AbrirMenu;
         _botonCerrarMenu.clicked   += CerrarMenu;
         _overlay.RegisterCallback<ClickEvent>(_ => CerrarMenu());
@@ -111,7 +93,6 @@ public class MainMenuController : MonoBehaviour
         _botonPerfil.clicked += OnClickPerfil;
         _botonConfig.clicked += OnClickConfig;
 
-        // ── Cursores ──────────────────────────────────────────
         AgregarCursor(_botonMenu);
         AgregarCursor(_botonCerrarMenu);
         AgregarCursor(_btnSeccionMates);
@@ -121,7 +102,6 @@ public class MainMenuController : MonoBehaviour
         AgregarCursor(_botonSalir);
     }
 
-    // ───────────────────────────────────────────────────────────
     void OnDisable()
     {
         UnityEngine.Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
@@ -134,7 +114,6 @@ public class MainMenuController : MonoBehaviour
         _botonConfig.clicked       -= OnClickConfig;
     }
 
-    // ── Abrir / Cerrar menú lateral ───────────────────────────
     private void AbrirMenu()
     {
         _overlay.style.display     = DisplayStyle.Flex;
@@ -147,7 +126,6 @@ public class MainMenuController : MonoBehaviour
         _menuLateral.style.display = DisplayStyle.None;
     }
 
-    // ── Toggle secciones ──────────────────────────────────────
     private void ToggleMates()
     {
         _matesExpandido = !_matesExpandido;
@@ -164,7 +142,6 @@ public class MainMenuController : MonoBehaviour
         _btnSeccionEspanol.text = (_espanolExpandido ? "▼" : "▶") + "  ESPAÑOL";
     }
 
-    // ── Progreso de niveles ───────────────────────────────────
     private void ActualizarProgreso()
     {
         if (ProgresoManager.Instance == null) return;
@@ -191,13 +168,12 @@ public class MainMenuController : MonoBehaviour
         bool desbloqueado = ProgresoManager.Instance.EstaDesbloqueado(idNivel);
         int  estrellas    = ProgresoManager.Instance.GetEstrellas(idNivel);
 
-        // Obtener texto base sin iconos
         string textoBase = boton.text;
 
         if (!desbloqueado)
         {
             boton.AddToClassList("nivel-bloqueado");
-            boton.text = textoBase + " 🔒";
+            boton.text = textoBase + " ";
             boton.SetEnabled(false);
         }
         else if (estrellas > 0)
@@ -205,7 +181,7 @@ public class MainMenuController : MonoBehaviour
             boton.AddToClassList("nivel-completado");
             string estrellaStr = new string('★', estrellas) +
                                  new string('☆', 3 - estrellas);
-            boton.text = "✅ " + textoBase + " " + estrellaStr;
+            boton.text = textoBase + " " + estrellaStr;
         }
     }
 
@@ -222,7 +198,6 @@ public class MainMenuController : MonoBehaviour
         if (label != null) label.text = estrellaStr;
     }
 
-    // ── Footer ────────────────────────────────────────────────
     private void OnClickSalir()
     {
         ApiManager.Instance.SetToken("");
@@ -239,7 +214,6 @@ public class MainMenuController : MonoBehaviour
         Debug.Log("Config — próximamente");
     }
 
-    // ── Cursor ────────────────────────────────────────────────
     private void AgregarCursor(Button boton)
     {
         boton.RegisterCallback<MouseEnterEvent>(_ =>

@@ -17,8 +17,6 @@ public static class QuestionPool
         return q;
     }
 
-    // Distractors use adjacent table entries — children commonly confuse
-    // 4×7 with 4×6 or 3×7, so these options test real table mastery.
     private static List<int> GenerateOptions(int correct, int a, int b)
     {
         HashSet<int> opts = new HashSet<int> { correct };

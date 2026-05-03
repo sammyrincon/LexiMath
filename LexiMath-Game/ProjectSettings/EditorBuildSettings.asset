@@ -33,8 +33,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel 1 Mate - BB.unity
     guid: 4a14a6488e1d756499281e47509347d0
   - enabled: 1
+    path: Assets/Scenes/Resta_RM.unity
+    guid: 99ac52ba82f27914ba91c6f579f87054
+  - enabled: 1
+    path: Assets/Scenes/Palabras_RM.unity
+    guid: d6ac57d287b867241b572bb9ecc04059
+  - enabled: 1
     path: Assets/Scenes/Oraciones_SR.unity
     guid: 69fb0f23e19a69c4880407e8ae9d96f9
+  - enabled: 1
+    path: Assets/Scenes/Multiplicacion_SR.unity
+    guid: d68bb6f5cb1389941ba0aa6f212dbe4e
+  - enabled: 1
+    path: Assets/Miguel/escenas/Escena_5_RC.unity
+    guid: b69580e1ea8ae59459b4c725f38aa5cd
+  - enabled: 1
+    path: Assets/Miguel/escenas/Escena_6_RC.unity
+    guid: 67c27289de07e6941bea937797e7398c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

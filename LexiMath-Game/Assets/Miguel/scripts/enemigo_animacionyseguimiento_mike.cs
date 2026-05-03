@@ -55,7 +55,6 @@ public class enemigo_animacionyseguimiento_mike : MonoBehaviour
 
     void FlipSprite()
     {
-        // Si el jugador está a la derecha → mirar derecha
         if (player.position.x > transform.position.x)
         {
             sprite.flipX = true;

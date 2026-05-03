@@ -1,4 +1,3 @@
-// Assets/Scripts/World/NPCInteractable.cs
 using UnityEngine;
 
 public class NPCInteractable : MonoBehaviour
@@ -7,14 +6,13 @@ public class NPCInteractable : MonoBehaviour
     public KeyCode interactKey = KeyCode.E;
     public GameObject interactPrompt;
     public string npcName = "Sabio";
-    
+
     private bool playerInRange = false;
     private bool questAnswered = false;
-    
-    // ← FALTABAN ESTAS DOS LÍNEAS
+
     private SpriteRenderer spriteRenderer;
     private Transform player;
-    
+
     private void Awake()
     {
         if (interactPrompt != null) interactPrompt.SetActive(false);
@@ -22,7 +20,7 @@ public class NPCInteractable : MonoBehaviour
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         if (p != null) player = p.transform;
     }
-    
+
     private void Update()
     {
         if (playerInRange && player != null && spriteRenderer != null)
@@ -32,38 +30,40 @@ public class NPCInteractable : MonoBehaviour
             else
                 spriteRenderer.flipX = false;
         }
-    
+
         if (playerInRange && !questAnswered && Input.GetKeyDown(interactKey))
         {
             TriggerSentence();
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !questAnswered)
         {
             playerInRange = true;
             if (interactPrompt != null) interactPrompt.SetActive(true);
+            OracionesHUDController.Instance?.ShowPrompt();
         }
     }
-    
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
             if (interactPrompt != null) interactPrompt.SetActive(false);
+            OracionesHUDController.Instance?.HidePrompt();
         }
     }
-    
+
     private void TriggerSentence()
     {
         Debug.Log($"{npcName}: Completa esta oración para que te deje pasar...");
         SentenceData sentence = SentencePool.GetRandomSentence();
         SentenceUIManager.Instance.ShowSentence(sentence, OnAnswered);
     }
-    
+
     private void OnAnswered(bool correct)
     {
         if (correct)

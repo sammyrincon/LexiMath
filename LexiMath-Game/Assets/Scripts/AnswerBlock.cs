@@ -20,7 +20,6 @@ public class AnswerBlock : MonoBehaviour
     public float alturaRebote = 0.3f;
     public float duracionRebote = 0.12f;
 
-    // ── Privados ─────────────────────────────────────────────
     private bool _yaGolpeado = false;
     private Vector3 _posOriginal;
     private QuestionManager _manager;
@@ -49,16 +48,12 @@ public class AnswerBlock : MonoBehaviour
         if (textoVisor != null) textoVisor.text = valor;
     }
 
-    // ── Detección de golpe por abajo (tipo Mario) ─────────────
     void OnTriggerEnter2D(Collider2D other)
     {
         if (_yaGolpeado) return;
 
-        // Verifica que sea el jugador (tag Player)
         if (!other.CompareTag("Player")) return;
 
-        // Verifica que el golpe venga desde abajo
-        // La posición Y del Knight debe estar por debajo del bloque
         if (other.transform.position.y < transform.position.y)
             Golpear();
     }

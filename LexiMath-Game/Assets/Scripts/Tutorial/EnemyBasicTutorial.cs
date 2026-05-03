@@ -95,7 +95,6 @@ public class EnemyBasicTutorial : MonoBehaviour, IDamageable
 
         if (spriteRenderer != null)
         {
-            // Este mushroom mira a la derecha cuando flipX es true.
             spriteRenderer.flipX = movingRight;
         }
 
@@ -183,7 +182,6 @@ public class EnemyBasicTutorial : MonoBehaviour, IDamageable
         }
     }
 
-    // Compatibilidad con cualquier script viejo que siga llamando TakeDamage(int)
     public void TakeDamage(int amount)
     {
         TakeDamage(amount, transform.position, Vector2.zero);

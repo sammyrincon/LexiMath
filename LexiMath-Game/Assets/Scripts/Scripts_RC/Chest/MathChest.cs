@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public enum TipoTema 
-{ 
-    Suma, 
-    Resta, 
-    Multiplicacion, 
-    Division, 
+public enum TipoTema
+{
+    Suma,
+    Resta,
+    Multiplicacion,
+    Division,
     Vocales,
     Palabras,
     Oraciones,
@@ -17,7 +17,7 @@ public enum TipoTema
 [RequireComponent(typeof(AudioSource))]
 public class MathChest : MonoBehaviour
 {
-    public TipoTema temaDelCofre; 
+    public TipoTema temaDelCofre;
 
     private Animator animator;
     private AudioSource audioSource;
@@ -27,8 +27,8 @@ public class MathChest : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-        
-        audioSource.playOnAwake = false; 
+
+        audioSource.playOnAwake = false;
         audioSource.loop = false;
     }
 
@@ -44,7 +44,7 @@ public class MathChest : MonoBehaviour
     {
         isOpened = true;
 
-        animator.SetTrigger("Open"); 
+        animator.SetTrigger("Open");
 
         if (audioSource != null && audioSource.clip != null)
         {

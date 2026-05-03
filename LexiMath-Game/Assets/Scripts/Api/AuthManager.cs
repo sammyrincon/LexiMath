@@ -20,7 +20,6 @@ public class AuthManager : MonoBehaviour
         _registroTemp = new RegistroRequest();
     }
 
-    // ── LOGIN ──────────────────────────────────────────────────
     public void Login(string usuario, string contrasena,
         Action onSuccess, Action<string> onError)
     {
@@ -30,7 +29,7 @@ public class AuthManager : MonoBehaviour
             contrasena = contrasena
         };
 
-        StartCoroutine(ApiManager.Instance.Post("/login", body,
+        StartCoroutine(ApiManager.Instance.Post("/auth/login", body,
             (json) =>
             {
                 LoginResponse resp = JsonUtility.FromJson<LoginResponse>(json);
@@ -50,7 +49,6 @@ public class AuthManager : MonoBehaviour
         ));
     }
 
-    // ── REGISTRO ───────────────────────────────────────────────
     public void GuardarPaso1(string nombre, int edad, string genero)
     {
         _registroTemp.nombre = nombre;
@@ -71,10 +69,9 @@ public class AuthManager : MonoBehaviour
     {
         _registroTemp.codigo_acceso = codigo_nide;
 
-        StartCoroutine(ApiManager.Instance.Post("/registro", _registroTemp,
+        StartCoroutine(ApiManager.Instance.Post("/auth/registro", _registroTemp,
             (json) =>
             {
-                // Guardar usuario en GameManager para pantalla de bienvenida
                 GameManager.Instance.NombreEstudiante = _registroTemp.usuario;
                 onSuccess?.Invoke();
             },
@@ -82,8 +79,6 @@ public class AuthManager : MonoBehaviour
         ));
     }
 }
-
-// ── Modelos de datos ───────────────────────────────────────────
 
 [Serializable]
 public class LoginRequest

@@ -4,10 +4,10 @@ public class BossOceanIA : MonoBehaviour
 {
     [Header("Configuración de Movimiento")]
     public float velocidad = 2.5f;
-    
+
     [Tooltip("Distancia para dar el golpe cuerpo a cuerpo")]
     public float distanciaAtaqueNormal = 2f;
-    
+
     [Tooltip("Distancia máxima para lanzar magia")]
     public float distanciaMagia = 6f;
 
@@ -23,7 +23,7 @@ public class BossOceanIA : MonoBehaviour
     [Header("Configuración Especial")]
     public int danoPorTocar = 15;
     public int cantidadACurar = 50;
-    public int limiteSaludParaCurar = 100; 
+    public int limiteSaludParaCurar = 100;
 
     [Header("Configuración de Audio")]
     public AudioSource audioSource;
@@ -34,13 +34,11 @@ public class BossOceanIA : MonoBehaviour
     public AudioClip sonidoDolor;
     public AudioClip sonidoMuerte;
 
-    // Referencias a los componentes (Automáticas)
     private Animator animator;
     private Transform jugador;
     private SpriteRenderer spriteRenderer;
-    private Sistema_Salud_RC miSalud; 
-    
-    // Variables privadas para los Hitboxes
+    private Sistema_Salud_RC miSalud;
+
     private ArmaEnemigoRC hitboxAtaqueNormal;
     private ArmaEnemigoRC hitboxMagia;
 
@@ -54,15 +52,15 @@ public class BossOceanIA : MonoBehaviour
 
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        miSalud = GetComponent<Sistema_Salud_RC>(); 
-        
+        miSalud = GetComponent<Sistema_Salud_RC>();
+
         if (audioSource == null)
         {
             audioSource = GetComponent<AudioSource>();
         }
 
         ArmaEnemigoRC[] todasLasArmas = GetComponentsInChildren<ArmaEnemigoRC>();
-        
+
         foreach (ArmaEnemigoRC arma in todasLasArmas)
         {
             if (arma.gameObject.name == "Hitbox_Attack")
@@ -93,20 +91,20 @@ public class BossOceanIA : MonoBehaviour
         if (miSalud.saludActual <= limiteSaludParaCurar && temporizadorCura >= cooldownCura)
         {
             DetenerMovimiento();
-            animator.SetTrigger("Heal"); 
-            miSalud.Curar(cantidadACurar); 
+            animator.SetTrigger("Heal");
+            miSalud.Curar(cantidadACurar);
             temporizadorCura = 0f;
         }
         else if (distancia <= distanciaAtaqueNormal && temporizadorAtaque >= cooldownAtaque)
         {
             DetenerMovimiento();
-            animator.SetTrigger("Attack"); 
+            animator.SetTrigger("Attack");
             temporizadorAtaque = 0f;
         }
         else if (distancia <= distanciaMagia && distancia > distanciaAtaqueNormal && temporizadorMagia >= cooldownMagia)
         {
             DetenerMovimiento();
-            animator.SetTrigger("Magic"); 
+            animator.SetTrigger("Magic");
             temporizadorMagia = 0f;
         }
         else if (distancia > distanciaAtaqueNormal)
@@ -117,7 +115,7 @@ public class BossOceanIA : MonoBehaviour
         }
         else
         {
-            DetenerMovimiento(); 
+            DetenerMovimiento();
         }
     }
 
@@ -125,7 +123,7 @@ public class BossOceanIA : MonoBehaviour
     {
         animator.SetFloat("Speed", 0f);
     }
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -137,8 +135,6 @@ public class BossOceanIA : MonoBehaviour
             }
         }
     }
-
-    // --- EVENTOS PARA ACTIVAR/DESACTIVAR HITBOXES (Ya no tienen audio) ---
 
     public void PrenderAtaqueNormal()
     {
@@ -160,12 +156,12 @@ public class BossOceanIA : MonoBehaviour
         if (hitboxMagia != null) hitboxMagia.ApagarHitbox();
     }
 
-    public void ReproducirSonidoAtaqueNormal() 
+    public void ReproducirSonidoAtaqueNormal()
     {
         ReproducirSonido(sonidoAtaqueNormal);
     }
 
-    public void ReproducirSonidoAtaqueMagico() 
+    public void ReproducirSonidoAtaqueMagico()
     {
         ReproducirSonido(sonidoMagia);
     }
@@ -175,7 +171,7 @@ public class BossOceanIA : MonoBehaviour
         ReproducirSonido(sonidoCaminar);
     }
 
-    public void ReproducirSonidoCura() 
+    public void ReproducirSonidoCura()
     {
         ReproducirSonido(sonidoCura);
     }

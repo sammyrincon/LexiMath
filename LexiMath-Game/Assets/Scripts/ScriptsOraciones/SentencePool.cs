@@ -1,4 +1,3 @@
-// Assets/Scripts/Questions/SentencePool.cs
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +26,7 @@ public static class SentencePool
         Make("Las estrellas brillan en el ___", "cielo", "mar", "suelo", "bosque"),
         Make("Para escribir usamos un ___", "lápiz", "tenedor", "zapato", "vaso")
     };
-    
+
     private static SentenceData Make(string sentence, string correct, string w1, string w2, string w3)
     {
         SentenceData s = new SentenceData();
@@ -36,12 +35,11 @@ public static class SentencePool
         s.options = new List<string> { correct, w1, w2, w3 };
         return s;
     }
-    
+
     private static int lastIndex = -1;
 
     public static SentenceData GetRandomSentence()
     {
-        // Pick a random index that differs from the last shown to avoid immediate repeats
         int index;
         if (sentences.Count > 1)
         {
@@ -64,7 +62,7 @@ public static class SentencePool
 
         return copy;
     }
-    
+
     private static void Shuffle<T>(List<T> list)
     {
         for (int i = 0; i < list.Count; i++)

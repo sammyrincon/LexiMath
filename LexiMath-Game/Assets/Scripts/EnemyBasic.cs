@@ -96,9 +96,6 @@ public class EnemyBasic : MonoBehaviour
         if (animator != null)
             animator.SetTrigger("Attack");
 
-        // ══════════════════════════════════════════════════════
-        //  NUEVO — Hacer daño al jugador
-        // ══════════════════════════════════════════════════════
         if (PlayerHealth.Instance != null)
             PlayerHealth.Instance.RecibirDano(danoAlJugador);
 

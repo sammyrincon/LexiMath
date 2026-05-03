@@ -74,7 +74,6 @@ public class QuestionUIManager : MonoBehaviour
         foreach (var btn in optionButtons)
             btn.interactable = false;
 
-        // Highlight: green on correct answer, red on the wrong selection
         for (int i = 0; i < optionButtons.Length; i++)
         {
             if (currentQuestion.options[i] == currentQuestion.correctAnswer)
@@ -85,7 +84,7 @@ public class QuestionUIManager : MonoBehaviour
 
         if (feedbackText != null)
         {
-            feedbackText.text = isCorrect ? "¡Correcto! ★" : "Esa no es... ¡Sigue intentando!";
+            feedbackText.text = isCorrect ? "¡Correcto!" : "Esa no es... ¡Sigue intentando!";
             feedbackText.color = isCorrect ? correctColor : wrongColor;
             feedbackText.gameObject.SetActive(true);
         }

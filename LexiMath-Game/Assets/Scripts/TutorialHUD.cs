@@ -1,14 +1,8 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-/// <summary>
-/// Controla el HUD del tutorial.
-/// Maneja los 4 dots de progreso y los paneles de instrucción.
-/// Pasos: 0=Mover, 1=Saltar, 2=Atacar, 3=Matar enemigo
-/// </summary>
 public class TutorialHUD : MonoBehaviour
 {
-    // ── Títulos de cada paso ───────────────────────────────────
     private readonly string[] _stepTitles =
     {
         "PASO 1: MOVER",
@@ -17,7 +11,6 @@ public class TutorialHUD : MonoBehaviour
         "PASO 4: MATAR AL ENEMIGO"
     };
 
-    // ── Elementos del UXML ─────────────────────────────────────
     private UIDocument      _document;
     private VisualElement[] _stepDots;
     private VisualElement[] _progressLines;
@@ -25,10 +18,8 @@ public class TutorialHUD : MonoBehaviour
     private VisualElement   _panelPortal;
     private Label           _labelPasoActual;
 
-    // ── Estado ─────────────────────────────────────────────────
     private int _currentStep = 0;
 
-    // ──────────────────────────────────────────────────────────
     private void OnEnable()
     {
         _document = GetComponent<UIDocument>();
@@ -45,18 +36,12 @@ public class TutorialHUD : MonoBehaviour
         SetStep(0);
     }
 
-    // ──────────────────────────────────────────────────────────
-    /// <summary>
-    /// Avanza al paso indicado y actualiza dots + panel visible.
-    /// 0=Mover, 1=Saltar, 2=Atacar, 3=Matar
-    /// </summary>
     public void SetStep(int stepIndex)
     {
         if (_stepDots == null) return;
 
         _currentStep = Mathf.Clamp(stepIndex, 0, _stepDots.Length - 1);
 
-        // Actualizar dots
         for (int i = 0; i < _stepDots.Length; i++)
         {
             if (_stepDots[i] == null) continue;
@@ -66,18 +51,15 @@ public class TutorialHUD : MonoBehaviour
             _stepDots[i].EnableInClassList("step-pending", i > _currentStep);
         }
 
-        // Actualizar líneas de progreso
         for (int i = 0; i < _progressLines.Length; i++)
         {
             if (_progressLines[i] == null) continue;
             _progressLines[i].EnableInClassList("line-done", i < _currentStep);
         }
 
-        // Actualizar label del paso
         if (_labelPasoActual != null && _currentStep < _stepTitles.Length)
             _labelPasoActual.text = _stepTitles[_currentStep];
 
-        // Mostrar solo el panel del paso actual
         for (int i = 0; i < _stepPanels.Length; i++)
         {
             if (_stepPanels[i] == null) continue;
@@ -87,30 +69,17 @@ public class TutorialHUD : MonoBehaviour
         Debug.Log($"[TutorialHUD] Paso: {_currentStep} — {_stepTitles[_currentStep]}");
     }
 
-    // ──────────────────────────────────────────────────────────
-    /// <summary>
-    /// Mantiene compatibilidad con TutorialManager.
-    /// </summary>
     public void SetMovementCheckCompleted(int index, bool completed)
     {
         Debug.Log($"[TutorialHUD] Check {index} = {completed}");
 
     }
 
-    // ──────────────────────────────────────────────────────────
-    /// <summary>
-    /// Resetea todos los dots al estado inicial.
-    /// </summary>
     public void ResetMovementChecks()
     {
         SetStep(0);
     }
 
-    // ──────────────────────────────────────────────────────────
-    /// <summary>
-    /// Muestra el mensaje de entrar al portal.
-    /// Lo llama TutorialManager cuando el enemigo muere.
-    /// </summary>
     public void MostrarMensajePortal()
     {
         if (_panelPortal == null)
@@ -120,13 +89,9 @@ public class TutorialHUD : MonoBehaviour
         }
 
         _panelPortal.EnableInClassList("panel-oculto", false);
-        Debug.Log("[TutorialHUD] ✨ Mensaje portal mostrado.");
+        Debug.Log("[TutorialHUD] Mensaje portal mostrado.");
     }
 
-    // ──────────────────────────────────────────────────────────
-    /// <summary>
-    /// Muestra el panel final de tutorial completado.
-    /// </summary>
     public void MostrarPanelFinal()
     {
         if (_document == null) return;
@@ -135,24 +100,19 @@ public class TutorialHUD : MonoBehaviour
         var panelFinal = root?.Q<VisualElement>("panel-final");
         if (panelFinal == null) return;
 
-        // Ocultar todos los paneles de paso
         foreach (var panel in _stepPanels)
             panel?.EnableInClassList("panel-oculto", true);
 
-        // Ocultar panel portal
         if (_panelPortal != null)
             _panelPortal.EnableInClassList("panel-oculto", true);
 
-        // Mostrar panel final
         panelFinal.EnableInClassList("panel-oculto", false);
 
-        Debug.Log("[TutorialHUD] 🎉 Panel final mostrado.");
+        Debug.Log("[TutorialHUD] Panel final mostrado.");
     }
 
-    // ──────────────────────────────────────────────────────────
     private void CacheElements(VisualElement root)
     {
-        // Dots de progreso
         _stepDots = new[]
         {
             root.Q<VisualElement>("step-dot-1"),
@@ -161,7 +121,6 @@ public class TutorialHUD : MonoBehaviour
             root.Q<VisualElement>("step-dot-4")
         };
 
-        // Líneas de progreso
         _progressLines = new[]
         {
             root.Q<VisualElement>("progress-line-1"),
@@ -169,7 +128,6 @@ public class TutorialHUD : MonoBehaviour
             root.Q<VisualElement>("progress-line-3")
         };
 
-        // Paneles de cada paso
         _stepPanels = new[]
         {
             root.Q<VisualElement>("panel-movimiento"),
@@ -178,13 +136,10 @@ public class TutorialHUD : MonoBehaviour
             root.Q<VisualElement>("panel-matar")
         };
 
-        // Panel portal
         _panelPortal = root.Q<VisualElement>("panel-portal");
 
-        // Label del paso actual
         _labelPasoActual = root.Q<Label>("label-paso-actual");
 
-        // Validar elementos críticos
         for (int i = 0; i < _stepDots.Length; i++)
         {
             if (_stepDots[i] == null)

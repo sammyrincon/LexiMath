@@ -1,4 +1,3 @@
-// Assets/Scripts/Player/PlayerLives.cs
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -6,19 +5,19 @@ using UnityEngine.SceneManagement;
 public class PlayerLives : MonoBehaviour
 {
     public static PlayerLives Instance;
-    
+
     [Header("Lives")]
     public int maxLives = 3;
     public int currentLives;
     public TextMeshProUGUI livesText;
-    
+
     [Header("Respawn")]
-    public Transform respawnPoint; // punto inicial del nivel
+    public Transform respawnPoint;
     public float invulnerabilityTime = 1.5f;
-    
+
     private bool isInvulnerable = false;
     private SpriteRenderer spriteRenderer;
-    
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -27,15 +26,15 @@ public class PlayerLives : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         UpdateUI();
     }
-    
+
     public void LoseLife()
     {
         if (isInvulnerable) return;
-        
+
         currentLives--;
         UpdateUI();
         Debug.Log($"¡Vida perdida! Vidas restantes: {currentLives}");
-        
+
         if (currentLives <= 0)
         {
             GameOver();
@@ -45,15 +44,15 @@ public class PlayerLives : MonoBehaviour
             Respawn();
         }
     }
-    
+
     private void Respawn()
     {
         if (respawnPoint != null)
             transform.position = respawnPoint.position;
-        
+
         StartCoroutine(InvulnerabilityRoutine());
     }
-    
+
     private System.Collections.IEnumerator InvulnerabilityRoutine()
     {
         isInvulnerable = true;
@@ -71,7 +70,7 @@ public class PlayerLives : MonoBehaviour
         if (spriteRenderer != null) spriteRenderer.color = Color.white;
         isInvulnerable = false;
     }
-    
+
     private void GameOver()
     {
         Debug.Log("Game Over");
@@ -83,10 +82,11 @@ public class PlayerLives : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
-    
+
     private void UpdateUI()
     {
         if (livesText != null)
             livesText.text = $"Vidas: {currentLives}";
+        OracionesHUDController.Instance?.SetLives(currentLives);
     }
 }

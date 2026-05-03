@@ -7,17 +7,18 @@ using UnityEngine.SceneManagement;
 
 public class BookPauseController : MonoBehaviour
 {
+    
+    public static BookPauseController Instance { get; private set; } 
+
     private VisualElement pauseScreen;
     private VisualElement bookContainer;
     private VisualElement buttonsContainer;
-    private VisualElement rightPageContainer; // Página derecha del libro
+    private VisualElement rightPageContainer;
 
-    // Botones originales
     private Button btnContinuar;
     private Button btnSonido;
     private Button btnSalir;
 
-    // Botones nuevos
     private Button btnControles;
     private Button btnGraficos;
 
@@ -26,32 +27,34 @@ public class BookPauseController : MonoBehaviour
     public float velocidadFrame = 0.05f;
 
     [Header("Audio (opcional)")]
-    public AudioMixer audioMixer; // Arrastra tu AudioMixer aquí en el Inspector
+    public AudioMixer audioMixer;
 
     private bool estaAnimando = false;
     private bool estaPausado = false;
-    private string panelActivo = ""; // Qué panel está mostrando la página derecha
+    private string panelActivo = "";
+
+    void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
 
     void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
 
-        // Contenedores
         pauseScreen        = root.Q<VisualElement>("pause-screen");
         bookContainer      = root.Q<VisualElement>("book-animation-container");
         buttonsContainer   = root.Q<VisualElement>("buttons-container");
-        rightPageContainer = root.Q<VisualElement>("right-page-container"); // Nuevo en el UXML
+        rightPageContainer = root.Q<VisualElement>("right-page-container");
 
-        // Botones originales
         btnContinuar = root.Q<Button>("button-continuar");
         btnSonido    = root.Q<Button>("button-sonido");
         btnSalir     = root.Q<Button>("button-salir");
 
-        // Botones nuevos
         btnControles = root.Q<Button>("button-controles");
         btnGraficos  = root.Q<Button>("button-graficos");
 
-        // Acciones
         if (btnContinuar != null) btnContinuar.clicked += IntentarCambiarPausa;
         if (btnSalir     != null) btnSalir.clicked     += IrAlMenuPrincipal;
         if (btnSonido    != null) btnSonido.clicked    += () => MostrarPanel("sonido");
@@ -65,15 +68,10 @@ public class BookPauseController : MonoBehaviour
             IntentarCambiarPausa();
     }
 
-    // ─────────────────────────────────────────────
-    //  PÁGINA DERECHA: mostrar panel según botón
-    // ─────────────────────────────────────────────
-
     void MostrarPanel(string panel)
     {
         if (rightPageContainer == null) return;
 
-        // Si ya estaba abierto ese panel, lo cerramos (toggle)
         if (panelActivo == panel)
         {
             rightPageContainer.Clear();
@@ -100,13 +98,11 @@ public class BookPauseController : MonoBehaviour
 
         AgregarSlider("Música", "slider-musica", 0f, 1f, 0.8f, valor =>
         {
-            // Si tienes AudioMixer: audioMixer.SetFloat("VolumenMusica", Mathf.Log10(valor) * 20);
             Debug.Log($"Música: {valor}");
         });
 
         AgregarSlider("Efectos", "slider-efectos", 0f, 1f, 1f, valor =>
         {
-            // audioMixer.SetFloat("VolumenEfectos", Mathf.Log10(valor) * 20);
             Debug.Log($"Efectos: {valor}");
         });
     }
@@ -132,14 +128,12 @@ public class BookPauseController : MonoBehaviour
     {
         AgregarTitulo("Gráficos");
 
-        // Toggle de pantalla completa
         var toggle = new Toggle("Pantalla Completa");
         toggle.value = Screen.fullScreen;
         toggle.AddToClassList("right-page-toggle");
         toggle.RegisterValueChangedCallback(evt => Screen.fullScreen = evt.newValue);
         rightPageContainer.Add(toggle);
 
-        // Resoluciones comunes
         AgregarTitulo("Resolución");
         var resoluciones = new[] { "1280x720", "1920x1080", "2560x1440" };
         foreach (var res in resoluciones)
@@ -149,10 +143,6 @@ public class BookPauseController : MonoBehaviour
             rightPageContainer.Add(btn);
         }
     }
-
-    // ─────────────────────────────────────────────
-    //  HELPERS para construir la UI de la página
-    // ─────────────────────────────────────────────
 
     void AgregarTitulo(string texto)
     {
@@ -197,17 +187,13 @@ public class BookPauseController : MonoBehaviour
             Screen.SetResolution(w, h, Screen.fullScreen);
     }
 
-    // ─────────────────────────────────────────────
-    //  ANIMACIÓN DEL LIBRO (igual que antes)
-    // ─────────────────────────────────────────────
-
     void IrAlMenuPrincipal()
     {
-        Time.timeScale = 1; // Aseguramos que el tiempo vuelva a la normalidad
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
 
-    void IntentarCambiarPausa()
+    public void IntentarCambiarPausa()
     {
         if (estaAnimando) return;
         if (!estaPausado) StartCoroutine(AbrirLibro());
@@ -240,7 +226,6 @@ public class BookPauseController : MonoBehaviour
         estaAnimando = true;
         buttonsContainer.style.display = DisplayStyle.None;
 
-        // Limpiar página derecha al cerrar
         if (rightPageContainer != null)
         {
             rightPageContainer.Clear();

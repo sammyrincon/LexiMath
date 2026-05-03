@@ -1,4 +1,3 @@
-// Assets/Scripts/Enemies/CaballeroChase.cs
 using UnityEngine;
 
 public class CaballeroChase : MonoBehaviour
@@ -7,38 +6,38 @@ public class CaballeroChase : MonoBehaviour
     public float patrolSpeed = 1.5f;
     public float chaseSpeed = 3f;
     public Transform[] patrolPoints;
-    
+
     [Header("Detection")]
     public float visionRange = 6f;
-    public float visionAngle = 90f; // ángulo del cono de visión en grados
+    public float visionAngle = 90f;
     public LayerMask playerLayer;
-    public LayerMask obstacleLayer; // walls que bloquean visión
-    
+    public LayerMask obstacleLayer;
+
     [Header("References")]
     public SpriteRenderer spriteRenderer;
     public Animator animator;
-    
+
     private Rigidbody2D rb;
     private Transform player;
     private int currentPatrolIndex = 0;
     [Header("Chase Persistence")]
-    public float losePersistenceTime = 1.5f; // seconds to keep chasing after losing LOS
+    public float losePersistenceTime = 1.5f;
 
     private bool isChasing = false;
     private float loseTimer = 0f;
     private Vector2 facingDirection = Vector2.right;
-    
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         if (p != null) player = p.transform;
     }
-    
+
     private void Update()
     {
         if (player == null) return;
-        
+
         bool canSeePlayer = CanSeePlayer();
 
         if (canSeePlayer)
@@ -49,7 +48,6 @@ public class CaballeroChase : MonoBehaviour
         }
         else if (isChasing)
         {
-            // Keep chasing briefly after losing LOS so player can't trivially dodge
             loseTimer -= Time.deltaTime;
             if (loseTimer > 0f)
                 ChasePlayer();
@@ -60,35 +58,33 @@ public class CaballeroChase : MonoBehaviour
         {
             Patrol();
         }
-        
+
         UpdateAnimation();
     }
-    
+
     private bool CanSeePlayer()
     {
         Vector2 toPlayer = (Vector2)player.position - (Vector2)transform.position;
         float distance = toPlayer.magnitude;
-        
+
         if (distance > visionRange) return false;
-        
-        // Check ángulo del cono
+
         float angle = Vector2.Angle(facingDirection, toPlayer.normalized);
         if (angle > visionAngle * 0.5f) return false;
-        
-        // Raycast para verificar que no hay paredes en medio
+
         RaycastHit2D hit = Physics2D.Raycast(transform.position, toPlayer.normalized, distance, obstacleLayer);
-        if (hit.collider != null) return false; // hay pared en medio
-        
+        if (hit.collider != null) return false;
+
         return true;
     }
-    
+
     private void ChasePlayer()
     {
         Vector2 direction = ((Vector2)player.position - (Vector2)transform.position).normalized;
         rb.linearVelocity = direction * chaseSpeed;
         UpdateFacing(direction);
     }
-    
+
     private void Patrol()
     {
         if (patrolPoints == null || patrolPoints.Length == 0)
@@ -96,48 +92,45 @@ public class CaballeroChase : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             return;
         }
-        
+
         Transform target = patrolPoints[currentPatrolIndex];
         Vector2 direction = ((Vector2)target.position - (Vector2)transform.position).normalized;
         rb.linearVelocity = direction * patrolSpeed;
         UpdateFacing(direction);
-        
-        // Cambiar de punto cuando esté cerca
+
         if (Vector2.Distance(transform.position, target.position) < 0.3f)
         {
             currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
         }
     }
-    
+
     private void UpdateFacing(Vector2 dir)
     {
         if (dir.sqrMagnitude < 0.01f) return;
         facingDirection = dir;
-        
+
         if (dir.x > 0.01f) spriteRenderer.flipX = false;
         else if (dir.x < -0.01f) spriteRenderer.flipX = true;
     }
-    
+
     private void UpdateAnimation()
     {
         if (animator == null) return;
         bool moving = rb.linearVelocity.sqrMagnitude > 0.1f;
         animator.SetBool("isRunning", moving);
     }
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && PlayerLives.Instance != null)
             PlayerLives.Instance.LoseLife();
     }
-    
+
     private void OnDrawGizmosSelected()
     {
-        // Vision range
         Gizmos.color = isChasing ? Color.red : Color.yellow;
         Gizmos.DrawWireSphere(transform.position, visionRange);
-        
-        // Vision cone
+
         Vector2 facing = Application.isPlaying ? facingDirection : Vector2.right;
         float halfAngle = visionAngle * 0.5f * Mathf.Deg2Rad;
         Vector2 leftRay = new Vector2(
@@ -150,8 +143,7 @@ public class CaballeroChase : MonoBehaviour
         );
         Gizmos.DrawLine(transform.position, transform.position + (Vector3)leftRay * visionRange);
         Gizmos.DrawLine(transform.position, transform.position + (Vector3)rightRay * visionRange);
-        
-        // Patrol points
+
         if (patrolPoints != null)
         {
             Gizmos.color = Color.green;

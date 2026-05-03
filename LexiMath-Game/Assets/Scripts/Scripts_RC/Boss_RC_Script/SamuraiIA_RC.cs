@@ -119,8 +119,8 @@ public class BossSamuraiIA_RC : MonoBehaviour
     {
         estaEscapando = true;
         animator.SetTrigger("Death");
-        
-        ReproducirSonidoEscape(); 
+
+        ReproducirSonidoEscape();
 
         float ladoEscape = (transform.position.x > jugador.position.x) ? 1f : -1f;
         direccionEscape = new Vector2(ladoEscape, 0);
@@ -141,7 +141,7 @@ public class BossSamuraiIA_RC : MonoBehaviour
         if (hitboxAtaque != null) hitboxAtaque.ApagarHitbox();
     }
 
-    public void ReproducirSonidoAtaque() 
+    public void ReproducirSonidoAtaque()
     {
         ReproducirSonido(sonidoAtaque);
     }

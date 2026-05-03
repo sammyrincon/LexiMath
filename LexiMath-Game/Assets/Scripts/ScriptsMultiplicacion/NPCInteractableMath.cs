@@ -1,4 +1,3 @@
-// Assets/Scripts/World/NPCInteractableMath.cs
 using UnityEngine;
 
 public class NPCInteractableMath : MonoBehaviour
@@ -7,15 +6,15 @@ public class NPCInteractableMath : MonoBehaviour
     public KeyCode interactKey = KeyCode.E;
     public GameObject interactPrompt;
     public string npcName = "Sabio";
-    
+
     [Header("Reward")]
     public int soulsReward = 50;
-    
+
     private bool playerInRange = false;
     private bool questAnswered = false;
     private SpriteRenderer spriteRenderer;
     private Transform player;
-    
+
     private void Awake()
     {
         if (interactPrompt != null) interactPrompt.SetActive(false);
@@ -23,7 +22,7 @@ public class NPCInteractableMath : MonoBehaviour
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         if (p != null) player = p.transform;
     }
-    
+
     private void Update()
     {
         if (playerInRange && player != null && spriteRenderer != null)
@@ -33,13 +32,13 @@ public class NPCInteractableMath : MonoBehaviour
             else
                 spriteRenderer.flipX = false;
         }
-        
+
         if (playerInRange && !questAnswered && Input.GetKeyDown(interactKey))
         {
             TriggerQuestion();
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !questAnswered)
@@ -48,7 +47,7 @@ public class NPCInteractableMath : MonoBehaviour
             if (interactPrompt != null) interactPrompt.SetActive(true);
         }
     }
-    
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -57,14 +56,14 @@ public class NPCInteractableMath : MonoBehaviour
             if (interactPrompt != null) interactPrompt.SetActive(false);
         }
     }
-    
+
     private void TriggerQuestion()
     {
         Debug.Log($"{npcName}: Resuelve esta multiplicación para ganar mi recompensa...");
         QuestionData_SR question = QuestionPool.GenerateMultiplicationQuestion();
         QuestionUIManager.Instance.ShowQuestion(question, OnAnswered);
     }
-    
+
     private void OnAnswered(bool correct)
     {
         if (correct)
@@ -77,7 +76,6 @@ public class NPCInteractableMath : MonoBehaviour
         }
         else
         {
-            // Sin castigo, solo mensaje. Puede reintentar.
             Debug.Log($"{npcName}: Esa no es la respuesta. Vuelve cuando estés listo.");
         }
     }

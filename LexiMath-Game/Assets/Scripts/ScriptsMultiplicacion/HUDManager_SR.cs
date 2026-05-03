@@ -6,12 +6,10 @@ public class HUDManager_SR : MonoBehaviour
 {
     public static HUDManager_SR Instance { get; private set; }
 
-    // ── HUD en gameplay ──────────────────────────────────────────────────────
     private VisualElement healthbarFill;
     private Label labelNivel;
     private Label labelContador;
 
-    // ── Panel de victoria ────────────────────────────────────────────────────
     private VisualElement victoryPanel;
     private Label victoryTitle;
     private VisualElement[] estrellas = new VisualElement[3];
@@ -23,12 +21,10 @@ public class HUDManager_SR : MonoBehaviour
     private Button btnContinue;
     private Button btnClose;
 
-    // ── Panel de Game Over ───────────────────────────────────────────────────
     private VisualElement gameoverPanel;
     private Button btnGameoverMenu;
     private Button btnGameoverRetry;
 
-    // ── Estado interno ───────────────────────────────────────────────────────
     private int puntosAcumulados   = 0;
     private int monedasAcumuladas  = 0;
     private int maxHealthRef       = 100;
@@ -39,8 +35,6 @@ public class HUDManager_SR : MonoBehaviour
     [Header("Umbrales de estrellas")]
     public int puntosPara2Estrellas = 300;
     public int puntosPara3Estrellas = 600;
-
-    // ────────────────────────────────────────────────────────────────────────
 
     void Awake()
     {
@@ -54,12 +48,10 @@ public class HUDManager_SR : MonoBehaviour
         if (doc == null) { Debug.LogError("HUDManager_SR: no hay UIDocument en la escena."); return; }
         var root = doc.rootVisualElement;
 
-        // HUD gameplay
         healthbarFill = root.Q<VisualElement>("healthbar-fill");
         labelNivel    = root.Q<Label>("label-nivel");
         labelContador = root.Q<Label>("ContadorTexto");
 
-        // Victoria
         victoryPanel  = root.Q<VisualElement>("Victory-panel");
         victoryTitle  = root.Q<Label>("victoryTitle");
         pointsNumber  = root.Q<Label>("PointsNumber");
@@ -81,7 +73,6 @@ public class HUDManager_SR : MonoBehaviour
         if (btnContinue != null) btnContinue.clicked += Continuar;
         if (btnClose    != null) btnClose.clicked    += CerrarJuego;
 
-        // Game Over
         gameoverPanel     = root.Q<VisualElement>("gameover-panel");
         btnGameoverMenu   = root.Q<Button>("gameover-menu-btn");
         btnGameoverRetry  = root.Q<Button>("gameover-retry-btn");
@@ -90,8 +81,6 @@ public class HUDManager_SR : MonoBehaviour
         if (btnGameoverMenu  != null) btnGameoverMenu.clicked  += IrAlMenu;
         if (btnGameoverRetry != null) btnGameoverRetry.clicked += Reintentar;
     }
-
-    // ── API pública ──────────────────────────────────────────────────────────
 
     public void SetMaxHealth(int max) => maxHealthRef = max;
 
@@ -118,8 +107,6 @@ public class HUDManager_SR : MonoBehaviour
         if (labelNivel != null) labelNivel.text = nombre;
     }
 
-    // ── Victoria ─────────────────────────────────────────────────────────────
-
     public void MostrarVictoria()
     {
         Time.timeScale = 0f;
@@ -142,16 +129,12 @@ public class HUDManager_SR : MonoBehaviour
         if (btnContinue   != null) { btnContinue.SetEnabled(pasa); btnContinue.style.opacity = pasa ? 1f : 0.4f; }
     }
 
-    // ── Game Over ────────────────────────────────────────────────────────────
-
     public void MostrarGameOver()
     {
         if (gameoverPanel == null) return;
         gameoverPanel.RemoveFromClassList("gameover-hidden");
         gameoverPanel.AddToClassList("gameover-visible");
     }
-
-    // ── Navegación ───────────────────────────────────────────────────────────
 
     private void IrAlMenu()
     {

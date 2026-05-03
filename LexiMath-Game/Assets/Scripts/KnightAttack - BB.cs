@@ -1,18 +1,5 @@
 using UnityEngine;
 
-/// <summary>
-/// KnightAttack — LexiMath
-/// 
-/// Va en el Knight. Cuando presiona X busca enemigos cerca y les hace daño.
-/// 
-/// SETUP EN UNITY:
-///   1. Add Component en el Knight → KnightAttack
-///   2. Configura:
-///        • Attack Range  → radio del ataque (0.8 ~ 1.5 recomendado)
-///        • Attack Damage → daño por golpe (1 recomendado, 3 golpes matan)
-///        • Enemy Layer   → selecciona "Enemy"
-///   3. NO asignes Attack Point manualmente — se genera un punto frente al Knight
-/// </summary>
 public class KnightAttack : MonoBehaviour
 {
     [Header("Ataque")]
@@ -34,7 +21,6 @@ public class KnightAttack : MonoBehaviour
     [Header("Capa de enemigos")]
     public LayerMask enemyLayer;
 
-    // ── Privados ─────────────────────────────────────────────
     private SpriteRenderer _sprite;
     private float _nextAttackTime = 0f;
 
@@ -56,7 +42,6 @@ public class KnightAttack : MonoBehaviour
     {
         Vector2 centroAtaque = ObtenerCentroAtaque();
 
-        // Detectar enemigos en el área
         Collider2D[] enemigos = Physics2D.OverlapCircleAll(
             centroAtaque, attackRange, enemyLayer);
 
@@ -68,10 +53,6 @@ public class KnightAttack : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Calcula el punto central del ataque frente al Knight
-    /// (cambia según la dirección en la que mira).
-    /// </summary>
     private Vector2 ObtenerCentroAtaque()
     {
         float dir = _sprite != null && _sprite.flipX ? -1f : 1f;
@@ -81,7 +62,6 @@ public class KnightAttack : MonoBehaviour
         );
     }
 
-    // ── Gizmo para ver el área en Scene view ─────────────────
     void OnDrawGizmosSelected()
     {
         if (_sprite == null) _sprite = GetComponent<SpriteRenderer>();

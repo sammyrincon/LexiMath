@@ -505,7 +505,6 @@ GameObject:
   - component: {fileID: 394417462}
   - component: {fileID: 394417461}
   - component: {fileID: 394417460}
-  - component: {fileID: 394417459}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -513,18 +512,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &394417459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394417458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5379d821cb1a4b44ca90063e18c91e7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HUDController
 --- !u!114 &394417460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,9 +521,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 394417458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3339611afbc38d840be0f60749ee91b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c14d40cff8d5774abb6aeae906215f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookPauseController
+  framesDelLibro: []
+  velocidadFrame: 0.05
+  audioMixer: {fileID: 0}
 --- !u!114 &394417461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,9 +536,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 394417458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d47f76cb5c2f4489012210009cf5cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 3766ef66f3e2cc04c84812bd678acc2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  platform: {fileID: 0}
+  waitTime: 1
+  retrieveSpeed: 1
+  pushSpeed: 10
 --- !u!114 &394417462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
   m_PanelSettings: {fileID: 11400000, guid: 094517f9e7f584149aafceb25b5c9703, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: d96751ae3d904234ab97849799c7ebbd, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: a93946fc4964b984398c5e2f373e4f0d, type: 3}
   m_SortingOrder: 0
   m_Position: 0
   m_WorldSpaceSizeMode: 1

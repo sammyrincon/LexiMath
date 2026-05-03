@@ -564,7 +564,7 @@ SpriteRenderer:
   m_Size: {x: 21.218758, y: 11.918555}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!4 &414145080
 Transform:
@@ -735,7 +735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8579758167595735006, guid: 8026d3a125cb59a4c8565ebb6ef1acbd, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8579758167595735006, guid: 8026d3a125cb59a4c8565ebb6ef1acbd, type: 3}
       propertyPath: m_SortingLayerID
@@ -751,7 +751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8756651035610367036, guid: 8026d3a125cb59a4c8565ebb6ef1acbd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8756651035610367036, guid: 8026d3a125cb59a4c8565ebb6ef1acbd, type: 3}
       propertyPath: m_LocalRotation.w

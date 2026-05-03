@@ -4,27 +4,17 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 
-/// <summary>
-/// ApiManager — capa de red de LEXIMATH
-/// Singleton que maneja todas las llamadas HTTP a la API REST.
-/// Basado en UnityWebRequest según metodología del profesor.
-/// </summary>
 public class ApiManager : MonoBehaviour
 {
-    // ── Singleton ──────────────────────────────────────────────
     public static ApiManager Instance { get; private set; }
 
-    // ── URL base de la API (ya desplegada en AWS) ──────────────
-    private const string BASE_URL = 
-        "https://vyw108sp52.execute-api.us-east-1.amazonaws.com/prod";
+    private const string BASE_URL =
+        "https://leximath.com.mx/api";
 
-    // ── JWT Token (se guarda al hacer login) ───────────────────
     private string _jwtToken = "";
 
-    // ───────────────────────────────────────────────────────────
     void Awake()
     {
-        // Singleton: solo existe una instancia y no se destruye al cambiar de escena
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -34,24 +24,19 @@ public class ApiManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // ── Guardar el token después del login ─────────────────────
     public void SetToken(string token)
     {
         _jwtToken = token;
     }
 
-    // ── Verificar si hay token activo ──────────────────────────
     public bool IsLoggedIn()
     {
         return !string.IsNullOrEmpty(_jwtToken);
     }
 
-    // MÉTODO PRINCIPAL — POST
-    // Envía un JSON a un endpoint y devuelve la respuesta
     public IEnumerator Post(string endpoint, object body,
         Action<string> onSuccess, Action<string> onError)
     {
-        // Convertir el objeto C# a JSON
         string jsonBody = JsonUtility.ToJson(body);
         string url = BASE_URL + endpoint;
 
@@ -61,7 +46,6 @@ public class ApiManager : MonoBehaviour
         request.downloadHandler = new DownloadHandlerBuffer();
         request.SetRequestHeader("Content-Type", "application/json");
 
-        // Agregar token JWT si existe
         if (!string.IsNullOrEmpty(_jwtToken))
             request.SetRequestHeader("Authorization", "Bearer " + _jwtToken);
 
@@ -75,7 +59,6 @@ public class ApiManager : MonoBehaviour
         request.Dispose();
     }
 
-    // MÉTODO PRINCIPAL — GET
     public IEnumerator Get(string endpoint,
         Action<string> onSuccess, Action<string> onError)
     {
@@ -97,7 +80,6 @@ public class ApiManager : MonoBehaviour
         request.Dispose();
     }
 
-    // MÉTODO PRINCIPAL — PATCH
     public IEnumerator Patch(string endpoint, object body,
         Action<string> onSuccess, Action<string> onError)
     {

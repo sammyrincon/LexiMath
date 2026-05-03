@@ -8,9 +8,8 @@ public class EnemigoSeguidor : MonoBehaviour
 
     [Header("Configuración de Ataque")]
     public int danoDeAtaque = 20;
-    
-    // NUEVO: Tiempo que debe esperar el enemigo entre cada golpe
-    public float tiempoEntreAtaques = 1.5f; 
+
+    public float tiempoEntreAtaques = 1.5f;
     private float temporizadorAtaque = 0f;
 
     [Header("Configuración de Obstáculos")]
@@ -27,7 +26,7 @@ public class EnemigoSeguidor : MonoBehaviour
             jugador = objetoJugador.transform;
         }
 
-        animator = GetComponent<Animator>(); 
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -51,7 +50,7 @@ public class EnemigoSeguidor : MonoBehaviour
                 {
                     animator.SetFloat("Speed", 0f);
                 }
-                
+
                 if (direccion.x < 0)
                 {
                     transform.eulerAngles = new Vector3(0, 180, 0);
@@ -63,17 +62,17 @@ public class EnemigoSeguidor : MonoBehaviour
             }
             else
             {
-                animator.SetFloat("Speed", 0f); 
+                animator.SetFloat("Speed", 0f);
 
                 if (temporizadorAtaque >= tiempoEntreAtaques)
                 {
                     animator.SetTrigger("Attack");
-                    temporizadorAtaque = 0f; 
+                    temporizadorAtaque = 0f;
                 }
             }
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

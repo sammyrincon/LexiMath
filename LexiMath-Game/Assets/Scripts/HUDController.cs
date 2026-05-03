@@ -10,7 +10,6 @@ public class HUDController : MonoBehaviour
     private int estrellasRecogidas = 0;
     private int estrellasTotal = 3;
 
-    // Singleton para que otros scripts puedan acceder fácilmente
     public static HUDController Instance { get; private set; }
 
     void Awake()
@@ -29,8 +28,6 @@ public class HUDController : MonoBehaviour
         ActualizarEstrellas();
     }
 
-    // ── Nivel ──────────────────────────────────────
-
     public void SetNivel(int numero)
     {
         nivelActual = numero;
@@ -43,11 +40,6 @@ public class HUDController : MonoBehaviour
             labelNivel.text = $"Level {nivelActual}";
     }
 
-    // ── Estrellas ──────────────────────────────────
-
-    /// <summary>
-    /// Llama esto al iniciar cada nivel para configurar el total de estrellas.
-    /// </summary>
     public void SetEstrellasTotal(int total)
     {
         estrellasTotal    = total;
@@ -55,9 +47,6 @@ public class HUDController : MonoBehaviour
         ActualizarEstrellas();
     }
 
-    /// <summary>
-    /// Llama esto cuando el jugador recoge una estrella.
-    /// </summary>
     public void RecogerEstrella()
     {
         estrellasRecogidas = Mathf.Clamp(estrellasRecogidas + 1, 0, estrellasTotal);

@@ -22,10 +22,8 @@ public class BienvenidaController : MonoBehaviour
         _botonEmpezar      = root.Q<Button>("boton-empezar");
         _botonCerrarSesion = root.Q<Button>("boton-cerrar-sesion");
 
-        // Mostrar usuario del jugador
         _textoBienvenida.text = $"¡BIENVENIDO, {GameManager.Instance.NombreEstudiante}!";
 
-        // Botones
         _botonEmpezar.clicked      += OnClickEmpezar;
         _botonCerrarSesion.clicked += OnClickCerrarSesion;
 
@@ -45,7 +43,6 @@ public class BienvenidaController : MonoBehaviour
     }
     private void OnClickCerrarSesion()
     {
-        // Limpiar token y datos
         ApiManager.Instance.SetToken("");
         SceneManager.LoadScene("LoginScene");
     }

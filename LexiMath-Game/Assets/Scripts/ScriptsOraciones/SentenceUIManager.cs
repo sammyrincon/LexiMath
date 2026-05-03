@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+using UnityEngine.UIElements;
 using System;
 using System.Collections;
 
@@ -8,87 +7,88 @@ public class SentenceUIManager : MonoBehaviour
 {
     public static SentenceUIManager Instance;
 
-    [Header("UI References")]
-    public GameObject sentencePanel;
-    public TextMeshProUGUI sentenceText;
-    public Button[] optionButtons;
-    public TextMeshProUGUI feedbackText;
-
-    [Header("Feedback")]
     public float feedbackDuration = 1.2f;
-    public Color correctColor = new Color(0.2f, 0.85f, 0.3f);
-    public Color wrongColor = new Color(0.9f, 0.2f, 0.2f);
+
+    private VisualElement overlay;
+    private Label sentenceText;
+    private Button[] optionButtons;
+    private Label feedbackLabel;
 
     private SentenceData currentSentence;
     private Action<bool> onAnswerCallback;
-    private Color defaultButtonColor;
 
-    private void Awake()
+    private static readonly StyleColor ColDefault = new StyleColor(new Color32(80, 50, 20, 230));
+    private static readonly StyleColor ColCorrect = new StyleColor(new Color32(51, 216, 76, 255));
+    private static readonly StyleColor ColWrong   = new StyleColor(new Color32(229, 51, 51, 255));
+
+    void Awake()
     {
         if (Instance == null) Instance = this;
-        else { Destroy(gameObject); return; }
+        else Destroy(gameObject);
+    }
 
-        if (sentencePanel != null)
-            sentencePanel.SetActive(false);
+    void Start()
+    {
+        var root = OracionesHUDController.Instance.Root;
 
-        if (optionButtons != null && optionButtons.Length > 0 && optionButtons[0] != null)
-            defaultButtonColor = optionButtons[0].image.color;
+        overlay       = root.Q<VisualElement>("sentence-overlay");
+        sentenceText  = root.Q<Label>("sentence-text");
+        feedbackLabel = root.Q<Label>("feedback-label");
 
-        if (feedbackText != null)
-            feedbackText.gameObject.SetActive(false);
+        optionButtons = new[]
+        {
+            root.Q<Button>("btn-opt-0"),
+            root.Q<Button>("btn-opt-1"),
+            root.Q<Button>("btn-opt-2"),
+            root.Q<Button>("btn-opt-3"),
+        };
+
+        for (int i = 0; i < optionButtons.Length; i++)
+        {
+            int idx = i;
+            optionButtons[i].clicked += () => OnAnswerSelected(idx);
+        }
     }
 
     public void ShowSentence(SentenceData sentence, Action<bool> callback)
     {
-        if (sentencePanel == null || sentenceText == null) return;
+        if (overlay == null) return;
 
-        currentSentence = sentence;
+        currentSentence  = sentence;
         onAnswerCallback = callback;
 
         sentenceText.text = sentence.sentenceWithBlank;
-
-        if (feedbackText != null)
-            feedbackText.gameObject.SetActive(false);
+        feedbackLabel.style.display = DisplayStyle.None;
 
         for (int i = 0; i < optionButtons.Length; i++)
         {
-            int index = i;
-            optionButtons[i].image.color = defaultButtonColor;
-            optionButtons[i].interactable = true;
-
-            TextMeshProUGUI btnText = optionButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            if (btnText != null) btnText.text = sentence.options[i];
-
-            optionButtons[i].onClick.RemoveAllListeners();
-            optionButtons[i].onClick.AddListener(() => OnAnswerSelected(index));
+            optionButtons[i].text = sentence.options[i];
+            optionButtons[i].SetEnabled(true);
+            optionButtons[i].style.backgroundColor = ColDefault;
         }
 
-        sentencePanel.SetActive(true);
+        overlay.style.display = DisplayStyle.Flex;
         Time.timeScale = 0f;
     }
 
     private void OnAnswerSelected(int index)
     {
+        if (currentSentence == null) return;
+
         bool isCorrect = currentSentence.options[index] == currentSentence.correctWord;
 
-        foreach (var btn in optionButtons)
-            btn.interactable = false;
-
-        // Highlight correct answer green; wrong selection red
         for (int i = 0; i < optionButtons.Length; i++)
         {
+            optionButtons[i].SetEnabled(false);
             if (currentSentence.options[i] == currentSentence.correctWord)
-                optionButtons[i].image.color = correctColor;
+                optionButtons[i].style.backgroundColor = ColCorrect;
             else if (i == index)
-                optionButtons[i].image.color = wrongColor;
+                optionButtons[i].style.backgroundColor = ColWrong;
         }
 
-        if (feedbackText != null)
-        {
-            feedbackText.text = isCorrect ? "¡Correcto! ★" : "Esa no es... ¡Mira la correcta!";
-            feedbackText.color = isCorrect ? correctColor : wrongColor;
-            feedbackText.gameObject.SetActive(true);
-        }
+        feedbackLabel.text = isCorrect ? "¡Correcto!" : "Esa no es... ¡Mira la correcta!";
+        feedbackLabel.style.color = isCorrect ? ColCorrect : ColWrong;
+        feedbackLabel.style.display = DisplayStyle.Flex;
 
         StartCoroutine(CloseFeedback(isCorrect));
     }
@@ -96,13 +96,8 @@ public class SentenceUIManager : MonoBehaviour
     private IEnumerator CloseFeedback(bool isCorrect)
     {
         yield return new WaitForSecondsRealtime(feedbackDuration);
-
-        if (feedbackText != null)
-            feedbackText.gameObject.SetActive(false);
-
-        sentencePanel.SetActive(false);
+        overlay.style.display = DisplayStyle.None;
         Time.timeScale = 1f;
-
         onAnswerCallback?.Invoke(isCorrect);
     }
 }
