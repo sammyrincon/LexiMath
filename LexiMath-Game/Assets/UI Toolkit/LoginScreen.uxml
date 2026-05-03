@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/LoginStyles.uss?fileID=7433441132597879392&amp;guid=38c75105c388b9d48aed2c7836b9d1c2&amp;type=3#LoginStyles"/>
+    <ui:VisualElement name="root">
+        <ui:Label name="texto-titulo" text="LEXIMATH" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+        <ui:Label name="texto-subtitulo" text="✦ MATEMATICAS &amp; ESPAÑOL ✦" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 18px;"/>
+        <ui:VisualElement name="espacio-caballero"/>
+        <ui:VisualElement name="panel-login" style="padding-top: 50px; padding-bottom: 50px; margin-top: 0; width: 650px;">
+            <ui:Label text="USUARIO" class="label-campo" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:TextField name="input-usuario" class="input-field" style="font-size: 26px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); height: 56px;"/>
+            <ui:Label text="CONTRASEÑA" class="label-campo" style="font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:TextField name="input-contrasena" password="true" mask-character="X" class="input-field" style="height: 60px; -unity-text-align: middle-center; font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); align-items: stretch; -unity-font-style: bold;"/>
+            <ui:Button name="boton-login" text="▶  JUGAR" style="-unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); font-size: 20px;"/>
+            <ui:Button name="boton-registrarse" text="CREAR CUENTA" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+            <ui:Button name="boton-admin" text="ADMIN" style="font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;); height: 48px;"/>
+            <ui:Label name="texto-error" text="Usuario o contraseña incorrectos" style="font-size: 22px; -unity-font-style: bold;"/>
+        </ui:VisualElement>
+        <ui:Label name="texto-footer" text="© 2026 LEXI MATH" style="color: rgb(255, 255, 255); font-size: 18px; -unity-font-definition: url(&quot;project://database/Assets/Sprites/minecraft/Minecraft.ttf?fileID=12800000&amp;guid=4556de84cb5c3cc4d8a26ae9ef1f2788&amp;type=3#Minecraft&quot;);"/>
+    </ui:VisualElement>
+</ui:UXML>

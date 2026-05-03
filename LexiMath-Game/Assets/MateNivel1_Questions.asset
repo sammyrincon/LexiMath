@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5dc7e856d4292441bf6d1ae3c13cc04, type: 3}
+  m_Name: MateNivel1_Questions
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionData
+  nombreNivel: Nivel 1
+  preguntas:
+  - enunciado: "\xBFCu\xE1nto es 2 + 3?"
+    respuestaCorrecta: 5
+    distractores:
+    - 4
+    - 6
+  - enunciado: "\xBFCu\xE1nto es 6 + 2?"
+    respuestaCorrecta: 8
+    distractores:
+    - 7
+    - 9
+  - enunciado: "\xBFCu\xE1nto es 2 + 5?"
+    respuestaCorrecta: 7
+    distractores:
+    - 8
+    - 6
+  - enunciado: "\xBFCu\xE1nto es 7 + 3?"
+    respuestaCorrecta: 10
+    distractores:
+    - 11
+    - 9
+  - enunciado: "\xBFCu\xE1nto es 12 + 3?"
+    respuestaCorrecta: 15
+    distractores:
+    - 17
+    - 16
+  - enunciado: "\xBFCu\xE1nto es 7 + 12?"
+    respuestaCorrecta: 19
+    distractores:
+    - 20
+    - 17
+  - enunciado: "\xBFCu\xE1nto es 25 + 9?"
+    respuestaCorrecta: 34
+    distractores:
+    - 30
+    - 32
+  - enunciado: "\xBFCu\xE1nto es 17 + 3?"
+    respuestaCorrecta: 20
+    distractores:
+    - 19
+    - 18
+  - enunciado: "\xBFCu\xE1nto es 18 + 3?"
+    respuestaCorrecta: 21
+    distractores:
+    - 20
+    - 19
+  - enunciado: "\xBFCu\xE1nto es 14 + 10?"
+    respuestaCorrecta: 24
+    distractores:
+    - 23
+    - 21

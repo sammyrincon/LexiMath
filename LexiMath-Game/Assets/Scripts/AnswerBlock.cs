@@ -1,0 +1,101 @@
+using System.Collections;
+using UnityEngine;
+using TMPro;
+
+
+[RequireComponent(typeof(Collider2D))]
+public class AnswerBlock : MonoBehaviour
+{
+    [Header("Contenido")]
+    public string valor = "1";
+    public bool esCorrecto = false;
+
+    [Header("Visual")]
+    public TextMeshPro textoVisor;
+    public SpriteRenderer spriteRenderer;
+    public Sprite spriteNormal;
+    public Sprite spriteGolpeado;
+
+    [Header("Animación de rebote")]
+    public float alturaRebote = 0.3f;
+    public float duracionRebote = 0.12f;
+
+    private bool _yaGolpeado = false;
+    private Vector3 _posOriginal;
+    private QuestionManager _manager;
+
+    void Start()
+    {
+        _posOriginal = transform.position;
+        RefrescarTexto();
+    }
+
+    public void Configurar(string nuevoValor, bool correcto, QuestionManager manager)
+    {
+        valor = nuevoValor;
+        esCorrecto = correcto;
+        _manager = manager;
+        _yaGolpeado = false;
+
+        if (spriteRenderer != null && spriteNormal != null)
+            spriteRenderer.sprite = spriteNormal;
+
+        RefrescarTexto();
+    }
+
+    private void RefrescarTexto()
+    {
+        if (textoVisor != null) textoVisor.text = valor;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (_yaGolpeado) return;
+
+        if (!other.CompareTag("Player")) return;
+
+        if (other.transform.position.y < transform.position.y)
+            Golpear();
+    }
+
+    public void Golpear()
+    {
+        if (_yaGolpeado) return;
+        _yaGolpeado = true;
+
+        if (spriteRenderer != null && spriteGolpeado != null)
+            spriteRenderer.sprite = spriteGolpeado;
+
+        StartCoroutine(AnimacionRebote());
+
+        if (_manager != null)
+            _manager.OnBloqueGolpeado(this);
+    }
+
+    private IEnumerator AnimacionRebote()
+    {
+        Vector3 posFinal = _posOriginal + Vector3.up * alturaRebote;
+        float t = 0f;
+
+        while (t < duracionRebote)
+        {
+            t += Time.deltaTime;
+            transform.position = Vector3.Lerp(_posOriginal, posFinal, t / duracionRebote);
+            yield return null;
+        }
+        t = 0f;
+        while (t < duracionRebote)
+        {
+            t += Time.deltaTime;
+            transform.position = Vector3.Lerp(posFinal, _posOriginal, t / duracionRebote);
+            yield return null;
+        }
+        transform.position = _posOriginal;
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = esCorrecto ? Color.green : Color.red;
+        Gizmos.DrawWireCube(transform.position, Vector3.one * 0.9f);
+    }
+}

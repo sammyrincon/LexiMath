@@ -1,0 +1,990 @@
+fileFormatVersion: 2
+guid: 9fc232c2ccca82a488207f3c8c887beb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8860817721052681629
+    second: OceanKnight_Heal_0
+  - first:
+      213: -4762348757227209553
+    second: OceanKnight_Heal_1
+  - first:
+      213: -7321635057555785742
+    second: OceanKnight_Heal_2
+  - first:
+      213: -2712911523267254990
+    second: OceanKnight_Heal_3
+  - first:
+      213: -792301811045353081
+    second: OceanKnight_Heal_4
+  - first:
+      213: -1614634993172602872
+    second: OceanKnight_Heal_5
+  - first:
+      213: 5171874177124402004
+    second: OceanKnight_Heal_6
+  - first:
+      213: -8617213287355917969
+    second: OceanKnight_Heal_7
+  - first:
+      213: -6545192064951257922
+    second: OceanKnight_Heal_8
+  - first:
+      213: -7315557883881783426
+    second: OceanKnight_Heal_9
+  - first:
+      213: -7523974134957116497
+    second: OceanKnight_Heal_10
+  - first:
+      213: 2698729519001780953
+    second: OceanKnight_Heal_11
+  - first:
+      213: -5751269226193589068
+    second: OceanKnight_Heal_12
+  - first:
+      213: -245001883653474291
+    second: OceanKnight_Heal_13
+  - first:
+      213: 5974416317497841350
+    second: OceanKnight_Heal_14
+  - first:
+      213: 2992688826207636707
+    second: OceanKnight_Heal_15
+  - first:
+      213: -4313277083707098491
+    second: OceanKnight_Heal_16
+  - first:
+      213: -2255639383214950143
+    second: OceanKnight_Heal_17
+  - first:
+      213: 2904412841303244026
+    second: OceanKnight_Heal_18
+  - first:
+      213: -7426865197331755347
+    second: OceanKnight_Heal_19
+  - first:
+      213: 2623651754234035321
+    second: OceanKnight_Heal_20
+  - first:
+      213: -9053196891499384862
+    second: OceanKnight_Heal_21
+  - first:
+      213: -2227756108028927038
+    second: OceanKnight_Heal_22
+  - first:
+      213: 7195136193757842497
+    second: OceanKnight_Heal_23
+  - first:
+      213: 2906463546072354358
+    second: OceanKnight_Heal_24
+  - first:
+      213: 3445908353532116141
+    second: OceanKnight_Heal_25
+  - first:
+      213: -6965362667305939487
+    second: OceanKnight_Heal_26
+  - first:
+      213: 7699846257067115367
+    second: OceanKnight_Heal_27
+  - first:
+      213: -1475676676630763209
+    second: OceanKnight_Heal_28
+  - first:
+      213: 7094869254550846624
+    second: OceanKnight_Heal_29
+  - first:
+      213: 5914101389239801660
+    second: OceanKnight_Heal_30
+  - first:
+      213: -6306208670267182275
+    second: OceanKnight_Heal_31
+  - first:
+      213: 1398333967072629137
+    second: OceanKnight_Heal_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OceanKnight_Heal_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 71
+        width: 77
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95d4da45c2f7fa70800000000000000
+      internalID: 8860817721052681629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_1
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 59
+        width: 65
+        height: 62
+      alignment: 9
+      pivot: {x: 0.50791675, y: 0.6245347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: facf2fc890db8edb0800000000000000
+      internalID: -4762348757227209553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_2
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 56
+        width: 34
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5250693, y: 0.5980899}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f73753f4b3546a90800000000000000
+      internalID: -7321635057555785742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_3
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 60
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235679cd75dc95ad0800000000000000
+      internalID: -2712911523267254990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_4
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 67
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7893ebd53bd2105f0800000000000000
+      internalID: -792301811045353081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_5
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 63
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8002806470aa799e0800000000000000
+      internalID: -1614634993172602872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_6
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 63
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453048e892036c740800000000000000
+      internalID: 5171874177124402004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_7
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69df5dcb22896880800000000000000
+      internalID: -8617213287355917969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_8
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 63
+        width: 39
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4ffddae7eca25a0800000000000000
+      internalID: -6545192064951257922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_9
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 63
+        width: 38
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ffa653ddae97a90800000000000000
+      internalID: -7315557883881783426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_10
+      rect:
+        serializedVersion: 2
+        x: 3007
+        y: 63
+        width: 38
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5170577, y: 0.4603871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa377a25369759790800000000000000
+      internalID: -7523974134957116497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_11
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 63
+        width: 39
+        height: 74
+      alignment: 9
+      pivot: {x: 0.507343, y: 0.44326577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d246f4f230d37520800000000000000
+      internalID: 2698729519001780953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_12
+      rect:
+        serializedVersion: 2
+        x: 3583
+        y: 63
+        width: 41
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc681d3c136f20b0800000000000000
+      internalID: -5751269226193589068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_13
+      rect:
+        serializedVersion: 2
+        x: 3871
+        y: 63
+        width: 43
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08788bb514999cf0800000000000000
+      internalID: -245001883653474291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_14
+      rect:
+        serializedVersion: 2
+        x: 4159
+        y: 63
+        width: 42
+        height: 77
+      alignment: 9
+      pivot: {x: 0.51221865, y: 0.44668877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c691c8acf369e250800000000000000
+      internalID: 5974416317497841350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_15
+      rect:
+        serializedVersion: 2
+        x: 4447
+        y: 63
+        width: 40
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5203247, y: 0.44016156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec0369a1aa288920800000000000000
+      internalID: 2992688826207636707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_16
+      rect:
+        serializedVersion: 2
+        x: 4735
+        y: 63
+        width: 41
+        height: 74
+      alignment: 9
+      pivot: {x: 0.49311644, y: 0.34247878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a3ec758592424c0800000000000000
+      internalID: -4313277083707098491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_17
+      rect:
+        serializedVersion: 2
+        x: 5023
+        y: 63
+        width: 40
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109771e8eeb52b0e0800000000000000
+      internalID: -2255639383214950143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_18
+      rect:
+        serializedVersion: 2
+        x: 5311
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc76f6471c8e4820800000000000000
+      internalID: 2904412841303244026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_19
+      rect:
+        serializedVersion: 2
+        x: 5599
+        y: 63
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae4456c3797ee890800000000000000
+      internalID: -7426865197331755347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_20
+      rect:
+        serializedVersion: 2
+        x: 5887
+        y: 63
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c3379ae55196420800000000000000
+      internalID: 2623651754234035321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_21
+      rect:
+        serializedVersion: 2
+        x: 6175
+        y: 63
+        width: 43
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef2280a4659c5280800000000000000
+      internalID: -9053196891499384862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_22
+      rect:
+        serializedVersion: 2
+        x: 6463
+        y: 63
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3aab67f9b6511e0800000000000000
+      internalID: -2227756108028927038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_23
+      rect:
+        serializedVersion: 2
+        x: 6751
+        y: 63
+        width: 39
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c0e7b2f324ad360800000000000000
+      internalID: 7195136193757842497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_24
+      rect:
+        serializedVersion: 2
+        x: 6791
+        y: 104
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ec3403235d55820800000000000000
+      internalID: 2906463546072354358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_25
+      rect:
+        serializedVersion: 2
+        x: 7039
+        y: 63
+        width: 43
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac35dce36352df20800000000000000
+      internalID: 3445908353532116141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_26
+      rect:
+        serializedVersion: 2
+        x: 7327
+        y: 63
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed4673ee8f065f90800000000000000
+      internalID: -6965362667305939487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_27
+      rect:
+        serializedVersion: 2
+        x: 7615
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7634b9110695bda60800000000000000
+      internalID: 7699846257067115367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_28
+      rect:
+        serializedVersion: 2
+        x: 7903
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739281e81e7558be0800000000000000
+      internalID: -1475676676630763209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_29
+      rect:
+        serializedVersion: 2
+        x: 8191
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0acf75d2ff9067260800000000000000
+      internalID: 7094869254550846624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_30
+      rect:
+        serializedVersion: 2
+        x: 8479
+        y: 63
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37584711eb131250800000000000000
+      internalID: 5914101389239801660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_31
+      rect:
+        serializedVersion: 2
+        x: 8767
+        y: 63
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d337c3940a8db78a0800000000000000
+      internalID: -6306208670267182275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanKnight_Heal_32
+      rect:
+        serializedVersion: 2
+        x: 9053
+        y: 55
+        width: 35
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1911ab89551e76310800000000000000
+      internalID: 1398333967072629137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cc54bef4a353c924daeb451e4069beb3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      OceanKnight_Heal_0: 8860817721052681629
+      OceanKnight_Heal_1: -4762348757227209553
+      OceanKnight_Heal_10: -7523974134957116497
+      OceanKnight_Heal_11: 2698729519001780953
+      OceanKnight_Heal_12: -5751269226193589068
+      OceanKnight_Heal_13: -245001883653474291
+      OceanKnight_Heal_14: 5974416317497841350
+      OceanKnight_Heal_15: 2992688826207636707
+      OceanKnight_Heal_16: -4313277083707098491
+      OceanKnight_Heal_17: -2255639383214950143
+      OceanKnight_Heal_18: 2904412841303244026
+      OceanKnight_Heal_19: -7426865197331755347
+      OceanKnight_Heal_2: -7321635057555785742
+      OceanKnight_Heal_20: 2623651754234035321
+      OceanKnight_Heal_21: -9053196891499384862
+      OceanKnight_Heal_22: -2227756108028927038
+      OceanKnight_Heal_23: 7195136193757842497
+      OceanKnight_Heal_24: 2906463546072354358
+      OceanKnight_Heal_25: 3445908353532116141
+      OceanKnight_Heal_26: -6965362667305939487
+      OceanKnight_Heal_27: 7699846257067115367
+      OceanKnight_Heal_28: -1475676676630763209
+      OceanKnight_Heal_29: 7094869254550846624
+      OceanKnight_Heal_3: -2712911523267254990
+      OceanKnight_Heal_30: 5914101389239801660
+      OceanKnight_Heal_31: -6306208670267182275
+      OceanKnight_Heal_32: 1398333967072629137
+      OceanKnight_Heal_4: -792301811045353081
+      OceanKnight_Heal_5: -1614634993172602872
+      OceanKnight_Heal_6: 5171874177124402004
+      OceanKnight_Heal_7: -8617213287355917969
+      OceanKnight_Heal_8: -6545192064951257922
+      OceanKnight_Heal_9: -7315557883881783426
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,11 +6,50 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 76155cbddde3974448cb59406dcf4c6d
+    path: Assets/Scenes/LoginScene.unity
+    guid: 02bc862b540b49b4e811e9cbf5132426
+  - enabled: 1
+    path: Assets/Scenes/RegistroScene.unity
+    guid: 3e0aa596e5a2c2d42ba4e50be155c431
+  - enabled: 1
+    path: Assets/Scenes/RegistroScene2.unity
+    guid: 9da9eeb519b1acf408ecfdee514d78f0
+  - enabled: 1
+    path: Assets/Scenes/RegistroScene3.unity
+    guid: 8d8fdf2edc07f364890adef52e9fe344
+  - enabled: 1
+    path: Assets/Scenes/BienvenidaScene.unity
+    guid: 6d61285bdb0ac7743938854e8655a9a7
   - enabled: 1
     path: Assets/Scenes/TutorialScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: a1f8d33c2f7888341a1ba24da951a948
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 7f6bb7669d4c9bb479ab2d738a2590e8
+  - enabled: 1
+    path: Assets/Scenes/Nivel 1 Esp - BB.unity
+    guid: e98246d74fdc4ec45a3237724a8709e9
+  - enabled: 1
+    path: Assets/Scenes/Nivel 1 Mate - BB.unity
+    guid: 4a14a6488e1d756499281e47509347d0
+  - enabled: 1
+    path: Assets/Scenes/Resta_RM.unity
+    guid: 99ac52ba82f27914ba91c6f579f87054
+  - enabled: 1
+    path: Assets/Scenes/Palabras_RM.unity
+    guid: d6ac57d287b867241b572bb9ecc04059
+  - enabled: 1
+    path: Assets/Scenes/Oraciones_SR.unity
+    guid: 69fb0f23e19a69c4880407e8ae9d96f9
+  - enabled: 1
+    path: Assets/Scenes/Multiplicacion_SR.unity
+    guid: d68bb6f5cb1389941ba0aa6f212dbe4e
+  - enabled: 1
+    path: Assets/Miguel/escenas/Escena_5_RC.unity
+    guid: b69580e1ea8ae59459b4c725f38aa5cd
+  - enabled: 1
+    path: Assets/Miguel/escenas/Escena_6_RC.unity
+    guid: 67c27289de07e6941bea937797e7398c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

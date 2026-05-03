@@ -1,0 +1,47 @@
+using UnityEngine;
+using TMPro;
+
+public class GameProgressManager : MonoBehaviour
+{
+    public static GameProgressManager Instance;
+
+    [Header("Progress")]
+    public int totalCollectibles = 3;
+    public int collected = 0;
+
+    [Header("UI")]
+    public TextMeshProUGUI progressText;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else { Destroy(gameObject); return; }
+        UpdateUI();
+    }
+
+    public void RegisterCollected()
+    {
+        collected++;
+        UpdateUI();
+        Debug.Log($"Progreso: {collected}/{totalCollectibles}");
+
+        if (collected >= totalCollectibles)
+        {
+            Debug.Log("¡Todos los pergaminos recolectados! La puerta final está abierta.");
+            if (GameUIManager.Instance != null)
+                GameUIManager.Instance.ShowVictoryHint();
+        }
+    }
+
+    public bool IsComplete()
+    {
+        return collected >= totalCollectibles;
+    }
+
+    private void UpdateUI()
+    {
+        if (progressText != null)
+            progressText.text = $"Pergaminos: {collected}/{totalCollectibles}";
+        OracionesHUDController.Instance?.SetScrolls(collected, totalCollectibles);
+    }
+}

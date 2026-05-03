@@ -1,0 +1,75 @@
+using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(SpriteRenderer))]
+public class KnightController : MonoBehaviour
+{
+    [Header("Movimiento")]
+    public float velocidad   = 5f;
+    public float fuerzaSalto = 12f;
+
+    [Header("Ataque")]
+    public float cooldownAtaque = 0.5f;
+
+    public bool estaEnPiso { get; private set; } = false;
+
+    private Rigidbody2D    _rb;
+    private Animator       _anim;
+    private SpriteRenderer _sprite;
+
+    private float _inputH;
+    private bool  _miraDerecha           = true;
+    private float _tiempoSiguienteAtaque = 0f;
+
+    void Awake()
+    {
+        _rb     = GetComponent<Rigidbody2D>();
+        _anim   = GetComponent<Animator>();
+        _sprite = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        _inputH = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.Space) && estaEnPiso)
+        {
+            _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, fuerzaSalto);
+            _anim.SetTrigger("Jump");
+        }
+
+        if (Input.GetKeyDown(KeyCode.X) && Time.time >= _tiempoSiguienteAtaque)
+        {
+            _anim.SetTrigger("Attack");
+            _tiempoSiguienteAtaque = Time.time + cooldownAtaque;
+        }
+
+        if (_inputH > 0 && !_miraDerecha) Voltear();
+        if (_inputH < 0 &&  _miraDerecha) Voltear();
+
+        _anim.SetFloat("Speed", Mathf.Abs(_inputH));
+        _anim.SetBool("IsGrounded", estaEnPiso);
+    }
+
+    void FixedUpdate()
+    {
+        _rb.linearVelocity = new Vector2(_inputH * velocidad, _rb.linearVelocity.y);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        estaEnPiso = true;
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        estaEnPiso = false;
+    }
+
+    private void Voltear()
+    {
+        _miraDerecha = !_miraDerecha;
+        _sprite.flipX = !_miraDerecha;
+    }
+}
